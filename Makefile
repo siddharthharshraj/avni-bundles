@@ -7,7 +7,7 @@ recopy:
 	cp -r ~/Downloads/goonj/* goonj/
 
 transform-csj:
-	node tranform-bundle-to-js.js csj-uat
+	node tools/transform-bundle-to-js.js csj-uat
 
 copy-sample:
 	cp csj-uat/subjectTypes.js subjectTypes.js
@@ -23,5 +23,5 @@ ifndef bundle
 	@echo "Please provide bundle param"
 	exit 1
 else
-	node tools/tranform-bundle-to-js.js development/$(bundle)
+	node tools/transform-bundle-to-js.js development/$(bundle)
 endif
