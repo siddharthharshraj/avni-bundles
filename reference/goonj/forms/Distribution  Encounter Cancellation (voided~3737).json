@@ -1,0 +1,8 @@
+{
+  "name" : "Distribution  Encounter Cancellation (voided~3737)",
+  "uuid" : "99a8584e-58d5-4cb8-b41a-12e9b226264f",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

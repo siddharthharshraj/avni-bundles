@@ -1,0 +1,82 @@
+[ {
+  "name" : "School Profile (Pre-Post)",
+  "uuid" : "6d1c3e7c-53a8-4896-9f02-4d661e980c9f",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "Community Hb Screening (voided~4598)",
+  "uuid" : "547412c8-a95e-4254-90e3-91793027aa4c",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false,
+  "voided" : true
+}, {
+  "name" : "PNC",
+  "uuid" : "52311afa-a573-424e-95bd-346c6a0dcb6c",
+  "entityEligibilityCheckRule" : "//SAMPLE RULE EXAMPLE\n'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  return false;\n};",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "ANC - Follow Up",
+  "uuid" : "a66e7312-3bed-4769-998f-171de8287be4",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "School Health - Screening",
+  "uuid" : "18b15a1c-bc82-4e98-ba6c-8fb8d651c698",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "Child - Follow up",
+  "uuid" : "a549dfa1-9390-4a09-ae5d-24d8769a8553",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "Activities follow up",
+  "uuid" : "ae2ab050-d8f8-4bee-beda-ba6dfe3c6143",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "Community Hb Screening 1 (voided~4610)",
+  "uuid" : "6565e788-9627-422f-84f8-3c9e8345144a",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false,
+  "voided" : true
+}, {
+  "name" : "Community Hb Screening - Follow Up  (voided~4599)",
+  "uuid" : "796de8f0-2404-4be2-8145-0644d8e77ee9",
+  "entityEligibilityCheckRule" : "//SAMPLE RULE EXAMPLE\n'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  return false;\n};",
+  "active" : true,
+  "immutable" : false,
+  "voided" : true
+}, {
+  "name" : "Community Hb Screening",
+  "uuid" : "9bb3bd2d-972a-4d37-a09c-0e9a32ac6ef3",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "Community Hb Screening - Follow Up",
+  "uuid" : "f2750595-1b37-4711-8037-e250c3687142",
+  "entityEligibilityCheckRule" : "",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "Delivery",
+  "uuid" : "fc892c3d-8285-4769-9abc-343be41aa368",
+  "entityEligibilityCheckRule" : "//SAMPLE RULE EXAMPLE\n'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n\n  let pregnancyEnrolments = individual.enrolments\n    .filter((enrl) =>\n        enrl.program.name == 'Pregnancy' &&\n        enrl.enrolmentDateTime != null &&\n        enrl.programExitDateTime == null &&\n        enrl.voided == false\n    )\n    .sort((a, b) => moment(b.enrolmentDateTime).diff(moment(a.enrolmentDateTime)));\n\n  if(pregnancyEnrolments.length == 0) {\n    return false;\n  }\n\n  const latestPregnancyEnrolment = pregnancyEnrolments[0];\n\n  if(latestPregnancyEnrolment.hasEncounterOfType('Delivery')) {\n    return false;\n  }\n  \n  return true;\n};",
+  "active" : true,
+  "immutable" : false
+}, {
+  "name" : "School Health - Screening Follow up",
+  "uuid" : "5d04dc3c-b10b-4678-8558-3dc9fe35e112",
+  "entityEligibilityCheckRule" : "'use strict';\n({params, imports}) => {\n    const individual = params.entity;\n    const encounters = individual.getEncounters(true);\n    \n    // Get screening encounters that are not voided\n    const screeningEncounters = encounters.filter(enc => \n        enc.encounterType.name === 'School Health - Screening' && \n        !enc.voided && \n        enc.encounterDateTime != null\n    );\n\n    // Check if there is exactly one screening encounter\n    if (screeningEncounters.length !== 1) {\n        return false;\n    }\n\n    // Get the latest screening encounter\n    const latestScreening = screeningEncounters[0];\n\n    // Standard UUIDs for classes 5th to 12th\n    const validClassUUIDs = [\n        'c188c654-9954-4d7f-b405-0593ac751b0b', // 5th\n        'db0954dc-c97d-4d8d-aad2-495b04b3c756', // 6th\n        'c2df3edc-d6d1-4d86-ab37-562376b91bcd', // 7th\n        'c24ae217-68f9-4543-a331-55f0606613c8', // 8th\n        '953850f9-3c4d-410e-880b-923c41921065', // 9th\n        '9499b6fd-d6a7-48b8-ac3a-410a87790f71', // 10th\n        'a798e63d-94cd-41a4-9444-11a6ec265181', // 11th\n        '8b6bf669-b1cd-44fa-b1cb-657bc281b657'  // 12th\n    ];\n\n    // First check: Student must be in class 5th to 12th\n    const studentClass = latestScreening.getObservationReadableValue('Standard');\n    if (!studentClass || !validClassUUIDs.some(cls => cls === studentClass)) {\n        return false;\n    }\n\n    \n    // Hb UUIDs for anemic values\n    const anemicValues = [\n        'f015ffb9-babc-434f-87d1-d46c1a52fa2d', // 8 gm/dl or less (Severe)\n        '5b943e5b-56c7-40b4-977d-9c9291fec8b0', // Between 8-10 gm/dl (Moderate)\n        '9847a475-3347-49d0-9f67-60a985003f96', // Between 10-12 gm/dl (Mild)\n        'f2ce9989-d20c-4fe9-895b-c00ab9b5690e', // Between 8-10.9 gm/dl (Moderate)\n        '2cc1be43-1a35-4cb6-9120-5c114c9e58c2', // Between 11-11.9 gm/dl (Mild)\n        '18a31a40-5e6d-496c-93e7-d8a47fa45876'  // Between 11-12.9 gm/dl (Mild)\n    ];\n    const isAnemic = anemicValues.some(value => value === hbValue);\n    if (!isAnemic) {\n        return false;\n    }\n\n    // Check if followup is already done\n    const hasFollowup = encounters.some(enc => \n        enc.encounterType.name === 'School Health - Screening Follow up' && \n        !enc.voided && \n        enc.encounterDateTime != null\n    );\n\n    return !hasFollowup;\n};\n",
+  "active" : true,
+  "immutable" : false
+} ]

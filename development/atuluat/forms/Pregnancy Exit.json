@@ -1,0 +1,113 @@
+{
+  "name" : "Pregnancy Exit",
+  "uuid" : "708420a3-007e-492a-872f-881875adacd7",
+  "formType" : "ProgramExit",
+  "formElementGroups" : [ {
+    "uuid" : "65d601e0-8f73-47ab-9e3a-80513b72066a",
+    "name" : "Exit Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Reason for exit",
+      "uuid" : "6e5b8bb8-8bea-445f-b858-e9ad800fd0fd",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Reason for exit - Pregnancy",
+        "uuid" : "d12dcd20-2bde-429e-b773-d4c091778ae0",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Maternal death",
+          "uuid" : "f0caadb9-082c-459a-a345-1101fa5c5b05",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Migrated and not in contact",
+          "uuid" : "1cce87a8-5aab-4615-aa59-bfb96c135d26",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Miscarages",
+          "uuid" : "99b733ee-18d9-4fb7-b2dc-8af6e7f0e6f2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Migrated and in contact through phone",
+          "uuid" : "2ae56308-8ab7-4210-a102-a3623b46e985",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Abortion",
+          "uuid" : "a5ba697c-59cb-4880-9dd1-0b58d0aa71f2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other reason, please specify",
+      "uuid" : "74990011-4b4e-49a4-8ba5-e58290eb5620",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other reason, please specify",
+        "uuid" : "55316640-b851-4002-9d46-dba38e7a95e7",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEnrolment = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEnrolment, formElement}).when.valueInExit(\"d12dcd20-2bde-429e-b773-d4c091778ae0\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "exit",
+                "conceptName" : "Reason for exit - Pregnancy",
+                "conceptUuid" : "d12dcd20-2bde-429e-b773-d4c091778ae0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    } ],
+    "display" : "Exit Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

@@ -1,0 +1,2412 @@
+{
+  "name" : "School Registration",
+  "uuid" : "4c42a5fd-d76b-4c4e-bdee-96b315228b7d",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "a18746da-2ede-4904-8d94-02a4d6b9ebd5",
+    "name" : "Basic Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Name of nearby SC / PHC / CHC / DH to the school",
+      "uuid" : "33a1df16-9882-400f-ac6e-4f25f3941883",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of nearby SC / PHC / CHC / DH to the school",
+        "uuid" : "3a04fd52-49f6-48b1-83cc-6b61875625d5",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Type of School (govt, pvt, semi, other)",
+      "uuid" : "a45cdf95-00b9-4221-96d5-d05bda4ecb3e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of School",
+        "uuid" : "a86a5dd1-78ba-4212-b42c-cda5de47f7d0",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Grant aid school",
+          "uuid" : "7a16d71b-bb73-4021-8ad7-72eb452dd873",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Government",
+          "uuid" : "ac50724b-89e9-4cba-91d6-c1815e6e090e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Ashramshala",
+          "uuid" : "d9b3fdbf-d1ed-4a46-9cb6-a45566993572",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Private",
+          "uuid" : "07dca313-0b26-48d7-98bb-ee5189016034",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    } ],
+    "display" : "Basic Details",
+    "voided" : true,
+    "timed" : false
+  }, {
+    "uuid" : "f580df9a-0ecb-46ce-847f-de8f340c8387",
+    "name" : "Basic details",
+    "displayOrder" : 2.0,
+    "formElements" : [ {
+      "name" : "Name of nearby SC / PHC / CHC / DH to the school",
+      "uuid" : "01a5c253-d2f9-4bbf-84e5-e1ac455507b0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of nearby SC / PHC / CHC / DH to the school",
+        "uuid" : "3a04fd52-49f6-48b1-83cc-6b61875625d5",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Type of school (govt, pvt, semi, other)",
+      "uuid" : "2936ee17-6d3c-41e1-9712-8100bd69a89f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of School",
+        "uuid" : "a86a5dd1-78ba-4212-b42c-cda5de47f7d0",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Grant aid school",
+          "uuid" : "7a16d71b-bb73-4021-8ad7-72eb452dd873",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Government",
+          "uuid" : "ac50724b-89e9-4cba-91d6-c1815e6e090e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Ashramshala",
+          "uuid" : "d9b3fdbf-d1ed-4a46-9cb6-a45566993572",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Private",
+          "uuid" : "07dca313-0b26-48d7-98bb-ee5189016034",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Specify other school",
+      "uuid" : "10158f29-e081-456f-bdb6-a7ac9100c1ea",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Specify other school",
+        "uuid" : "00159872-16a4-441e-966b-5ac38133a56d",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"a86a5dd1-78ba-4212-b42c-cda5de47f7d0\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Type of School",
+                "conceptUuid" : "a86a5dd1-78ba-4212-b42c-cda5de47f7d0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Sections in school",
+      "uuid" : "214b2538-cf88-4e24-89ea-2400f6d54c69",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Sections in school",
+        "uuid" : "b5f0c6c4-87f5-4c97-9e68-2318104e4149",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Secondary",
+          "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Pre - primary",
+          "uuid" : "64631c9c-8d67-4f28-adbf-1b431e4f047b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Primary",
+          "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Higher Secondary",
+          "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Type of School",
+      "uuid" : "2ac2f4d6-946f-4626-b56d-554e71910e09",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of School",
+        "uuid" : "a86a5dd1-78ba-4212-b42c-cda5de47f7d0",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Grant aid school",
+          "uuid" : "7a16d71b-bb73-4021-8ad7-72eb452dd873",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Government",
+          "uuid" : "ac50724b-89e9-4cba-91d6-c1815e6e090e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Ashramshala",
+          "uuid" : "d9b3fdbf-d1ed-4a46-9cb6-a45566993572",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Private",
+          "uuid" : "07dca313-0b26-48d7-98bb-ee5189016034",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Specify other",
+      "uuid" : "3337ef89-8cbc-4a18-9b59-07646b259344",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other type of school",
+        "uuid" : "e52ceb1b-780e-44b6-86a3-75ed459fb54d",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"a86a5dd1-78ba-4212-b42c-cda5de47f7d0\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Type of School",
+                "conceptUuid" : "a86a5dd1-78ba-4212-b42c-cda5de47f7d0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Grade level/classes in school",
+      "uuid" : "1c42d214-593e-4382-aaf4-bde36be3088a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Grade level/classes in school",
+        "uuid" : "52c2f6be-2f94-459c-b485-2cef5a9381d7",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Pre - primary",
+          "uuid" : "64631c9c-8d67-4f28-adbf-1b431e4f047b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Higher Secondary",
+          "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Primary",
+          "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Secondary",
+          "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Form is to be filled for which section of the school",
+      "uuid" : "16ab2f75-6578-44da-af79-0e5f483817d9",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Form is to be filled for which section of the school",
+        "uuid" : "2f846af7-a0f2-43d5-9097-ccdd98bf3bc1",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Secondary",
+          "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Primary",
+          "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Higher Secondary",
+          "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Name of the principal",
+      "uuid" : "d34ea793-b4ed-4a06-95b7-8c9cdc6bf75d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the principal",
+        "uuid" : "d1178e48-b895-4c9c-be8b-99d2c20a4d9b",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Principal contact number",
+      "uuid" : "efed28e2-8b8c-42c7-a291-8e3525f9fd8b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Principal contact number",
+        "uuid" : "fa1a8927-6bcb-4310-b09a-d00fa698b385",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "validFormat" : {
+        "regex" : "^[0-9]{10}$",
+        "descriptionKey" : "Phone number should be 10 digits"
+      },
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of classrooms",
+      "uuid" : "0a823534-d80d-42ef-a7a6-3d7924eeeaa0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of classrooms",
+        "uuid" : "f4c9aac2-57b8-49f3-bd00-9dc82777bbf2",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of boys in the school",
+      "uuid" : "14426c5a-4d71-43bd-8cde-5d74f0b48b99",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of boys in the school",
+        "uuid" : "73f8b259-4b51-42fb-97d0-89698432584e",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 12.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of girls in the school",
+      "uuid" : "01d8a19f-13d7-4a6f-9d73-3945538ff312",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of girls in the school",
+        "uuid" : "209fbf93-6bf7-4ddd-a366-c304fac9aafc",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 13.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of students in the school",
+      "uuid" : "fe57d8cb-70d5-40e2-ac65-f8138c15dd2b",
+      "keyValues" : [ {
+        "key" : "editable",
+        "value" : false
+      } ],
+      "concept" : {
+        "name" : "Total number of students in the school",
+        "uuid" : "d49075ef-003f-480e-a1c1-ca0623964f1e",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 14.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const formElement = params.formElement;\n  let visibility = false;\n  let value = null;\n  let numberOfMaleStudents = individual.getObservationValue('73f8b259-4b51-42fb-97d0-89698432584e');\n  let numberOfFemaleStudents = individual.getObservationValue('209fbf93-6bf7-4ddd-a366-c304fac9aafc');\n  \n  if( numberOfMaleStudents && numberOfFemaleStudents ) {\n      visibility = true;\n      value = numberOfMaleStudents + numberOfFemaleStudents;\n  }\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value);\n};",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of boys in the school of standard 5th to 12th",
+      "uuid" : "b0051ed3-1937-4051-b6c1-10bc2f5f53e0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of boys in the school of standard 5th to 12th",
+        "uuid" : "983c13df-6176-482e-a537-2d7fface6a48",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 15.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"cdff6bd2-ebc6-4630-9ca1-05350a7214d5\").matches();\n  \n  const condition21 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"ded21006-ad59-42ff-abce-da7b7db113e2\").matches();\n  \n  const condition31 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"6f8611de-2cd8-48c0-af4a-d8d5912a1302\").matches();\n  \n  visibility = condition11 || condition21 || condition31 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of girls in the school of standard 5th to 12th",
+      "uuid" : "cad739ba-c748-41ae-b07b-c43c8af4fd36",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of girls in the school of standard 5th to 12th",
+        "uuid" : "a0a8eb39-2e1b-4b61-98a3-0426a5a6b6c6",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 16.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"cdff6bd2-ebc6-4630-9ca1-05350a7214d5\").matches();\n  \n  const condition21 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"ded21006-ad59-42ff-abce-da7b7db113e2\").matches();\n  \n  const condition31 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"6f8611de-2cd8-48c0-af4a-d8d5912a1302\").matches();\n  \n  visibility = condition11 || condition21 || condition31 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "conjunction" : "or",
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Grade level/classes in school",
+                "conceptUuid" : "52c2f6be-2f94-459c-b485-2cef5a9381d7",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Primary" ],
+                "answerConceptUuids" : [ "cdff6bd2-ebc6-4630-9ca1-05350a7214d5" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        }, {
+          "conjunction" : "or",
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Grade level/classes in school",
+                "conceptUuid" : "52c2f6be-2f94-459c-b485-2cef5a9381d7",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Secondary" ],
+                "answerConceptUuids" : [ "ded21006-ad59-42ff-abce-da7b7db113e2" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        }, {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Grade level/classes in school",
+                "conceptUuid" : "52c2f6be-2f94-459c-b485-2cef5a9381d7",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Higher Secondary" ],
+                "answerConceptUuids" : [ "6f8611de-2cd8-48c0-af4a-d8d5912a1302" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of students in the school of standard 5th to 12th",
+      "uuid" : "7efa5abc-e564-44bd-98ee-2440a5b16742",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of students in the school of standard 5th to 12th",
+        "uuid" : "6a280c93-7bf6-4773-a402-bee446e8d5df",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 17.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"cdff6bd2-ebc6-4630-9ca1-05350a7214d5\").matches();\n  \n  const condition21 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"ded21006-ad59-42ff-abce-da7b7db113e2\").matches();\n  \n  const condition31 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"52c2f6be-2f94-459c-b485-2cef5a9381d7\").containsAnswerConceptName(\"6f8611de-2cd8-48c0-af4a-d8d5912a1302\").matches();\n  \n  visibility = condition11 || condition21 || condition31 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of non teaching staff",
+      "uuid" : "bb8cfac1-e5a5-48cc-be41-b04dea5bbbd5",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of non teaching staff",
+        "uuid" : "5503e07c-fb01-4d7f-8a68-b56f4119318a",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 18.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of teaching staff",
+      "uuid" : "efdbcf44-bce7-4550-9826-2adf635ae068",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of teaching staff",
+        "uuid" : "8a9fee7a-3f72-49ab-8688-21b72be6bc50",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 19.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "School Ambassador Name",
+      "uuid" : "6c2db604-be73-4f51-8dd0-0bd13e6cdb80",
+      "keyValues" : [ {
+        "key" : "repeatable",
+        "value" : true
+      } ],
+      "concept" : {
+        "name" : "School Ambassador Name",
+        "uuid" : "3894cebc-ae33-482c-b022-706a8628b878",
+        "dataType" : "QuestionGroup",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 20.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "Does school have space for nutrition garden?",
+      "uuid" : "bbc70944-64ac-4901-92be-4c32ebffedcf",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does school have space for nutrition garden?",
+        "uuid" : "fc25ce5c-80bb-4389-9a6f-00de5e15064d",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 21.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Name",
+      "uuid" : "56132306-369a-43f6-b5bf-b741140e52ae",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Ambassador name",
+        "uuid" : "ad671168-0245-4648-ac8c-610274e13141",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 22.0,
+      "type" : "SingleSelect",
+      "parentFormElementUuid" : "6c2db604-be73-4f51-8dd0-0bd13e6cdb80",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Designation",
+      "uuid" : "3de8b50d-b00d-4045-91c4-774107b8e557",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Designation",
+        "uuid" : "37cc812d-0edc-4a55-8394-29d85f433e0d",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 23.0,
+      "type" : "SingleSelect",
+      "parentFormElementUuid" : "6c2db604-be73-4f51-8dd0-0bd13e6cdb80",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Contact number",
+      "uuid" : "aaa1cee5-c153-4f58-b26b-cc55cd763754",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Principal contact number",
+        "uuid" : "fa1a8927-6bcb-4310-b09a-d00fa698b385",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 24.0,
+      "type" : "SingleSelect",
+      "validFormat" : {
+        "regex" : "^[0-9]{10}$",
+        "descriptionKey" : "Phone number should be 10 digits"
+      },
+      "parentFormElementUuid" : "6c2db604-be73-4f51-8dd0-0bd13e6cdb80",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Subjects",
+      "uuid" : "d3a30488-3b9c-435c-b313-a3d249c0a353",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Subjects",
+        "uuid" : "c1507522-eebe-4035-a0d7-791dc4d618dc",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Gujarati",
+          "uuid" : "172883c3-96ef-4a6f-bf06-9ed7bc417662",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Hindi",
+          "uuid" : "adef292d-2385-453e-90ab-875ab258a660",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Sanskrit",
+          "uuid" : "ce14e112-5313-48f3-aa9b-11792f36dc1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "English",
+          "uuid" : "0aa9ca27-bda2-48fd-87e9-517e61c7cdb0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Maths",
+          "uuid" : "9f9b5cf8-59ed-40db-b471-0555ef27b9da",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Science",
+          "uuid" : "a724839e-0901-4ebb-9ecf-bb385a07fdf5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Social Studies",
+          "uuid" : "6730f40d-c368-431f-8787-41f0b5686abe",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Environmental Studies",
+          "uuid" : "b028724c-4209-4391-b63f-8fe02501641a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 25.0,
+      "type" : "MultiSelect",
+      "parentFormElementUuid" : "6c2db604-be73-4f51-8dd0-0bd13e6cdb80",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Total number of School Health Ambassadors in the schools",
+      "uuid" : "9d8f29d0-cc45-4aad-a95e-4d06073bbd8a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total number of School Health Ambassadors in the schools",
+        "uuid" : "1ebca021-b10b-468e-8563-6e391d0d4a90",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 26.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Name of the school health ambassador",
+      "uuid" : "833a9051-0763-4c0c-ae75-f5f52aac1fcb",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the school health ambassadors",
+        "uuid" : "c4ff5d56-ea2f-41fd-94bf-4125d59752f8",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 27.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of proper airway and light in the classrooms",
+      "uuid" : "b7aa31a1-84c5-43e5-bb7c-7b91b6ee4254",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of proper airway and light in the classrooms",
+        "uuid" : "03800c80-4fe1-403c-9fa0-e14234b311a0",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 28.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Is the parent-teacher meeting happening at school?",
+      "uuid" : "646ca404-b0b5-45e4-b6f4-6522979c5fa1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is the parent-teacher meeting happening at school?",
+        "uuid" : "2274e106-e6a6-4a01-80fe-3536a1469b9d",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 29.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Does 'Health' is taken up as a topic in Parents teachers meeting?",
+      "uuid" : "f1e0597c-9dca-4079-a618-6d95a4a14d89",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does 'Health' is taken up as a topic in Parents teachers meeting?",
+        "uuid" : "b5ead29d-4dd8-444d-b121-98fed51b68b8",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 30.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Remarks",
+      "uuid" : "c9650a61-9b9d-4e8d-887a-47c942aa40e8",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Remarks",
+        "uuid" : "cf69df2a-4f2f-4bc5-8972-d02287d648ab",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 31.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "Availability of waste management in the school",
+      "uuid" : "ab6ad734-2c58-49f3-bea0-bd5ba36b2ba7",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of waste management in the school",
+        "uuid" : "6091a23e-6cc2-48e9-9fa0-585fa6766de5",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 32.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Is School management committee (SMC) formed",
+      "uuid" : "749e47e1-cd11-49a2-aa6b-e1950b0dd98a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is School management committee (SMC) formed",
+        "uuid" : "e46df3d9-3a83-46c9-a817-e3647bb5a8d5",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 33.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "School Management Committee (SMC)",
+      "uuid" : "bfaa6d97-e448-4f59-b1a6-221a1b0e60d8",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Mention the name of members of school management committee",
+        "uuid" : "d15af340-4014-4e9e-8dc9-0dc04f69399f",
+        "dataType" : "QuestionGroup",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 34.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"e46df3d9-3a83-46c9-a817-e3647bb5a8d5\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Is School management committee (SMC) formed",
+                "conceptUuid" : "e46df3d9-3a83-46c9-a817-e3647bb5a8d5",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "Mention the name of members of school management committee (SMC)",
+      "uuid" : "fe509062-2e4c-45ff-9698-3ed7dd9ed05d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Mention the name of members of SMC",
+        "uuid" : "fb6612f5-5eba-48f8-9984-85706d828bce",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 35.0,
+      "type" : "SingleSelect",
+      "parentFormElementUuid" : "bfaa6d97-e448-4f59-b1a6-221a1b0e60d8",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Mention the name of members of school management committee (SMC)",
+      "uuid" : "339dad23-aec0-4ab2-8b04-cb2191911b6d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Mention the name of members of school management committee (SMC)",
+        "uuid" : "0a4b0432-70a7-4109-83a9-85a6f023d5ee",
+        "dataType" : "Subject",
+        "answers" : [ ],
+        "active" : true,
+        "keyValues" : [ {
+          "key" : "subjectTypeUUID",
+          "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+        } ]
+      },
+      "displayOrder" : 36.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Source of food for students",
+      "uuid" : "e21b8f3a-bb3d-44ba-8ad2-c326f814f63a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Source of food for students",
+        "uuid" : "d8fbf565-56b2-4bb8-8758-daffd4efe364",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Tiffin box by students",
+          "uuid" : "ade48855-6db2-4db1-b006-ce8448d4b2a5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "School canteen",
+          "uuid" : "6c294405-133a-4965-ad03-581188a9f4ad",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Mid Day Meal",
+          "uuid" : "7fe2c613-00da-4069-b395-ed78a3ba2b4a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 37.0,
+      "type" : "MultiSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Specify other",
+      "uuid" : "fdf8d69a-82cb-4af0-b2ac-48dc058bdfb9",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other source of food for students",
+        "uuid" : "59f5b754-b5be-47a1-8a96-6b033b5fdc21",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 38.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"d8fbf565-56b2-4bb8-8758-daffd4efe364\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Source of food for students",
+                "conceptUuid" : "d8fbf565-56b2-4bb8-8758-daffd4efe364",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "Availability of toilet facility for girls in school",
+      "uuid" : "4bcb7992-548e-48a8-a13b-1c7a798d8b39",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of toilet facility for girls in school",
+        "uuid" : "cec751e4-bed5-489d-9e51-f11c8c082b9c",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 39.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "No of toilets available for girls in school",
+      "uuid" : "d3a51691-b14f-4b0e-b320-f021418b86e2",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "No of toilets available for girls in school",
+        "uuid" : "6723b5b5-e90b-4ba8-bb64-3651534850e7",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 40.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"cec751e4-bed5-489d-9e51-f11c8c082b9c\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availibility of toilet facility for girls in school",
+                "conceptUuid" : "cec751e4-bed5-489d-9e51-f11c8c082b9c",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "Name of the school health ambassadors",
+      "uuid" : "ff5f3340-7318-4bde-8e24-7218de56bce8",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the school health ambassadors (voided~313045)",
+        "uuid" : "adc06262-559e-40f7-a1d2-030ea70d0eb3",
+        "dataType" : "Subject",
+        "answers" : [ ],
+        "active" : true,
+        "keyValues" : [ {
+          "key" : "subjectTypeUUID",
+          "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+        } ],
+        "voided" : true
+      },
+      "displayOrder" : 41.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : false
+    } ],
+    "display" : "Basic details",
+    "timed" : false
+  }, {
+    "uuid" : "0d0e9bd4-1bd1-48f0-b33f-7f22c5eee73a",
+    "name" : "Other facility details",
+    "displayOrder" : 3.0,
+    "formElements" : [ {
+      "name" : "Availability of drinking water facility",
+      "uuid" : "864f4281-1e9f-41d3-bcd1-8d86c063945a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of drinking water facility",
+        "uuid" : "a0b1a99b-2d52-42d3-aacc-c07cab9ee4e3",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Source of water facility",
+      "uuid" : "e1ce067e-82c1-48e7-81de-c6fb6b0ee6e9",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Source of water facility",
+        "uuid" : "0555a03a-fc79-4471-9f8a-42b5434a336d",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Well",
+          "uuid" : "d57ca5a3-102e-4733-bd4d-280f77743381",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Gram Panchayat",
+          "uuid" : "8c155822-f3f4-41ef-a014-8fcdfc5e6123",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Tanker",
+          "uuid" : "63fcc298-19de-4083-8f30-dbcabe5cc301",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Hand Pump",
+          "uuid" : "4289c3ac-7ec4-452e-8fac-9c2175abfd45",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Water bottle",
+          "uuid" : "8668100f-f260-427a-851e-ea4da0672476",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Pond",
+          "uuid" : "ff7c5bed-4b75-4274-918b-ee61c64493fd",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Bore Well",
+          "uuid" : "d34fd81a-cda0-4f8a-80d9-807716865465",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"a0b1a99b-2d52-42d3-aacc-c07cab9ee4e3\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availability of drinking water facility",
+                "conceptUuid" : "a0b1a99b-2d52-42d3-aacc-c07cab9ee4e3",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of water tank",
+      "uuid" : "4fd2acc1-3a48-43a6-8653-3fafc1176d91",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of water tank",
+        "uuid" : "796a5be9-d5e2-47d0-bd4e-c59ffea410b9",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Frequency of cleaning the water tank",
+      "uuid" : "69419bfc-61ce-459c-b0d7-46c97230e9f1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Frequency of cleaning the water tank",
+        "uuid" : "79d6059d-e047-45b7-aa81-73de56147128",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Done",
+          "uuid" : "63fc7814-fe36-4f1a-b055-35fcfff6fa3c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Not regularly",
+          "uuid" : "a513ac88-1a6c-4de6-9be7-890f63a0519a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Twice a year",
+          "uuid" : "d497a90f-b660-445b-a37f-0b55092fdca1",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Once a year",
+          "uuid" : "d4f52512-c6a2-4fa3-b0e4-f36440cf0450",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"796a5be9-d5e2-47d0-bd4e-c59ffea410b9\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availability of water tank",
+                "conceptUuid" : "796a5be9-d5e2-47d0-bd4e-c59ffea410b9",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of playground in the school",
+      "uuid" : "cd11239d-b5b8-4b77-b93f-0142837475e6",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of playground in the school",
+        "uuid" : "74b540d0-46f9-4d0a-80de-0a3303440f2e",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of Fire Extinguishers",
+      "uuid" : "52e6216d-251c-47e6-b006-70250202f01b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of Fire Extinguishers",
+        "uuid" : "135caccc-d2bd-4acd-aa1e-ddbb15435279",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Provision of Sick room",
+      "uuid" : "1087e81e-a5fa-43ee-a39d-3f87bb1a67da",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Provision of Sick room",
+        "uuid" : "aa5788e6-a5d6-4799-a940-fd267999f5f8",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Setup of well being corner",
+      "uuid" : "c0b2925f-f61e-49f8-8645-18ec2fe12cdc",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Setup of well being corner",
+        "uuid" : "a359004b-7ad5-45b5-bc7d-366156907881",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Hygiene corner",
+          "uuid" : "fa3cfab9-7746-4fc2-8f9a-1b4481ef4584",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Not available",
+          "uuid" : "11ebe3d7-aade-4751-9c14-eb3e111e5154",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Menstruation corner",
+          "uuid" : "93133c90-10fd-4fc6-a0e3-5d5be5e70631",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Frequency of Health check up in school",
+      "uuid" : "5601c40d-e5e9-4f7a-bfba-cf1c70a2fa67",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Frequency of Health check up in school",
+        "uuid" : "ac0061f1-0d5f-49d7-9c2e-c2ffdcd6d640",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Once a year",
+          "uuid" : "d4f52512-c6a2-4fa3-b0e4-f36440cf0450",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Not regularly",
+          "uuid" : "a513ac88-1a6c-4de6-9be7-890f63a0519a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Twice a year",
+          "uuid" : "d497a90f-b660-445b-a37f-0b55092fdca1",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of health/food/safety guidelines in the school",
+      "uuid" : "dd76a4a7-bcda-48e0-932b-6109349c0583",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of health/food/safety guidelines in the school",
+        "uuid" : "2ddf612f-488c-41c1-a3ed-457d559f3582",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Name of nearby SC / PHC / CHC / DH to the school",
+      "uuid" : "317cfe82-706f-4843-af99-204c8e8c024e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of nearby SC / PHC / CHC / DH to the school",
+        "uuid" : "3a04fd52-49f6-48b1-83cc-6b61875625d5",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Name of the RKSK counsellor attending the school sessions",
+      "uuid" : "172bb86d-912e-4320-b387-757f60a23fe6",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the RKSK counsellor attending the school sessions",
+        "uuid" : "0b0b721f-5786-40ff-9de7-f7a6448d45b8",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 12.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Name of the RBSK doctor",
+      "uuid" : "215f92df-b4e3-41b7-8558-b9723d1b5988",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the RBSK doctor",
+        "uuid" : "951a0e5b-8b62-4746-97a5-c34bd732ffe4",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 13.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Health check up in school is done by whom",
+      "uuid" : "e49f51fb-5e26-49eb-ba36-44e7030ebf45",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Health check up in school is done by whom",
+        "uuid" : "1c85752a-8fab-4bb4-9a54-a25e4b3e1a16",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Atul Foundation",
+          "uuid" : "1386776e-b8fb-472f-a159-4bf2e078ec9e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "NGO/Trust",
+          "uuid" : "73053b69-5d59-490b-9d6f-a8465fbb5bf3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "RBSK team",
+          "uuid" : "a7e9b69e-e504-4ffd-bfaf-98cda73fa5d1",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Nearby Primary Health Center",
+          "uuid" : "704a7845-9c96-493a-94f3-cadb02875b4d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 14.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"ac0061f1-0d5f-49d7-9c2e-c2ffdcd6d640\").containsAnyAnswerConceptName(\"d4f52512-c6a2-4fa3-b0e4-f36440cf0450\",\"d497a90f-b660-445b-a37f-0b55092fdca1\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Frequency of Health check up in school",
+                "conceptUuid" : "ac0061f1-0d5f-49d7-9c2e-c2ffdcd6d640",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Once a year", "Twice a year" ],
+                "answerConceptUuids" : [ "d4f52512-c6a2-4fa3-b0e4-f36440cf0450", "d497a90f-b660-445b-a37f-0b55092fdca1" ]
+              },
+              "operator" : "containsAnyAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of First Aid Kit in the school",
+      "uuid" : "5b0cee9a-f5e7-43fb-9612-dd6419072804",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of First Aid Kit in the school",
+        "uuid" : "647a6025-9975-4653-bb8e-8939bc82ae30",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 15.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Does IFA tablets given to every students on every Wednesday",
+      "uuid" : "a2a6b2e8-6d5c-4218-b596-30788a7eb0c3",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does IFA tablets given to every students on every Wednesday",
+        "uuid" : "7191f576-0cb3-4ddc-a126-77e869c31557",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 16.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "By whom, IFA tablets provided on every Wednesday",
+      "uuid" : "67647660-7783-4d2c-9137-2b1ff7734589",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "By whom, IFA tablets provided on every Wednesday",
+        "uuid" : "aadddee1-6577-434f-a403-367b418299a3",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "ASHA worker",
+          "uuid" : "869ededb-366e-4abc-9380-cbc5afd6386a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Atul Foundation team",
+          "uuid" : "5fcb8e11-d8ed-4557-8147-dc5d22630099",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 17.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Does the deworming activity (provision of Albendazole Tablet) occurs in the school twice a year",
+      "uuid" : "cec643ce-2c0d-4565-b09f-d314276f3973",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the deworming activity (provision of Albendazole Tablet) occurs in the school twice a year",
+        "uuid" : "21f329ef-49ed-4761-8dec-b09f28c74c57",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 18.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "By whom Albendazole tablets provided twice a year",
+      "uuid" : "80ff0773-df7a-4421-a591-4cbf3f91bb88",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "By whom Albendazole tablets provided twice a year",
+        "uuid" : "7c66e4db-d53e-4243-adfb-7d2a8e5db6ed",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Atul Foundation team",
+          "uuid" : "5fcb8e11-d8ed-4557-8147-dc5d22630099",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "ASHA worker",
+          "uuid" : "869ededb-366e-4abc-9380-cbc5afd6386a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 19.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Does this school fall in 5 model schools of Atul Foundation?",
+      "uuid" : "c7267a15-04d6-4478-9c14-e0d9f885e91d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does this school fall in 5 model schools of Atul Foundation",
+        "uuid" : "8dc1aeb3-58f6-40ae-bfbf-620aca2dfb3c",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 20.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    } ],
+    "display" : "Other facility details",
+    "voided" : true,
+    "timed" : false
+  }, {
+    "uuid" : "6cb9ff7f-f60c-4d66-bb0b-19af44204df8",
+    "name" : "Toilet details",
+    "displayOrder" : 4.0,
+    "formElements" : [ {
+      "name" : "Availability of toilet facility for girls in school",
+      "uuid" : "ea0e5298-b433-4e33-9270-bb969e8dccf5",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of toilet facility for girls in school",
+        "uuid" : "cec751e4-bed5-489d-9e51-f11c8c082b9c",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "No of toilets available for girls in school",
+      "uuid" : "f1968091-b295-45cd-b445-1a057ee2acef",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "No of toilets available for girls in school",
+        "uuid" : "6723b5b5-e90b-4ba8-bb64-3651534850e7",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"cec751e4-bed5-489d-9e51-f11c8c082b9c\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availibility of toilet facility for girls in school",
+                "conceptUuid" : "cec751e4-bed5-489d-9e51-f11c8c082b9c",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Condition of Toilet facility for girls",
+      "uuid" : "e4a2f1a8-82ec-4095-9ae7-09c683e6544c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Condition of Toilet facility for girls",
+        "uuid" : "88a5b69c-edf1-4424-b341-ff754ac52125",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Non-operational",
+          "uuid" : "3cc739c5-9ef8-481f-82cc-0641b14c57d3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Operational",
+          "uuid" : "b81c099a-1f45-4902-b773-c718d10854bd",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"cec751e4-bed5-489d-9e51-f11c8c082b9c\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availability of toilet facility for girls in school",
+                "conceptUuid" : "cec751e4-bed5-489d-9e51-f11c8c082b9c",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of water in girls toilet",
+      "uuid" : "90a07fa2-b9db-4adf-bfdf-4a917c0f28bc",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of water in girls toilet",
+        "uuid" : "f5635945-26ac-48a8-ac6e-4681986ca9b0",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"f5635945-26ac-48a8-ac6e-4681986ca9b0\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availability of water in girls toilet",
+                "conceptUuid" : "f5635945-26ac-48a8-ac6e-4681986ca9b0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Disposal facility for Sanitary napkin available in girls toilet",
+      "uuid" : "b6b070c6-0740-437d-bf53-c535ef298aa8",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Disposal facility for Sanitary napkin available in girls toilet",
+        "uuid" : "63beb45c-bb3f-4c1a-b6fe-8f76ab520678",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of Sanitary napkins is through",
+      "uuid" : "633546c7-4fb6-4493-8ade-959de365961a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of Sanitary napkins is through",
+        "uuid" : "314777c3-91f3-43ca-a175-3cdefdeecaf1",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "NGO/Trust",
+          "uuid" : "73053b69-5d59-490b-9d6f-a8465fbb5bf3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Distribution by nearby PHC",
+          "uuid" : "1de3bf86-3186-4151-acdf-d5ffe63afe23",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Atul Foundation",
+          "uuid" : "1386776e-b8fb-472f-a159-4bf2e078ec9e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Vending Machine",
+          "uuid" : "44f71cfa-2386-4fc2-a89b-6830051ae45d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "MultiSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of toilet facility for boys in school",
+      "uuid" : "6318bbb0-6c88-452f-981a-ec2e4c50b5e7",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of toilet facility for boys in school",
+        "uuid" : "f595fa00-5040-44d0-ad43-874ebc434272",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "No of toilets available for boys in school",
+      "uuid" : "ed813ea8-f59d-4253-bc8d-334e3c5d2789",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "No of toilets available for boys in school",
+        "uuid" : "dee956f4-521c-4f57-8053-fcd6e04222be",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"f595fa00-5040-44d0-ad43-874ebc434272\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availability of toilet facility for boys in school",
+                "conceptUuid" : "f595fa00-5040-44d0-ad43-874ebc434272",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Condition of Toilet facility for boys",
+      "uuid" : "3602ba66-434b-4b93-8af0-0b2823db4e27",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Condition of Toilet facility for boys",
+        "uuid" : "49a3b11e-0b76-4f3b-aea2-d11fdc4f582a",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Non-operational",
+          "uuid" : "3cc739c5-9ef8-481f-82cc-0641b14c57d3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Operational",
+          "uuid" : "b81c099a-1f45-4902-b773-c718d10854bd",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"f595fa00-5040-44d0-ad43-874ebc434272\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availability of toilet facility for boys in school",
+                "conceptUuid" : "f595fa00-5040-44d0-ad43-874ebc434272",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of water in boys toilet",
+      "uuid" : "52001d88-d013-45e6-82ed-47069eab0996",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of water in boys toilet",
+        "uuid" : "d4d573b5-65f2-450e-9191-69e7cf8183a4",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"f595fa00-5040-44d0-ad43-874ebc434272\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Availability of toilet facility for boys in school",
+                "conceptUuid" : "f595fa00-5040-44d0-ad43-874ebc434272",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of drinking water facility",
+      "uuid" : "9dd2d8c8-9328-46d9-b3d0-f24bc493d283",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of drinking water facility",
+        "uuid" : "a0b1a99b-2d52-42d3-aacc-c07cab9ee4e3",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : false
+    } ],
+    "display" : "Toilet details",
+    "voided" : true,
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

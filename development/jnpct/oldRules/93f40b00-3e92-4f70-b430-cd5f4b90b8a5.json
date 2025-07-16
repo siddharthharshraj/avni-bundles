@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "20e3c4e9-1e58-4a11-ba5c-9f3c745c7ef7",
+    "type" : "Form"
+  },
+  "entityUUID" : "20e3c4e9-1e58-4a11-ba5c-9f3c745c7ef7",
+  "entityType" : "Form",
+  "type" : "ViewFilter",
+  "executionOrder" : 100.0,
+  "data" : { },
+  "name" : "JNPCT Abortion Followup View Filter",
+  "uuid" : "93f40b00-3e92-4f70-b430-cd5f4b90b8a5",
+  "fnName" : "AbortionFollowupViewFilterHandlerJNPCT"
+}

@@ -1,0 +1,43 @@
+{
+  "operationalEncounterTypes" : [ {
+    "uuid" : "54b73a0a-8e9b-4ed4-af0f-858a703aa2d0",
+    "encounterType" : {
+      "uuid" : "543c3eb6-fc01-4e3a-b3e1-ef50ec6a8896",
+      "voided" : false
+    },
+    "name" : "Dispatch receipt",
+    "voided" : false
+  }, {
+    "uuid" : "b8f28a57-5297-4d47-9ae0-836d6f71ba17",
+    "encounterType" : {
+      "uuid" : "770d8de1-9a52-4e54-875a-fba268a7732c",
+      "voided" : false
+    },
+    "name" : "Village Assessment Form",
+    "voided" : false
+  }, {
+    "uuid" : "b1be7c45-275d-44c2-a442-f133bd4185c2",
+    "encounterType" : {
+      "uuid" : "018267d2-9dac-4636-8458-74e98b4cb150",
+      "voided" : false
+    },
+    "name" : "Dispatch (voided~1538)",
+    "voided" : true
+  }, {
+    "uuid" : "682c0eb9-c367-473a-a7a7-f475b7af1941",
+    "encounterType" : {
+      "uuid" : "a29e1dbe-c894-4384-9db4-0fd2df745df8",
+      "voided" : false
+    },
+    "name" : "Distribution (voided~1540)",
+    "voided" : true
+  }, {
+    "uuid" : "de9f360a-7efa-41c0-adfe-7b295b3f6591",
+    "encounterType" : {
+      "uuid" : "639605f9-a202-48dd-b42f-082dc2d172ff",
+      "voided" : false
+    },
+    "name" : "Activity (voided~1539)",
+    "voided" : true
+  } ]
+}

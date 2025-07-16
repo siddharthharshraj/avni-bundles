@@ -1,0 +1,85 @@
+[ {
+  "name" : "Household",
+  "uuid" : "a0ae1426-0873-483c-8503-035abf651008",
+  "active" : true,
+  "type" : "Household",
+  "subjectSummaryRule" : "",
+  "programEligibilityCheckRule" : "",
+  "allowEmptyLocation" : false,
+  "allowMiddleName" : false,
+  "lastNameOptional" : false,
+  "allowProfilePicture" : false,
+  "uniqueName" : false,
+  "shouldSyncByLocation" : true,
+  "settings" : {
+    "displayRegistrationDetails" : true,
+    "displayPlannedEncounters" : true
+  },
+  "household" : true,
+  "group" : true,
+  "directlyAssignable" : false,
+  "voided" : false
+}, {
+  "name" : "School",
+  "uuid" : "eb7fc46a-5f06-4f00-863d-ee4450b23960",
+  "active" : true,
+  "type" : "Group",
+  "subjectSummaryRule" : "",
+  "programEligibilityCheckRule" : "",
+  "allowEmptyLocation" : false,
+  "allowMiddleName" : false,
+  "lastNameOptional" : false,
+  "allowProfilePicture" : false,
+  "uniqueName" : false,
+  "shouldSyncByLocation" : true,
+  "settings" : {
+    "displayRegistrationDetails" : true,
+    "displayPlannedEncounters" : true
+  },
+  "household" : false,
+  "group" : true,
+  "directlyAssignable" : false,
+  "voided" : false
+}, {
+  "name" : "Individual",
+  "uuid" : "67be1ade-3124-40c0-8896-65ee48b5f2d5",
+  "active" : true,
+  "type" : "Person",
+  "subjectSummaryRule" : "",
+  "programEligibilityCheckRule" : "",
+  "allowEmptyLocation" : false,
+  "allowMiddleName" : true,
+  "lastNameOptional" : false,
+  "allowProfilePicture" : false,
+  "uniqueName" : false,
+  "shouldSyncByLocation" : true,
+  "settings" : {
+    "displayRegistrationDetails" : true,
+    "displayPlannedEncounters" : true
+  },
+  "household" : false,
+  "group" : false,
+  "directlyAssignable" : false,
+  "voided" : false
+}, {
+  "name" : "Place of Activity",
+  "uuid" : "1c948a22-61ef-4895-bc95-448831f54a87",
+  "active" : true,
+  "type" : "Group",
+  "subjectSummaryRule" : "",
+  "programEligibilityCheckRule" : "",
+  "allowEmptyLocation" : false,
+  "allowMiddleName" : false,
+  "lastNameOptional" : false,
+  "allowProfilePicture" : false,
+  "uniqueName" : false,
+  "shouldSyncByLocation" : true,
+  "settings" : {
+    "displayRegistrationDetails" : true,
+    "displayPlannedEncounters" : true
+  },
+  "household" : false,
+  "group" : true,
+  "directlyAssignable" : false,
+  "voided" : false
+} ]

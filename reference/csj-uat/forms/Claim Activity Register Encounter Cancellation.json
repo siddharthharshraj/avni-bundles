@@ -1,0 +1,7 @@
+{
+  "name" : "Claim Activity Register Encounter Cancellation",
+  "uuid" : "e3f955eb-b1bd-4e25-a97d-bd87ea4dfd4e",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

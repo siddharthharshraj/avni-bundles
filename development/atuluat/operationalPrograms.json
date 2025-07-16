@@ -1,0 +1,30 @@
+{
+  "operationalPrograms" : [ {
+    "uuid" : "8b450cd3-2add-4e8b-9b94-8499a07321c0",
+    "program" : {
+      "uuid" : "3bf0c0d7-5f6e-42c1-91ef-ff6ac15612e5",
+      "voided" : false
+    },
+    "name" : "Community Screening",
+    "programSubjectLabel" : "",
+    "voided" : false
+  }, {
+    "uuid" : "684816ef-344c-4320-94ce-3736f83b2c1e",
+    "program" : {
+      "uuid" : "e4570a64-d5d3-49b9-a1dd-a067f50fc411",
+      "voided" : false
+    },
+    "name" : "Pregnancy",
+    "programSubjectLabel" : "",
+    "voided" : false
+  }, {
+    "uuid" : "96e587f1-6345-496a-b6f2-bd1ed3d9ddf4",
+    "program" : {
+      "uuid" : "16e226cd-9ea0-42f6-98a0-f39c9133bbb3",
+      "voided" : false
+    },
+    "name" : "Child",
+    "programSubjectLabel" : "",
+    "voided" : false
+  } ]
+}

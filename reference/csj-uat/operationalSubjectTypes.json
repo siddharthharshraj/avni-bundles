@@ -1,0 +1,91 @@
+{
+  "operationalSubjectTypes" : [ {
+    "uuid" : "ff77e3fa-15c3-4883-8ebb-9f722d90cbde",
+    "subjectType" : {
+      "uuid" : "c26ea079-e6f5-451f-ba38-1ed55f5860a9",
+      "voided" : false
+    },
+    "name" : "Recognitions",
+    "voided" : false
+  }, {
+    "uuid" : "38c0ae13-cf8f-4d51-b92b-3a577cad70b0",
+    "subjectType" : {
+      "uuid" : "0ab6edd4-2a80-4ce9-9bfa-0464cb4ae6b0",
+      "voided" : false
+    },
+    "name" : "Campaign",
+    "voided" : false
+  }, {
+    "uuid" : "e6568569-2420-4c1f-9a81-f16bef01645c",
+    "subjectType" : {
+      "uuid" : "92bf310a-6ddb-4010-8d44-d7cb009cbc9c",
+      "voided" : false
+    },
+    "name" : "Intern",
+    "voided" : false
+  }, {
+    "uuid" : "e284dd21-47f4-43f3-91d6-c4991ba8904a",
+    "subjectType" : {
+      "uuid" : "b3b98338-35af-4f29-a74d-3c8999d92165",
+      "voided" : false
+    },
+    "name" : "Volunteer",
+    "voided" : false
+  }, {
+    "uuid" : "59c12c96-07da-467f-b462-ead26bc48304",
+    "subjectType" : {
+      "uuid" : "a92cdaae-19cd-4778-920c-235e30c5ecdf",
+      "voided" : false
+    },
+    "name" : "Outreach",
+    "voided" : false
+  }, {
+    "uuid" : "df60ad8c-d877-4afd-a5a2-359da4b6879f",
+    "subjectType" : {
+      "uuid" : "cadc8363-b121-4cd4-bbbf-5bee4fd620d1",
+      "voided" : false
+    },
+    "name" : "Court",
+    "voided" : false
+  }, {
+    "uuid" : "b03dd374-b862-4fe0-b39b-37657237449e",
+    "subjectType" : {
+      "uuid" : "cd93d6db-d4be-47a0-9f84-d25391f90e77",
+      "voided" : false
+    },
+    "name" : "Claim",
+    "voided" : false
+  }, {
+    "uuid" : "66b03f48-3bc1-45a0-af65-e6bbb1ea4343",
+    "subjectType" : {
+      "uuid" : "0bc1dbf5-6790-4c9b-b5eb-d241ec6b0379",
+      "voided" : false
+    },
+    "name" : "Case",
+    "voided" : false
+  }, {
+    "uuid" : "e6f7ab20-bbc7-4671-8204-eff67ac91fd9",
+    "subjectType" : {
+      "uuid" : "7c618fef-b244-47bc-9e7c-773198b03d94",
+      "voided" : false
+    },
+    "name" : "Training (voided~1744)",
+    "voided" : true
+  }, {
+    "uuid" : "ac53eb40-8951-4b39-b46d-a4b0f2446360",
+    "subjectType" : {
+      "uuid" : "816da5ca-d4df-449d-bcd4-8eef62930d5a",
+      "voided" : false
+    },
+    "name" : "Training",
+    "voided" : false
+  }, {
+    "uuid" : "c29b4507-e997-4195-b44f-2f47a2a632e2",
+    "subjectType" : {
+      "uuid" : "cffd3a47-d8cb-4a6f-99fc-21fddfa94b44",
+      "voided" : false
+    },
+    "name" : "Influencing State",
+    "voided" : false
+  } ]
+}

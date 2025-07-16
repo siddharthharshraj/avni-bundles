@@ -1,0 +1,8 @@
+{
+  "name" : "Dispatch Encounter Cancellation (voided~3736)",
+  "uuid" : "52b2478c-c8e9-4bef-bb89-43da8f4d8957",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

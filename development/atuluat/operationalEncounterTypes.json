@@ -1,0 +1,107 @@
+{
+  "operationalEncounterTypes" : [ {
+    "uuid" : "08ff9772-b9d8-49a6-8d3b-33a2ff436115",
+    "encounterType" : {
+      "uuid" : "6d1c3e7c-53a8-4896-9f02-4d661e980c9f",
+      "voided" : false
+    },
+    "name" : "School Profile (Pre-Post)",
+    "voided" : false
+  }, {
+    "uuid" : "85b4497a-7c5e-4bea-95ae-f4824622cff0",
+    "encounterType" : {
+      "uuid" : "52311afa-a573-424e-95bd-346c6a0dcb6c",
+      "voided" : false
+    },
+    "name" : "PNC",
+    "voided" : false
+  }, {
+    "uuid" : "7707bc79-4d69-41cd-a636-4e3e5b1407d9",
+    "encounterType" : {
+      "uuid" : "a66e7312-3bed-4769-998f-171de8287be4",
+      "voided" : false
+    },
+    "name" : "ANC - Follow Up",
+    "voided" : false
+  }, {
+    "uuid" : "57c468db-89f7-4b40-953b-16cd4234003a",
+    "encounterType" : {
+      "uuid" : "18b15a1c-bc82-4e98-ba6c-8fb8d651c698",
+      "voided" : false
+    },
+    "name" : "School Health - Screening",
+    "voided" : false
+  }, {
+    "uuid" : "3fb38238-6873-484f-b289-819942d2a836",
+    "encounterType" : {
+      "uuid" : "fc892c3d-8285-4769-9abc-343be41aa368",
+      "voided" : false
+    },
+    "name" : "Delivery",
+    "voided" : false
+  }, {
+    "uuid" : "304c6578-c2e6-447c-8361-608be8debea2",
+    "encounterType" : {
+      "uuid" : "a549dfa1-9390-4a09-ae5d-24d8769a8553",
+      "voided" : false
+    },
+    "name" : "Child - Follow up",
+    "voided" : false
+  }, {
+    "uuid" : "69a62517-7e32-41f0-9dfa-1e16920bbe00",
+    "encounterType" : {
+      "uuid" : "ae2ab050-d8f8-4bee-beda-ba6dfe3c6143",
+      "voided" : false
+    },
+    "name" : "Activities follow up",
+    "voided" : false
+  }, {
+    "uuid" : "50dfa03e-72df-4099-8ea0-5e5f6ee7d0fa",
+    "encounterType" : {
+      "uuid" : "5d04dc3c-b10b-4678-8558-3dc9fe35e112",
+      "voided" : false
+    },
+    "name" : "School Health - Screening Follow up",
+    "voided" : false
+  }, {
+    "uuid" : "9704d7b2-a1c0-4991-92a9-2756dc8eed4f",
+    "encounterType" : {
+      "uuid" : "6565e788-9627-422f-84f8-3c9e8345144a",
+      "voided" : false
+    },
+    "name" : "Community Hb Screening 1 (voided~4573)",
+    "voided" : true
+  }, {
+    "uuid" : "69251b9d-db2d-4638-b9ab-b0b6aa5081c4",
+    "encounterType" : {
+      "uuid" : "547412c8-a95e-4254-90e3-91793027aa4c",
+      "voided" : false
+    },
+    "name" : "Community Hb Screening (voided~4561)",
+    "voided" : true
+  }, {
+    "uuid" : "fbc0bf1a-fc31-4dde-a819-1ece4ae7b474",
+    "encounterType" : {
+      "uuid" : "796de8f0-2404-4be2-8145-0644d8e77ee9",
+      "voided" : false
+    },
+    "name" : "Community Hb Screening - Follow Up  (voided~4562)",
+    "voided" : true
+  }, {
+    "uuid" : "604dc1de-0a9b-44c7-937d-e9d700d44547",
+    "encounterType" : {
+      "uuid" : "9bb3bd2d-972a-4d37-a09c-0e9a32ac6ef3",
+      "voided" : false
+    },
+    "name" : "Community Hb Screening",
+    "voided" : false
+  }, {
+    "uuid" : "0e9e040a-a5b4-4dd4-af15-048930a257aa",
+    "encounterType" : {
+      "uuid" : "f2750595-1b37-4711-8037-e250c3687142",
+      "voided" : false
+    },
+    "name" : "Community Hb Screening - Follow Up",
+    "voided" : false
+  } ]
+}

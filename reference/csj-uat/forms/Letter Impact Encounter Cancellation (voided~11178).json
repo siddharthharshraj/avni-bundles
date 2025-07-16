@@ -1,0 +1,8 @@
+{
+  "name" : "Letter Impact Encounter Cancellation (voided~11178)",
+  "uuid" : "d8f14f7f-002c-4b20-95c8-0a123dc58251",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

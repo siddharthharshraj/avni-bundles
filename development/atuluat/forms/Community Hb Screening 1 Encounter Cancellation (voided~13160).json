@@ -1,0 +1,27 @@
+{
+  "name" : "Community Hb Screening 1 Encounter Cancellation (voided~13160)",
+  "uuid" : "a94159e0-0b34-4fa9-9218-4befeb99b60a",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "53575c40-abb3-4816-a6d0-b4c8a2d81094",
+    "name" : "Exit",
+    "displayOrder" : 1.0,
+    "formElements" : [ ],
+    "display" : "Exit",
+    "voided" : true,
+    "timed" : false
+  }, {
+    "uuid" : "301faea0-b30a-442d-82ba-24932d24f6bc",
+    "name" : "Exit",
+    "displayOrder" : 2.0,
+    "formElements" : [ ],
+    "display" : "Exit",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

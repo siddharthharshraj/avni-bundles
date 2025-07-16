@@ -1,0 +1,7 @@
+{
+  "name" : "Case Disposed Encounter Cancellation",
+  "uuid" : "d6d14f6d-6091-46cd-a9e2-c85bb9c989d4",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

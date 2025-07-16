@@ -1,0 +1,7 @@
+{
+  "name" : "Internal Training  Encounter Cancellation",
+  "uuid" : "61958a11-f63a-45c2-8ba3-0927cfbb8641",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

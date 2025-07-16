@@ -1,0 +1,7 @@
+{
+  "name" : "Claim Legal Fund Encounter Cancellation",
+  "uuid" : "3ad90d9f-7274-419b-82cf-3470680e0739",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

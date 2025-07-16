@@ -1,0 +1,62 @@
+[ {
+  "name" : "Individual",
+  "uuid" : "2eaf9457-4cb5-4027-a9dc-6027948a30ba",
+  "active" : true,
+  "type" : "Person",
+  "allowEmptyLocation" : false,
+  "allowMiddleName" : false,
+  "lastNameOptional" : false,
+  "allowProfilePicture" : false,
+  "uniqueName" : false,
+  "shouldSyncByLocation" : true,
+  "settings" : {
+    "displayRegistrationDetails" : true,
+    "displayPlannedEncounters" : true
+  },
+  "household" : false,
+  "group" : false,
+  "directlyAssignable" : false,
+  "voided" : false
+}, {
+  "name" : "Village",
+  "uuid" : "081da569-d9d6-497b-acf3-cbbcaac1b927",
+  "active" : true,
+  "type" : "Individual",
+  "subjectSummaryRule" : "",
+  "allowEmptyLocation" : false,
+  "allowMiddleName" : false,
+  "lastNameOptional" : false,
+  "allowProfilePicture" : false,
+  "uniqueName" : false,
+  "iconFileS3Key" : "https://s3.ap-south-1.amazonaws.com/prod-user-media/jnpct_uat/icons/081da569-d9d6-497b-acf3-cbbcaac1b927.png",
+  "shouldSyncByLocation" : true,
+  "settings" : {
+    "displayRegistrationDetails" : true,
+    "displayPlannedEncounters" : true
+  },
+  "household" : false,
+  "group" : false,
+  "directlyAssignable" : false,
+  "voided" : false
+}, {
+  "name" : "Household",
+  "uuid" : "b99b8c88-a68b-4f25-989b-a8cfcd559daf",
+  "active" : true,
+  "type" : "Household",
+  "subjectSummaryRule" : "",
+  "programEligibilityCheckRule" : "",
+  "allowEmptyLocation" : false,
+  "allowMiddleName" : false,
+  "lastNameOptional" : false,
+  "allowProfilePicture" : false,
+  "uniqueName" : false,
+  "shouldSyncByLocation" : true,
+  "settings" : {
+    "displayRegistrationDetails" : true,
+    "displayPlannedEncounters" : true
+  },
+  "household" : true,
+  "group" : true,
+  "directlyAssignable" : false,
+  "voided" : false
+} ]

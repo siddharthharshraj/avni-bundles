@@ -1,0 +1,1014 @@
+{
+  "name" : "Household Registration",
+  "uuid" : "ebc3ff23-9adb-4aa8-8532-b283dc0b27ae",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "6684cf13-72b8-457d-8bf0-bd8b00675d3a",
+    "name" : "Basic details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Household number",
+      "uuid" : "c7a42941-35b5-4af2-b4cd-a61e103a78ac",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Household number",
+        "uuid" : "6085c6cd-8e75-4362-97d6-9b3cb51e05b1",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "Type of household",
+      "uuid" : "ad8311df-d550-4db7-8e46-c34dace8470c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of household",
+        "uuid" : "b30b324c-47ad-4cda-855f-3cbc74b6893e",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Semi-Permanent (Semi Pakka) House",
+          "uuid" : "a6a96170-f46e-451c-81ab-f351a2bbbb17",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Permanent (Pakka) House",
+          "uuid" : "5c7cfa3a-5666-4344-bfef-7c26eab33350",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Temporary (Kaccha) House",
+          "uuid" : "c974512d-4bd6-41f5-a4a3-c3997ea900e9",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Willing to participate",
+      "uuid" : "2da4317d-0538-430f-8a71-9ab26cdd34f3",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Willing to participate",
+        "uuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Type of resident",
+      "uuid" : "d78ef192-2168-4114-ad5e-9beec98b9fe0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of resident",
+        "uuid" : "e137cead-29f0-4d0b-8102-3b48db429447",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Migrant",
+          "uuid" : "58938153-b533-4ea0-8e2e-d098e861b33d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Permanent resident",
+          "uuid" : "9255a0e0-1a4d-4fa9-b7f5-923c05571b31",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Total no. of males in household",
+      "uuid" : "8d86674f-61bd-43ae-97d9-a9e39060925c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total no. of males in household",
+        "uuid" : "190adf30-2520-4301-b865-29d837e3d25c",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Total no. of females in household",
+      "uuid" : "0e476113-4303-4eee-836b-e9fc005ef3a7",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total no. of females in household",
+        "uuid" : "ae4d624c-96ea-4300-94f4-2418b2c130a7",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Total no. of transgender in household",
+      "uuid" : "47918943-9dda-4322-a67e-df36278a921c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total no. of transgender in household",
+        "uuid" : "db608e46-66fc-415e-b751-37bda8c2c821",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Total Number of Family members",
+      "uuid" : "32a5fdbd-f0d8-4239-91ba-2eaf2178f354",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total Number of Family members",
+        "uuid" : "f73f744d-c4ff-44d5-bcb6-328bcc8e4f3b",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Ration card type",
+      "uuid" : "5ec14657-12c2-437b-9e26-d0313f61dc21",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Ration card type",
+        "uuid" : "277ad519-78b6-4334-93cd-4d6d87adce2b",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Orange with priority family stamp (PHH - priority household) (BPL)",
+          "uuid" : "05fa6f8d-29d5-42d4-aaea-65e2a6ccfd49",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "No Ration Card",
+          "uuid" : "45d54661-d2c8-405a-9e5f-b88cb73164e2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Orange without priority family stamp (NPH - non-priority household) (APL)",
+          "uuid" : "1274c470-248e-40fa-accc-4b00e570c198",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Yellow (AAY - Antodaya Anna Yojana)",
+          "uuid" : "2e767bc3-f1ad-4a87-88d5-82a1a9704f25",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "White (APL)",
+          "uuid" : "e0199c50-61f7-4e4a-bc3b-1e114cf9e65b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Is family is taking Ration from PDS",
+      "uuid" : "f93d4103-2559-4c41-8378-22a52317cd29",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is family is taking Ration from PDS",
+        "uuid" : "6a45ebf9-0e90-47d8-be74-76bda8bae738",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"277ad519-78b6-4334-93cd-4d6d87adce2b\").containsAnswerConceptName(\"45d54661-d2c8-405a-9e5f-b88cb73164e2\").matches();\n  \n  const condition21 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 || condition21 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "conjunction" : "or",
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Ration card type",
+                "conceptUuid" : "277ad519-78b6-4334-93cd-4d6d87adce2b",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No Ration Card" ],
+                "answerConceptUuids" : [ "45d54661-d2c8-405a-9e5f-b88cb73164e2" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        }, {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Total Annual Income of the household",
+      "uuid" : "024d92a2-af5e-438d-89b9-aba56d5937bb",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Total Annual Income of the household",
+        "uuid" : "5ab4d88f-3860-41ed-b9e8-321999ccf781",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Household falls into which of the following category",
+      "uuid" : "a3cc3769-cb6e-4fc5-8613-116378b9be9d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Household falls into which of the following category",
+        "uuid" : "499114f4-0e14-42b2-b7b3-2c2272de34b8",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Middle Income Group (6 lakh to 18 lakh)",
+          "uuid" : "b5763b9c-9a52-440c-af1e-68b94159131b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "High Income Group (18 lakh)",
+          "uuid" : "63059ca4-e5f9-4af0-9c95-0599580ea43d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Economically Weaker Section (upto 3 lakh)",
+          "uuid" : "df906305-25df-4fa1-9d56-d54144298383",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Lower Income Group (3 lakh to 6 lakh)",
+          "uuid" : "471766c2-af69-41da-85a0-ccc49287c039",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 12.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Type of water use for drinking",
+      "uuid" : "1d13559b-a6b8-436f-9fb4-9a3465c76264",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of water use for drinking",
+        "uuid" : "d9e3b3d2-91a9-4124-8eed-02325bdd73ae",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Well",
+          "uuid" : "d57ca5a3-102e-4733-bd4d-280f77743381",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Pond",
+          "uuid" : "ff7c5bed-4b75-4274-918b-ee61c64493fd",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Water bottle",
+          "uuid" : "8668100f-f260-427a-851e-ea4da0672476",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Tanker",
+          "uuid" : "63fcc298-19de-4083-8f30-dbcabe5cc301",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Hand Pump",
+          "uuid" : "4289c3ac-7ec4-452e-8fac-9c2175abfd45",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Filter water",
+          "uuid" : "65840dc9-8e4f-435e-87fe-a58c1b849cb2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Gram Panchayat",
+          "uuid" : "8c155822-f3f4-41ef-a014-8fcdfc5e6123",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Bore Well",
+          "uuid" : "d34fd81a-cda0-4f8a-80d9-807716865465",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 13.0,
+      "type" : "MultiSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Status of toilet facility",
+      "uuid" : "8847efea-2407-489e-b411-899fa7433a0f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Status of toilet facility",
+        "uuid" : "e89bd581-5275-493a-843b-4b5e2db86e10",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes, we have dedicated family toilet",
+          "uuid" : "9354e94f-c247-4d9f-a55d-fe363b21a3b4",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Yes, toilet shared by us and other families (public / community toilet)",
+          "uuid" : "702e3fc6-b9e4-4353-ba36-f822197ab3ef",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "No, our family is without toilet (family members defecate in open fields)",
+          "uuid" : "8adbcd4f-0dc7-4c87-ae60-2e705061c763",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 14.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Status of bathroom facility",
+      "uuid" : "1d8c5f4d-0fd0-40e9-97eb-4762fb8c9985",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Status of bathroom facility",
+        "uuid" : "bc7c92f7-0735-4dd5-8306-ae7c8f903289",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Kaccha bathroom",
+          "uuid" : "6acd6ea8-b19e-47dd-bdbc-23ae440c2eeb",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Pakka bathroom",
+          "uuid" : "2a1b9981-ada4-4c3b-b31d-e582b19d4eaa",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Not available",
+          "uuid" : "11ebe3d7-aade-4751-9c14-eb3e111e5154",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 15.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Are family members using slippers for toilet",
+      "uuid" : "b4e03057-ebf9-4490-9809-0512cde8f594",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Are family members using slippers for toilet",
+        "uuid" : "90b194a6-782c-4b3b-8c6c-3230032eeb50",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 16.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Availability of proper airway and light in the house",
+      "uuid" : "5156be52-06cd-43fe-a890-c7a2db783934",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of proper airway and light in the house",
+        "uuid" : "feebcf54-fd1a-446c-b668-3ab3d37915e4",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 17.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Availabilty of waste management in the house",
+      "uuid" : "82125dc9-4104-47bf-a364-92645f8b89b9",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availabilty of waste management in the house",
+        "uuid" : "431f0359-4a87-410b-9a54-93a42cfbcb94",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 18.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Cleanliness level of the house",
+      "uuid" : "e44eb7b8-7594-4600-835c-7b582d5be4e6",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Cleanliness level of the house",
+        "uuid" : "6b4e1429-7d74-41e6-9e2a-b1905d945be2",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Level - 3 (Quite Dirty)",
+          "uuid" : "8a0de0dc-3be0-4225-8e99-836b538507ad",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Level - 2 (Not very Dirty)",
+          "uuid" : "76bd3fdf-1c7e-406b-881d-e6268fb2821b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Level - 1 (Extremely Clean)",
+          "uuid" : "02daae25-c837-4eb1-a2d3-c69619f22ee6",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 19.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"478b6684-0f7b-4239-afb9-d8077a05dbb0\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Willing to participate",
+                "conceptUuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    } ],
+    "display" : "Basic details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

@@ -1,0 +1,7 @@
+{
+  "name" : "Outreach Location Specific Details Encounter Cancellation",
+  "uuid" : "d547ae18-74dc-40e5-b09d-3eb439a37ec0",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

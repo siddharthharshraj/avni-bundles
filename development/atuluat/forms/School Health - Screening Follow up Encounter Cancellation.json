@@ -1,0 +1,103 @@
+{
+  "name" : "School Health - Screening Follow up Encounter Cancellation",
+  "uuid" : "3df0c519-a0ae-4ad1-9c7b-88bab2c60dd8",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ {
+    "uuid" : "d417a44e-d8d1-4b7a-8d42-33d02b9b91f0",
+    "name" : "Reason for cancellation",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Is the student present?",
+      "uuid" : "2e0d758a-1f52-4425-b88c-9c776423cf7d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is the student present?",
+        "uuid" : "a54fe0da-6ec3-4a8a-8a7c-d17b8f2ea5d9",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Why not availble?",
+      "uuid" : "98428947-3dd1-49b3-9c9b-0126365b4548",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why not available?",
+        "uuid" : "f52e6c46-f982-4331-95c4-26bb36c48e72",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Death",
+          "uuid" : "1b6ce78f-181b-4b64-9ec9-7afc07fe9729",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Went to relative or other place",
+          "uuid" : "7aa91832-43d7-4ed6-8fe4-feabf1455cf7",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Not known",
+          "uuid" : "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Temporarily Migrated",
+          "uuid" : "345d9312-166d-4162-8ed2-17a016323181",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "When will visit again?",
+      "uuid" : "4d33d96e-693d-4dfb-ab70-0b45099280fa",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "When will visit again for the patient?",
+        "uuid" : "f78f4b22-9930-4575-8c55-4a5108cf90a8",
+        "dataType" : "Date",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const RuleCondition = imports.rulesConfig.RuleCondition;\n\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n\n  const cancelReasonMatches = new RuleCondition({encounter, formElement})\n    .when.valueInCancelEncounter(\"f52e6c46-f982-4331-95c4-26bb36c48e72\")\n    .containsAnyAnswerConceptName(\n      \"7aa91832-43d7-4ed6-8fe4-feabf1455cf7\",\n      \"c28401fc-3b61-4c8d-a2a6-6c97df6ff61b\"\n    )\n    .matches();\n\n  visibility = cancelReasonMatches;\n\n  if (visibility) {\n    const rawDate = encounter.getObservationValue(\"f78f4b22-9930-4575-8c55-4a5108cf90a8\");\n    const selectedDate = moment(rawDate);\n    const today = moment();\n\n    if (!selectedDate.isAfter(today)) {\n      validationErrors.push(\"Selected date must be in the future.\");\n    }\n  }\n\n  return new imports.rulesConfig.FormElementStatus(\n    formElement.uuid,\n    visibility,\n    value,\n    answersToSkip,\n    validationErrors\n  );\n};",
+      "mandatory" : true
+    } ],
+    "display" : "Reason for cancellation",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

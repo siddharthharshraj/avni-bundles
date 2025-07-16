@@ -1,0 +1,973 @@
+{
+  "name" : "Individual Registration",
+  "uuid" : "ef9dcc34-87a7-4627-8f6e-3f44fba6f1a6",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "d91fb8f0-cb2e-4c7e-95b8-42c3c9366fef",
+    "name" : "Basic Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Marital Status",
+      "uuid" : "b4758748-e40b-47f7-a873-48ccf0802770",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Marital Status",
+        "uuid" : "ef4eb4dd-cb1f-470a-ae81-a2ba3830ad6d",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Widow",
+          "uuid" : "b1d9f78c-cc26-4eae-a4e9-c2b8eb14b373",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Engaged",
+          "uuid" : "47c27db0-561c-4fe1-9072-efd9927ae451",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Divorce",
+          "uuid" : "abd33e8b-b76d-4113-8c5d-0acf5d858581",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Married",
+          "uuid" : "f5395289-b41a-44e7-8b40-d85bdbc9ce7b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Separated",
+          "uuid" : "c9160f9a-ebec-4a22-8133-55f1f83d089a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Living relationship",
+          "uuid" : "93ca46e1-cf24-434f-9f74-076829c2beb0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Unmarried",
+          "uuid" : "a962ae86-3c25-433e-afb3-b7d63968c4e2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Contact Number",
+      "uuid" : "73653280-fa8c-43ec-bf48-37130c77c617",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Contact number",
+        "uuid" : "8c8f5111-f0cf-4b8b-be46-4dc7b7f0dda6",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "validFormat" : {
+        "regex" : "^[0-9]{10}$",
+        "descriptionKey" : "Please provide valid Mobile Number"
+      },
+      "mandatory" : true
+    }, {
+      "name" : "Alternate Contact Number",
+      "uuid" : "c9389d66-0153-421f-bfaf-d3b675176f99",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Alternate Contact Number",
+        "uuid" : "26d01ac4-215a-419f-8181-3812fb36831e",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "validFormat" : {
+        "regex" : "^[0-9]{10}$",
+        "descriptionKey" : "Please provide valid Mobile Number"
+      },
+      "mandatory" : false
+    }, {
+      "name" : "Religion",
+      "uuid" : "2b2772f8-4439-4aeb-9be6-aedc7fa09211",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Religion",
+        "uuid" : "418b4a4b-69dd-4e2c-bb07-e6feace8295a",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Islam",
+          "uuid" : "f96ab20b-e7a1-4b39-b3b9-728f5799df93",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Sikhism",
+          "uuid" : "73dc4f38-185e-4f35-883a-05d04ec590ac",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Buddhism",
+          "uuid" : "1e94597e-31da-45ff-b74b-9f288d6c4f3b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Hindu",
+          "uuid" : "99f56d36-40c5-4d70-b1cc-4c45088a1871",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Christianity",
+          "uuid" : "2469017b-a685-4354-b000-3972411355aa",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Jainism",
+          "uuid" : "51ef0eb5-33e4-4560-94e6-7b9e5e8d6d2e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Caste",
+      "uuid" : "cf7117b9-2eeb-4a2c-857a-ef8e1106c90e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Caste",
+        "uuid" : "8c5650ae-40f8-4689-9032-1257d6ce8c1e",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "ST",
+          "uuid" : "7e2ebb6e-0401-4b6f-8efe-dd09be78a41d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "General",
+          "uuid" : "5e10659f-5fc3-4952-8c4d-b51ea2c2a231",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "OBC",
+          "uuid" : "353b02e4-7226-41cd-b7fa-7d17360758c9",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "SC",
+          "uuid" : "3d40dc41-e208-42bf-90e3-5e4aab7754b9",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Education",
+      "uuid" : "72325f57-20ef-40e6-b7ab-db8706b66a76",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Education",
+        "uuid" : "6a243b63-9963-4d2e-bfe2-c46d4a2d4f53",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Primary",
+          "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Post Graduate",
+          "uuid" : "f660a0fa-a544-4858-a2b5-aa8d9176221a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Diploma",
+          "uuid" : "a4dd6e0f-2d82-48eb-99cc-e69e42790745",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Higher Secondary",
+          "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "ITI",
+          "uuid" : "afecdf46-d831-4ba6-a3e6-4b5b1db5ff3b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Illiterate",
+          "uuid" : "f288f8ec-1d19-4c04-91a2-68a651917ca0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Under Graduate",
+          "uuid" : "5a342f53-654b-476e-be04-abc74be82068",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Other course",
+          "uuid" : "e6216fbd-8adc-43aa-8b70-9105d65f98d9",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "NA",
+          "uuid" : "bcf2e50f-64f0-4f26-80eb-727ac547b9d4",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        }, {
+          "name" : "Certificate course",
+          "uuid" : "e891933e-85ed-4c18-84fc-63c2c358b592",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Secondary",
+          "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Specify other",
+      "uuid" : "e3a80b27-7316-4675-9ca0-0306ac85964f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other education",
+        "uuid" : "67219f1d-2835-43a1-aaa8-5213be5b3f86",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"6a243b63-9963-4d2e-bfe2-c46d4a2d4f53\").containsAnswerConceptName(\"e6216fbd-8adc-43aa-8b70-9105d65f98d9\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Education",
+                "conceptUuid" : "6a243b63-9963-4d2e-bfe2-c46d4a2d4f53",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other course" ],
+                "answerConceptUuids" : [ "e6216fbd-8adc-43aa-8b70-9105d65f98d9" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Income Sources",
+      "uuid" : "1ec20d9d-8449-4588-b60f-3c03d1c013ee",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Income Sources",
+        "uuid" : "274f9d0e-e175-4be2-901b-6788a1fa31d6",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Self-employed in agriculture with land",
+          "uuid" : "40cf5407-513f-405f-adcf-b55a893088fd",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Self-employed in non-agricultural activities",
+          "uuid" : "187f7793-7a34-42d3-be4b-1e6d84597128",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Landless agriculture labour",
+          "uuid" : "980142d5-a754-413b-8d43-00935fb7692e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "NA",
+          "uuid" : "bcf2e50f-64f0-4f26-80eb-727ac547b9d4",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Salaried employment/Govt. employee",
+          "uuid" : "319a3c50-b064-4861-8868-185ee155b991",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Casual workers/ daily wage earners",
+          "uuid" : "1231ca81-eda3-4ff6-ab0e-91be28269f34",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Specify other",
+      "uuid" : "3fd0f680-59ca-47dc-86f5-ba2e28e82d3d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other income source",
+        "uuid" : "63a95da9-1de1-4bbd-beb1-ca291a7e626a",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"274f9d0e-e175-4be2-901b-6788a1fa31d6\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Income Sources",
+                "conceptUuid" : "274f9d0e-e175-4be2-901b-6788a1fa31d6",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Annual Income of the individual",
+      "uuid" : "92184422-ff80-463b-a268-798b667842fc",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Annual Income of the individual",
+        "uuid" : "d9eb0450-970b-483a-bfeb-aeca8a780e30",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Does the individual have any disability?",
+      "uuid" : "6767845c-0935-41fa-8604-3cb412ea0a62",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the individual have any disability",
+        "uuid" : "0f59cd99-ab37-4edb-881c-509a985aca2a",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Mental disability",
+          "uuid" : "52588f0e-6009-43f9-a39d-0bc3d1604096",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Physical disability",
+          "uuid" : "97283fe8-a42b-480b-9596-be62e99b298d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Multiple disability",
+          "uuid" : "c25b068a-829e-4037-b20c-c26c4fd7e8ab",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Specify the disability",
+      "uuid" : "a949e268-1a4e-4031-aeb8-c98a5664f902",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Specify the disability",
+        "uuid" : "8605a9be-235b-4cfe-be77-63387f3e6d46",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 12.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"0f59cd99-ab37-4edb-881c-509a985aca2a\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Does the individual have any disability",
+                "conceptUuid" : "0f59cd99-ab37-4edb-881c-509a985aca2a",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Specify other",
+      "uuid" : "f6910150-1de8-4a41-b45f-a7adeafbc818",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other disability",
+        "uuid" : "65dd8cbb-fadc-4989-964a-273be10bd0b7",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 13.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"0f59cd99-ab37-4edb-881c-509a985aca2a\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Does the individual have any disability",
+                "conceptUuid" : "0f59cd99-ab37-4edb-881c-509a985aca2a",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Availability of PMJAY card",
+      "uuid" : "63b62462-c616-40d7-ba66-cf04f3454922",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Availability of PMJAY card",
+        "uuid" : "67e13345-5aa0-4c80-b592-af2edadff3b1",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 14.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Personal Hygiene",
+      "uuid" : "890aceab-f180-4837-bb33-620601a85be4",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Personal Hygiene",
+        "uuid" : "50ef3a01-0afb-438b-93a4-cef56ecb044b",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Clean clothing",
+          "uuid" : "c99025c6-1053-4434-9d8c-5beab88dc159",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Teeths looks clean",
+          "uuid" : "e94bb7bb-f5c9-41a2-8f05-3233b0d5984a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Nails properly maintained",
+          "uuid" : "4257933c-c650-4581-8807-fa8730d979de",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Takes bath daily",
+          "uuid" : "6187ed92-8b28-4bce-a8ef-eff15c83858b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Clean Hair",
+          "uuid" : "3c941d3d-acb7-47c5-a386-195c2d04d10e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 15.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Individual referred for",
+      "uuid" : "8cb7560a-5d58-4051-95f4-8db90807c219",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Individual referred for",
+        "uuid" : "874e0bcb-e67a-4e79-afb8-f89c30f585dc",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Sickle cell",
+          "uuid" : "55257000-a8b1-400a-b2cc-89528ebccc59",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 12.0,
+          "active" : true
+        }, {
+          "name" : "Anaemia",
+          "uuid" : "cc02f3a2-85fb-40c7-a6e7-0b9b377b771f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 11.0,
+          "active" : true
+        }, {
+          "name" : "Dermatological conditions",
+          "uuid" : "c2a73b6d-82c5-48df-bab4-34e63c07cc41",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        }, {
+          "name" : "Preventive checkup",
+          "uuid" : "20a8cacc-64e4-4f7a-80e8-e6afb2ace32a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 14.0,
+          "active" : true
+        }, {
+          "name" : "Hypertension",
+          "uuid" : "4ee14786-fd00-466d-80a9-1cdc8f5be306",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 16.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Other Nutritional defeciency",
+          "uuid" : "d5c6f8c6-b0e6-4466-8ddf-48748b7c4652",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 13.0,
+          "active" : true
+        }, {
+          "name" : "Opthalmic Services",
+          "uuid" : "c3407345-9f4e-48ce-adf5-d09a858998be",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Child Health",
+          "uuid" : "92f02a70-da6f-4bd5-ad2d-910ccf22be08",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Oral Health",
+          "uuid" : "91a393c4-b842-49d0-8462-14d3aa8b48b5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "Paralysis",
+          "uuid" : "0e092f86-0218-4688-bdaf-ba446b11597d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "ENT",
+          "uuid" : "e5bef41b-8362-4402-b5fe-c7ba078482f6",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 15.0,
+          "active" : true
+        }, {
+          "name" : "Reproductive Health",
+          "uuid" : "8d2e823d-c045-4270-94cb-f67114b8e630",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Diabetes",
+          "uuid" : "d379a1bb-c4d8-40ec-835e-3c47ead53489",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Cancer",
+          "uuid" : "5224c497-3719-4278-b349-ea7afaaa8240",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 16.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Individual referred at which facility",
+      "uuid" : "40f88738-4964-4ddb-90cc-f7f140d38cde",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Individual referred at which facility",
+        "uuid" : "b43101cf-1c08-4504-a490-db72381e61c1",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Nearby PHC/CHC/DH",
+          "uuid" : "fb443423-7e70-4b61-8b91-b0fd7832fb42",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "VIMS",
+          "uuid" : "5365191f-83b6-437d-a75f-694ec505d06c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Atul Foundation Health Center",
+          "uuid" : "77067829-4c76-4e00-abea-3234d5bf0242",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 17.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"874e0bcb-e67a-4e79-afb8-f89c30f585dc\").containsAnswerConceptName(\"04668370-364e-42f8-a26e-2d8c50c8828d\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Individual referred for",
+                "conceptUuid" : "874e0bcb-e67a-4e79-afb8-f89c30f585dc",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "None" ],
+                "answerConceptUuids" : [ "04668370-364e-42f8-a26e-2d8c50c8828d" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Specify other facility",
+      "uuid" : "0967ff32-f825-4e91-8b77-cee0b885d49d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other facility at which individual was referred",
+        "uuid" : "0201916f-36c1-4275-a751-d2bcf739be8c",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 18.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"b43101cf-1c08-4504-a490-db72381e61c1\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Individual referred at which facility",
+                "conceptUuid" : "b43101cf-1c08-4504-a490-db72381e61c1",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Individual can be enrolled in which of the following program",
+      "uuid" : "e776911d-788e-4a15-ad32-575fbcdccb2f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Individual can be enrolled in which of the following program",
+        "uuid" : "3ff4fe71-979d-44f8-8ad0-3cd83e5bad67",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Referral Services",
+          "uuid" : "da075f90-1982-40d9-b017-2dc1f1f3baab",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Hb Screening",
+          "uuid" : "29afd053-0731-4c4a-9d54-e35b50654626",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "School Health",
+          "uuid" : "fcf4b38c-8cd5-4157-92a2-8221140cdef7",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "First 1000 Days",
+          "uuid" : "b8d935fa-0f2a-4192-b7f6-9a5160c2261f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 19.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Remarks",
+      "uuid" : "f5e46b54-d62a-49cc-88cf-6f729c7a5a0b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Remarks",
+        "uuid" : "cf69df2a-4f2f-4bc5-8972-d02287d648ab",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 20.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    } ],
+    "display" : "Basic Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

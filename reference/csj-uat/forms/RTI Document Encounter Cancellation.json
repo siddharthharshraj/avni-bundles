@@ -1,0 +1,7 @@
+{
+  "name" : "RTI Document Encounter Cancellation",
+  "uuid" : "67e1fe9f-27d8-4911-8214-36b50c3b7d5b",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

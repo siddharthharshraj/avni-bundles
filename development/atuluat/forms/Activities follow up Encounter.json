@@ -1,0 +1,388 @@
+{
+  "name" : "Activities follow up Encounter",
+  "uuid" : "22298afa-f391-4098-b4f2-2cce154b1d7d",
+  "formType" : "Encounter",
+  "formElementGroups" : [ {
+    "uuid" : "b994738c-9c3f-46a9-863d-2032d2de61e0",
+    "name" : "Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Participation in any activity",
+      "uuid" : "87bd54c3-4589-4d2d-9301-f8bee85096d3",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Participation in any activity",
+        "uuid" : "9dd263ab-ff91-4a7d-99ec-aa948e858236",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Name of the participant",
+      "uuid" : "14edbc2a-fdce-46db-9e86-e4bbdb92b041",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the participant",
+        "uuid" : "6560a61c-7887-4047-a607-4d8010cb7d5c",
+        "dataType" : "Subject",
+        "answers" : [ ],
+        "active" : true,
+        "keyValues" : [ {
+          "key" : "subjectTypeUUID",
+          "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+        } ]
+      },
+      "displayOrder" : 2.0,
+      "type" : "MultiSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"9dd263ab-ff91-4a7d-99ec-aa948e858236\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Participation in any activity",
+                "conceptUuid" : "9dd263ab-ff91-4a7d-99ec-aa948e858236",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Total number of participants",
+      "uuid" : "e0472f3f-59b7-4dfd-8304-dfd11dde0ba0",
+      "keyValues" : [ {
+        "key" : "editable",
+        "value" : false
+      } ],
+      "concept" : {
+        "name" : "Total number of participants",
+        "uuid" : "43810da4-8fb4-41ca-8fb3-2d45bd8696a4",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"6560a61c-7887-4047-a607-4d8010cb7d5c\").defined.matches();\n  \n  if(condition11) {\n  value = encounter.getObservationValue('6560a61c-7887-4047-a607-4d8010cb7d5c').length;\n  \n  }\n \n visibility = condition11;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "mandatory" : false
+    }, {
+      "name" : "Type of activity",
+      "uuid" : "52881410-a3a2-4922-8c3a-34559905918d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of activity",
+        "uuid" : "db4dbc11-582b-4958-ad3c-cbe5a99b2542",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Demonstration cum Mela",
+          "uuid" : "5aca7275-30f3-46db-86dc-91cfb7fcbf59",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Group Session",
+          "uuid" : "74e0d3fe-3117-4547-b962-f0c2c45553d0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Competitions",
+          "uuid" : "97ed8411-05f5-49d5-bdc0-70c0ccf8fdf0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Health Check-up Camp",
+          "uuid" : "c2b844d2-05dc-43c3-bd55-9a7483947be1",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "National/International Day/Week celebration",
+          "uuid" : "89aba481-fc77-400b-9c5a-4d19f2c8a854",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Awareness activity",
+          "uuid" : "2a337eb2-fab0-4839-b51d-96584b44a0b1",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "MultiSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"9dd263ab-ff91-4a7d-99ec-aa948e858236\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Participation in any activity",
+                "conceptUuid" : "9dd263ab-ff91-4a7d-99ec-aa948e858236",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Other activity, please specify",
+      "uuid" : "155ca695-7546-404e-bd91-278d0aca91f4",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other activity,please specify",
+        "uuid" : "8216294b-2314-413c-a5d6-98a8dfe1c812",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Type of activity",
+                "conceptUuid" : "db4dbc11-582b-4958-ad3c-cbe5a99b2542",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Name of the activity",
+      "uuid" : "6f66f7ef-b4b9-493a-ace8-5355d83c3406",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the activity",
+        "uuid" : "8b5356d2-192c-472c-879f-bdc55db498e0",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "No of recipe made",
+      "uuid" : "efde137d-2ca0-4b06-a072-212de96fcf39",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "No of recipe made",
+        "uuid" : "a8bdbae5-a5c6-4805-8b62-6667d7e4e95f",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"5aca7275-30f3-46db-86dc-91cfb7fcbf59\").and.when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"89aba481-fc77-400b-9c5a-4d19f2c8a854\").matches();\n  \n  const condition21 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"5aca7275-30f3-46db-86dc-91cfb7fcbf59\").matches();\n  \n  const condition31 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"89aba481-fc77-400b-9c5a-4d19f2c8a854\").matches();\n  \n  visibility = condition11 || condition21 || condition31 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "conjunction" : "or",
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Type of activity",
+                "conceptUuid" : "db4dbc11-582b-4958-ad3c-cbe5a99b2542",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Demonstration cum Mela" ],
+                "answerConceptUuids" : [ "5aca7275-30f3-46db-86dc-91cfb7fcbf59" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            }, {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Type of activity",
+                "conceptUuid" : "db4dbc11-582b-4958-ad3c-cbe5a99b2542",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "National/International Day/Week celebration" ],
+                "answerConceptUuids" : [ "89aba481-fc77-400b-9c5a-4d19f2c8a854" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ],
+            "conjunction" : "and"
+          }
+        }, {
+          "conjunction" : "or",
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Type of activity",
+                "conceptUuid" : "db4dbc11-582b-4958-ad3c-cbe5a99b2542",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Demonstration cum Mela" ],
+                "answerConceptUuids" : [ "5aca7275-30f3-46db-86dc-91cfb7fcbf59" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        }, {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Type of activity",
+                "conceptUuid" : "db4dbc11-582b-4958-ad3c-cbe5a99b2542",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "National/International Day/Week celebration" ],
+                "answerConceptUuids" : [ "89aba481-fc77-400b-9c5a-4d19f2c8a854" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    }, {
+      "name" : "No of new recipe identified",
+      "uuid" : "58bf4acc-59ba-4dea-a713-406ac49a8a9b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "No of new recipe identified",
+        "uuid" : "b65beafc-3fc2-46b4-9aa0-02bc90def161",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"5aca7275-30f3-46db-86dc-91cfb7fcbf59\").and.when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"89aba481-fc77-400b-9c5a-4d19f2c8a854\").matches();\n  \n  const condition21 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"5aca7275-30f3-46db-86dc-91cfb7fcbf59\").matches();\n  \n  const condition31 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"89aba481-fc77-400b-9c5a-4d19f2c8a854\").matches();\n  \n  visibility = condition11 || condition21 || condition31 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "mandatory" : false
+    }, {
+      "name" : "Name of the new recipe",
+      "uuid" : "4890a3be-c7f4-4fb0-8038-38bc9027b855",
+      "keyValues" : [ {
+        "key" : "repeatable",
+        "value" : true
+      } ],
+      "concept" : {
+        "name" : "Name of the new recipe QG",
+        "uuid" : "82096d07-d1ad-4311-b1ab-4dff78f76054",
+        "dataType" : "QuestionGroup",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"5aca7275-30f3-46db-86dc-91cfb7fcbf59\").and.when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"89aba481-fc77-400b-9c5a-4d19f2c8a854\").matches();\n  \n  const condition21 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"5aca7275-30f3-46db-86dc-91cfb7fcbf59\").matches();\n  \n  const condition31 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"db4dbc11-582b-4958-ad3c-cbe5a99b2542\").containsAnswerConceptName(\"89aba481-fc77-400b-9c5a-4d19f2c8a854\").matches();\n  \n  visibility = condition11 || condition21 || condition31 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "mandatory" : false
+    }, {
+      "name" : "Name of the new recipe",
+      "uuid" : "3954b012-f963-418e-ad66-f7aee40738f9",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the new recipe",
+        "uuid" : "cf6451df-f6bd-4019-bd18-def17511d96d",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "parentFormElementUuid" : "4890a3be-c7f4-4fb0-8038-38bc9027b855",
+      "mandatory" : false
+    } ],
+    "display" : "Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

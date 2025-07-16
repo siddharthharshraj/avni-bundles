@@ -1,0 +1,36 @@
+{
+  "operationalPrograms" : [ {
+    "uuid" : "0f037a01-251f-4eec-8ee6-45808a7eb3c3",
+    "program" : {
+      "uuid" : "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
+      "voided" : false
+    },
+    "name" : "Eligible couple",
+    "voided" : false
+  }, {
+    "uuid" : "0d9321b2-4bb8-437d-b191-cc39ee00e75a",
+    "program" : {
+      "uuid" : "26d3e45e-7174-433f-b4a7-db1524648252",
+      "voided" : false
+    },
+    "name" : "Pregnancy",
+    "voided" : false
+  }, {
+    "uuid" : "70e4db05-c79a-406c-89be-54f8d77f643a",
+    "program" : {
+      "uuid" : "b54328b6-3e9a-4df7-915e-5b54cd772d43",
+      "voided" : false
+    },
+    "name" : "Child",
+    "voided" : false
+  }, {
+    "uuid" : "bd62b339-6f47-4372-85ab-f51e8395d8cc",
+    "program" : {
+      "uuid" : "e05b88c9-65f9-4a6c-a73f-72f21d4339dd",
+      "voided" : false
+    },
+    "name" : "NCD Program",
+    "programSubjectLabel" : "",
+    "voided" : false
+  } ]
+}

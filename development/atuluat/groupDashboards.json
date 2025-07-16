@@ -1,0 +1,12 @@
+[ {
+  "uuid" : "ec44564b-6751-4a11-bdf9-c4af5160bc87",
+  "voided" : false,
+  "dashboardUUID" : "c4d3bc0a-027e-4a6a-87dd-85e5b7285523",
+  "groupUUID" : "9ff1a474-a0e4-498d-bcc1-2f9b8a209c9a",
+  "groupName" : "Everyone",
+  "dashboardName" : "Default Dashboard",
+  "dashboardDescription" : null,
+  "groupOneOfTheDefaultGroups" : true,
+  "primaryDashboard" : true,
+  "secondaryDashboard" : false
+} ]

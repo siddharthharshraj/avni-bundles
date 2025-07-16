@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "ec4af29e-049d-4e3a-aef1-b660b74706ff",
+    "type" : "EncounterType"
+  },
+  "entityUUID" : "ec4af29e-049d-4e3a-aef1-b660b74706ff",
+  "entityType" : "EncounterType",
+  "type" : "EncounterEligibilityCheck",
+  "executionOrder" : 100.0,
+  "data" : { },
+  "name" : "AbortionEligibility",
+  "uuid" : "c262762b-a767-4bbb-ab69-fc15d069e1ce",
+  "fnName" : "AbortionEligibility"
+}

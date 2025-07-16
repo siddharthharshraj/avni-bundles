@@ -1,0 +1,7 @@
+{
+  "name" : "RTI Status Exit",
+  "uuid" : "8788974a-4d93-4d04-b93d-a03388ae4944",
+  "formType" : "ProgramExit",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

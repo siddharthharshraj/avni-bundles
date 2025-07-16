@@ -1,0 +1,7 @@
+{
+  "name" : "PIL Legal Fund Encounter Cancellation",
+  "uuid" : "0484860f-9c53-40f7-bc89-9cbbe9a72cdb",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

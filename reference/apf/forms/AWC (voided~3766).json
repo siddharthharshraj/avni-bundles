@@ -1,0 +1,19 @@
+{
+  "name" : "AWC (voided~3766)",
+  "uuid" : "8269ad20-17e9-4fd1-998e-d6f78d5e7f17",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "726b86a3-d2a9-428e-8f7f-209cbb6b3feb",
+    "name" : "Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ ],
+    "display" : "Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

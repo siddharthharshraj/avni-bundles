@@ -1,0 +1,8 @@
+{
+  "name" : "NRC encounter Encounter (voided~3777)",
+  "uuid" : "b76a7689-a17a-4aa0-8bbe-5fb23b2cabff",
+  "formType" : "Encounter",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

@@ -1,0 +1,8 @@
+{
+  "name" : "PIL Impact Encounter (voided~11191)",
+  "uuid" : "8701b647-4a16-45f2-ba4e-cf2b24aca514",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

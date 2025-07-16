@@ -1,0 +1,698 @@
+{
+  "name" : "Delivery Encounter",
+  "uuid" : "7d72664b-8d53-4c67-82f7-16794a7c3533",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "c37061bd-2369-4657-89dc-109182c3b87e",
+    "name" : "Delivery Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Date of Delivery",
+      "uuid" : "49b48c2f-1334-486b-822b-14356543cb0f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Date of Delivery",
+        "uuid" : "5f9a5098-d052-4843-8e13-0c1f455490fc",
+        "dataType" : "Date",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const observationDate = programEncounter.getObservationValue('5f9a5098-d052-4843-8e13-0c1f455490fc');\n  const today = moment().startOf('day');\n\n  if (observationDate && moment(observationDate).isAfter(today, 'day')) {\n    validationErrors.push('Future date is not allowed');\n  }\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Time of Delivery",
+      "uuid" : "633ef898-4175-4756-81fd-86fe2334f17c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Time of Delivery",
+        "uuid" : "e01dd28c-57bc-4936-aa6e-3e92d6f7e3be",
+        "dataType" : "Time",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Type of Delivery",
+      "uuid" : "5a6d124a-4b09-47ed-8125-0eac47cb1822",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of Delivery",
+        "uuid" : "27e1f1bc-dbb0-4962-93ac-a599414c0806",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "C - Section",
+          "uuid" : "6e34cc58-26de-4480-a38d-a828e6213d76",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Normal",
+          "uuid" : "f3e8e5bb-2569-4ec9-afa8-19c218906c74",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Episiotomy",
+          "uuid" : "c275eeac-ba7a-413a-807f-0aeba7cd1b55",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Vacuum",
+          "uuid" : "156eceb4-765b-416f-974e-7a7508a1f6ef",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Forceps",
+          "uuid" : "30008205-b8dc-4b57-9bd3-973e13648ff7",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Place of delivery (facility type)",
+      "uuid" : "5ac27bac-7ead-425c-b726-dd9665442436",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Place of delivery (facility type)",
+        "uuid" : "b95bf15b-d8f7-4fcb-9c35-37b3d1247b31",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Home Delivery",
+          "uuid" : "f8c5b6f1-697e-4add-8920-25cc617a361c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "NGO/Trust Hospital",
+          "uuid" : "e97865cc-8519-4ca5-9a65-9a3120033456",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Private Hospital",
+          "uuid" : "fa1368a7-f388-4edb-bb94-cd2365f07f47",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "In-transit Delivery",
+          "uuid" : "7fc8d3ca-c6a9-44bc-9a0e-3d3b04dc05a7",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Government Facility",
+          "uuid" : "cd222f7c-84c5-4989-9dea-3fc7d5b6f3cc",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other place of delivery, please specify",
+      "uuid" : "999d2509-4a6a-471c-8811-7a641c7ba6ee",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other place of delivery",
+        "uuid" : "d4bb6661-2d98-490f-9b00-0a2249c7c5f0",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"b95bf15b-d8f7-4fcb-9c35-37b3d1247b31\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Place of delivery (facility type)",
+                "conceptUuid" : "b95bf15b-d8f7-4fcb-9c35-37b3d1247b31",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    }, {
+      "name" : "Name of the delivery place",
+      "uuid" : "0bb1db0c-696a-49da-b37c-e9588e3173cb",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the delivery place",
+        "uuid" : "af6f109a-dceb-4e42-923c-ce22b2aac7c3",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Birth Weight",
+      "uuid" : "297c342d-fb72-4205-8ede-3204c4ff9a7d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Birth Weight",
+        "uuid" : "25150de8-0cbb-4ca9-82fe-0ae20a598709",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "highAbsolute" : 10.0,
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"25150de8-0cbb-4ca9-82fe-0ae20a598709\").lessThanOrEqualTo(0).matches();\n  \n  if(condition11 ){\n    validationErrors.push(\"Birth Weight cannot be 0 or negative\");  \n}\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "details" : {
+            "validationError" : "Birth Weight cannot be 0 or negative"
+          },
+          "actionType" : "validationError"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Birth Weight",
+                "conceptUuid" : "25150de8-0cbb-4ca9-82fe-0ae20a598709",
+                "conceptDataType" : "Numeric"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : 0
+              },
+              "operator" : "lessThanOrEqualTo"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Does the child received colostrum",
+      "uuid" : "eb6d6a75-b628-48ad-a61b-1727c88f8ff1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the child received colostrum",
+        "uuid" : "5fe8dccb-6a16-4300-8717-696182e808eb",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Was the child given any pre-lacteals",
+      "uuid" : "3642d407-01a6-4009-a498-e949aa4baf26",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Was the child given any pre-lacteals",
+        "uuid" : "ca58fda0-2f3e-4afd-be35-aac66e7a67ec",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "All of the above",
+          "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Cow milk",
+          "uuid" : "e5d30d3a-4d9c-4aed-8b95-788ee66ed422",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Honey",
+          "uuid" : "2f41770c-8580-429b-af1d-9aaf5be12e07",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Jaggery",
+          "uuid" : "8b529c2b-a544-4cef-b0b5-2da6b76a2de5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Goat milk",
+          "uuid" : "76dea82d-f4d4-437f-a7f2-63c5234b38e6",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "unique" : true,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other pre-lacteals, please specify",
+      "uuid" : "3187132c-78ae-4263-aa88-d06065d358e9",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other pre-lacteals",
+        "uuid" : "3a023829-652b-448e-8ab6-31a0f6b63e4f",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"ca58fda0-2f3e-4afd-be35-aac66e7a67ec\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Was the child given any pre-lacteals",
+                "conceptUuid" : "ca58fda0-2f3e-4afd-be35-aac66e7a67ec",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Does Kangaroo mother care (KMC) Given",
+      "uuid" : "64c19741-c502-4537-9d05-aee89ac30cfc",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does Kangaroo mother care (KMC) Given",
+        "uuid" : "e465d95c-b64d-4c46-aa28-73e8cb98f8a3",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Kangaroo mother care (KMC) initiation date",
+      "uuid" : "14f70a0c-e189-4819-9fe2-29aab957e1b8",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Kangaroo mother care (KMC) initiation date",
+        "uuid" : "38ff4d5f-65be-45b0-9304-8c3fad41afc7",
+        "dataType" : "Date",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 12.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  let dateOfDeliveryObservation = programEncounter.findObservation('5f9a5098-d052-4843-8e13-0c1f455490fc');\n  let dateOfDeliveryValue = _.isEmpty(dateOfDeliveryObservation) ? dateOfDeliveryObservation : dateOfDeliveryObservation.getReadableValue();\n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"38ff4d5f-65be-45b0-9304-8c3fad41afc7\").lessThan(dateOfDeliveryValue, 'ms').matches();\n  \n  if(condition11 ){\n    validationErrors.push(\"Date cannot be before delivery date\");  \n}\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "details" : {
+            "validationError" : "Date cannot be before delivery date"
+          },
+          "actionType" : "validationError"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Kangaroo mother care (KMC) initiation date",
+                "conceptUuid" : "38ff4d5f-65be-45b0-9304-8c3fad41afc7",
+                "conceptDataType" : "Date"
+              },
+              "rhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Date of Delivery",
+                "conceptUuid" : "5f9a5098-d052-4843-8e13-0c1f455490fc"
+              },
+              "operator" : "lessThan"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    } ],
+    "display" : "Delivery Details",
+    "timed" : false
+  }, {
+    "uuid" : "5ac7135e-8b52-4851-a8d0-3f021804e031",
+    "name" : "Kangaroo Care",
+    "displayOrder" : 2.0,
+    "formElements" : [ {
+      "name" : "Does Kangaroo mother care (KMC) Given",
+      "uuid" : "2e5795d4-4bee-41e5-8430-b99d19b68f3c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does Kangaroo mother care (KMC) Given",
+        "uuid" : "e465d95c-b64d-4c46-aa28-73e8cb98f8a3",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Kangaroo mother care (KMC) initiation date",
+      "uuid" : "b38cee7e-27d7-433e-a455-89eb7433e44d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Kangaroo mother care (KMC) initiation date",
+        "uuid" : "38ff4d5f-65be-45b0-9304-8c3fad41afc7",
+        "dataType" : "Date",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  let dateOfDeliveryObservation = programEncounter.findObservation('5f9a5098-d052-4843-8e13-0c1f455490fc');\n  let dateOfDeliveryValue = _.isEmpty(dateOfDeliveryObservation) ? dateOfDeliveryObservation : dateOfDeliveryObservation.getReadableValue();\n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"38ff4d5f-65be-45b0-9304-8c3fad41afc7\").lessThan(dateOfDeliveryValue, 'ms').matches();\n    \n  const condition12 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"e465d95c-b64d-4c46-aa28-73e8cb98f8a3\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  if(condition11 ){\n    validationErrors.push(\"Date cannot be before delivery date\");  \n}\n    visibility = condition12 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "details" : {
+            "validationError" : "Date cannot be before delivery date"
+          },
+          "actionType" : "validationError"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Kangaroo mother care (KMC) initiation date",
+                "conceptUuid" : "38ff4d5f-65be-45b0-9304-8c3fad41afc7",
+                "conceptDataType" : "Date"
+              },
+              "rhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Date of Delivery",
+                "conceptUuid" : "5f9a5098-d052-4843-8e13-0c1f455490fc"
+              },
+              "operator" : "lessThan"
+            } ]
+          }
+        } ]
+      }, {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does Kangaroo mother care (KMC) Given",
+                "conceptUuid" : "e465d95c-b64d-4c46-aa28-73e8cb98f8a3",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    }, {
+      "name" : "Does Vitamin K given to the child",
+      "uuid" : "2e611053-93a5-413c-a2d9-fe08b441b272",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does Vitamin K given to the child",
+        "uuid" : "f2bddcfb-4721-4a39-a426-ff68ec050260",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Vitamin K given to the child on which date",
+      "uuid" : "e06550f2-d71e-49c4-9802-508ab7381be2",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Vitamin K given to the child on which date",
+        "uuid" : "683bed56-8e81-4f5a-b3e4-5c88076616c7",
+        "dataType" : "Date",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  let dateOfDeliveryObservation = programEncounter.findObservation('5f9a5098-d052-4843-8e13-0c1f455490fc');\n  let dateOfDeliveryValue = _.isEmpty(dateOfDeliveryObservation) ? dateOfDeliveryObservation : dateOfDeliveryObservation.getReadableValue();\n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"683bed56-8e81-4f5a-b3e4-5c88076616c7\").lessThan(dateOfDeliveryValue, 'ms').matches();\n    \n  const condition12 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"f2bddcfb-4721-4a39-a426-ff68ec050260\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  if(condition11 ){\n    validationErrors.push(\"Date cannot be before delivery date\");  \n}\n    visibility = condition12 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "details" : {
+            "validationError" : "Date cannot be before delivery date"
+          },
+          "actionType" : "validationError"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Vitamin K given to the child on which date",
+                "conceptUuid" : "683bed56-8e81-4f5a-b3e4-5c88076616c7",
+                "conceptDataType" : "Date"
+              },
+              "rhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Date of Delivery",
+                "conceptUuid" : "5f9a5098-d052-4843-8e13-0c1f455490fc"
+              },
+              "operator" : "lessThan"
+            } ]
+          }
+        } ]
+      }, {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does Vitamin K given to the child",
+                "conceptUuid" : "f2bddcfb-4721-4a39-a426-ff68ec050260",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    }, {
+      "name" : "Which of the following birth dose vaccine was given",
+      "uuid" : "49e3bc45-ddc9-4591-91f4-b7433c48cb98",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Which of the following birth dose vaccine was given",
+        "uuid" : "e2baa4ca-86ea-4c5e-a030-8b318af3217a",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Polio - 0",
+          "uuid" : "c467f0b7-bda5-4bca-ae2e-adf421b18855",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "BCG",
+          "uuid" : "43a460bc-be37-4e14-a155-472fa9a0fe43",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Hepatitis - B",
+          "uuid" : "0a15218f-28a5-4c1c-bea8-796f02467fcc",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "All of the above",
+          "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "unique" : true,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    } ],
+    "display" : "Kangaroo Care",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "\"use strict\";\n({ params, imports }) => {\n    const programEncounter = params.entity;\n    const moment = imports.moment;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({programEncounter});\n    \n    const isActiveInProgram = !programEncounter.programEnrolment.programExitDateTime;\n\n    const isPNCAlreadyScheduled = programEncounter.programEnrolment.getEncountersOfType(\"PNC\").length > 0;\n    \n    if(isActiveInProgram && !isPNCAlreadyScheduled){\n        const dateOfDelivery = programEncounter.getObservationReadableValue('5f9a5098-d052-4843-8e13-0c1f455490fc');\n        const earliestDate = moment(dateOfDelivery).add(2, 'days').toDate();\n        const maxDate = moment(earliestDate).add(10, 'days').toDate();\n        scheduleBuilder.add({name: \"PNC Followup 1\", encounterType: \"PNC\", earliestDate, maxDate});  \n    }\n    \n    return scheduleBuilder.getAll();\n};",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

@@ -1,0 +1,8 @@
+{
+  "name" : "One Time Training Encounter (voided~11125)",
+  "uuid" : "0e5a8203-1158-4330-bfb7-15e4019d75c8",
+  "formType" : "Encounter",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

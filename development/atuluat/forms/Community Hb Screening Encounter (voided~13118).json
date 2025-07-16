@@ -1,0 +1,1615 @@
+{
+  "name" : "Community Hb Screening Encounter (voided~13118)",
+  "uuid" : "2e0097b7-af42-4ba0-9c24-be40ef807b30",
+  "formType" : "Encounter",
+  "formElementGroups" : [ {
+    "uuid" : "1a7a6952-99e9-4892-8cfb-8ec8643e2a05",
+    "name" : "Basic Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Type of the Beneficiary",
+      "uuid" : "b3179aee-f464-4dfa-be8d-7b5675d33c21",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of the Beneficiary",
+        "uuid" : "01217ff2-82eb-4614-a2d9-29ffce1e58d5",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Non school going Female 15-19 years",
+          "uuid" : "f33ed841-31a7-4197-9f0c-c14745e9350c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "School going Male 15-19 years (Falls in other school)",
+          "uuid" : "677367d1-939c-4551-b5a9-1068f8475ead",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Non Pregnant female and non-lactating female who have children above 2 years 20-49 years",
+          "uuid" : "25ec7a1a-bad2-4e6a-a630-f076d4f68dcf",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        }, {
+          "name" : "School going Female 15-19 years (Falls in other school)",
+          "uuid" : "3dbc52a4-22e8-4569-bef4-c28143af6885",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Non school going Female 10-15 years",
+          "uuid" : "9e8457d4-0532-4ae6-a89f-92ab8ea4d7bf",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Non school going Male 10-15 years",
+          "uuid" : "ce925e45-1055-4ba1-b112-6040dba9976d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "School going Female 10-15 years (Falls in other school)",
+          "uuid" : "1b6c0787-9440-4202-b5ef-e60a7367d849",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Non school going Male 15-19 years",
+          "uuid" : "f79d1a80-9d6d-4024-81fb-f3f78f58b306",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "School going Male 10-15 years (Falls in other school)",
+          "uuid" : "801a3ded-1112-4640-9c25-049dd0d64e4d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other Beneficiary, please specify",
+      "uuid" : "a6968520-b25c-4f70-8ae1-605ebe56711d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other Beneficiary, please specify",
+        "uuid" : "1ec4179c-dce7-4da9-bf1a-a3813bb4ed37",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"01217ff2-82eb-4614-a2d9-29ffce1e58d5\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Type of the Beneficiary",
+                "conceptUuid" : "01217ff2-82eb-4614-a2d9-29ffce1e58d5",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Name of the school",
+      "uuid" : "5431d935-dff2-4564-9544-4531e1bc694c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the school",
+        "uuid" : "685647fc-5cd9-48f7-b5af-6616948d7529",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"01217ff2-82eb-4614-a2d9-29ffce1e58d5\").containsAnyAnswerConceptName(\"677367d1-939c-4551-b5a9-1068f8475ead\",\"3dbc52a4-22e8-4569-bef4-c28143af6885\",\"801a3ded-1112-4640-9c25-049dd0d64e4d\",\"1b6c0787-9440-4202-b5ef-e60a7367d849\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Type of the Beneficiary",
+                "conceptUuid" : "01217ff2-82eb-4614-a2d9-29ffce1e58d5",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "School going Male 15-19 years (Falls in other school)", "School going Female 15-19 years (Falls in other school)", "School going Male 10-15 years (Falls in other school)", "School going Female 10-15 years (Falls in other school)" ],
+                "answerConceptUuids" : [ "677367d1-939c-4551-b5a9-1068f8475ead", "3dbc52a4-22e8-4569-bef4-c28143af6885", "801a3ded-1112-4640-9c25-049dd0d64e4d", "1b6c0787-9440-4202-b5ef-e60a7367d849" ]
+              },
+              "operator" : "containsAnyAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Regularity of menstruation",
+      "uuid" : "36bc3d38-50e7-4a81-b377-1c0b4a559e4c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Regularity of Menstruation",
+        "uuid" : "909ffa10-31d4-4c7b-a35b-9a9323a966d7",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Irregular",
+          "uuid" : "1b00f912-6a00-4721-8e09-f76775d6c21f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Regular",
+          "uuid" : "bf3255fa-481c-46e0-b652-6d83ad523d5b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Menstruation Stopped",
+          "uuid" : "41eaf421-fea8-4644-a368-5d1ad4108da3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Hysterectomy Done",
+          "uuid" : "640d4f87-23ff-428a-ac94-02e2ae9165aa",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "gender"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : "Female"
+              },
+              "operator" : "equals"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Regularity of menstruation",
+      "uuid" : "d6f48c57-613e-4bfa-83fd-06c05bed4116",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Regularity of menstruation (voided~323689)",
+        "uuid" : "02adbcbc-ca77-4f28-882c-650ef20ed199",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Menstruation Stopped",
+          "uuid" : "41eaf421-fea8-4644-a368-5d1ad4108da3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Irregular",
+          "uuid" : "1b00f912-6a00-4721-8e09-f76775d6c21f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Regular",
+          "uuid" : "bf3255fa-481c-46e0-b652-6d83ad523d5b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Hysterectomy Done",
+          "uuid" : "640d4f87-23ff-428a-ac94-02e2ae9165aa",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true,
+        "voided" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "gender"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : "Female"
+              },
+              "operator" : "equals"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Duration of menstruation",
+      "uuid" : "3112eeee-2418-4de5-830d-ea8322f05011",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Duration of Menstruation",
+        "uuid" : "68d1581c-a43d-43c1-bc14-245bf967f7ae",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "One day",
+          "uuid" : "c39614e2-57c0-43c0-b38c-7d2fbd760aef",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Two to three days",
+          "uuid" : "47a34cd4-bd8a-4331-b8d0-11ca173c8be3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Four to six days",
+          "uuid" : "5f0139a1-8c99-44c8-a537-35118b485add",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "More than six days",
+          "uuid" : "c8111c6c-f06b-489f-846f-5ae99ba86fd1",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "gender"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : "Female"
+              },
+              "operator" : "equals"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Other Duration of menstruation, please specify",
+      "uuid" : "2f4c261f-2049-4e93-8049-bb0d363c3b87",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other Duration of menstruation",
+        "uuid" : "5ba4b268-0e5b-43a9-bfbd-3eeb87e201b9",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"68d1581c-a43d-43c1-bc14-245bf967f7ae\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Duration of Menstruation",
+                "conceptUuid" : "68d1581c-a43d-43c1-bc14-245bf967f7ae",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Absorbent material used most of the times",
+      "uuid" : "ae3babfb-d479-4dfa-ad27-a2aed7ca4259",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Absorbent material used most of the times",
+        "uuid" : "50d64a4c-879b-4658-a722-27b43b2e9c55",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Tampons",
+          "uuid" : "54f8de75-3ab9-4a51-b81b-7a7245fc2858",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Sanitary Napkin",
+          "uuid" : "36e90a55-3674-4d29-83df-9ed550e8e1c0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Cloth",
+          "uuid" : "183b596a-5edb-4aa5-a931-beedb3c75b90",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Menstrual cup",
+          "uuid" : "d3253bc4-19a9-4be0-a372-2462298afbca",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "unique" : true,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "MultiSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "gender"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : "Female"
+              },
+              "operator" : "equals"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Other absorbent material used, please specify",
+      "uuid" : "265a9b0c-4d10-4e59-8487-b2d5be6c32ca",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other absorbent material used",
+        "uuid" : "3059386a-abfe-42a8-9a54-7f450e13cce2",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"50d64a4c-879b-4658-a722-27b43b2e9c55\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Absorbent material used most of the times",
+                "conceptUuid" : "50d64a4c-879b-4658-a722-27b43b2e9c55",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Absorbent material used most of the times",
+      "uuid" : "4b78be85-69ed-46e4-aa52-eb2d9303dea1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Absorbent material used most of the times",
+        "uuid" : "50d64a4c-879b-4658-a722-27b43b2e9c55",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Tampons",
+          "uuid" : "54f8de75-3ab9-4a51-b81b-7a7245fc2858",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Sanitary Napkin",
+          "uuid" : "36e90a55-3674-4d29-83df-9ed550e8e1c0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Cloth",
+          "uuid" : "183b596a-5edb-4aa5-a931-beedb3c75b90",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Menstrual cup",
+          "uuid" : "d3253bc4-19a9-4be0-a372-2462298afbca",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "unique" : true,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "gender"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : "Female"
+              },
+              "operator" : "equals"
+            } ]
+          }
+        } ]
+      } ],
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Other Duration of menstruation, please specify",
+      "uuid" : "ba6eebf3-8ef4-4110-826e-968c79727485",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other Duration of menstruation, please specify (voided~323696)",
+        "uuid" : "dba61829-4c96-4880-9fdf-0af4669087a8",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true,
+        "voided" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    } ],
+    "display" : "Basic Details",
+    "timed" : false
+  }, {
+    "uuid" : "4eb07dd3-0351-4539-a799-2e158f114d8b",
+    "name" : "Menstruation",
+    "displayOrder" : 2.0,
+    "formElements" : [ {
+      "name" : "Regularity of menstruation",
+      "uuid" : "78ce00c5-c5a5-4596-80fe-88e0e8f7e1b0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Regularity of Menstruation",
+        "uuid" : "909ffa10-31d4-4c7b-a35b-9a9323a966d7",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Irregular",
+          "uuid" : "1b00f912-6a00-4721-8e09-f76775d6c21f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Regular",
+          "uuid" : "bf3255fa-481c-46e0-b652-6d83ad523d5b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Menstruation Stopped",
+          "uuid" : "41eaf421-fea8-4644-a368-5d1ad4108da3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Hysterectomy Done",
+          "uuid" : "640d4f87-23ff-428a-ac94-02e2ae9165aa",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "rule" : "",
+      "mandatory" : true
+    }, {
+      "name" : "Duration of menstruation",
+      "uuid" : "32162a23-b5f3-4fb8-8bee-a3deea2520eb",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Duration of Menstruation",
+        "uuid" : "68d1581c-a43d-43c1-bc14-245bf967f7ae",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "One day",
+          "uuid" : "c39614e2-57c0-43c0-b38c-7d2fbd760aef",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Two to three days",
+          "uuid" : "47a34cd4-bd8a-4331-b8d0-11ca173c8be3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Four to six days",
+          "uuid" : "5f0139a1-8c99-44c8-a537-35118b485add",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "More than six days",
+          "uuid" : "c8111c6c-f06b-489f-846f-5ae99ba86fd1",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "",
+      "mandatory" : true
+    }, {
+      "name" : "Other Duration of menstruation, please specify",
+      "uuid" : "1609b27d-659c-4e62-a2f9-100294f46f25",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other Duration of menstruation",
+        "uuid" : "5ba4b268-0e5b-43a9-bfbd-3eeb87e201b9",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"68d1581c-a43d-43c1-bc14-245bf967f7ae\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Duration of Menstruation",
+                "conceptUuid" : "68d1581c-a43d-43c1-bc14-245bf967f7ae",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Absorbent material used most of the times",
+      "uuid" : "de96943d-9f49-46e5-9bdf-4506c98cf761",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Absorbent material used most of the times",
+        "uuid" : "50d64a4c-879b-4658-a722-27b43b2e9c55",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Tampons",
+          "uuid" : "54f8de75-3ab9-4a51-b81b-7a7245fc2858",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Sanitary Napkin",
+          "uuid" : "36e90a55-3674-4d29-83df-9ed550e8e1c0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Cloth",
+          "uuid" : "183b596a-5edb-4aa5-a931-beedb3c75b90",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Menstrual cup",
+          "uuid" : "d3253bc4-19a9-4be0-a372-2462298afbca",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "unique" : true,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "MultiSelect",
+      "rule" : "",
+      "mandatory" : true
+    }, {
+      "name" : "Other absorbent material used, please specify",
+      "uuid" : "72235ad3-4bae-43e1-bfb1-8e0cbd905622",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other absorbent material used",
+        "uuid" : "3059386a-abfe-42a8-9a54-7f450e13cce2",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"50d64a4c-879b-4658-a722-27b43b2e9c55\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Absorbent material used most of the times",
+                "conceptUuid" : "50d64a4c-879b-4658-a722-27b43b2e9c55",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    } ],
+    "rule" : "'use strict';\n({params, imports}) => {\n    const encounter = params.entity;\n    const moment = imports.moment;\n    const formElementGroup = params.formElementGroup;\n    const _ = imports.lodash;\n    let visibility = true;\n    return formElementGroup.formElements.map((formElement) => {\n        \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n  \n        visibility = condition11 ;\n  \n        return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, null);\n    });\n};",
+    "declarativeRule" : [ {
+      "actions" : [ {
+        "actionType" : "showFormElementGroup"
+      }, { } ],
+      "conditions" : [ {
+        "compoundRule" : {
+          "rules" : [ {
+            "lhs" : {
+              "type" : "gender"
+            },
+            "rhs" : {
+              "type" : "value",
+              "value" : "Female"
+            },
+            "operator" : "equals"
+          } ]
+        }
+      } ]
+    } ],
+    "display" : "Menstruation",
+    "timed" : false
+  }, {
+    "uuid" : "5b398072-358d-4601-afd5-92ca0fa6a5f9",
+    "name" : "Hb Details",
+    "displayOrder" : 3.0,
+    "formElements" : [ {
+      "name" : "Hb",
+      "uuid" : "3e4f1118-0a0b-4eac-ada5-5fc82c6f4bc9",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Hb",
+        "uuid" : "3f1d701c-9c33-46dd-9143-b56e06fc495b",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "13 gm/dl or more than it (Normal)",
+          "uuid" : "be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "12 gm/dl or more than it (Normal)",
+          "uuid" : "559f614a-1386-4662-ba25-f2cd5017ea50",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Between 11-12.9 gm/dl (Mild Anaemia)",
+          "uuid" : "18a31a40-5e6d-496c-93e7-d8a47fa45876",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Between 11-11.9 gm/dl (Mild Anaemia)",
+          "uuid" : "2cc1be43-1a35-4cb6-9120-5c114c9e58c2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Between 8 to 10.9 gm/dl (Moderate Anaemia)",
+          "uuid" : "f2ce9989-d20c-4fe9-895b-c00ab9b5690e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "8 gm/dl or less than it (Severe Anaemia)",
+          "uuid" : "f015ffb9-babc-434f-87d1-d46c1a52fa2d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Between 8 to 10 gm/dl (Moderate Anaemia)",
+          "uuid" : "5b943e5b-56c7-40b4-977d-9c9291fec8b0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Between 10 to 12 gm/dl (Mild Anaemia)",
+          "uuid" : "9847a475-3347-49d0-9f67-60a985003f96",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n    \n  const condition12 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Male\").and.when.ageInYears.greaterThan(10).and.when.ageInYears.lessThanOrEqualTo(15).matches();\n    \n  const condition13 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Male\").and.when.ageInYears.greaterThan(15).matches();\n  \n  if(condition11 ) {\n    _.forEach([\"f2ce9989-d20c-4fe9-895b-c00ab9b5690e\",\"2cc1be43-1a35-4cb6-9120-5c114c9e58c2\",\"18a31a40-5e6d-496c-93e7-d8a47fa45876\",\"be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba\"], (answer) => {\n        const answerToSkip = formElement.getAnswerWithConceptUuid(answer);\n        if (answerToSkip) answersToSkip.push(answerToSkip);\n    });\n};\n    if(condition12 ) {\n    _.forEach([\"5b943e5b-56c7-40b4-977d-9c9291fec8b0\",\"9847a475-3347-49d0-9f67-60a985003f96\",\"be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba\",\"18a31a40-5e6d-496c-93e7-d8a47fa45876\"], (answer) => {\n        const answerToSkip = formElement.getAnswerWithConceptUuid(answer);\n        if (answerToSkip) answersToSkip.push(answerToSkip);\n    });\n};\n    if(condition13 ) {\n    _.forEach([\"5b943e5b-56c7-40b4-977d-9c9291fec8b0\",\"9847a475-3347-49d0-9f67-60a985003f96\",\"559f614a-1386-4662-ba25-f2cd5017ea50\",\"2cc1be43-1a35-4cb6-9120-5c114c9e58c2\"], (answer) => {\n        const answerToSkip = formElement.getAnswerWithConceptUuid(answer);\n        if (answerToSkip) answersToSkip.push(answerToSkip);\n    });\n};\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "mandatory" : true
+    }, {
+      "name" : "IFA Tablets given during current visit",
+      "uuid" : "6f498459-e0d1-4209-ac2b-a05eb3217d3c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "IFA Tablets given during current visit",
+        "uuid" : "25dccb89-30b3-4294-b8fe-ce8cfa2da138",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "No. of IFA Tablets given in current visit",
+      "uuid" : "615c69a9-8aa5-4a7e-a7e8-1ae2d14d099f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "No. of IFA Tablets given in current visit",
+        "uuid" : "197a6f42-ed70-4bf9-8f3c-98c9466c2031",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "lowAbsolute" : 0.0,
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"25dccb89-30b3-4294-b8fe-ce8cfa2da138\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "IFA Tablets given during current visit",
+                "conceptUuid" : "25dccb89-30b3-4294-b8fe-ce8cfa2da138",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Does the Albendazole Tablet given during current visit ?",
+      "uuid" : "56207200-6ca3-4e75-a56c-f8be59fdbd40",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the Albendazole Tablet given during current visit?",
+        "uuid" : "330743a1-82d1-4a94-a91d-4d2e15a3a325",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ],
+    "display" : "Hb Details",
+    "timed" : false
+  }, {
+    "uuid" : "c099a85f-5ad4-4fa5-9762-1954ccb29b71",
+    "name" : "Other Details",
+    "displayOrder" : 4.0,
+    "formElements" : [ {
+      "name" : "Type of diet",
+      "uuid" : "a7725def-2f61-4b55-8b21-f55962311152",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of diet",
+        "uuid" : "0d4ea18b-4136-4a03-a725-0a3ec66782e1",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Veg",
+          "uuid" : "b256d4d0-1d06-4db7-9974-fda5e412ff24",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Non - Veg",
+          "uuid" : "c5467a75-95ab-45b4-b808-9e49b155db7d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "24 hours dietary diversity",
+      "uuid" : "bb33f5d3-f621-472a-8ff8-02b8376ce512",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "24 hours dietary diversity",
+        "uuid" : "87a52932-4efe-46a9-8e58-5f92372079b3",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Pulses (beans, peas and lentils)",
+          "uuid" : "179f313b-916b-4819-8c94-f7c8444130cb",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yesterday was a fasting day",
+          "uuid" : "8d0e23dc-9e7c-4d29-ab5f-66d8b873bbda",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 11.0,
+          "active" : true
+        }, {
+          "name" : "Other vegetables",
+          "uuid" : "4f3c99b3-be27-46e6-8120-af849b068613",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Other fruits",
+          "uuid" : "cda106d1-823a-428c-b957-342d25a389dc",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        }, {
+          "name" : "Meat, poultry and fish",
+          "uuid" : "9cfbde36-75f9-405b-bc43-724726f471c4",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Eggs",
+          "uuid" : "71f08417-3d21-4416-8d45-cb51150c8c59",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Grains, white roots and tubers, and plantains",
+          "uuid" : "e8cb4e4e-681f-40c9-bf2e-c34404cd2573",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Dairy",
+          "uuid" : "23962ba6-d40a-492c-ba81-9175eb23526e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Dark green leafy vegetables",
+          "uuid" : "d70220f3-0636-4b0a-b30b-53ce4ceac5f3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Nuts and seeds",
+          "uuid" : "8f7b5bfc-001d-4cad-8422-7c46ec843d03",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Other vitamin A-rich fruits and vegetables",
+          "uuid" : "f2eb59c2-7a22-42a1-b507-8625b90163ad",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other diet, please specify",
+      "uuid" : "c9a71808-1111-4a8f-8f9e-0c91f839f77a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other diet",
+        "uuid" : "3e7b3103-47c0-439e-ad37-47155907b5d0",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"87a52932-4efe-46a9-8e58-5f92372079b3\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "24 hours dietary diversity",
+                "conceptUuid" : "87a52932-4efe-46a9-8e58-5f92372079b3",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "How many meals do you consume in a day",
+      "uuid" : "094b2dd1-5b44-4f27-9f29-98c062460ee1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "How many meals do you consume in a day?",
+        "uuid" : "e2873d46-b41c-40b9-b0a9-ecfb0058ce4a",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Five times",
+          "uuid" : "a0a069fb-ca61-414f-a3fb-f2660f52cdcb",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Four times",
+          "uuid" : "f00919f7-6fdb-44b7-b460-11ee0b24d05c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "More then five times",
+          "uuid" : "40da1b57-0b99-4a32-9fe8-3607cc199144",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "One time",
+          "uuid" : "7c7091df-63dd-42aa-a04c-5f912a0a97b6",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Two times",
+          "uuid" : "ef894c98-68b8-4c10-82e5-acbfbdadf30c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Three times",
+          "uuid" : "c49641ec-bf82-4043-8a94-07fbce961ecc",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Presence of any comorbidity",
+      "uuid" : "e1f39c44-7328-403e-b022-e23cad840837",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Presence of any comorbidity",
+        "uuid" : "3c3e6291-8f9e-490c-92ad-8cc0a0e99a3a",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Cholesterol",
+          "uuid" : "7531fab3-2f94-4b69-88f4-8feb1cf2e1da",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 11.0,
+          "active" : true
+        }, {
+          "name" : "Thalassemia",
+          "uuid" : "5b605050-88f8-46e2-9d8e-81ae9530b17c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Sickle cell trait",
+          "uuid" : "c60afd5f-e217-40ee-bbe2-52711d2dab37",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "Diahorrea",
+          "uuid" : "465ff5f4-0c1a-41d6-81db-5ae613c5c9cc",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Kidney problem",
+          "uuid" : "fba84927-45b3-49c9-a852-ce03091f2f0f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Heart problem",
+          "uuid" : "93f91d5f-8410-4b90-bd89-c6c79eca8e10",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Sickle cell disease",
+          "uuid" : "839d5f3d-6be3-4cce-bbdd-2950e61a6c2b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        }, {
+          "name" : "Hypertension",
+          "uuid" : "4ee14786-fd00-466d-80a9-1cdc8f5be306",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Diabetes",
+          "uuid" : "d379a1bb-c4d8-40ec-835e-3c47ead53489",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Respiratory problem",
+          "uuid" : "da0c27c1-1241-4cb9-b322-975d7ed1927b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other comorbidity , please specify",
+      "uuid" : "2a2ecdef-5298-4a2c-8c40-7b1bda55805d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other comorbidity",
+        "uuid" : "6951e6b9-05ca-499a-852d-92c462267bfe",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"3c3e6291-8f9e-490c-92ad-8cc0a0e99a3a\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Presence of any comorbidity",
+                "conceptUuid" : "3c3e6291-8f9e-490c-92ad-8cc0a0e99a3a",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Addiction",
+      "uuid" : "36da9810-23e8-4964-be5b-83446ac55397",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Addiction",
+        "uuid" : "00ea2de6-9bce-4d49-8c47-36febab57c2c",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Smoking",
+          "uuid" : "b2dd9cf8-c117-426d-9419-94391ba41e3c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Tobacco",
+          "uuid" : "42f6b5be-9769-4665-9d95-aa5b4f967f8e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Alcohol",
+          "uuid" : "ce110fdf-bd7c-4ace-bb00-37eea1b565bf",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other Addiction, please specify",
+      "uuid" : "1fd28cfa-1d85-40dd-898c-268ae393fda1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other addiction",
+        "uuid" : "a8b8734b-00ff-403c-88c5-8a1f0ca6fc82",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"00ea2de6-9bce-4d49-8c47-36febab57c2c\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Addiction",
+                "conceptUuid" : "00ea2de6-9bce-4d49-8c47-36febab57c2c",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Counselling given on",
+      "uuid" : "65ae7ad9-9c7c-46e1-9e2e-217855d0fc73",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Counselling given on",
+        "uuid" : "4669ef42-aa4d-4ffc-aef4-db2492f0e905",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "IFA Tablet consumption",
+          "uuid" : "d57d1d2a-5bfb-4453-bdff-9c97938ab164",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "All of the above",
+          "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 11.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 12.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Adequate sleep of 7-8 hours",
+          "uuid" : "8d4bbe65-e93c-4ef7-a005-e55aa5ee7742",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Doing regular physical activity for minimum 1 hour",
+          "uuid" : "20b20ad8-2363-4c05-b1e0-14da604a415c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "To stop doing addiction",
+          "uuid" : "64bc1d99-1efe-43b7-ade5-f68758472b7d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Dietary diversity",
+          "uuid" : "68dcc3d8-0c91-4799-9e04-e2d411df17af",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "Drinking 2 to 2.5 liters of water daily",
+          "uuid" : "b10f68bb-04b2-44fb-a2cd-1ba09ba6c658",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Menstrual health and hygiene",
+          "uuid" : "3683a95b-2348-43f5-b8be-06d76f04bb98",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        }, {
+          "name" : "Personal hygiene",
+          "uuid" : "f6204be8-37d2-4b9b-9486-5ba0828887f6",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "To reduce screen time less than 2 hours",
+          "uuid" : "e14ea09d-0ae3-4e74-852d-397898bde2ac",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Balanced diet",
+          "uuid" : "25b9aa40-fc25-4730-b7e7-508aed867808",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    } ],
+    "display" : "Other Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

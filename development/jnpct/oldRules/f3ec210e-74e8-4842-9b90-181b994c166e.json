@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "b54328b6-3e9a-4df7-915e-5b54cd772d43",
+    "type" : "Program"
+  },
+  "entityUUID" : "b54328b6-3e9a-4df7-915e-5b54cd772d43",
+  "entityType" : "Program",
+  "type" : "EnrolmentSummary",
+  "executionOrder" : 100.0,
+  "data" : { },
+  "name" : "child program summary",
+  "uuid" : "f3ec210e-74e8-4842-9b90-181b994c166e",
+  "fnName" : "childProgramSummary"
+}

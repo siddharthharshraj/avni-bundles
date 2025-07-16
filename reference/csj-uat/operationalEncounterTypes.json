@@ -1,0 +1,283 @@
+{
+  "operationalEncounterTypes" : [ {
+    "uuid" : "697a792a-df80-4020-b8e6-9075752c48b1",
+    "encounterType" : {
+      "uuid" : "04175152-5f03-4e3c-b7b7-c07914b8d67e",
+      "voided" : false
+    },
+    "name" : "Outreach Location Specific Details",
+    "voided" : false
+  }, {
+    "uuid" : "f2e30b26-1b5c-49f7-b71e-470953b67fc0",
+    "encounterType" : {
+      "uuid" : "3f750412-feee-4044-8400-664312f8d064",
+      "voided" : false
+    },
+    "name" : "Client Follow Up (voided~3660)",
+    "voided" : true
+  }, {
+    "uuid" : "5176a545-6e14-4338-a07d-385108c952dd",
+    "encounterType" : {
+      "uuid" : "943dbaea-ad93-493b-b692-47be2ccd7b7a",
+      "voided" : false
+    },
+    "name" : "Case Documents",
+    "voided" : false
+  }, {
+    "uuid" : "23b9884c-579e-42df-9874-6a6e9d878152",
+    "encounterType" : {
+      "uuid" : "312ad861-3f2b-4b5a-8611-d2d170a4eb1c",
+      "voided" : false
+    },
+    "name" : "Victim Compensation",
+    "voided" : false
+  }, {
+    "uuid" : "b1255fd6-4148-44c5-8cd8-7d7e156e5446",
+    "encounterType" : {
+      "uuid" : "763a7f8e-6aec-4a9b-b4ca-7f74e5309597",
+      "voided" : false
+    },
+    "name" : "Case Legal Fund",
+    "voided" : false
+  }, {
+    "uuid" : "8e7e6687-e8ea-4d3b-ab90-ab4127e40d75",
+    "encounterType" : {
+      "uuid" : "a6290741-b145-474a-812a-6c0270452c92",
+      "voided" : false
+    },
+    "name" : "Case Disposed",
+    "voided" : false
+  }, {
+    "uuid" : "76798899-2f61-4605-8639-603bd865412e",
+    "encounterType" : {
+      "uuid" : "d8f9b41a-abe2-4677-84a0-c3ead8542af4",
+      "voided" : false
+    },
+    "name" : "Case Status Details",
+    "voided" : false
+  }, {
+    "uuid" : "1215b947-a06e-48a8-9aca-9ef73827461a",
+    "encounterType" : {
+      "uuid" : "7630882f-8f18-4c13-b5a2-668ed15b5da9",
+      "voided" : false
+    },
+    "name" : "Case Fact Finding",
+    "voided" : false
+  }, {
+    "uuid" : "12c680d6-a6fd-468c-aacf-b6f44dd13a25",
+    "encounterType" : {
+      "uuid" : "37920b3f-5ad5-48c5-b11e-ae969bf8ffff",
+      "voided" : false
+    },
+    "name" : "Case Monetary Impact",
+    "voided" : false
+  }, {
+    "uuid" : "bf191dad-4822-48e4-b284-c8fdea110476",
+    "encounterType" : {
+      "uuid" : "85f99584-0c1c-4241-9d2f-2fba9f6f13f5",
+      "voided" : false
+    },
+    "name" : "Case Activity Register",
+    "voided" : false
+  }, {
+    "uuid" : "e3ada5f1-6e39-4810-91f8-0c716e403a60",
+    "encounterType" : {
+      "uuid" : "57486413-7045-491c-9596-c66c6fc61a2a",
+      "voided" : false
+    },
+    "name" : "Claim Activity Register",
+    "voided" : false
+  }, {
+    "uuid" : "589e9461-7ded-4a33-b058-4d9749030866",
+    "encounterType" : {
+      "uuid" : "779596f8-b162-42e7-ad00-678aadb6fc83",
+      "voided" : false
+    },
+    "name" : "Claim Impact (voided~3698)",
+    "voided" : true
+  }, {
+    "uuid" : "ea3e92eb-dfa9-4d66-b7fc-41bd98a3d1e1",
+    "encounterType" : {
+      "uuid" : "5c3e8378-68ff-476f-ae34-8548434d013f",
+      "voided" : false
+    },
+    "name" : "Claim Legal Fund (voided~3699)",
+    "voided" : true
+  }, {
+    "uuid" : "88c10db4-0543-4fb7-871f-b85539b6a6b5",
+    "encounterType" : {
+      "uuid" : "2767916a-2bcc-4d64-9017-db0ad460a645",
+      "voided" : false
+    },
+    "name" : "Claim Legal Fund (voided~3722)",
+    "voided" : true
+  }, {
+    "uuid" : "e349b274-a6b6-4c02-8dec-8f976cedc8c0",
+    "encounterType" : {
+      "uuid" : "6afe3ea4-a64a-4861-a586-9d8fa54edf5c",
+      "voided" : false
+    },
+    "name" : "Claim Legal Fund",
+    "voided" : false
+  }, {
+    "uuid" : "f59764f0-3b23-4d38-abc9-826c859a770b",
+    "encounterType" : {
+      "uuid" : "0bb3b428-6057-4cf3-9d15-22851ecce74b",
+      "voided" : false
+    },
+    "name" : "Claim Impact Form",
+    "voided" : false
+  }, {
+    "uuid" : "2ce5c2af-6196-4c06-a1f2-a5ceb920081c",
+    "encounterType" : {
+      "uuid" : "1427d910-4e82-4b96-9446-5e42d0683128",
+      "voided" : false
+    },
+    "name" : "Claim Status Details (voided~3721)",
+    "voided" : true
+  }, {
+    "uuid" : "26812a7c-9337-4f1b-8585-cd9f5fe80991",
+    "encounterType" : {
+      "uuid" : "5bc44f70-46a9-4e7a-85e9-8cf0e44dc55b",
+      "voided" : false
+    },
+    "name" : "Training Legal Fund",
+    "voided" : false
+  }, {
+    "uuid" : "87d40d3b-c6f5-47e7-adcb-eaeaaa491977",
+    "encounterType" : {
+      "uuid" : "107721e2-1ee1-4d51-a3c8-5f9ed7983ba7",
+      "voided" : false
+    },
+    "name" : "External Training",
+    "voided" : false
+  }, {
+    "uuid" : "30ff9800-3e18-4c23-a239-ab8a9c6c31a3",
+    "encounterType" : {
+      "uuid" : "20e89d9d-2237-4789-8d10-352fc4ef2261",
+      "voided" : false
+    },
+    "name" : "One Time Training (voided~3745)",
+    "voided" : true
+  }, {
+    "uuid" : "9e56aef1-7c06-4edb-b4ce-2a331cc566d0",
+    "encounterType" : {
+      "uuid" : "a3e30cab-ff81-4ed1-8706-9773ec2372c2",
+      "voided" : false
+    },
+    "name" : "One Time Training",
+    "voided" : false
+  }, {
+    "uuid" : "629cdfad-a27e-4f4b-8f07-d6e232d1b45f",
+    "encounterType" : {
+      "uuid" : "7e42c11e-e3f1-4f04-8562-f67471ee157c",
+      "voided" : false
+    },
+    "name" : "PIL Case Activity Register",
+    "voided" : false
+  }, {
+    "uuid" : "646f20d0-dbad-4915-be28-6619cc0bc391",
+    "encounterType" : {
+      "uuid" : "42e4c852-fa15-4ad0-bfab-80dab90de421",
+      "voided" : false
+    },
+    "name" : "RTI Impact",
+    "voided" : false
+  }, {
+    "uuid" : "1e37f1fd-2dba-48c2-960c-09a430fb8101",
+    "encounterType" : {
+      "uuid" : "a5d29b8a-69d8-4a76-b18e-c28883ca82ba",
+      "voided" : false
+    },
+    "name" : "Internal Training",
+    "voided" : false
+  }, {
+    "uuid" : "11540bfc-1f40-4f0e-b1a2-8c7a4b0b6ab3",
+    "encounterType" : {
+      "uuid" : "a55bfb9e-2a2f-4575-8353-4c966e2150ad",
+      "voided" : false
+    },
+    "name" : "Letter Impact (voided~3763)",
+    "voided" : true
+  }, {
+    "uuid" : "453b1d91-9f4b-42bb-8f3d-e4ee3d1098ab",
+    "encounterType" : {
+      "uuid" : "ac2a5462-1656-4c4e-98ee-9b108bf806d4",
+      "voided" : false
+    },
+    "name" : "RTI Document",
+    "voided" : false
+  }, {
+    "uuid" : "940cf40c-da88-4645-9383-d5e6050872e7",
+    "encounterType" : {
+      "uuid" : "488d359e-d33e-47b8-91ac-02e65ba2f50a",
+      "voided" : false
+    },
+    "name" : "PIL Impact Form (voided~3768)",
+    "voided" : true
+  }, {
+    "uuid" : "513096b5-7e36-4ed8-b257-44fd926531dc",
+    "encounterType" : {
+      "uuid" : "91d66fa7-0770-4cde-a5a1-fe09fbd57ea3",
+      "voided" : false
+    },
+    "name" : "PIL Impact (voided~3767)",
+    "voided" : true
+  }, {
+    "uuid" : "13327c62-299c-44dc-86e7-3e93fa8c90cf",
+    "encounterType" : {
+      "uuid" : "bdbd3d89-e1fb-4c4b-ae6a-ca0d745b2652",
+      "voided" : false
+    },
+    "name" : "PIL Impact",
+    "voided" : false
+  }, {
+    "uuid" : "daa77b94-c4fa-4c41-b8d6-02ba0ceac929",
+    "encounterType" : {
+      "uuid" : "252c33f0-bd3f-48ff-bf80-22db679cff8c",
+      "voided" : false
+    },
+    "name" : "PIL Legal Fund",
+    "voided" : false
+  }, {
+    "uuid" : "6acd1e5d-403d-48e6-824e-2b656dbfaa92",
+    "encounterType" : {
+      "uuid" : "dac30d7e-97eb-4da9-8882-b3411fb39f26",
+      "voided" : false
+    },
+    "name" : "PIL Document",
+    "voided" : false
+  }, {
+    "uuid" : "d62fef49-604c-4e05-87e2-6c68a46692dc",
+    "encounterType" : {
+      "uuid" : "a80cfec5-6436-457f-bdac-ba2d37860baf",
+      "voided" : false
+    },
+    "name" : "Follow Up RTI",
+    "voided" : false
+  }, {
+    "uuid" : "6477bfc1-2766-4048-b141-9e41c17e6442",
+    "encounterType" : {
+      "uuid" : "6a52bd71-f499-476d-ba39-7ce0977698e5",
+      "voided" : false
+    },
+    "name" : "Follow Up Letter",
+    "voided" : false
+  }, {
+    "uuid" : "0c2b32fa-500b-4de1-ada6-fef9cd5daee6",
+    "encounterType" : {
+      "uuid" : "ecdc98b0-9b69-49c9-a798-faa8ed48ddbe",
+      "voided" : false
+    },
+    "name" : "Letter Document",
+    "voided" : false
+  }, {
+    "uuid" : "ea6459e5-f10f-426e-932b-f78ee227739d",
+    "encounterType" : {
+      "uuid" : "688c8097-c617-4acf-8281-864319da35d4",
+      "voided" : false
+    },
+    "name" : "Letter Impact",
+    "voided" : false
+  } ]
+}

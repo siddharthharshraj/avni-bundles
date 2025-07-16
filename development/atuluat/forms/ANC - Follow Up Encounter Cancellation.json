@@ -1,0 +1,173 @@
+{
+  "name" : "ANC - Follow Up Encounter Cancellation",
+  "uuid" : "2b208111-cfd4-4884-aa4d-1cf77c2eafdc",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ {
+    "uuid" : "fcbb01b1-c600-4a67-9910-4a52a4471428",
+    "name" : "Reason for cancellaton",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Is the patient present?",
+      "uuid" : "a160f3c8-d02f-4dd2-8406-2063855a0077",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is the patient present?",
+        "uuid" : "d3cabdc4-fe41-4fdd-a92d-3c6052830dc4",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "Why patient not availble?",
+      "uuid" : "30e5ff8a-7338-4e23-8862-bda1047ad188",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why patient not availble?",
+        "uuid" : "e19ded48-c845-4a50-91ab-0d559d570b39",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Went to relative or other place",
+          "uuid" : "7aa91832-43d7-4ed6-8fe4-feabf1455cf7",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Not known",
+          "uuid" : "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Temporarily Migrated",
+          "uuid" : "345d9312-166d-4162-8ed2-17a016323181",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Death",
+          "uuid" : "1b6ce78f-181b-4b64-9ec9-7afc07fe9729",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInCancelEncounter(\"d3cabdc4-fe41-4fdd-a92d-3c6052830dc4\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "cancelEncounter",
+                "conceptName" : "Is the patient present?",
+                "conceptUuid" : "d3cabdc4-fe41-4fdd-a92d-3c6052830dc4",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    }, {
+      "name" : "When will you visit the patient again?",
+      "uuid" : "5799172c-75d6-40e9-a31e-08a52a4f9b8e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "When will you visit the patient again?",
+        "uuid" : "6ba70a2a-47c7-4861-a55e-ae7e862a9197",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "After seven days",
+          "uuid" : "882e4b89-4ee1-4dfa-b500-3755a0f0f5ac",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "After 30 days",
+          "uuid" : "8429e030-cc24-4f87-9237-529728d97690",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "After 15 days",
+          "uuid" : "d1aa3722-0736-4ae7-967b-d7eb0dd7449b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInCancelEncounter(\"e19ded48-c845-4a50-91ab-0d559d570b39\").containsAnyAnswerConceptName(\"7aa91832-43d7-4ed6-8fe4-feabf1455cf7\",\"c28401fc-3b61-4c8d-a2a6-6c97df6ff61b\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "cancelEncounter",
+                "conceptName" : "Why patient not availble?",
+                "conceptUuid" : "e19ded48-c845-4a50-91ab-0d559d570b39",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Went to relative or other place", "Not known" ],
+                "answerConceptUuids" : [ "7aa91832-43d7-4ed6-8fe4-feabf1455cf7", "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b" ]
+              },
+              "operator" : "containsAnyAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    } ],
+    "display" : "Reason for cancellaton",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

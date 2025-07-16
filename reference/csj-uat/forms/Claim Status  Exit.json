@@ -1,0 +1,7 @@
+{
+  "name" : "Claim Status  Exit",
+  "uuid" : "134d34fa-914c-45ae-a0e8-f524126899ed",
+  "formType" : "ProgramExit",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

@@ -1,0 +1,8 @@
+{
+  "name" : "Community Hb Screening Encounter Cancellation (voided~13119)",
+  "uuid" : "8a2e4909-33ea-4a8b-a419-c657cab5c7c4",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

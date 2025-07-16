@@ -1,0 +1,203 @@
+{
+  "operationalEncounterTypes" : [ {
+    "uuid" : "7ea5120f-8e97-480c-87d6-35a926aa6b6c",
+    "encounterType" : {
+      "uuid" : "c487771e-738b-41f2-852e-d60c25d8afea",
+      "voided" : false
+    },
+    "name" : "Eligible Couple Followup",
+    "voided" : false
+  }, {
+    "uuid" : "65fe2029-a5d8-455d-980e-c8a57576d8df",
+    "encounterType" : {
+      "uuid" : "3348db59-a01d-447e-a4b6-0d369023152d",
+      "voided" : false
+    },
+    "name" : "Child Followup",
+    "voided" : false
+  }, {
+    "uuid" : "984e4ed5-3a70-4691-829b-f1c3e82d837f",
+    "encounterType" : {
+      "uuid" : "0a0504d7-a420-4b00-ab03-c620071efa41",
+      "voided" : false
+    },
+    "name" : "ANC",
+    "voided" : false
+  }, {
+    "uuid" : "333b12a7-d21e-4f19-89ac-a82484bae8e7",
+    "encounterType" : {
+      "uuid" : "f1dbb45f-ed4a-4696-a68d-23cce75afc6f",
+      "voided" : false
+    },
+    "name" : "Delivery Form",
+    "voided" : false
+  }, {
+    "uuid" : "8ffacbcf-518f-45eb-a524-a425a36aab3f",
+    "encounterType" : {
+      "uuid" : "7101cfc3-1e1c-4535-adbb-871179f9ddd8",
+      "voided" : false
+    },
+    "name" : "Birth Form",
+    "voided" : false
+  }, {
+    "uuid" : "fb4ebfa4-ede7-4d48-85dc-8ac0eb72c96b",
+    "encounterType" : {
+      "uuid" : "ec4af29e-049d-4e3a-aef1-b660b74706ff",
+      "voided" : false
+    },
+    "name" : "Abortion Form",
+    "voided" : false
+  }, {
+    "uuid" : "b7867b79-4037-4c6d-9e65-03283b78bd5b",
+    "encounterType" : {
+      "uuid" : "d029ef9a-04ca-4364-b447-9a2c1f0e2fa9",
+      "voided" : false
+    },
+    "name" : "Abortion Followup",
+    "voided" : false
+  }, {
+    "uuid" : "659323b5-b9b8-41d8-b4e6-223c33d25495",
+    "encounterType" : {
+      "uuid" : "9de58542-d280-4041-b879-5e7a5ff83fc2",
+      "voided" : false
+    },
+    "name" : "Child PNC",
+    "voided" : false
+  }, {
+    "uuid" : "6c5d47ee-b582-45aa-9610-fb6b6593f570",
+    "encounterType" : {
+      "uuid" : "a2e2aee7-5226-4a94-9cec-00e5bfa137a4",
+      "voided" : false
+    },
+    "name" : "PNC",
+    "voided" : false
+  }, {
+    "uuid" : "49cd1a24-90bb-409f-8d4f-1e099424b1ac",
+    "encounterType" : {
+      "uuid" : "f883c6c3-3ced-415e-a1cb-750ddd57f18a",
+      "voided" : false
+    },
+    "name" : "ANC Cluster Incharge",
+    "voided" : false
+  }, {
+    "uuid" : "6d785d7a-67ae-4e27-b646-8a35082ded9d",
+    "encounterType" : {
+      "uuid" : "95dedf71-5709-46f0-b4e8-b6d91b9b05e0",
+      "voided" : false
+    },
+    "name" : "Child PNC Cluster Incharge",
+    "voided" : false
+  }, {
+    "uuid" : "72a7e163-8950-4047-a2a1-737586867d53",
+    "encounterType" : {
+      "uuid" : "3310a91d-a1b2-4e09-9caf-af25346bf1f5",
+      "voided" : false
+    },
+    "name" : "Child Followup Cluster Incharge",
+    "voided" : false
+  }, {
+    "uuid" : "cc53f073-64df-4296-a30e-6473ea139c3d",
+    "encounterType" : {
+      "uuid" : "f077765b-4c1f-4e3c-9e83-855d2bcf7ddc",
+      "voided" : false
+    },
+    "name" : "ANC - Saheli",
+    "voided" : false
+  }, {
+    "uuid" : "664feb61-9abd-4b91-87d4-df70ac492675",
+    "encounterType" : {
+      "uuid" : "183dd269-270f-46fa-80aa-a9f03c629a64",
+      "voided" : false
+    },
+    "name" : "Delivery - Saheli",
+    "voided" : false
+  }, {
+    "uuid" : "c70224f8-6a65-4a2d-aeb2-72a94e67572d",
+    "encounterType" : {
+      "uuid" : "89a937a9-37a7-4ce7-878e-be8ba9f4e61a",
+      "voided" : false
+    },
+    "name" : "Mother PNC -Saheli",
+    "voided" : false
+  }, {
+    "uuid" : "1527c542-3720-4d96-bb5a-2a61678ee54e",
+    "encounterType" : {
+      "uuid" : "5613b6ff-8dbb-4d18-8488-12df3584d455",
+      "voided" : false
+    },
+    "name" : "Abortion - Saheli",
+    "voided" : false
+  }, {
+    "uuid" : "32aef0ef-f8d9-451e-8008-c33afa984828",
+    "encounterType" : {
+      "uuid" : "6aa8f9be-2dee-4b0c-b745-8c8e2381489c",
+      "voided" : false
+    },
+    "name" : "Abortion followup - Saheli",
+    "voided" : false
+  }, {
+    "uuid" : "68fdccdb-1811-4d03-abb7-6fd98604d35a",
+    "encounterType" : {
+      "uuid" : "100f021d-2612-4b64-baf1-06d596c9413c",
+      "voided" : false
+    },
+    "name" : "Mamta divas mother (voided~1015)",
+    "voided" : true
+  }, {
+    "uuid" : "f2fa65fb-db3b-401c-9ed6-907ca4fd34a6",
+    "encounterType" : {
+      "uuid" : "e7659ebf-8dfa-401c-810a-45d722f92ab2",
+      "voided" : false
+    },
+    "name" : "Child PNC - Saheli",
+    "voided" : false
+  }, {
+    "uuid" : "49f3a8a0-ab2b-4738-ae30-98254b590783",
+    "encounterType" : {
+      "uuid" : "ca4bb866-091e-4479-9311-73ecf08fee5d",
+      "voided" : false
+    },
+    "name" : "Child followup - Saheli",
+    "voided" : false
+  }, {
+    "uuid" : "4d503893-e780-4255-b56f-89b3bcc864a7",
+    "encounterType" : {
+      "uuid" : "7af02f29-1146-4ddc-92f9-7a67c3769d70",
+      "voided" : false
+    },
+    "name" : "Birth form - Saheli",
+    "voided" : false
+  }, {
+    "uuid" : "909065b7-88ac-4f08-9400-e4cd7180af19",
+    "encounterType" : {
+      "uuid" : "6d26c11d-f018-4876-8229-4b6aa64f8ca4",
+      "voided" : false
+    },
+    "name" : "Mamta divas",
+    "voided" : false
+  }, {
+    "uuid" : "d5d1624e-5d4d-43a9-90dc-32109036bf82",
+    "encounterType" : {
+      "uuid" : "28305547-0d78-444c-8253-311d00c605d6",
+      "voided" : false
+    },
+    "name" : "Mamta divas child (voided~1014)",
+    "voided" : true
+  }, {
+    "uuid" : "cc508ce8-084d-4796-bf0a-0d1d6b593596",
+    "encounterType" : {
+      "uuid" : "dc6619e4-3cb4-4364-88a3-ef1f90010aff",
+      "voided" : false
+    },
+    "name" : "Screening Form",
+    "voided" : false
+  }, {
+    "uuid" : "89a70dbf-2652-47fc-8aeb-be8e2fae59f5",
+    "encounterType" : {
+      "uuid" : "1d2c3407-799e-4a12-965b-d97d5c520efd",
+      "voided" : false
+    },
+    "name" : "NCD Followup",
+    "voided" : false
+  } ]
+}

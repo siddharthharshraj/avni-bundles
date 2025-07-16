@@ -1,0 +1,7 @@
+{
+  "name" : "Victim Compensation Encounter Cancellation",
+  "uuid" : "b10a5b32-0df1-45ab-ac88-edf984f1e597",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

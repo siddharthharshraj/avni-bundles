@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "1c8bd246-f46e-4250-88bc-1ca567ba03ce",
+    "type" : "Form"
+  },
+  "entityUUID" : "1c8bd246-f46e-4250-88bc-1ca567ba03ce",
+  "entityType" : "Form",
+  "type" : "Decision",
+  "executionOrder" : 100.0,
+  "data" : { },
+  "name" : "Eligible Couple Form Decision",
+  "uuid" : "dcb03f68-8cda-483c-9c8b-6a781ecffabb",
+  "fnName" : "EligibleCoupleFormDecisionHandler"
+}

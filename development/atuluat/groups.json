@@ -1,0 +1,10 @@
+[ {
+  "uuid" : "9ff1a474-a0e4-498d-bcc1-2f9b8a209c9a",
+  "id" : 2733,
+  "name" : "Everyone",
+  "notEveryoneGroup" : false
+}, {
+  "uuid" : "0a9935f0-7889-4be4-bddd-a2c9d2ef7a95",
+  "id" : 2777,
+  "name" : "Program Manager"
+} ]

@@ -1,0 +1,30 @@
+[ {
+  "uuid" : "1d4a240b-6763-4cc2-ab37-1ae346e1021a",
+  "id" : 155,
+  "name" : "Block",
+  "level" : 4.0
+}, {
+  "uuid" : "7875948a-ebba-4f0a-8f5c-f7fb441c582e",
+  "id" : 156,
+  "name" : "Phc",
+  "level" : 3.0,
+  "parent" : {
+    "uuid" : "1d4a240b-6763-4cc2-ab37-1ae346e1021a"
+  }
+}, {
+  "uuid" : "2a66fde8-1db7-4f89-8530-b421c1cdc2dc",
+  "id" : 157,
+  "name" : "Subcentre",
+  "level" : 2.0,
+  "parent" : {
+    "uuid" : "7875948a-ebba-4f0a-8f5c-f7fb441c582e"
+  }
+}, {
+  "uuid" : "15214362-941a-403e-88fb-19ad9d8908f3",
+  "id" : 152,
+  "name" : "Village",
+  "level" : 1.0,
+  "parent" : {
+    "uuid" : "2a66fde8-1db7-4f89-8530-b421c1cdc2dc"
+  }
+} ]

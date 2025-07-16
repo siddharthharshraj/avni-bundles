@@ -1,0 +1,112 @@
+[ {
+  "uuid" : "c4d3bc0a-027e-4a6a-87dd-85e5b7285523",
+  "id" : 1000,
+  "name" : "Default Dashboard",
+  "sections" : [ {
+    "uuid" : "fb302038-25a1-4cd6-9f56-80ef67b21103",
+    "id" : 1911,
+    "name" : "Recent Statistics",
+    "description" : "",
+    "viewType" : "Tile",
+    "displayOrder" : 2.0,
+    "dashboardUUID" : "c4d3bc0a-027e-4a6a-87dd-85e5b7285523",
+    "dashboardSectionCardMappings" : [ {
+      "uuid" : "9fb198b6-ae10-4c3f-a8e6-652b7d1b7e9c",
+      "displayOrder" : 3.0,
+      "dashboardSectionUUID" : "fb302038-25a1-4cd6-9f56-80ef67b21103",
+      "reportCardUUID" : "dd961ee1-9d4e-4ec9-99f0-99b36672be7c",
+      "voided" : false
+    }, {
+      "uuid" : "383b8df8-93d8-43d9-bc96-545e1176fe63",
+      "displayOrder" : 2.0,
+      "dashboardSectionUUID" : "fb302038-25a1-4cd6-9f56-80ef67b21103",
+      "reportCardUUID" : "e1036b69-df46-4351-9916-10cd4cfcb6bd",
+      "voided" : false
+    }, {
+      "uuid" : "8afecd6c-741c-4871-86f1-bce171f8bfd8",
+      "displayOrder" : 1.0,
+      "dashboardSectionUUID" : "fb302038-25a1-4cd6-9f56-80ef67b21103",
+      "reportCardUUID" : "f366f35a-5c4f-4ff7-b510-2dc9f5f88847",
+      "voided" : false
+    } ],
+    "voided" : false
+  }, {
+    "uuid" : "741711ef-df17-4884-8928-20dee701479e",
+    "id" : 1910,
+    "name" : "Visit Details",
+    "description" : "",
+    "viewType" : "Tile",
+    "displayOrder" : 1.0,
+    "dashboardUUID" : "c4d3bc0a-027e-4a6a-87dd-85e5b7285523",
+    "dashboardSectionCardMappings" : [ {
+      "uuid" : "4d139c45-1854-46ec-ad80-40725f7b9b8a",
+      "displayOrder" : 1.0,
+      "dashboardSectionUUID" : "741711ef-df17-4884-8928-20dee701479e",
+      "reportCardUUID" : "6085c2f4-52e7-4b08-85b6-d6b2612b4cf5",
+      "voided" : false
+    }, {
+      "uuid" : "4dff9285-88b3-43de-a90b-9823ab32e433",
+      "displayOrder" : 2.0,
+      "dashboardSectionUUID" : "741711ef-df17-4884-8928-20dee701479e",
+      "reportCardUUID" : "85ce7239-e8b5-4e57-b07d-66c18cee47b2",
+      "voided" : false
+    } ],
+    "voided" : false
+  }, {
+    "uuid" : "2ce712c2-3fa3-4ca4-9703-95766ef512c2",
+    "id" : 1909,
+    "name" : "Registration Overview",
+    "description" : "",
+    "viewType" : "Tile",
+    "displayOrder" : 3.0,
+    "dashboardUUID" : "c4d3bc0a-027e-4a6a-87dd-85e5b7285523",
+    "dashboardSectionCardMappings" : [ {
+      "uuid" : "e02a68ed-c02b-4cba-a5b5-6a5c71ab5eb8",
+      "displayOrder" : 1.0,
+      "dashboardSectionUUID" : "2ce712c2-3fa3-4ca4-9703-95766ef512c2",
+      "reportCardUUID" : "a1673f8a-c394-4bcf-8b6f-63d83a5443e2",
+      "voided" : false
+    } ],
+    "voided" : false
+  } ],
+  "filters" : [ {
+    "uuid" : "efea5b8d-d621-47d0-a02c-c9b1a667b680",
+    "id" : 795,
+    "name" : "As On Date",
+    "filterConfig" : {
+      "type" : "AsOnDate",
+      "subjectTypeUUID" : null,
+      "widget" : null,
+      "groupSubjectTypeFilter" : null,
+      "observationBasedFilter" : null
+    },
+    "voided" : false
+  }, {
+    "uuid" : "20367018-a168-43ff-a28f-64cd46ad3e2c",
+    "id" : 796,
+    "name" : "Subject Type",
+    "filterConfig" : {
+      "type" : "SubjectType",
+      "subjectTypeUUID" : null,
+      "widget" : null,
+      "groupSubjectTypeFilter" : null,
+      "observationBasedFilter" : null
+    },
+    "voided" : false
+  }, {
+    "uuid" : "37b287cd-2d2c-4c40-af4e-f82ff9f2ad3d",
+    "id" : 1066,
+    "name" : "School Filter",
+    "filterConfig" : {
+      "type" : "GroupSubject",
+      "subjectTypeUUID" : "67be1ade-3124-40c0-8896-65ee48b5f2d5",
+      "widget" : null,
+      "groupSubjectTypeFilter" : {
+        "subjectTypeUUID" : "eb7fc46a-5f06-4f00-863d-ee4450b23960"
+      },
+      "observationBasedFilter" : null
+    },
+    "voided" : false
+  } ],
+  "voided" : false
+} ]

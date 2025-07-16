@@ -1,0 +1,7 @@
+{
+  "name" : "School Health - Screening Encounter Cancellation",
+  "uuid" : "b5e868fb-7dcc-4aa6-b95a-87f6ae0c1b45",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

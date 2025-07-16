@@ -1,0 +1,128 @@
+{
+  "name" : "Place of Activity Registration",
+  "uuid" : "74fed60a-e603-42fb-8fa2-68a30955116a",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "9af25c39-2ddf-4957-9bea-6e5d8b26b89f",
+    "name" : "Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Type of Place",
+      "uuid" : "0006d4fa-9f52-4e6a-b29a-8e4c4407a3a5",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Type of Place",
+        "uuid" : "fe463a3f-d788-4f9d-aede-d62c53ca913c",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Community",
+          "uuid" : "4db36fe2-6d3d-432f-9664-da965e5cd0f2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "School",
+          "uuid" : "b226bcdf-7d5c-4782-b0ad-be40fd99ba52",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Name of community",
+      "uuid" : "2634d661-c3d7-4c10-b4e3-76deaeed707b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of community",
+        "uuid" : "251ae37d-aee8-4017-90fc-5c1540d46c80",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"fe463a3f-d788-4f9d-aede-d62c53ca913c\").containsAnswerConceptName(\"4db36fe2-6d3d-432f-9664-da965e5cd0f2\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Type of Place",
+                "conceptUuid" : "fe463a3f-d788-4f9d-aede-d62c53ca913c",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Community" ],
+                "answerConceptUuids" : [ "4db36fe2-6d3d-432f-9664-da965e5cd0f2" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Name of the School",
+      "uuid" : "ce67cbe1-d8ae-40c5-9511-6d7eae60accd",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the School",
+        "uuid" : "6d1667ce-9cd2-4ac9-bfb2-8afaddc6d3a6",
+        "dataType" : "Subject",
+        "answers" : [ ],
+        "active" : true,
+        "keyValues" : [ {
+          "key" : "subjectTypeUUID",
+          "value" : "eb7fc46a-5f06-4f00-863d-ee4450b23960"
+        } ]
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual, formElement}).when.valueInRegistration(\"fe463a3f-d788-4f9d-aede-d62c53ca913c\").containsAnswerConceptName(\"b226bcdf-7d5c-4782-b0ad-be40fd99ba52\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "registration",
+                "conceptName" : "Type of Place",
+                "conceptUuid" : "fe463a3f-d788-4f9d-aede-d62c53ca913c",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "School" ],
+                "answerConceptUuids" : [ "b226bcdf-7d5c-4782-b0ad-be40fd99ba52" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    } ],
+    "display" : "Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

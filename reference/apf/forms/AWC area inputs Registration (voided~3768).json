@@ -1,0 +1,8 @@
+{
+  "name" : "AWC area inputs Registration (voided~3768)",
+  "uuid" : "7effdc04-7325-4569-8fc9-5624aaee9329",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

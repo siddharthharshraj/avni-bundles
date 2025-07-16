@@ -1,0 +1,7 @@
+{
+  "name" : "PIL Case Activity Register Encounter Cancellation",
+  "uuid" : "f4959fb3-6e6d-4e12-9cee-6cb326047a36",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

@@ -1,0 +1,7 @@
+{
+  "name" : "Training Legal Fund Encounter Cancellation",
+  "uuid" : "1405f51e-2dd9-4d4f-9dbe-f65d615abac7",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

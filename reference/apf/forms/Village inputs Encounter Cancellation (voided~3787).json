@@ -1,0 +1,8 @@
+{
+  "name" : "Village inputs Encounter Cancellation (voided~3787)",
+  "uuid" : "2d2a051e-404d-41a0-8ebc-5cced32d8f59",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

@@ -1,0 +1,7 @@
+{
+  "name" : "Claim Impact Encounter Cancellation",
+  "uuid" : "e9c36fd2-5183-4512-9f0d-9291e6a25dc6",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

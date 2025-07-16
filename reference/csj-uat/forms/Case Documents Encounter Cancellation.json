@@ -1,0 +1,7 @@
+{
+  "name" : "Case Documents Encounter Cancellation",
+  "uuid" : "d2448500-df08-41c7-9e64-228579c1d30c",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

@@ -1,0 +1,7 @@
+{
+  "name" : "Letter Impact Encounter Cancellation",
+  "uuid" : "9f9343c5-9594-4b90-bf07-a75cf46d1c56",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

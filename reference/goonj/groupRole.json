@@ -1,0 +1,23 @@
+[ {
+  "uuid" : "c6e8ba08-c723-48e4-916b-706295bd893e",
+  "groupSubjectTypeUUID" : "c781319c-e47f-49f1-9ed7-7c85cd2bd16a",
+  "memberSubjectTypeUUID" : "07d0e5b8-0dad-4469-9623-10278261f829",
+  "role" : "Activity Role",
+  "subjectMemberName" : "Activity",
+  "groupRoleUUID" : "c6e8ba08-c723-48e4-916b-706295bd893e",
+  "maximumNumberOfMembers" : 100,
+  "minimumNumberOfMembers" : 1,
+  "primary" : false,
+  "voided" : false
+}, {
+  "uuid" : "c0a9e4af-fe58-4585-a445-079035040768",
+  "groupSubjectTypeUUID" : "c781319c-e47f-49f1-9ed7-7c85cd2bd16a",
+  "memberSubjectTypeUUID" : "461abfde-8767-41f3-993e-b68599999f07",
+  "role" : "Distribution Role",
+  "subjectMemberName" : "Distribution",
+  "groupRoleUUID" : "c0a9e4af-fe58-4585-a445-079035040768",
+  "maximumNumberOfMembers" : 100,
+  "minimumNumberOfMembers" : 1,
+  "primary" : false,
+  "voided" : false
+} ]

@@ -1,0 +1,24 @@
+{
+  "uuid" : "d1679ed2-eaf4-4075-b4c2-1bb193ef4a2b",
+  "settings" : {
+    "languages" : [ "en", "gu_IN" ],
+    "customRegistrationLocations" : [ {
+      "subjectTypeUUID" : "a0ae1426-0873-483c-8503-035abf651008",
+      "locationTypeUUIDs" : [ "4c23ae7d-6f0c-4924-93f2-7296bfe96fef" ]
+    }, {
+      "subjectTypeUUID" : "67be1ade-3124-40c0-8896-65ee48b5f2d5",
+      "locationTypeUUIDs" : [ "4c23ae7d-6f0c-4924-93f2-7296bfe96fef" ]
+    }, {
+      "subjectTypeUUID" : "eb7fc46a-5f06-4f00-863d-ee4450b23960",
+      "locationTypeUUIDs" : [ "c983153d-f57f-4df8-90bb-3f8fb3642e42" ]
+    } ],
+    "searchFilters" : [ {
+      "type" : "GroupSubject",
+      "titleKey" : "Student by School",
+      "subjectTypeUUID" : "67be1ade-3124-40c0-8896-65ee48b5f2d5",
+      "groupSubjectTypeUUID" : "eb7fc46a-5f06-4f00-863d-ee4450b23960"
+    } ],
+    "myDashboardFilters" : [ ]
+  },
+  "worklistUpdationRule" : ""
+}

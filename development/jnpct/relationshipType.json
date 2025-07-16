@@ -1,0 +1,46 @@
+[ {
+  "uuid" : "a5fe8ca8-31e3-485d-bc55-8b6c1398f673",
+  "id" : 228,
+  "individualAIsToBRelation" : {
+    "uuid" : "bda5a00d-1ae1-4fc4-931f-125440e83d37",
+    "id" : 291,
+    "name" : "Mother",
+    "genders" : [ "Female" ]
+  },
+  "individualBIsToARelation" : {
+    "uuid" : "a9055498-96a9-4ee2-a7ed-42b665da6737",
+    "id" : 292,
+    "name" : "Daughter",
+    "genders" : [ "Female" ]
+  }
+}, {
+  "uuid" : "51b8a563-e408-4aed-8dd5-061300a77d1a",
+  "id" : 229,
+  "individualAIsToBRelation" : {
+    "uuid" : "bda5a00d-1ae1-4fc4-931f-125440e83d37",
+    "id" : 291,
+    "name" : "Mother",
+    "genders" : [ "Female" ]
+  },
+  "individualBIsToARelation" : {
+    "uuid" : "b7a90c60-3c7f-4b44-9cf5-6e640f61417a",
+    "id" : 293,
+    "name" : "Son",
+    "genders" : [ "Female" ]
+  }
+}, {
+  "uuid" : "5d9cc464-fafb-4ea3-aac8-3459c153ddcc",
+  "id" : 230,
+  "individualAIsToBRelation" : {
+    "uuid" : "6b8d28fc-ecde-41e9-a2b6-ea4b791524b3",
+    "id" : 294,
+    "name" : "Sibling",
+    "genders" : [ "Female", "Male" ]
+  },
+  "individualBIsToARelation" : {
+    "uuid" : "6b8d28fc-ecde-41e9-a2b6-ea4b791524b3",
+    "id" : 294,
+    "name" : "Sibling",
+    "genders" : [ "Female", "Male" ]
+  }
+} ]

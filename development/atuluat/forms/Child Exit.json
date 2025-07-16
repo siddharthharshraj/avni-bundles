@@ -1,0 +1,99 @@
+{
+  "name" : "Child Exit",
+  "uuid" : "de5b3176-0976-44b3-90d2-72f01ff2359f",
+  "formType" : "ProgramExit",
+  "formElementGroups" : [ {
+    "uuid" : "f2f003ce-5d0a-4519-99bf-9e65cd2b4092",
+    "name" : "Exit Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Reason for exit",
+      "uuid" : "183f79ed-b87e-4ae0-93b3-3d97a29c2372",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Reason for exit",
+        "uuid" : "33940cc4-f3da-423c-ad51-20b8d6c4a1fc",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Migrated and not in contact",
+          "uuid" : "1cce87a8-5aab-4615-aa59-bfb96c135d26",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Migrated and in contact through phone",
+          "uuid" : "2ae56308-8ab7-4210-a102-a3623b46e985",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Child death",
+          "uuid" : "91432b1c-6e04-41b6-81a4-3404635d300d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other reason, please specify",
+      "uuid" : "919cf3ca-e52c-4c8e-b715-d33646799bb1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other reason, please specify",
+        "uuid" : "55316640-b851-4002-9d46-dba38e7a95e7",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEnrolment = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEnrolment, formElement}).when.valueInExit(\"33940cc4-f3da-423c-ad51-20b8d6c4a1fc\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "exit",
+                "conceptName" : "Reason for exit",
+                "conceptUuid" : "33940cc4-f3da-423c-ad51-20b8d6c4a1fc",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    } ],
+    "display" : "Exit Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

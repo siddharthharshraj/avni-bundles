@@ -1,0 +1,7 @@
+{
+  "name" : "Client Follow Up Encounter Cancellation",
+  "uuid" : "8d88534a-345c-43b0-92af-ce5d2788a19e",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

@@ -1,0 +1,8 @@
+{
+  "name" : "PIL Impact Encounter Cancellation (voided~11192)",
+  "uuid" : "6e108b0d-2626-4c83-884a-75f2279bc35a",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

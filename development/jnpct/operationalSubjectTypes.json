@@ -1,0 +1,27 @@
+{
+  "operationalSubjectTypes" : [ {
+    "uuid" : "40c1cf14-c902-4013-a61f-94467d5c904f",
+    "subjectType" : {
+      "uuid" : "2eaf9457-4cb5-4027-a9dc-6027948a30ba",
+      "voided" : false
+    },
+    "name" : "Individual",
+    "voided" : false
+  }, {
+    "uuid" : "d47c715a-5be6-49a2-a553-8ad2dd48eb1f",
+    "subjectType" : {
+      "uuid" : "081da569-d9d6-497b-acf3-cbbcaac1b927",
+      "voided" : false
+    },
+    "name" : "Village",
+    "voided" : false
+  }, {
+    "uuid" : "b81d18fa-477b-4939-b0b3-56e6b26cf179",
+    "subjectType" : {
+      "uuid" : "b99b8c88-a68b-4f25-989b-a8cfcd559daf",
+      "voided" : false
+    },
+    "name" : "Household",
+    "voided" : false
+  } ]
+}

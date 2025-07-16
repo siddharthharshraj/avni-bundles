@@ -1,0 +1,19 @@
+{
+  "name" : "AWC area inputs Registration (voided~3772)",
+  "uuid" : "aba4905b-54ae-4f71-b206-95b1ce7adb3e",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "3f0f7b1e-0970-4b34-8a38-49d7716faab9",
+    "name" : "Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ ],
+    "display" : "Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

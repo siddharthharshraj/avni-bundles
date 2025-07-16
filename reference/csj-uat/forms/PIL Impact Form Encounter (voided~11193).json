@@ -1,0 +1,47 @@
+{
+  "name" : "PIL Impact Form Encounter (voided~11193)",
+  "uuid" : "9fa89c96-27df-4cb4-b12e-76f95d95c545",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "622bd72f-ca83-40e5-a44e-445713304aa3",
+    "name" : "PIL Impact Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Description of Impact",
+      "uuid" : "74b03716-ac92-44ec-a255-71be7fa40a21",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "PIL Description of Impact",
+        "uuid" : "eef75f5e-aaab-451e-8971-546555fb179a",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Monetary Impact",
+      "uuid" : "da1258fb-800a-421a-a98d-2d712c296889",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "PIL Monetary Impact",
+        "uuid" : "70a1b713-2b6c-4708-b037-a205b3934ccd",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    } ],
+    "display" : "PIL Impact Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

@@ -1,0 +1,7 @@
+{
+  "name" : "Case Legal Fund Encounter Cancellation",
+  "uuid" : "56161b9a-dd52-4411-b8c4-571b319327cb",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

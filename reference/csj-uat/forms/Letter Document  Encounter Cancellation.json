@@ -1,0 +1,7 @@
+{
+  "name" : "Letter Document  Encounter Cancellation",
+  "uuid" : "1896179f-6b4b-467b-9f8b-0062899463b8",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

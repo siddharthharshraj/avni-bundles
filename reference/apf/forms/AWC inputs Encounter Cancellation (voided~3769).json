@@ -1,0 +1,8 @@
+{
+  "name" : "AWC inputs Encounter Cancellation (voided~3769)",
+  "uuid" : "3c080d23-c5de-4a44-8cd2-85e40309832a",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

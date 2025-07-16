@@ -1,0 +1,21 @@
+{
+  "operationalPrograms" : [ {
+    "uuid" : "f3ab11af-9d40-4f9a-9d21-724d2b5c6dca",
+    "program" : {
+      "uuid" : "7e905823-0326-4f67-8bc3-84cc4bb9f407",
+      "voided" : false
+    },
+    "name" : "Pregnancy",
+    "programSubjectLabel" : "",
+    "voided" : false
+  }, {
+    "uuid" : "b6b17163-69e4-40ae-9de5-568e31e0893c",
+    "program" : {
+      "uuid" : "5538d0f1-194c-4055-9311-dcc0239fe1ce",
+      "voided" : false
+    },
+    "name" : "Child",
+    "programSubjectLabel" : "",
+    "voided" : false
+  } ]
+}

@@ -1,0 +1,8 @@
+{
+  "name" : "Location Attribute Form(Voided)",
+  "uuid" : "5478f4d0-eb21-4822-9b2a-9ff8c258a860",
+  "formType" : "Location",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

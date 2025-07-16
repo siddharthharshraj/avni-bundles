@@ -1,0 +1,103 @@
+{
+  "name" : "Child - Follow up Encounter Cancellation",
+  "uuid" : "3c79062c-3787-473d-8827-fbc771794057",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ {
+    "uuid" : "b980d123-a375-4feb-9af6-c7e2c8bc551f",
+    "name" : "Reason for cancellation",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Is the child present?",
+      "uuid" : "b193a621-bd76-4956-bd10-f3efea2e3bd7",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is the child present?",
+        "uuid" : "51e92d6f-2ef5-4de0-9be1-74b768cb8142",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Why not available?",
+      "uuid" : "30e79de9-0bdf-4d98-9caa-ae4599655eb3",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why not available?",
+        "uuid" : "f52e6c46-f982-4331-95c4-26bb36c48e72",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Death",
+          "uuid" : "1b6ce78f-181b-4b64-9ec9-7afc07fe9729",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Went to relative or other place",
+          "uuid" : "7aa91832-43d7-4ed6-8fe4-feabf1455cf7",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Not known",
+          "uuid" : "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Temporarily Migrated",
+          "uuid" : "345d9312-166d-4162-8ed2-17a016323181",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "When will you visit the child again?",
+      "uuid" : "1babcb0a-bf77-4df6-9d97-c6aa2f7ce7fe",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "When will you visit the child again?",
+        "uuid" : "40bf91d6-7b64-4bc4-b4ba-80785159cedc",
+        "dataType" : "Date",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInCancelEncounter(\"f52e6c46-f982-4331-95c4-26bb36c48e72\").containsAnyAnswerConceptName(\"7aa91832-43d7-4ed6-8fe4-feabf1455cf7\",\"c28401fc-3b61-4c8d-a2a6-6c97df6ff61b\").matches();\n  \n  visibility = condition11 ;\n\n  const observationDate = programEncounter.getObservationValue('40bf91d6-7b64-4bc4-b4ba-80785159cedc');\n  const today = moment().startOf('day');\n\n  if (observationDate && moment(observationDate).isAfter(today, 'day')) {\n    validationErrors.push('Future date is not allowed');\n  }\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "mandatory" : true
+    } ],
+    "display" : "Reason for cancellation",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

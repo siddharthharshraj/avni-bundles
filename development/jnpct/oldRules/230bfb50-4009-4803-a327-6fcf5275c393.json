@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "3348db59-a01d-447e-a4b6-0d369023152d",
+    "type" : "EncounterType"
+  },
+  "entityUUID" : "3348db59-a01d-447e-a4b6-0d369023152d",
+  "entityType" : "EncounterType",
+  "type" : "EncounterEligibilityCheck",
+  "executionOrder" : 100.0,
+  "data" : { },
+  "name" : "ChildFollowupEligibility",
+  "uuid" : "230bfb50-4009-4803-a327-6fcf5275c393",
+  "fnName" : "ChildFollowupEligibility"
+}

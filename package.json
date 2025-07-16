@@ -1,0 +1,16 @@
+{
+  "name": "avni-impl-bundles",
+  "version": "1.0.0",
+  "description": "Implementation bundles utilities",
+  "main": "make-multi-line.js",
+  "dependencies": {
+    "glob": "^10.3.10",
+    "openchs-models": "latest",
+    "rules-config": "github:openchs/rules-config#982bb007c4f759639063159196edee386b48cac3",
+    "avni-health-modules": "latest",
+    "lodash": "4.17.21",
+    "moment": "2.29.4"
+  },
+  "devDependencies": {
+  }
+}

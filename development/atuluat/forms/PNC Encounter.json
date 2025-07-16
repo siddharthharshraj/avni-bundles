@@ -1,0 +1,569 @@
+{
+  "name" : "PNC Encounter",
+  "uuid" : "fe100389-4944-4658-9820-a6e5b33ca6c9",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "b674fe91-807d-404d-a3fb-f7dd9f925039",
+    "name" : "Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Was the child given any pre-lacteals",
+      "uuid" : "3a36eb1d-5dcf-497e-828a-441fa2d6c08c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Was the child given any pre-lacteals",
+        "uuid" : "ca58fda0-2f3e-4afd-be35-aac66e7a67ec",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "All of the above",
+          "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Cow milk",
+          "uuid" : "e5d30d3a-4d9c-4aed-8b95-788ee66ed422",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Honey",
+          "uuid" : "2f41770c-8580-429b-af1d-9aaf5be12e07",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Jaggery",
+          "uuid" : "8b529c2b-a544-4cef-b0b5-2da6b76a2de5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Goat milk",
+          "uuid" : "76dea82d-f4d4-437f-a7f2-63c5234b38e6",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "unique" : true,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other pre-lacteals, please specify",
+      "uuid" : "9b3c26b2-b4cf-462e-a662-b9cbc5d9b839",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other pre-lacteals",
+        "uuid" : "3a023829-652b-448e-8ab6-31a0f6b63e4f",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"ca58fda0-2f3e-4afd-be35-aac66e7a67ec\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Was the child given any pre-lacteals",
+                "conceptUuid" : "ca58fda0-2f3e-4afd-be35-aac66e7a67ec",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Do you breastfeed your child",
+      "uuid" : "6f552df8-c88e-4e87-80ce-81e67b280e6f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you breastfeed your child",
+        "uuid" : "0a0c398f-9621-4162-a92a-293e70c7e3ed",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Why?",
+      "uuid" : "4e5459c9-6ad3-4403-a8c8-8736b4adf9b5",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why don’t you breastfeed your child?",
+        "uuid" : "c47d2458-1b9f-40c5-bf80-faebb303bbc2",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"0a0c398f-9621-4162-a92a-293e70c7e3ed\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Do you breastfeed your child",
+                "conceptUuid" : "0a0c398f-9621-4162-a92a-293e70c7e3ed",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Which of the following Family Planning method is practiced",
+      "uuid" : "e51b0563-3389-409d-9e27-96b7b2d60c71",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Which of the following Family Planning method is practiced",
+        "uuid" : "0e5a2fbf-7e1b-4770-a614-b3dc09dffa39",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Antara injection",
+          "uuid" : "1ca9a803-32fb-451e-80eb-48cdf3435b56",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Chhaya pills",
+          "uuid" : "5950dbbe-0f02-4c3a-800a-b08ed7e0b5da",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "PPIUCD",
+          "uuid" : "c6ced386-174b-41ff-ba64-ef948722249f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Non-Scalpel Vasectomy (NSV)",
+          "uuid" : "7a44c7ca-df06-47ce-badc-7a3a45c4ac3a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Tubal Ligation (TL)",
+          "uuid" : "18a38e2d-f18c-4ad1-a847-c68588938c8d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Condom",
+          "uuid" : "891f0309-82ee-4934-98a4-a70f91c48099",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "IUCD",
+          "uuid" : "c15f9b01-5c47-45b8-8360-9f821fa5d86b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Mala pills",
+          "uuid" : "8b8f3695-c1b4-421c-87c1-e358aac7aab4",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other Family Planning method is practiced, please specify",
+      "uuid" : "75716fbf-6868-4145-8dd8-28c3c81fe674",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other Family Planning method is practiced",
+        "uuid" : "37016db0-0853-483b-be53-bcf6b4f69bb8",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInEncounter(\"0e5a2fbf-7e1b-4770-a614-b3dc09dffa39\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Which of the following Family Planning method is practiced",
+                "conceptUuid" : "0e5a2fbf-7e1b-4770-a614-b3dc09dffa39",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Counselling done on which of the following topic",
+      "uuid" : "51b630f0-0b66-4b5e-8438-115372961b2d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Counselling done on which of the following topic",
+        "uuid" : "a249d980-4c71-4f30-b5b5-8c9a00e999b2",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Breastfeeding techniques",
+          "uuid" : "2b2403cc-0c1e-4b02-b66d-1f6c8bcb96ab",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Guidance on complementary feeding",
+          "uuid" : "b85cb6c7-5f12-4dec-ada1-48db787b0e0b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "To make sure that child is vaccinated as per the National Immunization Schedule",
+          "uuid" : "f87e9bc6-34cc-45a0-91df-fc6f2f5e0460",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "IFA Consumption",
+          "uuid" : "b105a063-d030-4682-afe5-dc7c03a483aa",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "To provide Iron and Vitamin A syrup to baby as per the schedule",
+          "uuid" : "0582921e-65c0-4d45-b6c5-1e4c93aaeaf3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Exclusive Breast Feeding (EBF)",
+          "uuid" : "0e88e9b2-5678-450d-80aa-f6d69df6252e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Family Planning",
+          "uuid" : "7f9f6a4d-2077-438b-ba1e-4cb995589e80",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Kangaroo Mother Care (KMC)",
+          "uuid" : "ee1edf52-1d9e-47a6-a429-54144c858360",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Diet Diversity",
+          "uuid" : "fc983e74-d216-4c8f-bac3-7c6d4dccfb73",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "To maintain proper health and hygiene",
+          "uuid" : "ded7510f-edfd-4291-9ead-15c2020b0be2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "MultiSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Does mother need to be referred for gynecological services?",
+      "uuid" : "627a2bb2-8c4c-4a24-a492-2fcd537dc17c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does mother need to be referred for gynecological services?",
+        "uuid" : "240314ba-adf3-4c0c-b896-bfcf0b4d7902",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    } ],
+    "display" : "Details",
+    "timed" : false
+  }, {
+    "uuid" : "55693247-d80d-4389-b303-4705819ec8f4",
+    "name" : "Counselling Points",
+    "displayOrder" : 2.0,
+    "formElements" : [ {
+      "name" : "Counselling done on which of the following topic",
+      "uuid" : "3fb2484b-305b-4ee7-8c00-7823ef16a9a5",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Counselling done on which of the following topic",
+        "uuid" : "a249d980-4c71-4f30-b5b5-8c9a00e999b2",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Breastfeeding techniques",
+          "uuid" : "2b2403cc-0c1e-4b02-b66d-1f6c8bcb96ab",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Guidance on complementary feeding",
+          "uuid" : "b85cb6c7-5f12-4dec-ada1-48db787b0e0b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "To make sure that child is vaccinated as per the National Immunization Schedule",
+          "uuid" : "f87e9bc6-34cc-45a0-91df-fc6f2f5e0460",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "IFA Consumption",
+          "uuid" : "b105a063-d030-4682-afe5-dc7c03a483aa",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "To provide Iron and Vitamin A syrup to baby as per the schedule",
+          "uuid" : "0582921e-65c0-4d45-b6c5-1e4c93aaeaf3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Exclusive Breast Feeding (EBF)",
+          "uuid" : "0e88e9b2-5678-450d-80aa-f6d69df6252e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Family Planning",
+          "uuid" : "7f9f6a4d-2077-438b-ba1e-4cb995589e80",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Kangaroo Mother Care (KMC)",
+          "uuid" : "ee1edf52-1d9e-47a6-a429-54144c858360",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Diet Diversity",
+          "uuid" : "fc983e74-d216-4c8f-bac3-7c6d4dccfb73",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "To maintain proper health and hygiene",
+          "uuid" : "ded7510f-edfd-4291-9ead-15c2020b0be2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    } ],
+    "display" : "Counselling Points",
+    "timed" : false
+  }, {
+    "uuid" : "2eaac396-02c9-4e4d-91fb-e7e8bbd048e2",
+    "name" : "Referal Details",
+    "displayOrder" : 3.0,
+    "formElements" : [ {
+      "name" : "Does mother need to be referred for gynecological services?",
+      "uuid" : "d4429f4e-9ec5-40d6-8891-12e8d62d1039",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does mother need to be referred for gynecological services?",
+        "uuid" : "240314ba-adf3-4c0c-b896-bfcf0b4d7902",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ],
+    "display" : "Referal Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

@@ -1,0 +1,7 @@
+{
+  "name" : "Case Activity Register  Encounter Cancellation",
+  "uuid" : "20c10906-6edf-49dc-b5d3-f662bfe5df9e",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

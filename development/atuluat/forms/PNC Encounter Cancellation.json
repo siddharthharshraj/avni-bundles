@@ -1,0 +1,128 @@
+{
+  "name" : "PNC Encounter Cancellation",
+  "uuid" : "41fdaae9-fcee-444b-a280-a357d8f28fd5",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ {
+    "uuid" : "a1ea86ff-2049-4fbc-ac88-d604968705e5",
+    "name" : "Reason for cancellaton",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Is the patient present?",
+      "uuid" : "cd7344bb-6539-4db0-a781-8db8675ac436",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is the patient present?",
+        "uuid" : "d3cabdc4-fe41-4fdd-a92d-3c6052830dc4",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Why patient not availble?",
+      "uuid" : "7297888c-eab8-431d-bf10-0c80117c7e9f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why patient not availble?",
+        "uuid" : "e19ded48-c845-4a50-91ab-0d559d570b39",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Went to relative or other place",
+          "uuid" : "7aa91832-43d7-4ed6-8fe4-feabf1455cf7",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Not known",
+          "uuid" : "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Temporarily Migrated",
+          "uuid" : "345d9312-166d-4162-8ed2-17a016323181",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Death",
+          "uuid" : "1b6ce78f-181b-4b64-9ec9-7afc07fe9729",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInCancelEncounter(\"d3cabdc4-fe41-4fdd-a92d-3c6052830dc4\").containsAnswerConceptName(\"30ade50e-fef5-4de1-9a6b-965cc66132ba\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "cancelEncounter",
+                "conceptName" : "Is the patient present?",
+                "conceptUuid" : "d3cabdc4-fe41-4fdd-a92d-3c6052830dc4",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "No" ],
+                "answerConceptUuids" : [ "30ade50e-fef5-4de1-9a6b-965cc66132ba" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "When will visit again for the patient?",
+      "uuid" : "607f96d5-f1d2-416a-8b9e-229e35aae1a9",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "When will visit again for the patient?",
+        "uuid" : "f78f4b22-9930-4575-8c55-4a5108cf90a8",
+        "dataType" : "Date",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({programEncounter, formElement}).when.valueInCancelEncounter(\"e19ded48-c845-4a50-91ab-0d559d570b39\").containsAnyAnswerConceptName(\"7aa91832-43d7-4ed6-8fe4-feabf1455cf7\",\"c28401fc-3b61-4c8d-a2a6-6c97df6ff61b\").matches();\n  \n  visibility = condition11 ;\n\n  let selectedDate = programEncounter.getObservationValue('When will visit again for the patient?');\n\n  if(selectedDate) {\n    selectedDate = moment(selectedDate)\n    const today = moment()\n\n    if (selectedMoment.isBefore(today, 'day')) {\n      validationErrors.push(\"The selected date cannot be in the past.\");\n    }\n  }\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "mandatory" : true
+    } ],
+    "display" : "Reason for cancellaton",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

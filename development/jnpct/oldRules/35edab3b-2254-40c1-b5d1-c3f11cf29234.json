@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "95796c7b-cb70-48f5-893f-c0c8afbc3785",
+    "type" : "Form"
+  },
+  "entityUUID" : "95796c7b-cb70-48f5-893f-c0c8afbc3785",
+  "entityType" : "Form",
+  "type" : "VisitSchedule",
+  "executionOrder" : 100.0,
+  "data" : { },
+  "name" : "ScheduleVisitDuringChildEnrolment",
+  "uuid" : "35edab3b-2254-40c1-b5d1-c3f11cf29234",
+  "fnName" : "ScheduleVisitDuringChildEnrolment"
+}

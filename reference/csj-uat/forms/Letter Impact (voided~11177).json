@@ -1,0 +1,98 @@
+{
+  "name" : "Letter Impact (voided~11177)",
+  "uuid" : "bcdd684d-bd92-4c57-b8b8-80d489acc05e",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "c73ffcf0-80ca-4732-9600-21b397a45e2a",
+    "name" : "Impact details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Impact details",
+      "uuid" : "9b3ddb96-1e93-4176-8295-cba9e91d9d5e",
+      "keyValues" : [ {
+        "key" : "repeatable",
+        "value" : true
+      } ],
+      "concept" : {
+        "name" : "Impact details",
+        "uuid" : "4b2c6b51-0ddf-48c9-bc1c-817c5148b99e",
+        "dataType" : "QuestionGroup",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Impact Details",
+      "uuid" : "9e2c249b-3144-4b7d-97c3-d5c35c5e604d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Impact details",
+        "uuid" : "4b2c6b51-0ddf-48c9-bc1c-817c5148b99e",
+        "dataType" : "QuestionGroup",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "Description of Impact",
+      "uuid" : "cfe8300f-fc4d-490d-96ee-e59edbab39d7",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Description of Impact",
+        "uuid" : "5194cd71-1e75-4745-9a88-5d6deb47b5fc",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "parentFormElementUuid" : "9e2c249b-3144-4b7d-97c3-d5c35c5e604d",
+      "mandatory" : true
+    }, {
+      "name" : "Description of Impact",
+      "uuid" : "7c1c58a9-5102-4121-b448-7cfd6da133d0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Description of Impact",
+        "uuid" : "5194cd71-1e75-4745-9a88-5d6deb47b5fc",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "parentFormElementUuid" : "9b3ddb96-1e93-4176-8295-cba9e91d9d5e",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Monetary Impact",
+      "uuid" : "7b7a5ff8-f68f-4fd2-b2ca-6e1a793d2f1b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Monetary Impact - Influencing State",
+        "uuid" : "f5e2ddb6-4eaf-4017-9e68-461509e0febf",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "parentFormElementUuid" : "9b3ddb96-1e93-4176-8295-cba9e91d9d5e",
+      "voided" : true,
+      "mandatory" : true
+    } ],
+    "display" : "Impact details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

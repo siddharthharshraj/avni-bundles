@@ -1,0 +1,7 @@
+{
+  "name" : "Case Monetary Impact  Encounter Cancellation",
+  "uuid" : "de5c72ac-58db-4557-983d-dd46ae87b048",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

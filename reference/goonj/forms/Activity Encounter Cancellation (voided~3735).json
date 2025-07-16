@@ -1,0 +1,8 @@
+{
+  "name" : "Activity Encounter Cancellation (voided~3735)",
+  "uuid" : "bc721005-ab01-48cf-85a7-877db35247df",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

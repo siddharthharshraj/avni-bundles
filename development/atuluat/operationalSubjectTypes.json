@@ -1,0 +1,35 @@
+{
+  "operationalSubjectTypes" : [ {
+    "uuid" : "7012d62f-1e04-4318-a8d6-ab71d3ca2a8d",
+    "subjectType" : {
+      "uuid" : "67be1ade-3124-40c0-8896-65ee48b5f2d5",
+      "voided" : false
+    },
+    "name" : "Individual",
+    "voided" : false
+  }, {
+    "uuid" : "6ad12e9d-2196-4758-92a1-3eb533739c61",
+    "subjectType" : {
+      "uuid" : "a0ae1426-0873-483c-8503-035abf651008",
+      "voided" : false
+    },
+    "name" : "Household",
+    "voided" : false
+  }, {
+    "uuid" : "7c4752bb-3fa3-41a1-9cdb-83d5b25542b3",
+    "subjectType" : {
+      "uuid" : "eb7fc46a-5f06-4f00-863d-ee4450b23960",
+      "voided" : false
+    },
+    "name" : "School",
+    "voided" : false
+  }, {
+    "uuid" : "0346bd58-25f8-4220-bae7-7fdd3b3c4463",
+    "subjectType" : {
+      "uuid" : "1c948a22-61ef-4895-bc95-448831f54a87",
+      "voided" : false
+    },
+    "name" : "Place of Activity",
+    "voided" : false
+  } ]
+}

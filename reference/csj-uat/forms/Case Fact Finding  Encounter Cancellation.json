@@ -1,0 +1,7 @@
+{
+  "name" : "Case Fact Finding  Encounter Cancellation",
+  "uuid" : "c3cfa995-13c1-4b41-8419-bf37430ed20e",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

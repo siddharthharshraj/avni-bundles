@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
+    "type" : "Program"
+  },
+  "entityUUID" : "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
+  "entityType" : "Program",
+  "type" : "EnrolmentEligibilityCheck",
+  "executionOrder" : 100.0,
+  "data" : { },
+  "name" : "EligibleCoupleEligibility",
+  "uuid" : "82611d82-e178-4c30-a5d7-764e5edd8d22",
+  "fnName" : "EligibleCoupleEligibility"
+}

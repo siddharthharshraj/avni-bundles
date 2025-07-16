@@ -1,0 +1,51 @@
+{
+  "operationalSubjectTypes" : [ {
+    "uuid" : "1e7c84b6-0605-4bac-ad0f-39884b9676ac",
+    "subjectType" : {
+      "uuid" : "bfc36f13-831c-445a-ada9-5696840f8cee",
+      "voided" : false
+    },
+    "name" : "Village Profile",
+    "voided" : false
+  }, {
+    "uuid" : "60e307ce-efc9-4c0a-8b3a-1cfb91f237ca",
+    "subjectType" : {
+      "uuid" : "f2ffc396-2acc-4e97-af90-d9585eb2df75",
+      "voided" : false
+    },
+    "name" : "Household",
+    "voided" : false
+  }, {
+    "uuid" : "bcdcae0d-7a9e-437c-adf4-a6cf78815268",
+    "subjectType" : {
+      "uuid" : "ec69af69-8fd2-40b3-b429-025504c18a01",
+      "voided" : false
+    },
+    "name" : "Individual",
+    "voided" : false
+  }, {
+    "uuid" : "d9435acc-3d4d-4b2b-9258-72d36273678e",
+    "subjectType" : {
+      "uuid" : "387cc2ab-3981-4ffd-85fa-faf9fdb04150",
+      "voided" : false
+    },
+    "name" : "AWC area inputs (voided~574)",
+    "voided" : true
+  }, {
+    "uuid" : "a3c8a3b0-1e55-4cb8-9548-068a593d43a6",
+    "subjectType" : {
+      "uuid" : "eb642a9c-ae1b-4247-81ba-87800227d981",
+      "voided" : false
+    },
+    "name" : "AWC Profile",
+    "voided" : false
+  }, {
+    "uuid" : "6c8b8853-0263-4fea-9b0b-9d3e12fa0e42",
+    "subjectType" : {
+      "uuid" : "542e9019-04c8-4aec-9801-26a7be8a39ad",
+      "voided" : false
+    },
+    "name" : "TIMS for Poshan Sathi",
+    "voided" : false
+  } ]
+}

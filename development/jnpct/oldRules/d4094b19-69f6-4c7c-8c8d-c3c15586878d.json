@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "6ff66edf-30c9-49c5-821c-c44f371b31b2",
+    "type" : "Form"
+  },
+  "entityUUID" : "6ff66edf-30c9-49c5-821c-c44f371b31b2",
+  "entityType" : "Form",
+  "type" : "VisitSchedule",
+  "executionOrder" : 100.0,
+  "data" : { },
+  "name" : "JNPCT Abortion Followup Visit schedule",
+  "uuid" : "d4094b19-69f6-4c7c-8c8d-c3c15586878d",
+  "fnName" : "ScheduleVisitDuringAbortion"
+}

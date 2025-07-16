@@ -1,0 +1,1834 @@
+{
+  "name" : "School Health - Screening Encounter",
+  "uuid" : "9832b428-f63d-4f3a-b527-1e5f8e014555",
+  "formType" : "Encounter",
+  "formElementGroups" : [ {
+    "uuid" : "759c9c45-badb-4015-8b5d-c9b2927f1b12",
+    "name" : "Basic Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ {
+      "name" : "Standard",
+      "uuid" : "68e21347-be54-4277-b913-3310838df32b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Standard",
+        "uuid" : "84b20238-a4fa-4c55-ae87-6a7e98223d02",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "12th",
+          "uuid" : "8b6bf669-b1cd-44fa-b1cb-657bc281b657",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "6th",
+          "uuid" : "db0954dc-c97d-4d8d-aad2-495b04b3c756",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "7th",
+          "uuid" : "c2df3edc-d6d1-4d86-ab37-562376b91bcd",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "8th",
+          "uuid" : "c24ae217-68f9-4543-a331-55f0606613c8",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "10th",
+          "uuid" : "9499b6fd-d6a7-48b8-ac3a-410a87790f71",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "11th",
+          "uuid" : "a798e63d-94cd-41a4-9444-11a6ec265181",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "5th",
+          "uuid" : "c188c654-9954-4d7f-b405-0593ac751b0b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "9th",
+          "uuid" : "953850f9-3c4d-410e-880b-923c41921065",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Class Divison",
+      "uuid" : "ce71731b-cf88-41fc-8504-5750b4e2f2f1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Class Divison",
+        "uuid" : "8daf379b-d180-4463-9829-2d7609d712f4",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Student Name",
+      "uuid" : "90d43300-02fc-442f-b463-0d6ef8fb9082",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Studen Name",
+        "uuid" : "a5314f93-62a2-4573-bf28-c7e8ee938072",
+        "dataType" : "Subject",
+        "answers" : [ ],
+        "active" : true,
+        "keyValues" : [ {
+          "key" : "subjectTypeUUID",
+          "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+        } ]
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : true
+    }, {
+      "name" : "Gender",
+      "uuid" : "1b416ca5-8b1a-4b52-a5eb-44f5dd74a6bb",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Gender-Student",
+        "uuid" : "5664629e-6e2c-46f0-a5d5-e957e3c90ad7",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  const individualService = params.services.individualService;\n  \n  const selectedStudentUUID = encounter.getObservationValue(\"a5314f93-62a2-4573-bf28-c7e8ee938072\");\n  console.log('selectedStudentUUID--->',selectedStudentUUID);\n  if(selectedStudentUUID){\n    console.log('individualService--->',individualService.getSubjectByUUID(selectedStudentUUID));\n    const selectedStudentGender = individualService.getSubjectByUUID(selectedStudentUUID).gender.name;\n    console.log('selectedStudentGender---->',selectedStudentGender);\n    value = selectedStudentGender;\n  }\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "Date of birth",
+      "uuid" : "27e175bf-76be-4e81-97a7-bc7c26ffb1ec",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Date of birth - Student",
+        "uuid" : "4194f814-14ff-46fd-b399-c43b1f65913a",
+        "dataType" : "Date",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  const individualService = params.services.individualService;\n  \n  const selectedStudentUUID = encounter.getObservationValue(\"a5314f93-62a2-4573-bf28-c7e8ee938072\");\n  console.log('selectedStudentUUID--->', selectedStudentUUID);\n  \n  if (selectedStudentUUID) {\n    const selectedStudent = individualService.getSubjectByUUID(selectedStudentUUID);\n    \n    if (selectedStudent && selectedStudent.dateOfBirth) {\n      const formattedDOB = moment(selectedStudent.dateOfBirth).format(\"DD-MM-YYYY\");\n      console.log('formattedDOB ---->', formattedDOB);\n      value = selectedStudent.dateOfBirth;\n    }\n  }\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "Age",
+      "uuid" : "5076618a-fd95-4408-8c5e-6e3af031d392",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Age - student",
+        "uuid" : "2db2f4f3-0842-4dd6-bf0c-487ca19b524d",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "voided" : true,
+      "mandatory" : false
+    }, {
+      "name" : "Height",
+      "uuid" : "33eb77d0-9d00-40a5-8796-095d03f18525",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Height",
+        "uuid" : "0a92ad2c-95b9-43a4-8d70-0f2ea845080d",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "lowAbsolute" : 1.0,
+        "highAbsolute" : 190.0,
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Weight",
+      "uuid" : "6357aa36-3f79-41e0-ad5d-c15ef0415b98",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Weight",
+        "uuid" : "97eda093-1ec0-446f-bb7d-4557e687989a",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "lowAbsolute" : 1.0,
+        "highAbsolute" : 150.0,
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "BMI",
+      "uuid" : "1270a36d-99c9-4a80-81ca-604cf1c07188",
+      "keyValues" : [ {
+        "key" : "editable",
+        "value" : false
+      } ],
+      "concept" : {
+        "name" : "BMI",
+        "uuid" : "b51a5257-4e8f-438e-9181-b8aaa504ee77",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  \n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n\n  const height = parseFloat(encounter.getObservationValue(\"0a92ad2c-95b9-43a4-8d70-0f2ea845080d\")); // cm\n  const weight = parseFloat(encounter.getObservationValue(\"97eda093-1ec0-446f-bb7d-4557e687989a\")); // kg\n\n  if (!isNaN(height) && !isNaN(weight) && height > 0) {\n    const heightInMeters = height / 100;\n    const bmi = weight / (heightInMeters * heightInMeters);\n    value = parseFloat(bmi.toFixed(2)); // Round to 2 decimal places\n  }\n\n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "mandatory" : false
+    }, {
+      "name" : "Growth Chart - BMI / Age (Z score)",
+      "uuid" : "19c1adb3-e296-4ab7-a0fb-4a5053eb7149",
+      "keyValues" : [ {
+        "key" : "editable",
+        "value" : false
+      } ],
+      "concept" : {
+        "name" : "Growth Chart - BMI",
+        "uuid" : "a36242e0-ddf2-414b-94c5-c1db6c221ec8",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "< -2 SD (Thinness)",
+          "uuid" : "86ed346c-8bcd-41cd-a2d3-e9d71a220b60",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "> +1 SD (Overweight)",
+          "uuid" : "359f80bc-ba81-4524-b47d-2bdc75a9fdc3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "< -3 SD (Severe Thinness)",
+          "uuid" : "b6acff0e-0590-4805-9728-2abd93496f7e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "> +2 SD (Obesity)",
+          "uuid" : "c20c4c4d-2925-4404-8f43-ccc62f226a2f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "> -1 to < +1 SD (Normal)",
+          "uuid" : "7cf9b113-6701-429e-aa30-0e37b9e88aea",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n\n  const bmi = parseFloat(encounter.getObservationValue(\"b51a5257-4e8f-438e-9181-b8aaa504ee77\")); // BMI\n  const dob = encounter.individual ? encounter.individual.dateOfBirth : null;\n\n  if (dob && !isNaN(bmi)) {\n    const dateOfBirth = moment(dob).startOf('day');\n    const today = moment().startOf('day');\n    const ageInYears = today.diff(dateOfBirth, 'years', true); \n    \n    console.log('bmi--->',bmi);\n    console.log('ageInYears--->',ageInYears);\n\n    // Simplified logic based on age + BMI for children 5–19 years old\n    if (ageInYears >= 5 && ageInYears <= 19) {\n      if (bmi < 16) {\n        value = \"< -3 SD (Severe Thinness)\";\n      } else if (bmi >= 16 && bmi < 18.5) {\n        value = \"< -2 SD (Thinness)\";\n      } else if (bmi >= 18.5 && bmi < 23) {\n        value = \"> -1 to < +1 SD (Normal)\";\n      } else if (bmi >= 23 && bmi < 25) {\n        value = \"> +1 SD (Overweight)\";\n      } else if (bmi >= 25) {\n        value = \"> +2 SD (Obesity)\";\n      }\n      console.log('value--->',value);\n    } else {\n      validationErrors.push(\"BMI-for-age classification is only supported for children 5–19 years.\");\n    }\n  }\n\n  return new imports.rulesConfig.FormElementStatus(\n    formElement.uuid,\n    visibility,\n    value,\n    answersToSkip,\n    validationErrors\n  );\n};",
+      "mandatory" : false
+    }, {
+      "name" : "Hb",
+      "uuid" : "86023e0e-7400-40f8-b5ed-9148947ed4c1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Hb",
+        "uuid" : "3f1d701c-9c33-46dd-9143-b56e06fc495b",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "13 gm/dl or more than it (Normal)",
+          "uuid" : "be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "12 gm/dl or more than it (Normal)",
+          "uuid" : "559f614a-1386-4662-ba25-f2cd5017ea50",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Between 11-12.9 gm/dl (Mild Anaemia)",
+          "uuid" : "18a31a40-5e6d-496c-93e7-d8a47fa45876",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Between 11-11.9 gm/dl (Mild Anaemia)",
+          "uuid" : "2cc1be43-1a35-4cb6-9120-5c114c9e58c2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Between 8 to 10.9 gm/dl (Moderate Anaemia)",
+          "uuid" : "f2ce9989-d20c-4fe9-895b-c00ab9b5690e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "8 gm/dl or less than it (Severe Anaemia)",
+          "uuid" : "f015ffb9-babc-434f-87d1-d46c1a52fa2d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Between 8 to 10 gm/dl (Moderate Anaemia)",
+          "uuid" : "5b943e5b-56c7-40b4-977d-9c9291fec8b0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Between 10 to 12 gm/dl (Mild Anaemia)",
+          "uuid" : "9847a475-3347-49d0-9f67-60a985003f96",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n    \n  const condition12 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Male\").and.when.ageInYears.greaterThan(10).and.when.ageInYears.lessThanOrEqualTo(15).matches();\n    \n  const condition13 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Male\").and.when.ageInYears.greaterThan(15).matches();\n  \n  if(condition11 ) {\n    _.forEach([\"f2ce9989-d20c-4fe9-895b-c00ab9b5690e\",\"2cc1be43-1a35-4cb6-9120-5c114c9e58c2\",\"18a31a40-5e6d-496c-93e7-d8a47fa45876\",\"be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba\"], (answer) => {\n        const answerToSkip = formElement.getAnswerWithConceptUuid(answer);\n        if (answerToSkip) answersToSkip.push(answerToSkip);\n    });\n};\n    if(condition12 ) {\n    _.forEach([\"5b943e5b-56c7-40b4-977d-9c9291fec8b0\",\"9847a475-3347-49d0-9f67-60a985003f96\",\"be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba\",\"18a31a40-5e6d-496c-93e7-d8a47fa45876\"], (answer) => {\n        const answerToSkip = formElement.getAnswerWithConceptUuid(answer);\n        if (answerToSkip) answersToSkip.push(answerToSkip);\n    });\n};\n    if(condition13 ) {\n    _.forEach([\"5b943e5b-56c7-40b4-977d-9c9291fec8b0\",\"9847a475-3347-49d0-9f67-60a985003f96\",\"559f614a-1386-4662-ba25-f2cd5017ea50\",\"2cc1be43-1a35-4cb6-9120-5c114c9e58c2\"], (answer) => {\n        const answerToSkip = formElement.getAnswerWithConceptUuid(answer);\n        if (answerToSkip) answersToSkip.push(answerToSkip);\n    });\n};\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "details" : {
+            "answersToSkip" : [ "Between 8 to 10.9 gm/dl (Moderate Anaemia)", "Between 11-11.9 gm/dl (Mild Anaemia)", "Between 11-12.9 gm/dl (Mild Anaemia)", "13 gm/dl or more than it (Normal)" ],
+            "answerUuidsToSkip" : [ "f2ce9989-d20c-4fe9-895b-c00ab9b5690e", "2cc1be43-1a35-4cb6-9120-5c114c9e58c2", "18a31a40-5e6d-496c-93e7-d8a47fa45876", "be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba" ]
+          },
+          "actionType" : "skipAnswers"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "gender"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : "Female"
+              },
+              "operator" : "equals"
+            } ]
+          }
+        } ]
+      }, {
+        "actions" : [ {
+          "details" : {
+            "answersToSkip" : [ "Between 8 to 10 gm/dl (Moderate Anaemia)", "Between 10 to 12 gm/dl (Mild Anaemia)", "13 gm/dl or more than it (Normal)", "Between 11-12.9 gm/dl (Mild Anaemia)" ],
+            "answerUuidsToSkip" : [ "5b943e5b-56c7-40b4-977d-9c9291fec8b0", "9847a475-3347-49d0-9f67-60a985003f96", "be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba", "18a31a40-5e6d-496c-93e7-d8a47fa45876" ]
+          },
+          "actionType" : "skipAnswers"
+        } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "gender"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : "Male"
+              },
+              "operator" : "equals"
+            }, {
+              "lhs" : {
+                "type" : "ageInYears"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : 10
+              },
+              "operator" : "greaterThan"
+            }, {
+              "lhs" : {
+                "type" : "ageInYears"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : 15
+              },
+              "operator" : "lessThanOrEqualTo"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      }, {
+        "actions" : [ {
+          "details" : {
+            "answersToSkip" : [ "Between 8 to 10 gm/dl (Moderate Anaemia)", "Between 10 to 12 gm/dl (Mild Anaemia)", "12 gm/dl or more than it (Normal)", "Between 11-11.9 gm/dl (Mild Anaemia)" ],
+            "answerUuidsToSkip" : [ "5b943e5b-56c7-40b4-977d-9c9291fec8b0", "9847a475-3347-49d0-9f67-60a985003f96", "559f614a-1386-4662-ba25-f2cd5017ea50", "2cc1be43-1a35-4cb6-9120-5c114c9e58c2" ]
+          },
+          "actionType" : "skipAnswers"
+        } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "gender"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : "Male"
+              },
+              "operator" : "equals"
+            }, {
+              "lhs" : {
+                "type" : "ageInYears"
+              },
+              "rhs" : {
+                "type" : "value",
+                "value" : 15
+              },
+              "operator" : "greaterThan"
+            } ],
+            "conjunction" : "and"
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    } ],
+    "display" : "Basic Details",
+    "timed" : false
+  }, {
+    "uuid" : "60b0042e-652a-428f-87bc-f8dde34f1451",
+    "name" : "Menstruation Details",
+    "displayOrder" : 2.0,
+    "formElements" : [ {
+      "name" : "Menstruation Started",
+      "uuid" : "cf6207bf-b205-4b0e-b69c-f91af6806d4b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Menstruation Started",
+        "uuid" : "8d04f53b-81c1-466a-8e98-0094b5fe55d2",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Regularity of menstruation",
+      "uuid" : "115cfa1f-2f7d-4fbb-9182-41ee30565dc3",
+      "keyValues" : [ {
+        "key" : "ExcludedAnswers",
+        "value" : [ "Menstruation Stopped", "Hysterectomy Done" ]
+      } ],
+      "concept" : {
+        "name" : "Regularity of Menstruation",
+        "uuid" : "909ffa10-31d4-4c7b-a35b-9a9323a966d7",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Irregular",
+          "uuid" : "1b00f912-6a00-4721-8e09-f76775d6c21f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Regular",
+          "uuid" : "bf3255fa-481c-46e0-b652-6d83ad523d5b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Menstruation Stopped",
+          "uuid" : "41eaf421-fea8-4644-a368-5d1ad4108da3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Hysterectomy Done",
+          "uuid" : "640d4f87-23ff-428a-ac94-02e2ae9165aa",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"8d04f53b-81c1-466a-8e98-0094b5fe55d2\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Menstruation Started",
+                "conceptUuid" : "8d04f53b-81c1-466a-8e98-0094b5fe55d2",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Duration of menstruation",
+      "uuid" : "a9221985-6532-491d-bc33-2e3bbb6888c1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Duration of Menstruation",
+        "uuid" : "68d1581c-a43d-43c1-bc14-245bf967f7ae",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "One day",
+          "uuid" : "c39614e2-57c0-43c0-b38c-7d2fbd760aef",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Two to three days",
+          "uuid" : "47a34cd4-bd8a-4331-b8d0-11ca173c8be3",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Four to six days",
+          "uuid" : "5f0139a1-8c99-44c8-a537-35118b485add",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "More than six days",
+          "uuid" : "c8111c6c-f06b-489f-846f-5ae99ba86fd1",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"8d04f53b-81c1-466a-8e98-0094b5fe55d2\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Menstruation Started",
+                "conceptUuid" : "8d04f53b-81c1-466a-8e98-0094b5fe55d2",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Other Duration of menstruation, please specify",
+      "uuid" : "b3893871-39d7-435e-b357-89a5e2c0722a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other Duration of menstruation",
+        "uuid" : "5ba4b268-0e5b-43a9-bfbd-3eeb87e201b9",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"68d1581c-a43d-43c1-bc14-245bf967f7ae\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Duration of Menstruation",
+                "conceptUuid" : "68d1581c-a43d-43c1-bc14-245bf967f7ae",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    }, {
+      "name" : "Absorbent material used most of the times",
+      "uuid" : "d87f3b06-b3a5-446d-ab86-44d1c5e55402",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Absorbent material used most of the times",
+        "uuid" : "50d64a4c-879b-4658-a722-27b43b2e9c55",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Tampons",
+          "uuid" : "54f8de75-3ab9-4a51-b81b-7a7245fc2858",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Sanitary Napkin",
+          "uuid" : "36e90a55-3674-4d29-83df-9ed550e8e1c0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Cloth",
+          "uuid" : "183b596a-5edb-4aa5-a931-beedb3c75b90",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Menstrual cup",
+          "uuid" : "d3253bc4-19a9-4be0-a372-2462298afbca",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "unique" : true,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"8d04f53b-81c1-466a-8e98-0094b5fe55d2\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Menstruation Started",
+                "conceptUuid" : "8d04f53b-81c1-466a-8e98-0094b5fe55d2",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Other absorbent material used, please specify",
+      "uuid" : "6d1e578d-55cc-4179-82f9-2b952d2cb53e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other absorbent material used",
+        "uuid" : "3059386a-abfe-42a8-9a54-7f450e13cce2",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"50d64a4c-879b-4658-a722-27b43b2e9c55\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Absorbent material used most of the times",
+                "conceptUuid" : "50d64a4c-879b-4658-a722-27b43b2e9c55",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    } ],
+    "rule" : "'use strict';\n({params, imports}) => {\n    const encounter = params.entity;\n    const moment = imports.moment;\n    const formElementGroup = params.formElementGroup;\n    const _ = imports.lodash;\n    let visibility = true;\n    return formElementGroup.formElements.map((formElement) => {\n        \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.gender.equals(\"Female\").matches();\n  \n        visibility = condition11 ;\n  \n        return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, null);\n    });\n};",
+    "declarativeRule" : [ {
+      "actions" : [ {
+        "actionType" : "showFormElementGroup"
+      }, { } ],
+      "conditions" : [ {
+        "compoundRule" : {
+          "rules" : [ {
+            "lhs" : {
+              "type" : "gender"
+            },
+            "rhs" : {
+              "type" : "value",
+              "value" : "Female"
+            },
+            "operator" : "equals"
+          } ]
+        }
+      } ]
+    } ],
+    "display" : "Menstruation Details",
+    "timed" : false
+  }, {
+    "uuid" : "929c2251-34f2-42f7-b96e-cfcd546d9b3e",
+    "name" : "Referal Details",
+    "displayOrder" : 3.0,
+    "formElements" : [ {
+      "name" : "Does the student have any of the following signs and symptom",
+      "uuid" : "ac3f7a4b-9ad9-49b3-9a7c-0c0bbfd0bafc",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the student have any of the following signs and symptom",
+        "uuid" : "53ee5884-c97a-47c4-b9ad-edb8bda6f1ea",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Unable to concentrate",
+          "uuid" : "8e68a29f-dc49-413a-a41d-9a41274bd016",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Loss of Conciousness",
+          "uuid" : "a461c5b0-20b0-4c9c-953a-83a7f0e30f64",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Pale tongue",
+          "uuid" : "a71592c2-84eb-4f1a-9ce7-80159dd78ddf",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Pale palms",
+          "uuid" : "0483aa00-ba99-40ba-aad2-84fe32bdedc5",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Shortness of breathe",
+          "uuid" : "d9298604-f301-450b-baf4-6e82ca3032e8",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "Tiredness",
+          "uuid" : "82a6bbbb-feb9-42c1-8dda-196f6c169e67",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Dizziness",
+          "uuid" : "c5df10c2-4035-4e5a-a116-600724e21ec4",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Pale nails",
+          "uuid" : "f595e34d-6d9a-447a-bf9e-31b99f79d4bd",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "Loss of apetite",
+          "uuid" : "c36bdd35-350d-45ea-b54e-e986dd517641",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other symptom,please specify",
+      "uuid" : "f8d32b07-f2b3-4e43-a987-b86c857a8bc1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other symptom",
+        "uuid" : "d260d6a8-c637-4541-af34-f6abc7217424",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"53ee5884-c97a-47c4-b9ad-edb8bda6f1ea\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student have any of the following signs and symptom",
+                "conceptUuid" : "53ee5884-c97a-47c4-b9ad-edb8bda6f1ea",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Does the student have any disability",
+      "uuid" : "a625a3cd-495d-4005-bab0-569ddd2e5160",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the student have any disability",
+        "uuid" : "87db8d45-d72b-459c-964d-e6db1e0dc159",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Mental disability",
+          "uuid" : "52588f0e-6009-43f9-a39d-0bc3d1604096",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Physical disability",
+          "uuid" : "97283fe8-a42b-480b-9596-be62e99b298d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Multiple disability",
+          "uuid" : "c25b068a-829e-4037-b20c-c26c4fd7e8ab",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Other disability ,please specify",
+      "uuid" : "7a4dda2b-6cec-4441-9596-bb785d30042b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Specify the disability",
+        "uuid" : "8605a9be-235b-4cfe-be77-63387f3e6d46",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"87db8d45-d72b-459c-964d-e6db1e0dc159\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student have any disability",
+                "conceptUuid" : "87db8d45-d72b-459c-964d-e6db1e0dc159",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Does the student referred at appropriate health facility for disability",
+      "uuid" : "6b088414-63da-4f93-a439-acf22ff54742",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the student referred at appropriate health facility for disability",
+        "uuid" : "87cb56f1-ef3e-4c17-a2bb-0a5066d46646",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"87db8d45-d72b-459c-964d-e6db1e0dc159\").containsAnswerConceptName(\"04668370-364e-42f8-a26e-2d8c50c8828d\").matches();\n  \n  visibility = !(condition11 );\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "hideFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student have any disability",
+                "conceptUuid" : "87db8d45-d72b-459c-964d-e6db1e0dc159",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "None" ],
+                "answerConceptUuids" : [ "04668370-364e-42f8-a26e-2d8c50c8828d" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Student referred for disability at which facility",
+      "uuid" : "99add204-d603-4bcf-86ae-3d3c784dbc68",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Individual referred at which facility",
+        "uuid" : "b43101cf-1c08-4504-a490-db72381e61c1",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Nearby PHC/CHC/DH",
+          "uuid" : "fb443423-7e70-4b61-8b91-b0fd7832fb42",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "VIMS",
+          "uuid" : "5365191f-83b6-437d-a75f-694ec505d06c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Atul Foundation Health Center",
+          "uuid" : "77067829-4c76-4e00-abea-3234d5bf0242",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"87cb56f1-ef3e-4c17-a2bb-0a5066d46646\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student referred at appropriate health facility for disability",
+                "conceptUuid" : "87cb56f1-ef3e-4c17-a2bb-0a5066d46646",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Other facility referred to, please specify",
+      "uuid" : "f9be7068-ce2a-4d2e-afb1-62ead60e1aca",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other facility at which individual was referred",
+        "uuid" : "0201916f-36c1-4275-a751-d2bcf739be8c",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"b43101cf-1c08-4504-a490-db72381e61c1\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Individual referred at which facility",
+                "conceptUuid" : "b43101cf-1c08-4504-a490-db72381e61c1",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Does the student have any of the following condition?",
+      "uuid" : "51122980-30a2-40c3-950b-52dd2221c309",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the student have any of the following condition?",
+        "uuid" : "8ec15bac-7460-478a-af30-07d02e2afa44",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Diabetes",
+          "uuid" : "d379a1bb-c4d8-40ec-835e-3c47ead53489",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Reactive Airway Disease",
+          "uuid" : "ae8f6521-2668-4694-a0c1-5499651cae2a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Anaemia",
+          "uuid" : "cc02f3a2-85fb-40c7-a6e7-0b9b377b771f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        }, {
+          "name" : "Dental Caries",
+          "uuid" : "ed7b7b17-d279-4256-a3e9-a7131136ca24",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Sickle cell trait",
+          "uuid" : "c60afd5f-e217-40ee-bbe2-52711d2dab37",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 11.0,
+          "active" : true
+        }, {
+          "name" : "Rheumatic Heart Disease",
+          "uuid" : "0067f89e-c5aa-408b-ac70-86ce320a665e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Sickle cell disease",
+          "uuid" : "839d5f3d-6be3-4cce-bbdd-2950e61a6c2b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "ENT",
+          "uuid" : "e5bef41b-8362-4402-b5fe-c7ba078482f6",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Cancer",
+          "uuid" : "5224c497-3719-4278-b349-ea7afaaa8240",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 15.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 14.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Thalessemia",
+          "uuid" : "1b6c6850-52d2-49f6-9f4a-eede426775b2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 12.0,
+          "active" : true
+        }, {
+          "name" : "Dermatological conditions",
+          "uuid" : "c2a73b6d-82c5-48df-bab4-34e63c07cc41",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Other Nutritional defeciency",
+          "uuid" : "d5c6f8c6-b0e6-4466-8ddf-48748b7c4652",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 13.0,
+          "active" : true
+        }, {
+          "name" : "Opthalmic condition",
+          "uuid" : "51f11c7d-9c02-44c8-bbed-f9442f078f02",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Convulsive Disorders",
+          "uuid" : "f0a968bf-86f8-4970-bd8a-9b33161f6ca2",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 8.0,
+      "type" : "MultiSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"53ee5884-c97a-47c4-b9ad-edb8bda6f1ea\").containsAnswerConceptNameOtherThan(\"04668370-364e-42f8-a26e-2d8c50c8828d\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student have any of the following signs and symptom",
+                "conceptUuid" : "53ee5884-c97a-47c4-b9ad-edb8bda6f1ea",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "None" ],
+                "answerConceptUuids" : [ "04668370-364e-42f8-a26e-2d8c50c8828d" ]
+              },
+              "operator" : "containsAnswerConceptNameOtherThan"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Other condition, please specify",
+      "uuid" : "4fac4b62-73c6-4311-9fe1-c72c1bb73a3d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other condition",
+        "uuid" : "3fa5da7a-31cd-45f8-bfef-c590fb13774c",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"8ec15bac-7460-478a-af30-07d02e2afa44\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student have any of the following condition?",
+                "conceptUuid" : "8ec15bac-7460-478a-af30-07d02e2afa44",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    }, {
+      "name" : "Does the student referred at approriate health facility for the prevailing condition?",
+      "uuid" : "86434e42-a728-4c55-a175-4a6e7bc0c4d2",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the student referred at approriate health facility for the prevailing condition?",
+        "uuid" : "c4f50666-3b83-4d38-9116-36daba663b10",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"8ec15bac-7460-478a-af30-07d02e2afa44\").containsAnswerConceptNameOtherThan(\"04668370-364e-42f8-a26e-2d8c50c8828d\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student have any of the following condition?",
+                "conceptUuid" : "8ec15bac-7460-478a-af30-07d02e2afa44",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "None" ],
+                "answerConceptUuids" : [ "04668370-364e-42f8-a26e-2d8c50c8828d" ]
+              },
+              "operator" : "containsAnswerConceptNameOtherThan"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Student referred for prevailing condition at which facility?",
+      "uuid" : "22833570-06e9-46c9-a787-e0c8fc946fb6",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Student referred for prevailing condition at which facility",
+        "uuid" : "7d1dcbfc-f815-427c-8f0a-836d3e237de8",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Other",
+          "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "VIMS",
+          "uuid" : "5365191f-83b6-437d-a75f-694ec505d06c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Atul Foundation Health Center",
+          "uuid" : "77067829-4c76-4e00-abea-3234d5bf0242",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "Nearby PHC/CHC/DH",
+          "uuid" : "fb443423-7e70-4b61-8b91-b0fd7832fb42",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"c4f50666-3b83-4d38-9116-36daba663b10\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student referred at approriate health facility for the prevailing condition?",
+                "conceptUuid" : "c4f50666-3b83-4d38-9116-36daba663b10",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    }, {
+      "name" : "Other facility referred to, please specify",
+      "uuid" : "da972a4d-20ab-465f-9c48-dd3026d31117",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Other facility referred to for prevailing condition",
+        "uuid" : "918fc569-4206-42cf-a99c-acf6f2d9fb22",
+        "dataType" : "Text",
+        "answers" : [ ],
+        "active" : true
+      },
+      "displayOrder" : 12.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"c4f50666-3b83-4d38-9116-36daba663b10\").containsAnswerConceptName(\"cf383e34-8ed9-47bd-9e86-41f726773a1f\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "Does the student referred at approriate health facility for the prevailing condition?",
+                "conceptUuid" : "c4f50666-3b83-4d38-9116-36daba663b10",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Other" ],
+                "answerConceptUuids" : [ "cf383e34-8ed9-47bd-9e86-41f726773a1f" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : true
+    } ],
+    "display" : "Referal Details",
+    "timed" : false
+  }, {
+    "uuid" : "bee7cc9e-49cb-4372-9e5e-f7f38db15441",
+    "name" : "Other Details",
+    "displayOrder" : 4.0,
+    "formElements" : [ {
+      "name" : "Personal Hygiene",
+      "uuid" : "eeb63c53-c078-4773-975c-26975f7214cb",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Personal Hygiene",
+        "uuid" : "50ef3a01-0afb-438b-93a4-cef56ecb044b",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Clean clothing",
+          "uuid" : "c99025c6-1053-4434-9d8c-5beab88dc159",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "Teeths looks clean",
+          "uuid" : "e94bb7bb-f5c9-41a2-8f05-3233b0d5984a",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        }, {
+          "name" : "Nails properly maintained",
+          "uuid" : "4257933c-c650-4581-8807-fa8730d979de",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Takes bath daily",
+          "uuid" : "6187ed92-8b28-4bce-a8ef-eff15c83858b",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Clean Hair",
+          "uuid" : "3c941d3d-acb7-47c5-a386-195c2d04d10e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Is student a Peer Educator",
+      "uuid" : "5756821c-62fd-4b14-9bc9-d7bcbb432049",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is student a Peer Educator",
+        "uuid" : "bfa7b5fe-b0e2-47e7-882b-496e644b2cda",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        }, {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ],
+    "display" : "Other Details",
+    "timed" : false
+  }, {
+    "uuid" : "3d868b84-14df-4235-940c-170d76cdcaa8",
+    "name" : "Medicine",
+    "displayOrder" : 5.0,
+    "formElements" : [ {
+      "name" : "IFA Tablets given during current visit",
+      "uuid" : "868c05f3-a764-4527-afe9-39d58e65d013",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "IFA Tablets given during current visit",
+        "uuid" : "25dccb89-30b3-4294-b8fe-ce8cfa2da138",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "No. of IFA Tablets given in current visit",
+      "uuid" : "b6a7f228-9dc0-4e4f-aa13-fa01022dd1b8",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "No. of IFA Tablets given in current visit",
+        "uuid" : "197a6f42-ed70-4bf9-8f3c-98c9466c2031",
+        "dataType" : "Numeric",
+        "answers" : [ ],
+        "lowAbsolute" : 0.0,
+        "active" : true
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const encounter = params.entity;\n  const moment = imports.moment;\n  const formElement = params.formElement;\n  const _ = imports.lodash;\n  let visibility = true;\n  let value = null;\n  let answersToSkip = [];\n  let validationErrors = [];\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({encounter, formElement}).when.valueInEncounter(\"25dccb89-30b3-4294-b8fe-ce8cfa2da138\").containsAnswerConceptName(\"f7a3a360-58d3-4987-99ff-e7fb97f911a0\").matches();\n  \n  visibility = condition11 ;\n  \n  return new imports.rulesConfig.FormElementStatus(formElement.uuid, visibility, value, answersToSkip, validationErrors);\n};",
+      "declarativeRule" : [ {
+        "actions" : [ {
+          "actionType" : "showFormElement"
+        }, { } ],
+        "conditions" : [ {
+          "compoundRule" : {
+            "rules" : [ {
+              "lhs" : {
+                "type" : "concept",
+                "scope" : "encounter",
+                "conceptName" : "IFA Tablets given during current visit",
+                "conceptUuid" : "25dccb89-30b3-4294-b8fe-ce8cfa2da138",
+                "conceptDataType" : "Coded"
+              },
+              "rhs" : {
+                "type" : "answerConcept",
+                "answerConceptNames" : [ "Yes" ],
+                "answerConceptUuids" : [ "f7a3a360-58d3-4987-99ff-e7fb97f911a0" ]
+              },
+              "operator" : "containsAnswerConceptName"
+            } ]
+          }
+        } ]
+      } ],
+      "mandatory" : false
+    }, {
+      "name" : "Does the Albendazole Tablet given during current visit?",
+      "uuid" : "4ec0baa7-3d25-43ec-bcd8-effd1052c156",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Does the Albendazole Tablet given during current visit?",
+        "uuid" : "330743a1-82d1-4a94-a91d-4d2e15a3a325",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "No",
+          "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "Yes",
+          "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 0.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ],
+    "display" : "Medicine",
+    "timed" : false
+  }, {
+    "uuid" : "4c4a7fd3-8525-4cb5-90e7-22b4889caee4",
+    "name" : "Counseling Points",
+    "displayOrder" : 6.0,
+    "formElements" : [ {
+      "name" : "Counseling given on",
+      "uuid" : "5b495206-8c9e-4bc4-9abe-9d62a829d72e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Counselling given on",
+        "uuid" : "4669ef42-aa4d-4ffc-aef4-db2492f0e905",
+        "dataType" : "Coded",
+        "answers" : [ {
+          "name" : "IFA Tablet consumption",
+          "uuid" : "d57d1d2a-5bfb-4453-bdff-9c97938ab164",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 1.0,
+          "active" : true
+        }, {
+          "name" : "All of the above",
+          "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 11.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "None",
+          "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 12.0,
+          "unique" : true,
+          "active" : true
+        }, {
+          "name" : "Adequate sleep of 7-8 hours",
+          "uuid" : "8d4bbe65-e93c-4ef7-a005-e55aa5ee7742",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 3.0,
+          "active" : true
+        }, {
+          "name" : "Doing regular physical activity for minimum 1 hour",
+          "uuid" : "20b20ad8-2363-4c05-b1e0-14da604a415c",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 6.0,
+          "active" : true
+        }, {
+          "name" : "To stop doing addiction",
+          "uuid" : "64bc1d99-1efe-43b7-ade5-f68758472b7d",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 7.0,
+          "active" : true
+        }, {
+          "name" : "Dietary diversity",
+          "uuid" : "68dcc3d8-0c91-4799-9e04-e2d411df17af",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 10.0,
+          "active" : true
+        }, {
+          "name" : "Drinking 2 to 2.5 liters of water daily",
+          "uuid" : "b10f68bb-04b2-44fb-a2cd-1ba09ba6c658",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 4.0,
+          "active" : true
+        }, {
+          "name" : "Menstrual health and hygiene",
+          "uuid" : "3683a95b-2348-43f5-b8be-06d76f04bb98",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 9.0,
+          "active" : true
+        }, {
+          "name" : "Personal hygiene",
+          "uuid" : "f6204be8-37d2-4b9b-9486-5ba0828887f6",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 5.0,
+          "active" : true
+        }, {
+          "name" : "To reduce screen time less than 2 hours",
+          "uuid" : "e14ea09d-0ae3-4e74-852d-397898bde2ac",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 8.0,
+          "active" : true
+        }, {
+          "name" : "Balanced diet",
+          "uuid" : "25b9aa40-fc25-4730-b7e7-508aed867808",
+          "dataType" : "NA",
+          "answers" : [ ],
+          "order" : 2.0,
+          "active" : true
+        } ],
+        "active" : true
+      },
+      "displayOrder" : 1.0,
+      "type" : "MultiSelect",
+      "mandatory" : true
+    } ],
+    "display" : "Counseling Points",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ]
+}

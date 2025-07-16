@@ -1,0 +1,32 @@
+[ {
+  "uuid" : "54f75d43-503b-4ac1-b3bf-a8cc2f19f0e9",
+  "id" : 106,
+  "name" : "Cluster Incharge"
+}, {
+  "uuid" : "e4d8212c-1fe2-45f4-9eab-a7f03c92ca6a",
+  "id" : 108,
+  "name" : "Supervisors"
+}, {
+  "uuid" : "6c4f90df-e806-47bb-ad53-c8acc726db7e",
+  "id" : 300,
+  "name" : "Saheli (voided~300)",
+  "voided" : true
+}, {
+  "uuid" : "1f06a9a3-24a0-4c53-9184-8cc068618fad",
+  "id" : 385,
+  "name" : "Saheli",
+  "voided" : true
+}, {
+  "uuid" : "31ceb93f-3efc-4de5-8913-41446137abc2",
+  "id" : 105,
+  "name" : "Everyone",
+  "notEveryoneGroup" : false
+}, {
+  "uuid" : "78f1c7ac-8757-4161-95fb-c86d64651419",
+  "id" : 107,
+  "name" : "Head Quarter"
+}, {
+  "uuid" : "9d9d8e3b-3107-4a70-a909-8c93b9aebb46",
+  "id" : 798,
+  "name" : "test"
+} ]

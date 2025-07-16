@@ -1,0 +1,8 @@
+{
+  "name" : "Claim Legal Fund Encounter Cancellation (voided~10999)",
+  "uuid" : "4fef3d2a-1845-4724-a9ba-2cf7cdd919a4",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

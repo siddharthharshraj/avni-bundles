@@ -1,0 +1,7 @@
+{
+  "name" : "Claim Status Details Encounter Cancellation",
+  "uuid" : "65d5a714-1587-4fdf-934c-ad4734e0e9ce",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

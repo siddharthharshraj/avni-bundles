@@ -1,0 +1,19 @@
+{
+  "name" : "Village area inputs Registration (voided~3770)",
+  "uuid" : "c5206443-376b-46c6-9089-7c1f1d1a4865",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "104e3c71-b8a2-4e55-93bf-6887834b71f1",
+    "name" : "Details",
+    "displayOrder" : 1.0,
+    "formElements" : [ ],
+    "display" : "Details",
+    "timed" : false
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : "",
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

@@ -1,0 +1,6526 @@
+[ {
+  "name" : "10th",
+  "uuid" : "9499b6fd-d6a7-48b8-ac3a-410a87790f71",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "11th",
+  "uuid" : "a798e63d-94cd-41a4-9444-11a6ec265181",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "12 gm/dl or more than it (Normal)",
+  "uuid" : "559f614a-1386-4662-ba25-f2cd5017ea50",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "12 months",
+  "uuid" : "1ceae09b-ff3b-4be2-82f4-9ded1099255b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "12th",
+  "uuid" : "8b6bf669-b1cd-44fa-b1cb-657bc281b657",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "13 gm/dl or more than it (Normal)",
+  "uuid" : "be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "14th day",
+  "uuid" : "7691df53-e38b-4f04-9243-edc85773cde3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "15 months",
+  "uuid" : "3d20feea-f568-4e3f-aeab-953b86fca230",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "18 months",
+  "uuid" : "b043b36b-d432-464d-94bc-199435dfa0b0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "21 months",
+  "uuid" : "7a335fcb-b62f-45d3-bf9a-6164a216a210",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "24 hours dietary diversity",
+  "uuid" : "87a52932-4efe-46a9-8e58-5f92372079b3",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Grains, white roots and tubers, and plantains",
+    "uuid" : "e8cb4e4e-681f-40c9-bf2e-c34404cd2573",
+    "order" : 0.0
+  }, {
+    "name" : "Pulses (beans, peas and lentils)",
+    "uuid" : "179f313b-916b-4819-8c94-f7c8444130cb",
+    "order" : 1.0
+  }, {
+    "name" : "Dairy",
+    "uuid" : "23962ba6-d40a-492c-ba81-9175eb23526e",
+    "order" : 2.0
+  }, {
+    "name" : "Nuts and seeds",
+    "uuid" : "8f7b5bfc-001d-4cad-8422-7c46ec843d03",
+    "order" : 3.0
+  }, {
+    "name" : "Meat, poultry and fish",
+    "uuid" : "9cfbde36-75f9-405b-bc43-724726f471c4",
+    "order" : 4.0
+  }, {
+    "name" : "Eggs",
+    "uuid" : "71f08417-3d21-4416-8d45-cb51150c8c59",
+    "order" : 5.0
+  }, {
+    "name" : "Dark green leafy vegetables",
+    "uuid" : "d70220f3-0636-4b0a-b30b-53ce4ceac5f3",
+    "order" : 6.0
+  }, {
+    "name" : "Other vitamin A-rich fruits and vegetables",
+    "uuid" : "f2eb59c2-7a22-42a1-b507-8625b90163ad",
+    "order" : 7.0
+  }, {
+    "name" : "Other vegetables",
+    "uuid" : "4f3c99b3-be27-46e6-8120-af849b068613",
+    "order" : 8.0
+  }, {
+    "name" : "Other fruits",
+    "uuid" : "cda106d1-823a-428c-b957-342d25a389dc",
+    "order" : 9.0
+  }, {
+    "name" : "Yesterday was a fasting day",
+    "uuid" : "8d0e23dc-9e7c-4d29-ab5f-66d8b873bbda",
+    "order" : 10.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 11.0
+  } ]
+}, {
+  "name" : "24 months",
+  "uuid" : "2352137b-6b3b-4acb-b4a3-f409ba5595d0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "28th day",
+  "uuid" : "9a9d20f2-2a8d-47ef-9b4f-5135adecbaf8",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "2nd day",
+  "uuid" : "e7b173ca-3a81-4412-a4b1-310555ca09e1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "3 months",
+  "uuid" : "4247c9be-aa71-4113-8291-52af4edd0755",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "42 kg of body weight after 6 months of pregnancy",
+  "uuid" : "6a663e98-3f98-4f53-a59e-b4c6f2400476",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "5th",
+  "uuid" : "c188c654-9954-4d7f-b405-0593ac751b0b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "6 months",
+  "uuid" : "5d4e83f9-7a48-41ee-884e-4f21f74c6c64",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "6th",
+  "uuid" : "db0954dc-c97d-4d8d-aad2-495b04b3c756",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "7th",
+  "uuid" : "c2df3edc-d6d1-4d86-ab37-562376b91bcd",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "8 gm/dl or less than it (Severe Anaemia)",
+  "uuid" : "f015ffb9-babc-434f-87d1-d46c1a52fa2d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "8th",
+  "uuid" : "c24ae217-68f9-4543-a331-55f0606613c8",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "9 months",
+  "uuid" : "4caef0f8-0447-4d48-8476-353330f64737",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "9th",
+  "uuid" : "953850f9-3c4d-410e-880b-923c41921065",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "< -2 SD (Thinness)",
+  "uuid" : "86ed346c-8bcd-41cd-a2d3-e9d71a220b60",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "< -3 SD (Severe Thinness)",
+  "uuid" : "b6acff0e-0590-4805-9728-2abd93496f7e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "> +1 SD (Overweight)",
+  "uuid" : "359f80bc-ba81-4524-b47d-2bdc75a9fdc3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "> +2 SD (Obesity)",
+  "uuid" : "c20c4c4d-2925-4404-8f43-ccc62f226a2f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "> -1 to < +1 SD (Normal)",
+  "uuid" : "7cf9b113-6701-429e-aa30-0e37b9e88aea",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Abortion",
+  "uuid" : "a5ba697c-59cb-4880-9dd1-0b58d0aa71f2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Absorbent material used most of the times",
+  "uuid" : "50d64a4c-879b-4658-a722-27b43b2e9c55",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Sanitary Napkin",
+    "uuid" : "36e90a55-3674-4d29-83df-9ed550e8e1c0",
+    "order" : 1.0
+  }, {
+    "name" : "Cloth",
+    "uuid" : "183b596a-5edb-4aa5-a931-beedb3c75b90",
+    "order" : 2.0
+  }, {
+    "name" : "Tampons",
+    "uuid" : "54f8de75-3ab9-4a51-b81b-7a7245fc2858",
+    "order" : 3.0
+  }, {
+    "name" : "Menstrual cup",
+    "uuid" : "d3253bc4-19a9-4be0-a372-2462298afbca",
+    "order" : 4.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 5.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Addiction",
+  "uuid" : "00ea2de6-9bce-4d49-8c47-36febab57c2c",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 0.0
+  }, {
+    "name" : "Tobacco",
+    "uuid" : "42f6b5be-9769-4665-9d95-aa5b4f967f8e",
+    "order" : 1.0
+  }, {
+    "name" : "Smoking",
+    "uuid" : "b2dd9cf8-c117-426d-9419-94391ba41e3c",
+    "order" : 2.0
+  }, {
+    "name" : "Alcohol",
+    "uuid" : "ce110fdf-bd7c-4ace-bb00-37eea1b565bf",
+    "order" : 3.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Adequate sleep of 7-8 hours",
+  "uuid" : "8d4bbe65-e93c-4ef7-a005-e55aa5ee7742",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "After 15 days",
+  "uuid" : "d1aa3722-0736-4ae7-967b-d7eb0dd7449b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "After 30 days",
+  "uuid" : "8429e030-cc24-4f87-9237-529728d97690",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "After 7th month",
+  "uuid" : "6a7baecd-ce57-4ffc-8886-a620c500e32d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "After seven days",
+  "uuid" : "882e4b89-4ee1-4dfa-b500-3755a0f0f5ac",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Age",
+  "uuid" : "9c95e9d3-fec6-4495-b775-8b93b27a7f84",
+  "dataType" : "Numeric",
+  "unit" : "Year",
+  "active" : true
+}, {
+  "name" : "Age - student",
+  "uuid" : "2db2f4f3-0842-4dd6-bf0c-487ca19b524d",
+  "dataType" : "Numeric",
+  "unit" : "Years",
+  "active" : true
+}, {
+  "name" : "Alcohol",
+  "uuid" : "ce110fdf-bd7c-4ace-bb00-37eea1b565bf",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "All of the above",
+  "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Alternate Contact Number",
+  "uuid" : "26d01ac4-215a-419f-8181-3812fb36831e",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Ambassador name",
+  "uuid" : "ad671168-0245-4648-ac8c-610274e13141",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Anaemia",
+  "uuid" : "cc02f3a2-85fb-40c7-a6e7-0b9b377b771f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Anemia screening in school is done by whom",
+  "uuid" : "28001aee-ffa2-4879-92ec-7c7fc225801b",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Atul Foundation",
+    "uuid" : "1386776e-b8fb-472f-a159-4bf2e078ec9e",
+    "order" : 1.0
+  }, {
+    "name" : "Nearby Primary Health Center",
+    "uuid" : "704a7845-9c96-493a-94f3-cadb02875b4d",
+    "order" : 2.0
+  }, {
+    "name" : "RBSK team",
+    "uuid" : "a7e9b69e-e504-4ffd-bfaf-98cda73fa5d1",
+    "order" : 3.0
+  }, {
+    "name" : "NGO/Trust",
+    "uuid" : "73053b69-5d59-490b-9d6f-a8465fbb5bf3",
+    "order" : 4.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "Annual Income of the individual",
+  "uuid" : "d9eb0450-970b-483a-bfeb-aeca8a780e30",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Antara injection",
+  "uuid" : "1ca9a803-32fb-451e-80eb-48cdf3435b56",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Any complications in current pregnancy",
+  "uuid" : "c4e4f2fc-0e1f-4aab-8b09-34b9bbc50971",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Anaemia",
+    "uuid" : "cc02f3a2-85fb-40c7-a6e7-0b9b377b771f",
+    "order" : 0.0
+  }, {
+    "name" : "Convulsions",
+    "uuid" : "89d134e2-2e97-44a6-ba50-44d34450d9b2",
+    "order" : 1.0
+  }, {
+    "name" : "Gestational Diabetes",
+    "uuid" : "716fa411-5c69-4b0a-b152-a3dd73daeef5",
+    "order" : 2.0
+  }, {
+    "name" : "HIV",
+    "uuid" : "cbdeaa97-a23f-42a6-b933-89bbdf502e54",
+    "order" : 3.0
+  }, {
+    "name" : "Triplets",
+    "uuid" : "4969b823-9550-4447-b9cc-cd3c1ebeaa87",
+    "order" : 4.0
+  }, {
+    "name" : "Sickle cell Trait",
+    "uuid" : "5a200ef2-47b1-40d9-921e-01aad465e153",
+    "order" : 5.0
+  }, {
+    "name" : "Sickle cell disease",
+    "uuid" : "839d5f3d-6be3-4cce-bbdd-2950e61a6c2b",
+    "order" : 6.0
+  }, {
+    "name" : "Thalessemia",
+    "uuid" : "1b6c6850-52d2-49f6-9f4a-eede426775b2",
+    "order" : 7.0
+  }, {
+    "name" : "Hemophilia",
+    "uuid" : "b1de0d13-c5d5-4d84-8f79-7cdeadfbe6a7",
+    "order" : 8.0
+  }, {
+    "name" : "Multi Drug Resistant (MDR) TB",
+    "uuid" : "c50b4013-dae2-43fa-b96f-ae648f71a57b",
+    "order" : 9.0
+  }, {
+    "name" : "Previous two C-Section",
+    "uuid" : "12c39fe5-9f16-4951-aae4-ff4abde1ad30",
+    "order" : 10.0
+  }, {
+    "name" : "Chronic Kidney Disease (CKD Grade 2 or more)",
+    "uuid" : "5ff7417e-e566-4782-b7ba-4f63acb35248",
+    "order" : 11.0
+  }, {
+    "name" : "BMI less than 17",
+    "uuid" : "d97dd33f-677d-4bb7-bab8-96ffe96cbcb1",
+    "order" : 12.0
+  }, {
+    "name" : "42 kg of body weight after 6 months of pregnancy",
+    "uuid" : "6a663e98-3f98-4f53-a59e-b4c6f2400476",
+    "order" : 13.0
+  }, {
+    "name" : "In two ANC checkup, Hb level 6.5 g/dl or less",
+    "uuid" : "97d4d1b3-d22e-4e1b-b56d-390bc1608a8c",
+    "order" : 14.0
+  }, {
+    "name" : "Protenuria in urine test",
+    "uuid" : "6c2750e3-d733-4fc3-878c-a561a1d92c8d",
+    "order" : 15.0
+  }, {
+    "name" : "In three checkups, BP 180/110 mm/Hg or more",
+    "uuid" : "5a55ba20-ffce-4476-8be7-06575e33d598",
+    "order" : 16.0
+  }, {
+    "name" : "Placenta Previa",
+    "uuid" : "403b39cf-e187-41f0-a1e5-b3d746fe01b1",
+    "order" : 17.0
+  }, {
+    "name" : "Heart Valve Replacement | Ballon Valvotomy",
+    "uuid" : "c9b1faaf-e897-4b2a-b756-c859ef8f7f2b",
+    "order" : 18.0
+  }, {
+    "name" : "Severe Mitral valve stenosis | Mitral regurgitation with pulmonary hypertension",
+    "uuid" : "f88dbf78-30e0-4c90-b974-cba1e450bef9",
+    "order" : 19.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 20.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 21.0
+  } ]
+}, {
+  "name" : "Are family members using slippers for toilet",
+  "uuid" : "90b194a6-782c-4b3b-8c6c-3230032eeb50",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "ASHA worker",
+  "uuid" : "869ededb-366e-4abc-9380-cbc5afd6386a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Ashramshala",
+  "uuid" : "d9b3fdbf-d1ed-4a46-9cb6-a45566993572",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "At eight month",
+  "uuid" : "2aa4a5df-ac7b-424c-a4a2-2eebed4a8356",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "At seventh month",
+  "uuid" : "f79e3475-0a0e-4b79-80e3-2fe25ad5494e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "At the end of 5th month",
+  "uuid" : "5c5cfaef-22b9-4330-a403-0d7765a9c363",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "At the end of 6th month",
+  "uuid" : "ecda9846-b4f3-41ea-b8ef-5642a72eeb28",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "At what frequency water filter is cleaned",
+  "uuid" : "4acd4ece-8d43-46d4-a899-424f240a3880",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Once in a month",
+    "uuid" : "2d138057-5396-43e6-bfde-c667a08ecb35",
+    "order" : 0.0
+  }, {
+    "name" : "Once in a two month",
+    "uuid" : "bbb0ed2d-5e8f-4642-89de-294cb724ffe1",
+    "order" : 1.0
+  }, {
+    "name" : "Once in a three month",
+    "uuid" : "deb121d8-a1cf-49f2-97dd-feea51f26eec",
+    "order" : 2.0
+  }, {
+    "name" : "Once in a six month",
+    "uuid" : "a8cc8386-d36a-478f-b4d4-a10e1ab99451",
+    "order" : 3.0
+  }, {
+    "name" : "Once in a year",
+    "uuid" : "cf572a07-6afa-4595-8887-95c5b3f59b57",
+    "order" : 4.0
+  }, {
+    "name" : "Don't know",
+    "uuid" : "cd6fee70-ea67-42d0-948a-41e6150ac6a4",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "Atul Foundation",
+  "uuid" : "1386776e-b8fb-472f-a159-4bf2e078ec9e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Atul Foundation Health Center",
+  "uuid" : "77067829-4c76-4e00-abea-3234d5bf0242",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Atul Foundation team",
+  "uuid" : "5fcb8e11-d8ed-4557-8147-dc5d22630099",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Availability of drinking water facility",
+  "uuid" : "a0b1a99b-2d52-42d3-aacc-c07cab9ee4e3",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of Fire Extinguishers",
+  "uuid" : "135caccc-d2bd-4acd-aa1e-ddbb15435279",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of First Aid Kit in the school",
+  "uuid" : "647a6025-9975-4653-bb8e-8939bc82ae30",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of health/food/safety guidelines in the school",
+  "uuid" : "2ddf612f-488c-41c1-a3ed-457d559f3582",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of playground in the school",
+  "uuid" : "74b540d0-46f9-4d0a-80de-0a3303440f2e",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of PMJAY card",
+  "uuid" : "67e13345-5aa0-4c80-b592-af2edadff3b1",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of proper airway and light in the classrooms",
+  "uuid" : "03800c80-4fe1-403c-9fa0-e14234b311a0",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of proper airway and light in the house",
+  "uuid" : "feebcf54-fd1a-446c-b668-3ab3d37915e4",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of Sanitary napkins is through",
+  "uuid" : "314777c3-91f3-43ca-a175-3cdefdeecaf1",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Vending Machine",
+    "uuid" : "44f71cfa-2386-4fc2-a89b-6830051ae45d",
+    "order" : 0.0
+  }, {
+    "name" : "Distribution by nearby PHC",
+    "uuid" : "1de3bf86-3186-4151-acdf-d5ffe63afe23",
+    "order" : 1.0
+  }, {
+    "name" : "Atul Foundation",
+    "uuid" : "1386776e-b8fb-472f-a159-4bf2e078ec9e",
+    "order" : 2.0
+  }, {
+    "name" : "NGO/Trust",
+    "uuid" : "73053b69-5d59-490b-9d6f-a8465fbb5bf3",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Availability of toilet facility for boys in school",
+  "uuid" : "f595fa00-5040-44d0-ad43-874ebc434272",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of toilet facility for girls in school",
+  "uuid" : "cec751e4-bed5-489d-9e51-f11c8c082b9c",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 1.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Availability of waste management in the school",
+  "uuid" : "6091a23e-6cc2-48e9-9fa0-585fa6766de5",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of water in boys toilet",
+  "uuid" : "d4d573b5-65f2-450e-9191-69e7cf8183a4",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of water in girls toilet",
+  "uuid" : "f5635945-26ac-48a8-ac6e-4681986ca9b0",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availability of water tank",
+  "uuid" : "796a5be9-d5e2-47d0-bd4e-c59ffea410b9",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Availabilty of waste management in the house",
+  "uuid" : "431f0359-4a87-410b-9a54-93a42cfbcb94",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Awareness activity",
+  "uuid" : "2a337eb2-fab0-4839-b51d-96584b44a0b1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Balanced diet",
+  "uuid" : "25b9aa40-fc25-4730-b7e7-508aed867808",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Baseline",
+  "uuid" : "b80db782-fb8f-4987-9997-3796dff34326",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "BCG",
+  "uuid" : "43a460bc-be37-4e14-a155-472fa9a0fe43",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Beans, peas, lentils, nuts and seeds",
+  "uuid" : "7ab424c7-15da-4595-8119-5dfe2e312643",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Before 5th month",
+  "uuid" : "495ec0c4-7845-435d-8570-86d791d36ee2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Between 10 to 12 gm/dl (Mild Anaemia)",
+  "uuid" : "9847a475-3347-49d0-9f67-60a985003f96",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Between 11-11.9 gm/dl (Mild Anaemia)",
+  "uuid" : "2cc1be43-1a35-4cb6-9120-5c114c9e58c2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Between 11-12.9 gm/dl (Mild Anaemia)",
+  "uuid" : "18a31a40-5e6d-496c-93e7-d8a47fa45876",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Between 8 to 10 gm/dl (Moderate Anaemia)",
+  "uuid" : "5b943e5b-56c7-40b4-977d-9c9291fec8b0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Between 8 to 10.9 gm/dl (Moderate Anaemia)",
+  "uuid" : "f2ce9989-d20c-4fe9-895b-c00ab9b5690e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Birth Weight",
+  "uuid" : "25150de8-0cbb-4ca9-82fe-0ae20a598709",
+  "dataType" : "Numeric",
+  "highAbsolute" : 10.0,
+  "unit" : "Kg",
+  "active" : true
+}, {
+  "name" : "BMI",
+  "uuid" : "b51a5257-4e8f-438e-9181-b8aaa504ee77",
+  "dataType" : "Numeric",
+  "unit" : "kg/m^2",
+  "active" : true
+}, {
+  "name" : "BMI less than 17",
+  "uuid" : "d97dd33f-677d-4bb7-bab8-96ffe96cbcb1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Bore Well",
+  "uuid" : "d34fd81a-cda0-4f8a-80d9-807716865465",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Both",
+  "uuid" : "fe0b8958-42d0-465d-8a01-954c703ee451",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Both are not available",
+  "uuid" : "b7ab6e2b-16dd-422e-b659-0cb62b6720e5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Breast milk",
+  "uuid" : "877f801f-07c2-4636-9ce9-20b3fdc2f053",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Breastfeeding techniques",
+  "uuid" : "2b2403cc-0c1e-4b02-b66d-1f6c8bcb96ab",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Buddhism",
+  "uuid" : "1e94597e-31da-45ff-b74b-9f288d6c4f3b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "By whom Albendazole tablets provided twice a year",
+  "uuid" : "7c66e4db-d53e-4243-adfb-7d2a8e5db6ed",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Atul Foundation team",
+    "uuid" : "5fcb8e11-d8ed-4557-8147-dc5d22630099",
+    "order" : 0.0
+  }, {
+    "name" : "ASHA worker",
+    "uuid" : "869ededb-366e-4abc-9380-cbc5afd6386a",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "By whom IFA tablets provided on every Wednesday",
+  "uuid" : "b43a715f-41f8-42b0-a5c7-f3fdd30f523e",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Atul Foundation team",
+    "uuid" : "5fcb8e11-d8ed-4557-8147-dc5d22630099",
+    "order" : 0.0
+  }, {
+    "name" : "ASHA worker",
+    "uuid" : "869ededb-366e-4abc-9380-cbc5afd6386a",
+    "order" : 1.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "By whom, Albendazole tablets provided twice a year",
+  "uuid" : "10e64161-9c11-4807-b4e4-2809fd92b4e0",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Atul Foundation team",
+    "uuid" : "5fcb8e11-d8ed-4557-8147-dc5d22630099",
+    "order" : 0.0
+  }, {
+    "name" : "ASHA worker",
+    "uuid" : "869ededb-366e-4abc-9380-cbc5afd6386a",
+    "order" : 1.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "By whom, IFA tablets provided on every Wednesday",
+  "uuid" : "aadddee1-6577-434f-a403-367b418299a3",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Atul Foundation team",
+    "uuid" : "5fcb8e11-d8ed-4557-8147-dc5d22630099",
+    "order" : 0.0
+  }, {
+    "name" : "ASHA worker",
+    "uuid" : "869ededb-366e-4abc-9380-cbc5afd6386a",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "C - Section",
+  "uuid" : "6e34cc58-26de-4480-a38d-a828e6213d76",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Cancer",
+  "uuid" : "5224c497-3719-4278-b349-ea7afaaa8240",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Caste",
+  "uuid" : "8c5650ae-40f8-4689-9032-1257d6ce8c1e",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "General",
+    "uuid" : "5e10659f-5fc3-4952-8c4d-b51ea2c2a231",
+    "order" : 0.0
+  }, {
+    "name" : "SC",
+    "uuid" : "3d40dc41-e208-42bf-90e3-5e4aab7754b9",
+    "order" : 1.0
+  }, {
+    "name" : "ST",
+    "uuid" : "7e2ebb6e-0401-4b6f-8efe-dd09be78a41d",
+    "order" : 2.0
+  }, {
+    "name" : "OBC",
+    "uuid" : "353b02e4-7226-41cd-b7fa-7d17360758c9",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Casual workers/ daily wage earners",
+  "uuid" : "1231ca81-eda3-4ff6-ab0e-91be28269f34",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Cerelac",
+  "uuid" : "8ece7e2c-2499-43d2-ad59-5be8f47d334c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Certificate course",
+  "uuid" : "e891933e-85ed-4c18-84fc-63c2c358b592",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Chhaya pills",
+  "uuid" : "5950dbbe-0f02-4c3a-800a-b08ed7e0b5da",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Child death",
+  "uuid" : "91432b1c-6e04-41b6-81a4-3404635d300d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Child gender detail",
+  "uuid" : "9df5314f-964b-419a-a0b1-c0a2133fd71d",
+  "dataType" : "QuestionGroup",
+  "active" : true
+}, {
+  "name" : "Child Health",
+  "uuid" : "92f02a70-da6f-4bd5-ad2d-910ccf22be08",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Cholesterol",
+  "uuid" : "7531fab3-2f94-4b69-88f4-8feb1cf2e1da",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Christianity",
+  "uuid" : "2469017b-a685-4354-b000-3972411355aa",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Chronic Kidney Disease (CKD Grade 2 or more)",
+  "uuid" : "5ff7417e-e566-4782-b7ba-4f63acb35248",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Class Divison",
+  "uuid" : "8daf379b-d180-4463-9829-2d7609d712f4",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Clean clothing",
+  "uuid" : "c99025c6-1053-4434-9d8c-5beab88dc159",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Clean Hair",
+  "uuid" : "3c941d3d-acb7-47c5-a386-195c2d04d10e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Cleanliness level of the classrooms",
+  "uuid" : "dbd5b007-0aba-4c48-aad1-3f9a8a863e3d",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Level - 1 (Extremely Clean)",
+    "uuid" : "02daae25-c837-4eb1-a2d3-c69619f22ee6",
+    "order" : 0.0
+  }, {
+    "name" : "Level - 2 (Not very Dirty)",
+    "uuid" : "76bd3fdf-1c7e-406b-881d-e6268fb2821b",
+    "order" : 1.0
+  }, {
+    "name" : "Level - 3 (Quite Dirty)",
+    "uuid" : "8a0de0dc-3be0-4225-8e99-836b538507ad",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Cleanliness level of the house",
+  "uuid" : "6b4e1429-7d74-41e6-9e2a-b1905d945be2",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Level - 1 (Extremely Clean)",
+    "uuid" : "02daae25-c837-4eb1-a2d3-c69619f22ee6",
+    "order" : 0.0
+  }, {
+    "name" : "Level - 2 (Not very Dirty)",
+    "uuid" : "76bd3fdf-1c7e-406b-881d-e6268fb2821b",
+    "order" : 1.0
+  }, {
+    "name" : "Level - 3 (Quite Dirty)",
+    "uuid" : "8a0de0dc-3be0-4225-8e99-836b538507ad",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Cleft Lip & Palate",
+  "uuid" : "5301f67c-36d0-472b-834f-fe97cc4149a9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Cloth",
+  "uuid" : "183b596a-5edb-4aa5-a931-beedb3c75b90",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Community",
+  "uuid" : "4db36fe2-6d3d-432f-9664-da965e5cd0f2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Competitions",
+  "uuid" : "97ed8411-05f5-49d5-bdc0-70c0ccf8fdf0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Condition of Toilet facility for boys",
+  "uuid" : "49a3b11e-0b76-4f3b-aea2-d11fdc4f582a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Operational",
+    "uuid" : "b81c099a-1f45-4902-b773-c718d10854bd",
+    "order" : 0.0
+  }, {
+    "name" : "Non-operational",
+    "uuid" : "3cc739c5-9ef8-481f-82cc-0641b14c57d3",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Condition of Toilet facility for girls",
+  "uuid" : "88a5b69c-edf1-4424-b341-ff754ac52125",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Operational",
+    "uuid" : "b81c099a-1f45-4902-b773-c718d10854bd",
+    "order" : 0.0
+  }, {
+    "name" : "Non-operational",
+    "uuid" : "3cc739c5-9ef8-481f-82cc-0641b14c57d3",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Condom",
+  "uuid" : "891f0309-82ee-4934-98a4-a70f91c48099",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Congenital Cataract",
+  "uuid" : "2e6a9f50-f77b-4056-a8b2-5e47c07b489f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Congenital Deafness",
+  "uuid" : "0e01d4d4-e420-4012-8f4e-2c92cdd573a5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Congenital Heart Disease",
+  "uuid" : "bbad74fd-590d-4258-ae9e-a757d41c9dc6",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Contact number",
+  "uuid" : "8c8f5111-f0cf-4b8b-be46-4dc7b7f0dda6",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Continued Breast Feeding upto 2 years or more",
+  "uuid" : "6f0a821a-fa8a-46cf-bb35-1cab5e1c7efa",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Convulsions",
+  "uuid" : "89d134e2-2e97-44a6-ba50-44d34450d9b2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Convulsive Disorders",
+  "uuid" : "f0a968bf-86f8-4970-bd8a-9b33161f6ca2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Counselling done on which of the following topic",
+  "uuid" : "a249d980-4c71-4f30-b5b5-8c9a00e999b2",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Kangaroo Mother Care (KMC)",
+    "uuid" : "ee1edf52-1d9e-47a6-a429-54144c858360",
+    "order" : 0.0
+  }, {
+    "name" : "Exclusive Breast Feeding (EBF)",
+    "uuid" : "0e88e9b2-5678-450d-80aa-f6d69df6252e",
+    "order" : 1.0
+  }, {
+    "name" : "Breastfeeding techniques",
+    "uuid" : "2b2403cc-0c1e-4b02-b66d-1f6c8bcb96ab",
+    "order" : 2.0
+  }, {
+    "name" : "Family Planning",
+    "uuid" : "7f9f6a4d-2077-438b-ba1e-4cb995589e80",
+    "order" : 3.0
+  }, {
+    "name" : "IFA Consumption",
+    "uuid" : "b105a063-d030-4682-afe5-dc7c03a483aa",
+    "order" : 4.0
+  }, {
+    "name" : "Guidance on complementary feeding",
+    "uuid" : "b85cb6c7-5f12-4dec-ada1-48db787b0e0b",
+    "order" : 5.0
+  }, {
+    "name" : "Diet Diversity",
+    "uuid" : "fc983e74-d216-4c8f-bac3-7c6d4dccfb73",
+    "order" : 6.0
+  }, {
+    "name" : "To provide Iron and Vitamin A syrup to baby as per the schedule",
+    "uuid" : "0582921e-65c0-4d45-b6c5-1e4c93aaeaf3",
+    "order" : 7.0
+  }, {
+    "name" : "To make sure that child is vaccinated as per the National Immunization Schedule",
+    "uuid" : "f87e9bc6-34cc-45a0-91df-fc6f2f5e0460",
+    "order" : 8.0
+  }, {
+    "name" : "To maintain proper health and hygiene",
+    "uuid" : "ded7510f-edfd-4291-9ead-15c2020b0be2",
+    "order" : 9.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 10.0
+  } ]
+}, {
+  "name" : "Counselling done on which of the following topic - Child",
+  "uuid" : "07e4e56f-05f5-4b8d-8a3e-4eba7aa20ee9",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Continued Breast Feeding upto 2 years or more",
+    "uuid" : "6f0a821a-fa8a-46cf-bb35-1cab5e1c7efa",
+    "order" : 0.0
+  }, {
+    "name" : "Guidance on complementary feeding",
+    "uuid" : "b85cb6c7-5f12-4dec-ada1-48db787b0e0b",
+    "order" : 1.0
+  }, {
+    "name" : "Family Planning",
+    "uuid" : "7f9f6a4d-2077-438b-ba1e-4cb995589e80",
+    "order" : 2.0
+  }, {
+    "name" : "To have dietary supplements",
+    "uuid" : "62dc01cd-3636-438e-9e91-240d9af43b92",
+    "order" : 3.0
+  }, {
+    "name" : "To provide Iron and Vitamin K syrup to baby as per the schedule",
+    "uuid" : "5be300e6-ed81-4d03-8efc-48811457e202",
+    "order" : 4.0
+  }, {
+    "name" : "To make sure that child is vaccinated as per the National Immunization Schedule",
+    "uuid" : "f87e9bc6-34cc-45a0-91df-fc6f2f5e0460",
+    "order" : 5.0
+  }, {
+    "name" : "Developmental milestone",
+    "uuid" : "f57788b1-263f-47ef-ae74-852de0719934",
+    "order" : 6.0
+  }, {
+    "name" : "Positive engagement and child care",
+    "uuid" : "c090ca62-97ce-4cab-901d-def2baa89d3e",
+    "order" : 7.0
+  }, {
+    "name" : "To maintain proper health and hygiene",
+    "uuid" : "ded7510f-edfd-4291-9ead-15c2020b0be2",
+    "order" : 8.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 9.0
+  } ]
+}, {
+  "name" : "Counselling done on which of the following topic - pregnancy",
+  "uuid" : "f65a320b-386e-4692-b190-f23d79b8ff77",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Protocol of consuming iron, calcium, and folic acid",
+    "uuid" : "a94b6616-c30e-4c71-ba50-5bda334bf0de",
+    "order" : 0.0
+  }, {
+    "name" : "Early registration at health facility",
+    "uuid" : "630b40b3-c286-4936-a93d-cb8279bf8ca2",
+    "order" : 1.0
+  }, {
+    "name" : "Institutional Delivery",
+    "uuid" : "6d83463b-c339-4da8-8695-cad0b3e04ea3",
+    "order" : 2.0
+  }, {
+    "name" : "Early initiation of Breast Feeding (EIBF)",
+    "uuid" : "3af6d1f3-4123-448c-83ab-26231cbfa836",
+    "order" : 3.0
+  }, {
+    "name" : "Diet Diversity",
+    "uuid" : "fc983e74-d216-4c8f-bac3-7c6d4dccfb73",
+    "order" : 4.0
+  }, {
+    "name" : "Guidance regarding Td vaccination for mother",
+    "uuid" : "b36a994e-64dc-415e-86b1-5471f7d7ea4a",
+    "order" : 5.0
+  }, {
+    "name" : "To make sure that child is vaccinated as per the National Immunization Schedule",
+    "uuid" : "f87e9bc6-34cc-45a0-91df-fc6f2f5e0460",
+    "order" : 6.0
+  }, {
+    "name" : "To maintain proper health and hygiene",
+    "uuid" : "ded7510f-edfd-4291-9ead-15c2020b0be2",
+    "order" : 7.0
+  }, {
+    "name" : "Relaxation and Yoga",
+    "uuid" : "419b19e6-e2de-4404-8ae4-0fcf4a098a83",
+    "order" : 8.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 9.0
+  } ]
+}, {
+  "name" : "Counselling given on",
+  "uuid" : "4669ef42-aa4d-4ffc-aef4-db2492f0e905",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "IFA Tablet consumption",
+    "uuid" : "d57d1d2a-5bfb-4453-bdff-9c97938ab164",
+    "order" : 1.0
+  }, {
+    "name" : "Balanced diet",
+    "uuid" : "25b9aa40-fc25-4730-b7e7-508aed867808",
+    "order" : 2.0
+  }, {
+    "name" : "Adequate sleep of 7-8 hours",
+    "uuid" : "8d4bbe65-e93c-4ef7-a005-e55aa5ee7742",
+    "order" : 3.0
+  }, {
+    "name" : "Drinking 2 to 2.5 liters of water daily",
+    "uuid" : "b10f68bb-04b2-44fb-a2cd-1ba09ba6c658",
+    "order" : 4.0
+  }, {
+    "name" : "Personal hygiene",
+    "uuid" : "f6204be8-37d2-4b9b-9486-5ba0828887f6",
+    "order" : 5.0
+  }, {
+    "name" : "Doing regular physical activity for minimum 1 hour",
+    "uuid" : "20b20ad8-2363-4c05-b1e0-14da604a415c",
+    "order" : 6.0
+  }, {
+    "name" : "To stop doing addiction",
+    "uuid" : "64bc1d99-1efe-43b7-ade5-f68758472b7d",
+    "order" : 7.0
+  }, {
+    "name" : "To reduce screen time less than 2 hours",
+    "uuid" : "e14ea09d-0ae3-4e74-852d-397898bde2ac",
+    "order" : 8.0
+  }, {
+    "name" : "Menstrual health and hygiene",
+    "uuid" : "3683a95b-2348-43f5-b8be-06d76f04bb98",
+    "order" : 9.0
+  }, {
+    "name" : "Dietary diversity",
+    "uuid" : "68dcc3d8-0c91-4799-9e04-e2d411df17af",
+    "order" : 10.0
+  }, {
+    "name" : "All of the above",
+    "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+    "unique" : true,
+    "order" : 11.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 12.0
+  } ]
+}, {
+  "name" : "Cow milk",
+  "uuid" : "e5d30d3a-4d9c-4aed-8b95-788ee66ed422",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Current Height of a child",
+  "uuid" : "f4017b5c-f039-4d4d-a576-e35ceed18387",
+  "dataType" : "Numeric",
+  "unit" : "cm",
+  "active" : true
+}, {
+  "name" : "Current Weight of a child",
+  "uuid" : "0554dc45-d131-4971-bf92-bb8153c84a39",
+  "dataType" : "Numeric",
+  "unit" : "Kg",
+  "active" : true
+}, {
+  "name" : "Dairy",
+  "uuid" : "23962ba6-d40a-492c-ba81-9175eb23526e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Dairy products (milk, infant formula, yogurt, cheese)",
+  "uuid" : "a5c854fc-305e-43cf-b827-1bbf13a8bdbf",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Dark green leafy vegetables",
+  "uuid" : "d70220f3-0636-4b0a-b30b-53ce4ceac5f3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Date of Birth",
+  "uuid" : "93cf6773-74c9-4ef2-80cb-4597746023ae",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Date of birth - Student",
+  "uuid" : "4194f814-14ff-46fd-b399-c43b1f65913a",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Date of Delivery",
+  "uuid" : "5f9a5098-d052-4843-8e13-0c1f455490fc",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Date of last Sonography",
+  "uuid" : "65cbd94c-a8f6-48cb-87ed-26de7366bd0c",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Date of registration at health facility",
+  "uuid" : "b9e95d09-c982-40dc-b96b-60fbe0b2c752",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Death",
+  "uuid" : "1b6ce78f-181b-4b64-9ec9-7afc07fe9729",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Demonstration cum Mela",
+  "uuid" : "5aca7275-30f3-46db-86dc-91cfb7fcbf59",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Dental Caries",
+  "uuid" : "ed7b7b17-d279-4256-a3e9-a7131136ca24",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Dermatological conditions",
+  "uuid" : "c2a73b6d-82c5-48df-bab4-34e63c07cc41",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Designation",
+  "uuid" : "37cc812d-0edc-4a55-8394-29d85f433e0d",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Developmental Dysplasia of Hip",
+  "uuid" : "cb021eba-a6c1-4285-9993-0c2b41a44bc1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Developmental milestone",
+  "uuid" : "f57788b1-263f-47ef-ae74-852de0719934",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Diabetes",
+  "uuid" : "d379a1bb-c4d8-40ec-835e-3c47ead53489",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Diahorrea",
+  "uuid" : "465ff5f4-0c1a-41d6-81db-5ae613c5c9cc",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Diastolic Blood pressure",
+  "uuid" : "374a1a5c-21ab-42ce-93ec-28387f775fbc",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 1.0,
+  "highAbsolute" : 250.0,
+  "active" : true
+}, {
+  "name" : "Diet diversity",
+  "uuid" : "bd2a3770-7027-494e-b216-933fb62c1994",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Breast milk",
+    "uuid" : "877f801f-07c2-4636-9ce9-20b3fdc2f053",
+    "order" : 0.0
+  }, {
+    "name" : "Grains, White/pale starchy roots, tubers and plantains",
+    "uuid" : "14ae46f3-0497-4044-b59a-1d05656ef225",
+    "order" : 1.0
+  }, {
+    "name" : "Beans, peas, lentils, nuts and seeds",
+    "uuid" : "7ab424c7-15da-4595-8119-5dfe2e312643",
+    "order" : 2.0
+  }, {
+    "name" : "Dairy products (milk, infant formula, yogurt, cheese)",
+    "uuid" : "a5c854fc-305e-43cf-b827-1bbf13a8bdbf",
+    "order" : 3.0
+  }, {
+    "name" : "Flesh foods",
+    "uuid" : "cb59334f-8e2a-41e3-9fac-80fd14479e12",
+    "order" : 4.0
+  }, {
+    "name" : "Eggs",
+    "uuid" : "71f08417-3d21-4416-8d45-cb51150c8c59",
+    "order" : 5.0
+  }, {
+    "name" : "Vitamin - A rich fruits and vegetables",
+    "uuid" : "cd1d918d-903c-4b15-8e73-0701ed488b4c",
+    "order" : 6.0
+  }, {
+    "name" : "Other fruits and vegetables",
+    "uuid" : "aef800d5-47e8-498e-8119-898ac7988bfc",
+    "order" : 7.0
+  } ]
+}, {
+  "name" : "Diet Diversity",
+  "uuid" : "fc983e74-d216-4c8f-bac3-7c6d4dccfb73",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Dietary diversity",
+  "uuid" : "68dcc3d8-0c91-4799-9e04-e2d411df17af",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Diploma",
+  "uuid" : "a4dd6e0f-2d82-48eb-99cc-e69e42790745",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Disposal facility for Sanitary napkin available in girls toilet",
+  "uuid" : "63beb45c-bb3f-4c1a-b6fe-8f76ab520678",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Distribution by nearby PHC",
+  "uuid" : "1de3bf86-3186-4151-acdf-d5ffe63afe23",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Divorce",
+  "uuid" : "abd33e8b-b76d-4113-8c5d-0acf5d858581",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Dizziness",
+  "uuid" : "c5df10c2-4035-4e5a-a116-600724e21ec4",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Do you breastfeed your child",
+  "uuid" : "0a0c398f-9621-4162-a92a-293e70c7e3ed",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Do you provide any food packets or processed food to your child",
+  "uuid" : "68020dc8-d656-480c-b60b-49d556ed7299",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Tea and Biscuit",
+    "uuid" : "28d30a51-17ad-474a-865a-d844b69d56da",
+    "order" : 1.0
+  }, {
+    "name" : "Only biscuit",
+    "uuid" : "97f0333b-f0d2-450e-b084-e8efa5b733b5",
+    "order" : 2.0
+  }, {
+    "name" : "Cerelac",
+    "uuid" : "8ece7e2c-2499-43d2-ad59-5be8f47d334c",
+    "order" : 3.0
+  }, {
+    "name" : "Pediasure",
+    "uuid" : "6176b6ab-c6f0-408a-a253-fe1e91892fa1",
+    "order" : 4.0
+  }, {
+    "name" : "Street food",
+    "uuid" : "c77a7a3a-f61a-4a33-a921-7da2f96502fc",
+    "order" : 5.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 6.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 7.0
+  } ]
+}, {
+  "name" : "Does 'Health' is taken up as a topic in Parents teachers meeting?",
+  "uuid" : "b5ead29d-4dd8-444d-b121-98fed51b68b8",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does 'Health' is taken up as a topic in SMC meeting",
+  "uuid" : "710c86c6-0bd3-47dd-910a-b00b0b831dec",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does breast crawl done",
+  "uuid" : "b38583f3-b794-4877-ab93-ff08a9c627a6",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does IFA tablets given to every students on every Wednesday",
+  "uuid" : "7191f576-0cb3-4ddc-a126-77e869c31557",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does in last six months, anemia screening was done by any of the team?",
+  "uuid" : "abec7799-4dbb-4cc0-820f-4031ac746bfe",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does Kangaroo mother care (KMC) Given",
+  "uuid" : "e465d95c-b64d-4c46-aa28-73e8cb98f8a3",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does mother need to be referred for gynecological services?",
+  "uuid" : "240314ba-adf3-4c0c-b896-bfcf0b4d7902",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does school have space for nutrition garden?",
+  "uuid" : "fc25ce5c-80bb-4389-9a6f-00de5e15064d",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the Albendazole tablet consumed during the last visit?",
+  "uuid" : "7637ac9e-97ca-4a80-8bba-d04e1a5a95a1",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the Albendazole Tablet given during current visit?",
+  "uuid" : "330743a1-82d1-4a94-a91d-4d2e15a3a325",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child have any birth defect",
+  "uuid" : "4fb3c8c0-b7a1-4f57-8876-b1ca90e91a46",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Cleft Lip & Palate",
+    "uuid" : "5301f67c-36d0-472b-834f-fe97cc4149a9",
+    "order" : 0.0
+  }, {
+    "name" : "Congenital Heart Disease",
+    "uuid" : "bbad74fd-590d-4258-ae9e-a757d41c9dc6",
+    "order" : 1.0
+  }, {
+    "name" : "Down's Syndrome",
+    "uuid" : "9c74dd4e-7228-48c4-955a-d24959c8edd0",
+    "order" : 2.0
+  }, {
+    "name" : "Talipes (Clubfoot)",
+    "uuid" : "0af24092-60b0-47ea-a124-e6edec15c748",
+    "order" : 3.0
+  }, {
+    "name" : "Neural Tube Defect",
+    "uuid" : "5d54fb8c-9ff8-48d1-87fb-6cdad02b6af9",
+    "order" : 4.0
+  }, {
+    "name" : "Developmental Dysplasia of Hip",
+    "uuid" : "cb021eba-a6c1-4285-9993-0c2b41a44bc1",
+    "order" : 5.0
+  }, {
+    "name" : "Congenital Cataract",
+    "uuid" : "2e6a9f50-f77b-4056-a8b2-5e47c07b489f",
+    "order" : 6.0
+  }, {
+    "name" : "Congenital Deafness",
+    "uuid" : "0e01d4d4-e420-4012-8f4e-2c92cdd573a5",
+    "order" : 7.0
+  }, {
+    "name" : "Retinopathy of Prematurity (ROP)",
+    "uuid" : "4ddf8814-48c3-4661-8e2b-ad36c27f33f3",
+    "order" : 8.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 9.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 10.0
+  } ]
+}, {
+  "name" : "Does the child have difficulty in breathing at the time of birth",
+  "uuid" : "47179e7a-6bde-4d53-9267-af83ef578b7a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child receive appropriate and timely complementary feeding",
+  "uuid" : "8cb43c06-fc05-43c0-bf89-cd4e6f4288b1",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child received breastmilk within 1 hour of delivery",
+  "uuid" : "41c65863-53ab-49e5-b915-950203a23d96",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child received colostrum",
+  "uuid" : "5fe8dccb-6a16-4300-8717-696182e808eb",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child received exclusive breastfeeding (EBF) till 6 months of age",
+  "uuid" : "7d2effea-7e99-4a7c-ab7d-da281ff0f6bf",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child refer for any condition at the time of birth",
+  "uuid" : "fc079b7b-3bde-47b1-9556-a37c034cb58c",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child showed appropriate weight gain",
+  "uuid" : "629d2999-b81d-4ebb-b12f-167d999344d5",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child still receiving breastmilk",
+  "uuid" : "1a8c522a-7541-4f5a-8bbf-e27df852aabc",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the child was administered with all the vaccines according to National Immunisation Schedule as per the age",
+  "uuid" : "1f904433-3806-4671-94ec-c1dd05be3521",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  }, {
+    "name" : "Partially",
+    "uuid" : "92642740-80d5-43f1-aadb-610c342f4206",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Does the deworming activity (provision of Albendazole Tablet) occurs in the school twice a year",
+  "uuid" : "21f329ef-49ed-4761-8dec-b09f28c74c57",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the individual have any disability",
+  "uuid" : "0f59cd99-ab37-4edb-881c-509a985aca2a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Physical disability",
+    "uuid" : "97283fe8-a42b-480b-9596-be62e99b298d",
+    "order" : 0.0
+  }, {
+    "name" : "Mental disability",
+    "uuid" : "52588f0e-6009-43f9-a39d-0bc3d1604096",
+    "order" : 1.0
+  }, {
+    "name" : "Multiple disability",
+    "uuid" : "c25b068a-829e-4037-b20c-c26c4fd7e8ab",
+    "order" : 2.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "order" : 3.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Does the institute have any of the following policy?",
+  "uuid" : "32ab9e31-e544-4c06-9b5a-8138999fd0b9",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "School Health Policy",
+    "uuid" : "c18d2d6e-138d-44cd-8dcc-f82ca51ece2d",
+    "order" : 0.0
+  }, {
+    "name" : "Nutrition Policy",
+    "uuid" : "6a9b0e28-a8a6-4531-9b8e-c576d16da741",
+    "order" : 1.0
+  }, {
+    "name" : "Both",
+    "uuid" : "fe0b8958-42d0-465d-8a01-954c703ee451",
+    "order" : 2.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Does the school have proper waste management practice",
+  "uuid" : "a58e2eac-079c-4168-92ad-3804e7360fe2",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Waste seggregation is done",
+    "uuid" : "b526a61a-7d69-4bf0-92e8-928123a8673b",
+    "order" : 0.0
+  }, {
+    "name" : "No waste segregation is done",
+    "uuid" : "3d0bf642-d8a0-4591-bbbc-88f16eac32cf",
+    "order" : 1.0
+  }, {
+    "name" : "No dustbin available",
+    "uuid" : "34852294-437f-4b4a-8462-e9bdbae846d5",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Does the student have any disability",
+  "uuid" : "87db8d45-d72b-459c-964d-e6db1e0dc159",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Physical disability",
+    "uuid" : "97283fe8-a42b-480b-9596-be62e99b298d",
+    "order" : 0.0
+  }, {
+    "name" : "Mental disability",
+    "uuid" : "52588f0e-6009-43f9-a39d-0bc3d1604096",
+    "order" : 1.0
+  }, {
+    "name" : "Multiple disability",
+    "uuid" : "c25b068a-829e-4037-b20c-c26c4fd7e8ab",
+    "order" : 2.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "order" : 3.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Does the student have any of the following condition?",
+  "uuid" : "8ec15bac-7460-478a-af30-07d02e2afa44",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Dermatological conditions",
+    "uuid" : "c2a73b6d-82c5-48df-bab4-34e63c07cc41",
+    "order" : 0.0
+  }, {
+    "name" : "ENT",
+    "uuid" : "e5bef41b-8362-4402-b5fe-c7ba078482f6",
+    "order" : 1.0
+  }, {
+    "name" : "Opthalmic condition",
+    "uuid" : "51f11c7d-9c02-44c8-bbed-f9442f078f02",
+    "order" : 2.0
+  }, {
+    "name" : "Rheumatic Heart Disease",
+    "uuid" : "0067f89e-c5aa-408b-ac70-86ce320a665e",
+    "order" : 3.0
+  }, {
+    "name" : "Reactive Airway Disease",
+    "uuid" : "ae8f6521-2668-4694-a0c1-5499651cae2a",
+    "order" : 4.0
+  }, {
+    "name" : "Dental Caries",
+    "uuid" : "ed7b7b17-d279-4256-a3e9-a7131136ca24",
+    "order" : 5.0
+  }, {
+    "name" : "Convulsive Disorders",
+    "uuid" : "f0a968bf-86f8-4970-bd8a-9b33161f6ca2",
+    "order" : 6.0
+  }, {
+    "name" : "Diabetes",
+    "uuid" : "d379a1bb-c4d8-40ec-835e-3c47ead53489",
+    "order" : 7.0
+  }, {
+    "name" : "Cancer",
+    "uuid" : "5224c497-3719-4278-b349-ea7afaaa8240",
+    "order" : 8.0
+  }, {
+    "name" : "Anaemia",
+    "uuid" : "cc02f3a2-85fb-40c7-a6e7-0b9b377b771f",
+    "order" : 9.0
+  }, {
+    "name" : "Sickle cell disease",
+    "uuid" : "839d5f3d-6be3-4cce-bbdd-2950e61a6c2b",
+    "order" : 10.0
+  }, {
+    "name" : "Sickle cell trait",
+    "uuid" : "c60afd5f-e217-40ee-bbe2-52711d2dab37",
+    "order" : 11.0
+  }, {
+    "name" : "Thalessemia",
+    "uuid" : "1b6c6850-52d2-49f6-9f4a-eede426775b2",
+    "order" : 12.0
+  }, {
+    "name" : "Other Nutritional defeciency",
+    "uuid" : "d5c6f8c6-b0e6-4466-8ddf-48748b7c4652",
+    "order" : 13.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 14.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 15.0
+  } ]
+}, {
+  "name" : "Does the student have any of the following signs and symptom",
+  "uuid" : "53ee5884-c97a-47c4-b9ad-edb8bda6f1ea",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Dizziness",
+    "uuid" : "c5df10c2-4035-4e5a-a116-600724e21ec4",
+    "order" : 0.0
+  }, {
+    "name" : "Tiredness",
+    "uuid" : "82a6bbbb-feb9-42c1-8dda-196f6c169e67",
+    "order" : 1.0
+  }, {
+    "name" : "Loss of apetite",
+    "uuid" : "c36bdd35-350d-45ea-b54e-e986dd517641",
+    "order" : 2.0
+  }, {
+    "name" : "Pale palms",
+    "uuid" : "0483aa00-ba99-40ba-aad2-84fe32bdedc5",
+    "order" : 3.0
+  }, {
+    "name" : "Pale tongue",
+    "uuid" : "a71592c2-84eb-4f1a-9ce7-80159dd78ddf",
+    "order" : 4.0
+  }, {
+    "name" : "Pale nails",
+    "uuid" : "f595e34d-6d9a-447a-bf9e-31b99f79d4bd",
+    "order" : 5.0
+  }, {
+    "name" : "Shortness of breathe",
+    "uuid" : "d9298604-f301-450b-baf4-6e82ca3032e8",
+    "order" : 6.0
+  }, {
+    "name" : "Loss of Conciousness",
+    "uuid" : "a461c5b0-20b0-4c9c-953a-83a7f0e30f64",
+    "order" : 7.0
+  }, {
+    "name" : "Unable to concentrate",
+    "uuid" : "8e68a29f-dc49-413a-a41d-9a41274bd016",
+    "order" : 8.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 9.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 10.0
+  } ]
+}, {
+  "name" : "Does the student referred at appropriate health facility for disability",
+  "uuid" : "87cb56f1-ef3e-4c17-a2bb-0a5066d46646",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does the student referred at approriate health facility for the prevailing condition?",
+  "uuid" : "c4f50666-3b83-4d38-9116-36daba663b10",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does this school fall in 5 model schools of Atul Foundation",
+  "uuid" : "8dc1aeb3-58f6-40ae-bfbf-620aca2dfb3c",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Does Vitamin K given to the child",
+  "uuid" : "f2bddcfb-4721-4a39-a426-ff68ec050260",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Doing regular physical activity for minimum 1 hour",
+  "uuid" : "20b20ad8-2363-4c05-b1e0-14da604a415c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Don't know",
+  "uuid" : "cd6fee70-ea67-42d0-948a-41e6150ac6a4",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Done",
+  "uuid" : "63fc7814-fe36-4f1a-b055-35fcfff6fa3c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Down's Syndrome",
+  "uuid" : "9c74dd4e-7228-48c4-955a-d24959c8edd0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Drinking 2 to 2.5 liters of water daily",
+  "uuid" : "b10f68bb-04b2-44fb-a2cd-1ba09ba6c658",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Duration of Menstruation",
+  "uuid" : "68d1581c-a43d-43c1-bc14-245bf967f7ae",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "One day",
+    "uuid" : "c39614e2-57c0-43c0-b38c-7d2fbd760aef",
+    "order" : 0.0
+  }, {
+    "name" : "Two to three days",
+    "uuid" : "47a34cd4-bd8a-4331-b8d0-11ca173c8be3",
+    "order" : 1.0
+  }, {
+    "name" : "Four to six days",
+    "uuid" : "5f0139a1-8c99-44c8-a537-35118b485add",
+    "order" : 2.0
+  }, {
+    "name" : "More than six days",
+    "uuid" : "c8111c6c-f06b-489f-846f-5ae99ba86fd1",
+    "order" : 3.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Early initiation of Breast Feeding (EIBF)",
+  "uuid" : "3af6d1f3-4123-448c-83ab-26231cbfa836",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Early registration at health facility",
+  "uuid" : "630b40b3-c286-4936-a93d-cb8279bf8ca2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Economically Weaker Section (upto 3 lakh)",
+  "uuid" : "df906305-25df-4fa1-9d56-d54144298383",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "EDD",
+  "uuid" : "018be231-d685-4629-9e7f-e10184d46cca",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Education",
+  "uuid" : "6a243b63-9963-4d2e-bfe2-c46d4a2d4f53",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Illiterate",
+    "uuid" : "f288f8ec-1d19-4c04-91a2-68a651917ca0",
+    "order" : 0.0
+  }, {
+    "name" : "Primary",
+    "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+    "order" : 1.0
+  }, {
+    "name" : "Secondary",
+    "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+    "order" : 2.0
+  }, {
+    "name" : "Higher Secondary",
+    "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+    "order" : 3.0
+  }, {
+    "name" : "Under Graduate",
+    "uuid" : "5a342f53-654b-476e-be04-abc74be82068",
+    "order" : 4.0
+  }, {
+    "name" : "Post Graduate",
+    "uuid" : "f660a0fa-a544-4858-a2b5-aa8d9176221a",
+    "order" : 5.0
+  }, {
+    "name" : "ITI",
+    "uuid" : "afecdf46-d831-4ba6-a3e6-4b5b1db5ff3b",
+    "order" : 6.0
+  }, {
+    "name" : "Diploma",
+    "uuid" : "a4dd6e0f-2d82-48eb-99cc-e69e42790745",
+    "order" : 7.0
+  }, {
+    "name" : "Certificate course",
+    "uuid" : "e891933e-85ed-4c18-84fc-63c2c358b592",
+    "order" : 8.0
+  }, {
+    "name" : "NA",
+    "uuid" : "bcf2e50f-64f0-4f26-80eb-727ac547b9d4",
+    "order" : 9.0
+  }, {
+    "name" : "Other course",
+    "uuid" : "e6216fbd-8adc-43aa-8b70-9105d65f98d9",
+    "order" : 10.0
+  } ]
+}, {
+  "name" : "Eggs",
+  "uuid" : "71f08417-3d21-4416-8d45-cb51150c8c59",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Endline",
+  "uuid" : "4f1b86f6-d033-4c62-a3c0-7aa8aa2b6f23",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Engaged",
+  "uuid" : "47c27db0-561c-4fe1-9072-efd9927ae451",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "English",
+  "uuid" : "0aa9ca27-bda2-48fd-87e9-517e61c7cdb0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "ENT",
+  "uuid" : "e5bef41b-8362-4402-b5fe-c7ba078482f6",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Environmental Studies",
+  "uuid" : "b028724c-4209-4391-b63f-8fe02501641a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Episiotomy",
+  "uuid" : "c275eeac-ba7a-413a-807f-0aeba7cd1b55",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Exclusive Breast Feeding (EBF)",
+  "uuid" : "0e88e9b2-5678-450d-80aa-f6d69df6252e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Facilities available in boys toilet",
+  "uuid" : "5f9daa37-76cf-4155-bdd4-12c85f843ce6",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Water availability",
+    "uuid" : "40b064bc-2750-4569-b3ca-119db503146d",
+    "order" : 0.0
+  }, {
+    "name" : "Soap",
+    "uuid" : "895d933f-e144-4e93-bd95-682c836864ad",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Facilities available in girls toilet",
+  "uuid" : "7250c79c-8e89-417b-a130-fb430449626c",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Water availability",
+    "uuid" : "40b064bc-2750-4569-b3ca-119db503146d",
+    "order" : 0.0
+  }, {
+    "name" : "Soap",
+    "uuid" : "895d933f-e144-4e93-bd95-682c836864ad",
+    "order" : 1.0
+  }, {
+    "name" : "Pad vending machine",
+    "uuid" : "7e305fac-180f-4818-98ca-6972de9a443c",
+    "order" : 2.0
+  }, {
+    "name" : "Incinerator available",
+    "uuid" : "86d77a4b-d8e5-42e0-98a7-f6ecb9c21414",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Facility Name",
+  "uuid" : "982ca14f-1a70-4780-94d5-ff8a9e1611cc",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Facility Type",
+  "uuid" : "3dc739aa-6fd9-4c24-916f-e988091a7127",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Government Facility",
+    "uuid" : "cd222f7c-84c5-4989-9dea-3fc7d5b6f3cc",
+    "order" : 0.0
+  }, {
+    "name" : "Private Hospital",
+    "uuid" : "fa1368a7-f388-4edb-bb94-cd2365f07f47",
+    "order" : 1.0
+  }, {
+    "name" : "NGO/Trust Hospital",
+    "uuid" : "e97865cc-8519-4ca5-9a65-9a3120033456",
+    "order" : 2.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Family Planning",
+  "uuid" : "7f9f6a4d-2077-438b-ba1e-4cb995589e80",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Female",
+  "uuid" : "717df4a2-ad3e-4902-8fcd-6a7eba737f66",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Filter water",
+  "uuid" : "65840dc9-8e4f-435e-87fe-a58c1b849cb2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Finger foods",
+  "uuid" : "0c29b9dc-571f-4d9f-bc2d-b0fd8dd6e04c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "First 1000 Days",
+  "uuid" : "b8d935fa-0f2a-4192-b7f6-9a5160c2261f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Five times",
+  "uuid" : "a0a069fb-ca61-414f-a3fb-f2660f52cdcb",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Flesh foods",
+  "uuid" : "cb59334f-8e2a-41e3-9fac-80fd14479e12",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Forceps",
+  "uuid" : "30008205-b8dc-4b57-9bd3-973e13648ff7",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Form filling for which type of survey",
+  "uuid" : "cd506028-cf46-49f8-b17b-8ec1695e99b3",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Baseline",
+    "uuid" : "b80db782-fb8f-4987-9997-3796dff34326",
+    "order" : 0.0
+  }, {
+    "name" : "Endline",
+    "uuid" : "4f1b86f6-d033-4c62-a3c0-7aa8aa2b6f23",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Form is to be filled for which section of the school",
+  "uuid" : "2f846af7-a0f2-43d5-9097-ccdd98bf3bc1",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Primary",
+    "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+    "order" : 0.0
+  }, {
+    "name" : "Secondary",
+    "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+    "order" : 1.0
+  }, {
+    "name" : "Higher Secondary",
+    "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Four time",
+  "uuid" : "a6be5850-e2ea-4b6d-bc77-a12327be90d0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Four times",
+  "uuid" : "f00919f7-6fdb-44b7-b460-11ee0b24d05c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Four to six days",
+  "uuid" : "5f0139a1-8c99-44c8-a537-35118b485add",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Frequency of cleaning the water tank",
+  "uuid" : "79d6059d-e047-45b7-aa81-73de56147128",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Once a year",
+    "uuid" : "d4f52512-c6a2-4fa3-b0e4-f36440cf0450",
+    "order" : 0.0
+  }, {
+    "name" : "Twice a year",
+    "uuid" : "d497a90f-b660-445b-a37f-0b55092fdca1",
+    "order" : 1.0
+  }, {
+    "name" : "Not regularly",
+    "uuid" : "a513ac88-1a6c-4de6-9be7-890f63a0519a",
+    "order" : 2.0
+  }, {
+    "name" : "Done",
+    "uuid" : "63fc7814-fe36-4f1a-b055-35fcfff6fa3c",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Frequency of Health check up in school",
+  "uuid" : "ac0061f1-0d5f-49d7-9c2e-c2ffdcd6d640",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Once a year",
+    "uuid" : "d4f52512-c6a2-4fa3-b0e4-f36440cf0450",
+    "order" : 0.0
+  }, {
+    "name" : "Twice a year",
+    "uuid" : "d497a90f-b660-445b-a37f-0b55092fdca1",
+    "order" : 1.0
+  }, {
+    "name" : "Not regularly",
+    "uuid" : "a513ac88-1a6c-4de6-9be7-890f63a0519a",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "From which month child started receiving complementary feeding",
+  "uuid" : "f7585906-2f0d-4b1e-9cd1-6dd73af2d0d6",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Before 5th month",
+    "uuid" : "495ec0c4-7845-435d-8570-86d791d36ee2",
+    "order" : 0.0
+  }, {
+    "name" : "At the end of 5th month",
+    "uuid" : "5c5cfaef-22b9-4330-a403-0d7765a9c363",
+    "order" : 1.0
+  }, {
+    "name" : "At the end of 6th month",
+    "uuid" : "ecda9846-b4f3-41ea-b8ef-5642a72eeb28",
+    "order" : 2.0
+  }, {
+    "name" : "In the beginning of 7th month",
+    "uuid" : "50e48480-b51f-446d-9ae2-f53a9da5b882",
+    "order" : 3.0
+  }, {
+    "name" : "After 7th month",
+    "uuid" : "6a7baecd-ce57-4ffc-8886-a620c500e32d",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Gender of live child",
+  "uuid" : "add70f77-3f6d-44be-b5ae-964b8198a67a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Male",
+    "uuid" : "865e3410-e4e7-4987-9dbf-05b0becfddeb",
+    "order" : 0.0
+  }, {
+    "name" : "Female",
+    "uuid" : "717df4a2-ad3e-4902-8fcd-6a7eba737f66",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Gender of live children (voided~323801)",
+  "uuid" : "580990cb-bf91-4d9d-b36b-26060f7e2a5b",
+  "dataType" : "QuestionGroup",
+  "active" : true,
+  "voided" : true
+}, {
+  "name" : "Gender-Student",
+  "uuid" : "5664629e-6e2c-46f0-a5d5-e957e3c90ad7",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "General",
+  "uuid" : "5e10659f-5fc3-4952-8c4d-b51ea2c2a231",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Gestational Diabetes",
+  "uuid" : "716fa411-5c69-4b0a-b152-a3dd73daeef5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Goat milk",
+  "uuid" : "76dea82d-f4d4-437f-a7f2-63c5234b38e6",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Government",
+  "uuid" : "ac50724b-89e9-4cba-91d6-c1815e6e090e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Government Facility",
+  "uuid" : "cd222f7c-84c5-4989-9dea-3fc7d5b6f3cc",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Grade level/classes in school",
+  "uuid" : "52c2f6be-2f94-459c-b485-2cef5a9381d7",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Pre - primary",
+    "uuid" : "64631c9c-8d67-4f28-adbf-1b431e4f047b",
+    "order" : 0.0
+  }, {
+    "name" : "Primary",
+    "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+    "order" : 1.0
+  }, {
+    "name" : "Secondary",
+    "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+    "order" : 2.0
+  }, {
+    "name" : "Higher Secondary",
+    "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Grains, white roots and tubers, and plantains",
+  "uuid" : "e8cb4e4e-681f-40c9-bf2e-c34404cd2573",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Grains, White/pale starchy roots, tubers and plantains",
+  "uuid" : "14ae46f3-0497-4044-b59a-1d05656ef225",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Gram Panchayat",
+  "uuid" : "8c155822-f3f4-41ef-a014-8fcdfc5e6123",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Grant aid school",
+  "uuid" : "7a16d71b-bb73-4021-8ad7-72eb452dd873",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Group Session",
+  "uuid" : "74e0d3fe-3117-4547-b962-f0c2c45553d0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Growth Chart - BMI",
+  "uuid" : "a36242e0-ddf2-414b-94c5-c1db6c221ec8",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "> +2 SD (Obesity)",
+    "uuid" : "c20c4c4d-2925-4404-8f43-ccc62f226a2f",
+    "order" : 0.0
+  }, {
+    "name" : "> +1 SD (Overweight)",
+    "uuid" : "359f80bc-ba81-4524-b47d-2bdc75a9fdc3",
+    "order" : 1.0
+  }, {
+    "name" : "> -1 to < +1 SD (Normal)",
+    "uuid" : "7cf9b113-6701-429e-aa30-0e37b9e88aea",
+    "order" : 2.0
+  }, {
+    "name" : "< -2 SD (Thinness)",
+    "uuid" : "86ed346c-8bcd-41cd-a2d3-e9d71a220b60",
+    "order" : 3.0
+  }, {
+    "name" : "< -3 SD (Severe Thinness)",
+    "uuid" : "b6acff0e-0590-4805-9728-2abd93496f7e",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Growth Chart - Weight for length/height (Z score)",
+  "uuid" : "1f93d0f9-c0f8-44ae-a3fb-b2621966cf99",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Guidance on complementary feeding",
+  "uuid" : "b85cb6c7-5f12-4dec-ada1-48db787b0e0b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Guidance regarding Td vaccination for mother",
+  "uuid" : "b36a994e-64dc-415e-86b1-5471f7d7ea4a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Gujarati",
+  "uuid" : "172883c3-96ef-4a6f-bf06-9ed7bc417662",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Haemoglobin",
+  "uuid" : "7207c377-ca0d-46f8-81c2-89bbc2ed058e",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "highAbsolute" : 18.0,
+  "unit" : "gm/dl",
+  "active" : true
+}, {
+  "name" : "Haemoglobin (voided~323769)",
+  "uuid" : "f40fe0cb-8fe3-48a3-8515-4a6fa6b7ebb1",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 1.0,
+  "active" : true,
+  "voided" : true
+}, {
+  "name" : "Hand Pump",
+  "uuid" : "4289c3ac-7ec4-452e-8fac-9c2175abfd45",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Have both",
+  "uuid" : "d02056f0-e6a9-4861-8728-27fb4c65990a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Have playground but don't have sports equipments",
+  "uuid" : "6404f688-64bf-4e49-b891-a7a296ff2f4e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Have sports equipments but don't have playground",
+  "uuid" : "d40d6b95-83f8-4b89-bba3-cfd84266d290",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Hb",
+  "uuid" : "3f1d701c-9c33-46dd-9143-b56e06fc495b",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "8 gm/dl or less than it (Severe Anaemia)",
+    "uuid" : "f015ffb9-babc-434f-87d1-d46c1a52fa2d",
+    "order" : 0.0
+  }, {
+    "name" : "Between 8 to 10 gm/dl (Moderate Anaemia)",
+    "uuid" : "5b943e5b-56c7-40b4-977d-9c9291fec8b0",
+    "order" : 1.0
+  }, {
+    "name" : "Between 10 to 12 gm/dl (Mild Anaemia)",
+    "uuid" : "9847a475-3347-49d0-9f67-60a985003f96",
+    "order" : 2.0
+  }, {
+    "name" : "12 gm/dl or more than it (Normal)",
+    "uuid" : "559f614a-1386-4662-ba25-f2cd5017ea50",
+    "order" : 3.0
+  }, {
+    "name" : "Between 8 to 10.9 gm/dl (Moderate Anaemia)",
+    "uuid" : "f2ce9989-d20c-4fe9-895b-c00ab9b5690e",
+    "order" : 4.0
+  }, {
+    "name" : "Between 11-11.9 gm/dl (Mild Anaemia)",
+    "uuid" : "2cc1be43-1a35-4cb6-9120-5c114c9e58c2",
+    "order" : 5.0
+  }, {
+    "name" : "Between 11-12.9 gm/dl (Mild Anaemia)",
+    "uuid" : "18a31a40-5e6d-496c-93e7-d8a47fa45876",
+    "order" : 6.0
+  }, {
+    "name" : "13 gm/dl or more than it (Normal)",
+    "uuid" : "be8e6b63-d5e8-47af-9efe-2cdfbd84c3ba",
+    "order" : 7.0
+  } ]
+}, {
+  "name" : "Hb Screening",
+  "uuid" : "29afd053-0731-4c4a-9d54-e35b50654626",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Health check up in school is done by whom",
+  "uuid" : "1c85752a-8fab-4bb4-9a54-a25e4b3e1a16",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Atul Foundation",
+    "uuid" : "1386776e-b8fb-472f-a159-4bf2e078ec9e",
+    "order" : 0.0
+  }, {
+    "name" : "Nearby Primary Health Center",
+    "uuid" : "704a7845-9c96-493a-94f3-cadb02875b4d",
+    "order" : 1.0
+  }, {
+    "name" : "RBSK team",
+    "uuid" : "a7e9b69e-e504-4ffd-bfaf-98cda73fa5d1",
+    "order" : 2.0
+  }, {
+    "name" : "NGO/Trust",
+    "uuid" : "73053b69-5d59-490b-9d6f-a8465fbb5bf3",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Health Check-up Camp",
+  "uuid" : "c2b844d2-05dc-43c3-bd55-9a7483947be1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Heart problem",
+  "uuid" : "93f91d5f-8410-4b90-bd89-c6c79eca8e10",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Heart Valve Replacement | Ballon Valvotomy",
+  "uuid" : "c9b1faaf-e897-4b2a-b756-c859ef8f7f2b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Height",
+  "uuid" : "0a92ad2c-95b9-43a4-8d70-0f2ea845080d",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 1.0,
+  "highAbsolute" : 190.0,
+  "unit" : "cm",
+  "active" : true
+}, {
+  "name" : "Height (voided~323767)",
+  "uuid" : "e388c47f-1c56-43bb-9e5d-8f86a64a471c",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 1.0,
+  "unit" : "Cm",
+  "active" : true,
+  "voided" : true
+}, {
+  "name" : "Hemophilia",
+  "uuid" : "b1de0d13-c5d5-4d84-8f79-7cdeadfbe6a7",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Hepatitis - B",
+  "uuid" : "0a15218f-28a5-4c1c-bea8-796f02467fcc",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "High Income Group (18 lakh)",
+  "uuid" : "63059ca4-e5f9-4af0-9c95-0599580ea43d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Higher Secondary",
+  "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Hindi",
+  "uuid" : "adef292d-2385-453e-90ab-875ab258a660",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Hindu",
+  "uuid" : "99f56d36-40c5-4d70-b1cc-4c45088a1871",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "HIV",
+  "uuid" : "cbdeaa97-a23f-42a6-b933-89bbdf502e54",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Home Delivery",
+  "uuid" : "f8c5b6f1-697e-4add-8920-25cc617a361c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Honey",
+  "uuid" : "2f41770c-8580-429b-af1d-9aaf5be12e07",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Household falls into which of the following category",
+  "uuid" : "499114f4-0e14-42b2-b7b3-2c2272de34b8",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Economically Weaker Section (upto 3 lakh)",
+    "uuid" : "df906305-25df-4fa1-9d56-d54144298383",
+    "order" : 0.0
+  }, {
+    "name" : "Lower Income Group (3 lakh to 6 lakh)",
+    "uuid" : "471766c2-af69-41da-85a0-ccc49287c039",
+    "order" : 1.0
+  }, {
+    "name" : "Middle Income Group (6 lakh to 18 lakh)",
+    "uuid" : "b5763b9c-9a52-440c-af1e-68b94159131b",
+    "order" : 2.0
+  }, {
+    "name" : "High Income Group (18 lakh)",
+    "uuid" : "63059ca4-e5f9-4af0-9c95-0599580ea43d",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Household number",
+  "uuid" : "6085c6cd-8e75-4362-97d6-9b3cb51e05b1",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "How food waste management is carried out",
+  "uuid" : "35f7e49d-1f92-4c3f-b094-cae3db3db733",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Thrown out",
+    "uuid" : "28c04d35-9f4f-4a3f-b354-9d59d7a89fff",
+    "order" : 0.0
+  }, {
+    "name" : "Throw in pit",
+    "uuid" : "c73a8e1c-07d9-477f-ad9f-849de7722010",
+    "order" : 1.0
+  }, {
+    "name" : "Leftover food is donated to others",
+    "uuid" : "18b19307-34d6-4fbe-9d7b-e32b32631bbc",
+    "order" : 2.0
+  }, {
+    "name" : "No wastage occurs",
+    "uuid" : "29fae40f-3914-497f-8ab3-e27d9202d1b6",
+    "order" : 3.0
+  }, {
+    "name" : "No provision available",
+    "uuid" : "56566b9c-acef-431f-bf25-e2b119da3a52",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "How many meals do you consume in a day?",
+  "uuid" : "e2873d46-b41c-40b9-b0a9-ecfb0058ce4a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "One time",
+    "uuid" : "7c7091df-63dd-42aa-a04c-5f912a0a97b6",
+    "order" : 0.0
+  }, {
+    "name" : "Two times",
+    "uuid" : "ef894c98-68b8-4c10-82e5-acbfbdadf30c",
+    "order" : 1.0
+  }, {
+    "name" : "Three times",
+    "uuid" : "c49641ec-bf82-4043-8a94-07fbce961ecc",
+    "order" : 2.0
+  }, {
+    "name" : "Four times",
+    "uuid" : "f00919f7-6fdb-44b7-b460-11ee0b24d05c",
+    "order" : 3.0
+  }, {
+    "name" : "Five times",
+    "uuid" : "a0a069fb-ca61-414f-a3fb-f2660f52cdcb",
+    "order" : 4.0
+  }, {
+    "name" : "More then five times",
+    "uuid" : "40da1b57-0b99-4a32-9fe8-3607cc199144",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "Hygiene corner",
+  "uuid" : "fa3cfab9-7746-4fc2-8f9a-1b4481ef4584",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Hypertension",
+  "uuid" : "4ee14786-fd00-466d-80a9-1cdc8f5be306",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Hysterectomy Done",
+  "uuid" : "640d4f87-23ff-428a-ac94-02e2ae9165aa",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "If registered at health facility",
+  "uuid" : "bb3a806d-2b8b-4982-a46c-b82204cac8a1",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "IFA Consumption",
+  "uuid" : "b105a063-d030-4682-afe5-dc7c03a483aa",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "IFA Tablet consumption",
+  "uuid" : "d57d1d2a-5bfb-4453-bdff-9c97938ab164",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "IFA Tablets given during current visit",
+  "uuid" : "25dccb89-30b3-4294-b8fe-ce8cfa2da138",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Illiterate",
+  "uuid" : "f288f8ec-1d19-4c04-91a2-68a651917ca0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "In Laws Home",
+  "uuid" : "47e5cd14-8fef-4954-bf47-87a7b2812e87",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "In the beginning of 7th month",
+  "uuid" : "50e48480-b51f-446d-9ae2-f53a9da5b882",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "In three checkups, BP 180/110 mm/Hg or more",
+  "uuid" : "5a55ba20-ffce-4476-8be7-06575e33d598",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "In two ANC checkup, Hb level 6.5 g/dl or less",
+  "uuid" : "97d4d1b3-d22e-4e1b-b56d-390bc1608a8c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "In-transit Delivery",
+  "uuid" : "7fc8d3ca-c6a9-44bc-9a0e-3d3b04dc05a7",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Incinerator available",
+  "uuid" : "86d77a4b-d8e5-42e0-98a7-f6ecb9c21414",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Income Sources",
+  "uuid" : "274f9d0e-e175-4be2-901b-6788a1fa31d6",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Self-employed in agriculture with land",
+    "uuid" : "40cf5407-513f-405f-adcf-b55a893088fd",
+    "order" : 0.0
+  }, {
+    "name" : "Self-employed in non-agricultural activities",
+    "uuid" : "187f7793-7a34-42d3-be4b-1e6d84597128",
+    "order" : 1.0
+  }, {
+    "name" : "Landless agriculture labour",
+    "uuid" : "980142d5-a754-413b-8d43-00935fb7692e",
+    "order" : 2.0
+  }, {
+    "name" : "Casual workers/ daily wage earners",
+    "uuid" : "1231ca81-eda3-4ff6-ab0e-91be28269f34",
+    "order" : 3.0
+  }, {
+    "name" : "Salaried employment/Govt. employee",
+    "uuid" : "319a3c50-b064-4861-8868-185ee155b991",
+    "order" : 4.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 5.0
+  }, {
+    "name" : "NA",
+    "uuid" : "bcf2e50f-64f0-4f26-80eb-727ac547b9d4",
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Individual can be enrolled in which of the following program",
+  "uuid" : "3ff4fe71-979d-44f8-8ad0-3cd83e5bad67",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Hb Screening",
+    "uuid" : "29afd053-0731-4c4a-9d54-e35b50654626",
+    "order" : 0.0
+  }, {
+    "name" : "First 1000 Days",
+    "uuid" : "b8d935fa-0f2a-4192-b7f6-9a5160c2261f",
+    "order" : 1.0
+  }, {
+    "name" : "School Health",
+    "uuid" : "fcf4b38c-8cd5-4157-92a2-8221140cdef7",
+    "order" : 2.0
+  }, {
+    "name" : "Referral Services",
+    "uuid" : "da075f90-1982-40d9-b017-2dc1f1f3baab",
+    "order" : 3.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Individual referred at which facility",
+  "uuid" : "b43101cf-1c08-4504-a490-db72381e61c1",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Atul Foundation Health Center",
+    "uuid" : "77067829-4c76-4e00-abea-3234d5bf0242",
+    "order" : 0.0
+  }, {
+    "name" : "VIMS",
+    "uuid" : "5365191f-83b6-437d-a75f-694ec505d06c",
+    "order" : 1.0
+  }, {
+    "name" : "Nearby PHC/CHC/DH",
+    "uuid" : "fb443423-7e70-4b61-8b91-b0fd7832fb42",
+    "order" : 2.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Individual referred for",
+  "uuid" : "874e0bcb-e67a-4e79-afb8-f89c30f585dc",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Reproductive Health",
+    "uuid" : "8d2e823d-c045-4270-94cb-f67114b8e630",
+    "order" : 1.0
+  }, {
+    "name" : "Child Health",
+    "uuid" : "92f02a70-da6f-4bd5-ad2d-910ccf22be08",
+    "order" : 2.0
+  }, {
+    "name" : "ENT",
+    "uuid" : "e5bef41b-8362-4402-b5fe-c7ba078482f6",
+    "order" : 3.0
+  }, {
+    "name" : "Opthalmic Services",
+    "uuid" : "c3407345-9f4e-48ce-adf5-d09a858998be",
+    "order" : 4.0
+  }, {
+    "name" : "Hypertension",
+    "uuid" : "4ee14786-fd00-466d-80a9-1cdc8f5be306",
+    "order" : 5.0
+  }, {
+    "name" : "Diabetes",
+    "uuid" : "d379a1bb-c4d8-40ec-835e-3c47ead53489",
+    "order" : 6.0
+  }, {
+    "name" : "Cancer",
+    "uuid" : "5224c497-3719-4278-b349-ea7afaaa8240",
+    "order" : 7.0
+  }, {
+    "name" : "Paralysis",
+    "uuid" : "0e092f86-0218-4688-bdaf-ba446b11597d",
+    "order" : 8.0
+  }, {
+    "name" : "Dermatological conditions",
+    "uuid" : "c2a73b6d-82c5-48df-bab4-34e63c07cc41",
+    "order" : 9.0
+  }, {
+    "name" : "Oral Health",
+    "uuid" : "91a393c4-b842-49d0-8462-14d3aa8b48b5",
+    "order" : 10.0
+  }, {
+    "name" : "Anaemia",
+    "uuid" : "cc02f3a2-85fb-40c7-a6e7-0b9b377b771f",
+    "order" : 11.0
+  }, {
+    "name" : "Sickle cell",
+    "uuid" : "55257000-a8b1-400a-b2cc-89528ebccc59",
+    "order" : 12.0
+  }, {
+    "name" : "Other Nutritional defeciency",
+    "uuid" : "d5c6f8c6-b0e6-4466-8ddf-48748b7c4652",
+    "order" : 13.0
+  }, {
+    "name" : "Preventive checkup",
+    "uuid" : "20a8cacc-64e4-4f7a-80e8-e6afb2ace32a",
+    "order" : 14.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 15.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 16.0
+  } ]
+}, {
+  "name" : "Ingredients are properly stored and covered",
+  "uuid" : "e695b736-a023-4cd6-b431-3a66421a4ab3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Ingredients are properly stored but not covered",
+  "uuid" : "7d4354b2-20c3-4495-8902-e6d9aea559e9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Ingredients not properly stored and not covered",
+  "uuid" : "e7a9d91c-5c8f-46ee-a26a-159509b92683",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Ingredients not properly stored but covered",
+  "uuid" : "11c370a9-3734-4021-9fb3-087b3bae06ba",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Institutional Delivery",
+  "uuid" : "6d83463b-c339-4da8-8695-cad0b3e04ea3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Irregular",
+  "uuid" : "1b00f912-6a00-4721-8e09-f76775d6c21f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Is delayed cord cutting was practiced",
+  "uuid" : "b881b8c3-b2f2-428f-ae27-b5bc98157af3",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is family is taking Ration from PDS",
+  "uuid" : "6a45ebf9-0e90-47d8-be74-76bda8bae738",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is School management committee (SMC) formed",
+  "uuid" : "e46df3d9-3a83-46c9-a817-e3647bb5a8d5",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is student a Peer Educator",
+  "uuid" : "bfa7b5fe-b0e2-47e7-882b-496e644b2cda",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is the child present?",
+  "uuid" : "51e92d6f-2ef5-4de0-9be1-74b768cb8142",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is the mother registered?",
+  "uuid" : "b82987e2-8405-464e-8512-3e78a1b99927",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is the parent-teacher meeting happening at school?",
+  "uuid" : "2274e106-e6a6-4a01-80fe-3536a1469b9d",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is the patient present?",
+  "uuid" : "d3cabdc4-fe41-4fdd-a92d-3c6052830dc4",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is the person present?",
+  "uuid" : "7a212bfa-365a-43a9-8ec9-a577c7922d1a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is the SMC meeting happening regularly at school",
+  "uuid" : "ea74dec3-2008-49b7-b215-ee4af90eee02",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is the student present?",
+  "uuid" : "a54fe0da-6ec3-4a8a-8a7c-d17b8f2ea5d9",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Is the women registered within 84 days of pregnancy at the health facility?",
+  "uuid" : "cdd9e3b2-e0a0-453d-abc4-ecddda39160b",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Islam",
+  "uuid" : "f96ab20b-e7a1-4b39-b3b9-728f5799df93",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "ITI",
+  "uuid" : "afecdf46-d831-4ba6-a3e6-4b5b1db5ff3b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "IUCD",
+  "uuid" : "c15f9b01-5c47-45b8-8360-9f821fa5d86b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Jaggery",
+  "uuid" : "8b529c2b-a544-4cef-b0b5-2da6b76a2de5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Jainism",
+  "uuid" : "51ef0eb5-33e4-4560-94e6-7b9e5e8d6d2e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Kaccha bathroom",
+  "uuid" : "6acd6ea8-b19e-47dd-bdbc-23ae440c2eeb",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Kangaroo Mother Care (KMC)",
+  "uuid" : "ee1edf52-1d9e-47a6-a429-54144c858360",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Kangaroo mother care (KMC) initiation date",
+  "uuid" : "38ff4d5f-65be-45b0-9304-8c3fad41afc7",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Kidney problem",
+  "uuid" : "fba84927-45b3-49c9-a852-ce03091f2f0f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Landless agriculture labour",
+  "uuid" : "980142d5-a754-413b-8d43-00935fb7692e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Leakage in roof",
+  "uuid" : "c7f2b6ff-4c9e-418f-b70e-6ebca286da7a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Leftover food is donated to others",
+  "uuid" : "18b19307-34d6-4fbe-9d7b-e32b32631bbc",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Less than seven months",
+  "uuid" : "1a26a6b6-197b-4065-9c77-45c198f4689f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Level - 1 (Extremely Clean)",
+  "uuid" : "02daae25-c837-4eb1-a2d3-c69619f22ee6",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Level - 2 (Not very Dirty)",
+  "uuid" : "76bd3fdf-1c7e-406b-881d-e6268fb2821b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Level - 3 (Quite Dirty)",
+  "uuid" : "8a0de0dc-3be0-4225-8e99-836b538507ad",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Living relationship",
+  "uuid" : "93ca46e1-cf24-434f-9f74-076829c2beb0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Living where",
+  "uuid" : "aee74259-9e64-4015-b3bb-9cd4012f1d50",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Maternal Home",
+    "uuid" : "83b463e8-5849-448b-851c-370393f679e1",
+    "order" : 0.0
+  }, {
+    "name" : "In Laws Home",
+    "uuid" : "47e5cd14-8fef-4954-bf47-87a7b2812e87",
+    "order" : 1.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "LMP",
+  "uuid" : "7bfef905-d0c1-45de-8e93-2e58657845fd",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Loss of apetite",
+  "uuid" : "c36bdd35-350d-45ea-b54e-e986dd517641",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Loss of Conciousness",
+  "uuid" : "a461c5b0-20b0-4c9c-953a-83a7f0e30f64",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Lower Income Group (3 lakh to 6 lakh)",
+  "uuid" : "471766c2-af69-41da-85a0-ccc49287c039",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Mala pills",
+  "uuid" : "8b8f3695-c1b4-421c-87c1-e358aac7aab4",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Male",
+  "uuid" : "865e3410-e4e7-4987-9dbf-05b0becfddeb",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Marital Status",
+  "uuid" : "ef4eb4dd-cb1f-470a-ae81-a2ba3830ad6d",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Married",
+    "uuid" : "f5395289-b41a-44e7-8b40-d85bdbc9ce7b",
+    "order" : 0.0
+  }, {
+    "name" : "Unmarried",
+    "uuid" : "a962ae86-3c25-433e-afb3-b7d63968c4e2",
+    "order" : 1.0
+  }, {
+    "name" : "Widow",
+    "uuid" : "b1d9f78c-cc26-4eae-a4e9-c2b8eb14b373",
+    "order" : 2.0
+  }, {
+    "name" : "Divorce",
+    "uuid" : "abd33e8b-b76d-4113-8c5d-0acf5d858581",
+    "order" : 3.0
+  }, {
+    "name" : "Separated",
+    "uuid" : "c9160f9a-ebec-4a22-8133-55f1f83d089a",
+    "order" : 4.0
+  }, {
+    "name" : "Living relationship",
+    "uuid" : "93ca46e1-cf24-434f-9f74-076829c2beb0",
+    "order" : 5.0
+  }, {
+    "name" : "Engaged",
+    "uuid" : "47c27db0-561c-4fe1-9072-efd9927ae451",
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Married",
+  "uuid" : "f5395289-b41a-44e7-8b40-d85bdbc9ce7b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Mashed",
+  "uuid" : "5f76be93-b03d-43bc-b9ab-78c200af61fb",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Maternal death",
+  "uuid" : "f0caadb9-082c-459a-a345-1101fa5c5b05",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Maternal Home",
+  "uuid" : "83b463e8-5849-448b-851c-370393f679e1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Maths",
+  "uuid" : "9f9b5cf8-59ed-40db-b471-0555ef27b9da",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Meat, poultry and fish",
+  "uuid" : "9cfbde36-75f9-405b-bc43-724726f471c4",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Menstrual cup",
+  "uuid" : "d3253bc4-19a9-4be0-a372-2462298afbca",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Menstrual health and hygiene",
+  "uuid" : "3683a95b-2348-43f5-b8be-06d76f04bb98",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Menstruation corner",
+  "uuid" : "93133c90-10fd-4fc6-a0e3-5d5be5e70631",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Menstruation Started",
+  "uuid" : "8d04f53b-81c1-466a-8e98-0094b5fe55d2",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Menstruation Stopped",
+  "uuid" : "41eaf421-fea8-4644-a368-5d1ad4108da3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Mental disability",
+  "uuid" : "52588f0e-6009-43f9-a39d-0bc3d1604096",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Mention the name of members of school management committee",
+  "uuid" : "d15af340-4014-4e9e-8dc9-0dc04f69399f",
+  "dataType" : "QuestionGroup",
+  "active" : true
+}, {
+  "name" : "Mention the name of members of school management committee (SMC)",
+  "uuid" : "0a4b0432-70a7-4109-83a9-85a6f023d5ee",
+  "dataType" : "Subject",
+  "active" : true,
+  "keyValues" : [ {
+    "key" : "subjectTypeUUID",
+    "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+  } ]
+}, {
+  "name" : "Mention the name of members of SMC",
+  "uuid" : "fb6612f5-5eba-48f8-9984-85706d828bce",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Mid Day Meal",
+  "uuid" : "7fe2c613-00da-4069-b395-ed78a3ba2b4a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Middle Income Group (6 lakh to 18 lakh)",
+  "uuid" : "b5763b9c-9a52-440c-af1e-68b94159131b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Migrant",
+  "uuid" : "58938153-b533-4ea0-8e2e-d098e861b33d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Migrated and in contact through phone",
+  "uuid" : "2ae56308-8ab7-4210-a102-a3623b46e985",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Migrated and not in contact",
+  "uuid" : "1cce87a8-5aab-4615-aa59-bfb96c135d26",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Miscarages",
+  "uuid" : "99b733ee-18d9-4fb7-b2dc-8af6e7f0e6f2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "More than six days",
+  "uuid" : "c8111c6c-f06b-489f-846f-5ae99ba86fd1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "More then five times",
+  "uuid" : "40da1b57-0b99-4a32-9fe8-3607cc199144",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Multi Drug Resistant (MDR) TB",
+  "uuid" : "c50b4013-dae2-43fa-b96f-ae648f71a57b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Multiple disability",
+  "uuid" : "c25b068a-829e-4037-b20c-c26c4fd7e8ab",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "NA",
+  "uuid" : "bcf2e50f-64f0-4f26-80eb-727ac547b9d4",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Nails properly maintained",
+  "uuid" : "4257933c-c650-4581-8807-fa8730d979de",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Name of community",
+  "uuid" : "251ae37d-aee8-4017-90fc-5c1540d46c80",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of facility where delivery is to be done",
+  "uuid" : "4f2063f0-d94e-472b-9f97-f2e46f284fcf",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of mother",
+  "uuid" : "72f10d13-494c-42b8-a348-9fd070bfff8a",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of mother - Subject",
+  "uuid" : "5d2c78c1-6db7-4faf-ab51-a9a5168a8bf4",
+  "dataType" : "Subject",
+  "active" : true,
+  "keyValues" : [ {
+    "key" : "subjectTypeUUID",
+    "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+  } ]
+}, {
+  "name" : "Name of nearby SC / PHC / CHC / DH to the school",
+  "uuid" : "3a04fd52-49f6-48b1-83cc-6b61875625d5",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the activity",
+  "uuid" : "8b5356d2-192c-472c-879f-bdc55db498e0",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the delivery place",
+  "uuid" : "af6f109a-dceb-4e42-923c-ce22b2aac7c3",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the doctor",
+  "uuid" : "fc76bc3c-6c29-42a8-a8fe-7baa389cc85e",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the new recipe",
+  "uuid" : "cf6451df-f6bd-4019-bd18-def17511d96d",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the new recipe QG",
+  "uuid" : "82096d07-d1ad-4311-b1ab-4dff78f76054",
+  "dataType" : "QuestionGroup",
+  "active" : true
+}, {
+  "name" : "Name of the participant",
+  "uuid" : "6560a61c-7887-4047-a607-4d8010cb7d5c",
+  "dataType" : "Subject",
+  "active" : true,
+  "keyValues" : [ {
+    "key" : "subjectTypeUUID",
+    "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+  } ]
+}, {
+  "name" : "Name of the principal",
+  "uuid" : "d1178e48-b895-4c9c-be8b-99d2c20a4d9b",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the RBSK doctor",
+  "uuid" : "951a0e5b-8b62-4746-97a5-c34bd732ffe4",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the RKSK counsellor attending the school sessions",
+  "uuid" : "0b0b721f-5786-40ff-9de7-f7a6448d45b8",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the school",
+  "uuid" : "685647fc-5cd9-48f7-b5af-6616948d7529",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the School",
+  "uuid" : "6d1667ce-9cd2-4ac9-bfb2-8afaddc6d3a6",
+  "dataType" : "Subject",
+  "active" : true,
+  "keyValues" : [ {
+    "key" : "subjectTypeUUID",
+    "value" : "eb7fc46a-5f06-4f00-863d-ee4450b23960"
+  } ]
+}, {
+  "name" : "Name of the school health ambassadors",
+  "uuid" : "c4ff5d56-ea2f-41fd-94bf-4125d59752f8",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Name of the school health ambassadors (voided~313045)",
+  "uuid" : "adc06262-559e-40f7-a1d2-030ea70d0eb3",
+  "dataType" : "Subject",
+  "active" : true,
+  "voided" : true,
+  "keyValues" : [ {
+    "key" : "subjectTypeUUID",
+    "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+  } ]
+}, {
+  "name" : "National/International Day/Week celebration",
+  "uuid" : "89aba481-fc77-400b-9c5a-4d19f2c8a854",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Nearby PHC/CHC/DH",
+  "uuid" : "fb443423-7e70-4b61-8b91-b0fd7832fb42",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Nearby Primary Health Center",
+  "uuid" : "704a7845-9c96-493a-94f3-cadb02875b4d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Neural Tube Defect",
+  "uuid" : "5d54fb8c-9ff8-48d1-87fb-6cdad02b6af9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "NGO/Trust",
+  "uuid" : "73053b69-5d59-490b-9d6f-a8465fbb5bf3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "NGO/Trust Hospital",
+  "uuid" : "e97865cc-8519-4ca5-9a65-9a3120033456",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No",
+  "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No dustbin available",
+  "uuid" : "34852294-437f-4b4a-8462-e9bdbae846d5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No of new recipe identified",
+  "uuid" : "b65beafc-3fc2-46b4-9aa0-02bc90def161",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "No of recipe made",
+  "uuid" : "a8bdbae5-a5c6-4805-8b62-6667d7e4e95f",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "No of toilets available for boys in school",
+  "uuid" : "dee956f4-521c-4f57-8053-fcd6e04222be",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "No of toilets available for girls in school",
+  "uuid" : "6723b5b5-e90b-4ba8-bb64-3651534850e7",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "No provision available",
+  "uuid" : "56566b9c-acef-431f-bf25-e2b119da3a52",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No provision for storage",
+  "uuid" : "0428aac0-4b6c-4c75-9f3c-2ca4c8475c64",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No Ration Card",
+  "uuid" : "45d54661-d2c8-405a-9e5f-b88cb73164e2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No wastage occurs",
+  "uuid" : "29fae40f-3914-497f-8ab3-e27d9202d1b6",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No waste segregation is done",
+  "uuid" : "3d0bf642-d8a0-4591-bbbc-88f16eac32cf",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No, our family is without toilet (family members defecate in open fields)",
+  "uuid" : "8adbcd4f-0dc7-4c87-ae60-2e705061c763",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "No. of IFA tablets consumed from the IFA tablets given during the last visit",
+  "uuid" : "bef858eb-8a19-4fef-b5f6-2504e2ac4a08",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "No. of IFA tablets given at the time of screening",
+  "uuid" : "2b6fe079-79c4-433f-b5fe-7bcfb9e5d922",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "No. of IFA Tablets given in current visit",
+  "uuid" : "197a6f42-ed70-4bf9-8f3c-98c9466c2031",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "active" : true
+}, {
+  "name" : "No. of Sonography done till now",
+  "uuid" : "bf42cdce-dc5a-485e-b8c8-1fc349153e4a",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "active" : true
+}, {
+  "name" : "Non - Veg",
+  "uuid" : "c5467a75-95ab-45b4-b808-9e49b155db7d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Non Pregnant female and non-lactating female who have children above 2 years 20-49 years",
+  "uuid" : "25ec7a1a-bad2-4e6a-a630-f076d4f68dcf",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Non school going Female 10-15 years",
+  "uuid" : "9e8457d4-0532-4ae6-a89f-92ab8ea4d7bf",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Non school going Female 15-19 years",
+  "uuid" : "f33ed841-31a7-4197-9f0c-c14745e9350c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Non school going Male 10-15 years",
+  "uuid" : "ce925e45-1055-4ba1-b112-6040dba9976d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Non school going Male 15-19 years",
+  "uuid" : "f79d1a80-9d6d-4024-81fb-f3f78f58b306",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Non-operational",
+  "uuid" : "3cc739c5-9ef8-481f-82cc-0641b14c57d3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Non-Scalpel Vasectomy (NSV)",
+  "uuid" : "7a44c7ca-df06-47ce-badc-7a3a45c4ac3a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "None",
+  "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Normal",
+  "uuid" : "f3e8e5bb-2569-4ec9-afa8-19c218906c74",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Not available",
+  "uuid" : "11ebe3d7-aade-4751-9c14-eb3e111e5154",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Not known",
+  "uuid" : "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Not regularly",
+  "uuid" : "a513ac88-1a6c-4de6-9be7-890f63a0519a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Number of meals provided to students in MDM",
+  "uuid" : "efb92403-5246-4e65-bf49-be4652356b2f",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "One time",
+    "uuid" : "7c7091df-63dd-42aa-a04c-5f912a0a97b6",
+    "order" : 0.0
+  }, {
+    "name" : "Two time",
+    "uuid" : "170df0e0-4fbe-4b49-a734-1deefdb61e3d",
+    "order" : 1.0
+  }, {
+    "name" : "Three time",
+    "uuid" : "214ebadb-f1c3-4e47-93c3-7d7685372023",
+    "order" : 2.0
+  }, {
+    "name" : "Four time",
+    "uuid" : "a6be5850-e2ea-4b6d-bc77-a12327be90d0",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Nutrition Policy",
+  "uuid" : "6a9b0e28-a8a6-4531-9b8e-c576d16da741",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Nuts and seeds",
+  "uuid" : "8f7b5bfc-001d-4cad-8422-7c46ec843d03",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "OBC",
+  "uuid" : "353b02e4-7226-41cd-b7fa-7d17360758c9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Once a year",
+  "uuid" : "d4f52512-c6a2-4fa3-b0e4-f36440cf0450",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Once in a month",
+  "uuid" : "2d138057-5396-43e6-bfde-c667a08ecb35",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Once in a six month",
+  "uuid" : "a8cc8386-d36a-478f-b4d4-a10e1ab99451",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Once in a three month",
+  "uuid" : "deb121d8-a1cf-49f2-97dd-feea51f26eec",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Once in a two month",
+  "uuid" : "bbb0ed2d-5e8f-4642-89de-294cb724ffe1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Once in a year",
+  "uuid" : "cf572a07-6afa-4595-8887-95c5b3f59b57",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "One day",
+  "uuid" : "c39614e2-57c0-43c0-b38c-7d2fbd760aef",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "One time",
+  "uuid" : "7c7091df-63dd-42aa-a04c-5f912a0a97b6",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Only biscuit",
+  "uuid" : "97f0333b-f0d2-450e-b084-e8efa5b733b5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Operational",
+  "uuid" : "b81c099a-1f45-4902-b773-c718d10854bd",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Opthalmic condition",
+  "uuid" : "51f11c7d-9c02-44c8-bbed-f9442f078f02",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Opthalmic Services",
+  "uuid" : "c3407345-9f4e-48ce-adf5-d09a858998be",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Oral Health",
+  "uuid" : "91a393c4-b842-49d0-8462-14d3aa8b48b5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Orange with priority family stamp (PHH - priority household)",
+  "uuid" : "5b5391b2-65b2-4148-9294-5170d7f628a9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Orange with priority family stamp (PHH - priority household) (BPL)",
+  "uuid" : "05fa6f8d-29d5-42d4-aaea-65e2a6ccfd49",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Orange without priority family stamp (NPH - non-priority household)",
+  "uuid" : "8ba59ada-c6a6-4657-bb50-010d418c39c7",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Orange without priority family stamp (NPH - non-priority household) (APL)",
+  "uuid" : "1274c470-248e-40fa-accc-4b00e570c198",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Other",
+  "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Other absorbent material used",
+  "uuid" : "3059386a-abfe-42a8-9a54-7f450e13cce2",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other activity,please specify",
+  "uuid" : "8216294b-2314-413c-a5d6-98a8dfe1c812",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other addiction",
+  "uuid" : "a8b8734b-00ff-403c-88c5-8a1f0ca6fc82",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other Beneficiary, please specify",
+  "uuid" : "1ec4179c-dce7-4da9-bf1a-a3813bb4ed37",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other birth defect",
+  "uuid" : "791bb226-957c-432c-af29-9ada81f646bc",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other comorbidity",
+  "uuid" : "6951e6b9-05ca-499a-852d-92c462267bfe",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other complications",
+  "uuid" : "797ad668-496f-47ae-9846-add53614ae66",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other condition",
+  "uuid" : "3fa5da7a-31cd-45f8-bfef-c590fb13774c",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other course",
+  "uuid" : "e6216fbd-8adc-43aa-8b70-9105d65f98d9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Other diet",
+  "uuid" : "3e7b3103-47c0-439e-ad37-47155907b5d0",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other disability",
+  "uuid" : "65dd8cbb-fadc-4989-964a-273be10bd0b7",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other Duration of menstruation",
+  "uuid" : "5ba4b268-0e5b-43a9-bfbd-3eeb87e201b9",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other Duration of menstruation, please specify (voided~323696)",
+  "uuid" : "dba61829-4c96-4880-9fdf-0af4669087a8",
+  "dataType" : "Text",
+  "active" : true,
+  "voided" : true
+}, {
+  "name" : "Other education",
+  "uuid" : "67219f1d-2835-43a1-aaa8-5213be5b3f86",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other facility at which individual was referred",
+  "uuid" : "0201916f-36c1-4275-a751-d2bcf739be8c",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other facility referred to for prevailing condition",
+  "uuid" : "918fc569-4206-42cf-a99c-acf6f2d9fb22",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other Facility Type",
+  "uuid" : "0fac8c5d-fe78-4f28-a474-419a01d953df",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other Family Planning method is practiced",
+  "uuid" : "37016db0-0853-483b-be53-bcf6b4f69bb8",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other food packets or processed food given",
+  "uuid" : "8402282d-06d9-4a3c-ad7f-75855f6e2324",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other fruits",
+  "uuid" : "cda106d1-823a-428c-b957-342d25a389dc",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Other fruits and vegetables",
+  "uuid" : "aef800d5-47e8-498e-8119-898ac7988bfc",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Other income source",
+  "uuid" : "63a95da9-1de1-4bbd-beb1-ca291a7e626a",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other Nutritional defeciency",
+  "uuid" : "d5c6f8c6-b0e6-4466-8ddf-48748b7c4652",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Other place",
+  "uuid" : "c8bf523a-e02e-46b2-8b5c-001d4f31f34d",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other place of delivery",
+  "uuid" : "d4bb6661-2d98-490f-9b00-0a2249c7c5f0",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other pre-lacteals",
+  "uuid" : "3a023829-652b-448e-8ab6-31a0f6b63e4f",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other reason, please specify",
+  "uuid" : "55316640-b851-4002-9d46-dba38e7a95e7",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other source of food for students",
+  "uuid" : "59f5b754-b5be-47a1-8a96-6b033b5fdc21",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other symptom",
+  "uuid" : "d260d6a8-c637-4541-af34-f6abc7217424",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other type of facility",
+  "uuid" : "ff192312-40e1-401d-b64e-53041b1211fc",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other type of facility, please specify",
+  "uuid" : "f89af554-ed44-4e45-b275-cf1163e4bd94",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other type of school",
+  "uuid" : "e52ceb1b-780e-44b6-86a3-75ed459fb54d",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Other vegetables",
+  "uuid" : "4f3c99b3-be27-46e6-8120-af849b068613",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Other vitamin A-rich fruits and vegetables",
+  "uuid" : "f2eb59c2-7a22-42a1-b507-8625b90163ad",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Others (voided~312968)",
+  "uuid" : "bfef9685-a7c7-4006-9664-4429d8b6a2f3",
+  "dataType" : "NA",
+  "active" : true,
+  "voided" : true
+}, {
+  "name" : "Pad vending machine",
+  "uuid" : "7e305fac-180f-4818-98ca-6972de9a443c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Pakka bathroom",
+  "uuid" : "2a1b9981-ada4-4c3b-b31d-e582b19d4eaa",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Pale nails",
+  "uuid" : "f595e34d-6d9a-447a-bf9e-31b99f79d4bd",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Pale palms",
+  "uuid" : "0483aa00-ba99-40ba-aad2-84fe32bdedc5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Pale tongue",
+  "uuid" : "a71592c2-84eb-4f1a-9ce7-80159dd78ddf",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Paralysis",
+  "uuid" : "0e092f86-0218-4688-bdaf-ba446b11597d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Partially",
+  "uuid" : "92642740-80d5-43f1-aadb-610c342f4206",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Participation in any activity",
+  "uuid" : "9dd263ab-ff91-4a7d-99ec-aa948e858236",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Pediasure",
+  "uuid" : "6176b6ab-c6f0-408a-a253-fe1e91892fa1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Permanent (Pakka) House",
+  "uuid" : "5c7cfa3a-5666-4344-bfef-7c26eab33350",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Permanent resident",
+  "uuid" : "9255a0e0-1a4d-4fa9-b7f5-923c05571b31",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Personal hygiene",
+  "uuid" : "f6204be8-37d2-4b9b-9486-5ba0828887f6",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Personal Hygiene",
+  "uuid" : "50ef3a01-0afb-438b-93a4-cef56ecb044b",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Takes bath daily",
+    "uuid" : "6187ed92-8b28-4bce-a8ef-eff15c83858b",
+    "order" : 1.0
+  }, {
+    "name" : "Teeths looks clean",
+    "uuid" : "e94bb7bb-f5c9-41a2-8f05-3233b0d5984a",
+    "order" : 2.0
+  }, {
+    "name" : "Clean Hair",
+    "uuid" : "3c941d3d-acb7-47c5-a386-195c2d04d10e",
+    "order" : 3.0
+  }, {
+    "name" : "Nails properly maintained",
+    "uuid" : "4257933c-c650-4581-8807-fa8730d979de",
+    "order" : 4.0
+  }, {
+    "name" : "Clean clothing",
+    "uuid" : "c99025c6-1053-4434-9d8c-5beab88dc159",
+    "order" : 5.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Physical disability",
+  "uuid" : "97283fe8-a42b-480b-9596-be62e99b298d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Place of delivery (facility type)",
+  "uuid" : "b95bf15b-d8f7-4fcb-9c35-37b3d1247b31",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Government Facility",
+    "uuid" : "cd222f7c-84c5-4989-9dea-3fc7d5b6f3cc",
+    "order" : 0.0
+  }, {
+    "name" : "Private Hospital",
+    "uuid" : "fa1368a7-f388-4edb-bb94-cd2365f07f47",
+    "order" : 1.0
+  }, {
+    "name" : "NGO/Trust Hospital",
+    "uuid" : "e97865cc-8519-4ca5-9a65-9a3120033456",
+    "order" : 2.0
+  }, {
+    "name" : "Home Delivery",
+    "uuid" : "f8c5b6f1-697e-4add-8920-25cc617a361c",
+    "order" : 3.0
+  }, {
+    "name" : "In-transit Delivery",
+    "uuid" : "7fc8d3ca-c6a9-44bc-9a0e-3d3b04dc05a7",
+    "order" : 4.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "Place of referral",
+  "uuid" : "a4dbedf3-fa59-4e3a-833b-84c99fc9b362",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Placenta Previa",
+  "uuid" : "403b39cf-e187-41f0-a1e5-b3d746fe01b1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Polio - 0",
+  "uuid" : "c467f0b7-bda5-4bca-ae2e-adf421b18855",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Pond",
+  "uuid" : "ff7c5bed-4b75-4274-918b-ee61c64493fd",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Positive engagement and child care",
+  "uuid" : "c090ca62-97ce-4cab-901d-def2baa89d3e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Post Graduate",
+  "uuid" : "f660a0fa-a544-4858-a2b5-aa8d9176221a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "PPIUCD",
+  "uuid" : "c6ced386-174b-41ff-ba64-ef948722249f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Pre - primary",
+  "uuid" : "64631c9c-8d67-4f28-adbf-1b431e4f047b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Presence of any comorbidity",
+  "uuid" : "3c3e6291-8f9e-490c-92ad-8cc0a0e99a3a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 0.0
+  }, {
+    "name" : "Hypertension",
+    "uuid" : "4ee14786-fd00-466d-80a9-1cdc8f5be306",
+    "order" : 1.0
+  }, {
+    "name" : "Diabetes",
+    "uuid" : "d379a1bb-c4d8-40ec-835e-3c47ead53489",
+    "order" : 2.0
+  }, {
+    "name" : "Cholesterol",
+    "uuid" : "7531fab3-2f94-4b69-88f4-8feb1cf2e1da",
+    "order" : 3.0
+  }, {
+    "name" : "Heart problem",
+    "uuid" : "93f91d5f-8410-4b90-bd89-c6c79eca8e10",
+    "order" : 4.0
+  }, {
+    "name" : "Respiratory problem",
+    "uuid" : "da0c27c1-1241-4cb9-b322-975d7ed1927b",
+    "order" : 5.0
+  }, {
+    "name" : "Kidney problem",
+    "uuid" : "fba84927-45b3-49c9-a852-ce03091f2f0f",
+    "order" : 6.0
+  }, {
+    "name" : "Diahorrea",
+    "uuid" : "465ff5f4-0c1a-41d6-81db-5ae613c5c9cc",
+    "order" : 7.0
+  }, {
+    "name" : "Thalassemia",
+    "uuid" : "5b605050-88f8-46e2-9d8e-81ae9530b17c",
+    "order" : 8.0
+  }, {
+    "name" : "Sickle cell disease",
+    "uuid" : "839d5f3d-6be3-4cce-bbdd-2950e61a6c2b",
+    "order" : 9.0
+  }, {
+    "name" : "Sickle cell trait",
+    "uuid" : "c60afd5f-e217-40ee-bbe2-52711d2dab37",
+    "order" : 10.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 11.0
+  } ]
+}, {
+  "name" : "Preventive checkup",
+  "uuid" : "20a8cacc-64e4-4f7a-80e8-e6afb2ace32a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Previous two C-Section",
+  "uuid" : "12c39fe5-9f16-4951-aae4-ff4abde1ad30",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Primary",
+  "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Principal contact number",
+  "uuid" : "fa1a8927-6bcb-4310-b09a-d00fa698b385",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Private",
+  "uuid" : "07dca313-0b26-48d7-98bb-ee5189016034",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Private Hospital",
+  "uuid" : "fa1368a7-f388-4edb-bb94-cd2365f07f47",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Protenuria in urine test",
+  "uuid" : "6c2750e3-d733-4fc3-878c-a561a1d92c8d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Protocol of consuming iron, calcium, and folic acid",
+  "uuid" : "a94b6616-c30e-4c71-ba50-5bda334bf0de",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Provision of Sick room",
+  "uuid" : "aa5788e6-a5d6-4799-a940-fd267999f5f8",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Pulses (beans, peas and lentils)",
+  "uuid" : "179f313b-916b-4819-8c94-f7c8444130cb",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Pureed",
+  "uuid" : "eca3c8d7-cb64-44ee-99fd-a8ee994c28de",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Ration card type",
+  "uuid" : "277ad519-78b6-4334-93cd-4d6d87adce2b",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "White (APL)",
+    "uuid" : "e0199c50-61f7-4e4a-bc3b-1e114cf9e65b",
+    "order" : 1.0
+  }, {
+    "name" : "Yellow (AAY - Antodaya Anna Yojana)",
+    "uuid" : "2e767bc3-f1ad-4a87-88d5-82a1a9704f25",
+    "order" : 2.0
+  }, {
+    "name" : "No Ration Card",
+    "uuid" : "45d54661-d2c8-405a-9e5f-b88cb73164e2",
+    "order" : 3.0
+  }, {
+    "name" : "Orange with priority family stamp (PHH - priority household) (BPL)",
+    "uuid" : "05fa6f8d-29d5-42d4-aaea-65e2a6ccfd49",
+    "order" : 4.0
+  }, {
+    "name" : "Orange without priority family stamp (NPH - non-priority household) (APL)",
+    "uuid" : "1274c470-248e-40fa-accc-4b00e570c198",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "RBSK team",
+  "uuid" : "a7e9b69e-e504-4ffd-bfaf-98cda73fa5d1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Reactive Airway Disease",
+  "uuid" : "ae8f6521-2668-4694-a0c1-5499651cae2a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Reason for exit",
+  "uuid" : "33940cc4-f3da-423c-ad51-20b8d6c4a1fc",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Child death",
+    "uuid" : "91432b1c-6e04-41b6-81a4-3404635d300d",
+    "order" : 0.0
+  }, {
+    "name" : "Migrated and not in contact",
+    "uuid" : "1cce87a8-5aab-4615-aa59-bfb96c135d26",
+    "order" : 1.0
+  }, {
+    "name" : "Migrated and in contact through phone",
+    "uuid" : "2ae56308-8ab7-4210-a102-a3623b46e985",
+    "order" : 2.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Reason for exit - Pregnancy",
+  "uuid" : "d12dcd20-2bde-429e-b773-d4c091778ae0",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Miscarages",
+    "uuid" : "99b733ee-18d9-4fb7-b2dc-8af6e7f0e6f2",
+    "order" : 0.0
+  }, {
+    "name" : "Abortion",
+    "uuid" : "a5ba697c-59cb-4880-9dd1-0b58d0aa71f2",
+    "order" : 1.0
+  }, {
+    "name" : "Maternal death",
+    "uuid" : "f0caadb9-082c-459a-a345-1101fa5c5b05",
+    "order" : 2.0
+  }, {
+    "name" : "Migrated and not in contact",
+    "uuid" : "1cce87a8-5aab-4615-aa59-bfb96c135d26",
+    "order" : 3.0
+  }, {
+    "name" : "Migrated and in contact through phone",
+    "uuid" : "2ae56308-8ab7-4210-a102-a3623b46e985",
+    "order" : 4.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "Referral Services",
+  "uuid" : "da075f90-1982-40d9-b017-2dc1f1f3baab",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Regular",
+  "uuid" : "bf3255fa-481c-46e0-b652-6d83ad523d5b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Regularity of Menstruation",
+  "uuid" : "909ffa10-31d4-4c7b-a35b-9a9323a966d7",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Irregular",
+    "uuid" : "1b00f912-6a00-4721-8e09-f76775d6c21f",
+    "order" : 0.0
+  }, {
+    "name" : "Regular",
+    "uuid" : "bf3255fa-481c-46e0-b652-6d83ad523d5b",
+    "order" : 1.0
+  }, {
+    "name" : "Menstruation Stopped",
+    "uuid" : "41eaf421-fea8-4644-a368-5d1ad4108da3",
+    "order" : 2.0
+  }, {
+    "name" : "Hysterectomy Done",
+    "uuid" : "640d4f87-23ff-428a-ac94-02e2ae9165aa",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Regularity of menstruation (voided~323689)",
+  "uuid" : "02adbcbc-ca77-4f28-882c-650ef20ed199",
+  "dataType" : "Coded",
+  "active" : true,
+  "voided" : true,
+  "answers" : [ {
+    "name" : "Irregular",
+    "uuid" : "1b00f912-6a00-4721-8e09-f76775d6c21f",
+    "order" : 0.0
+  }, {
+    "name" : "Regular",
+    "uuid" : "bf3255fa-481c-46e0-b652-6d83ad523d5b",
+    "order" : 1.0
+  }, {
+    "name" : "Menstruation Stopped",
+    "uuid" : "41eaf421-fea8-4644-a368-5d1ad4108da3",
+    "order" : 2.0
+  }, {
+    "name" : "Hysterectomy Done",
+    "uuid" : "640d4f87-23ff-428a-ac94-02e2ae9165aa",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Relaxation and Yoga",
+  "uuid" : "419b19e6-e2de-4404-8ae4-0fcf4a098a83",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Religion",
+  "uuid" : "418b4a4b-69dd-4e2c-bb07-e6feace8295a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Hindu",
+    "uuid" : "99f56d36-40c5-4d70-b1cc-4c45088a1871",
+    "order" : 0.0
+  }, {
+    "name" : "Islam",
+    "uuid" : "f96ab20b-e7a1-4b39-b3b9-728f5799df93",
+    "order" : 1.0
+  }, {
+    "name" : "Christianity",
+    "uuid" : "2469017b-a685-4354-b000-3972411355aa",
+    "order" : 2.0
+  }, {
+    "name" : "Jainism",
+    "uuid" : "51ef0eb5-33e4-4560-94e6-7b9e5e8d6d2e",
+    "order" : 3.0
+  }, {
+    "name" : "Sikhism",
+    "uuid" : "73dc4f38-185e-4f35-883a-05d04ec590ac",
+    "order" : 4.0
+  }, {
+    "name" : "Buddhism",
+    "uuid" : "1e94597e-31da-45ff-b74b-9f288d6c4f3b",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "Remarks",
+  "uuid" : "cf69df2a-4f2f-4bc5-8972-d02287d648ab",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Reproductive Health",
+  "uuid" : "8d2e823d-c045-4270-94cb-f67114b8e630",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Respiratory problem",
+  "uuid" : "da0c27c1-1241-4cb9-b322-975d7ed1927b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Retinopathy of Prematurity (ROP)",
+  "uuid" : "4ddf8814-48c3-4661-8e2b-ad36c27f33f3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Rheumatic Heart Disease",
+  "uuid" : "0067f89e-c5aa-408b-ac70-86ce320a665e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "RO filter water",
+  "uuid" : "09a0d171-b36c-4ab9-bddc-aaade7b5c18e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Salaried employment/Govt. employee",
+  "uuid" : "319a3c50-b064-4861-8868-185ee155b991",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Sanitary Napkin",
+  "uuid" : "36e90a55-3674-4d29-83df-9ed550e8e1c0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Sanskrit",
+  "uuid" : "ce14e112-5313-48f3-aa9b-11792f36dc1f",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "SC",
+  "uuid" : "3d40dc41-e208-42bf-90e3-5e4aab7754b9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School",
+  "uuid" : "b226bcdf-7d5c-4782-b0ad-be40fd99ba52",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School Ambassador Name",
+  "uuid" : "3894cebc-ae33-482c-b022-706a8628b878",
+  "dataType" : "QuestionGroup",
+  "active" : true
+}, {
+  "name" : "School canteen",
+  "uuid" : "6c294405-133a-4965-ad03-581188a9f4ad",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School going Female 10-15 years (Falls in intervening schools of Atul Foundation)",
+  "uuid" : "b7b23d9d-d1a7-424f-bade-d92711d6467a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School going Female 10-15 years (Falls in other school)",
+  "uuid" : "1b6c0787-9440-4202-b5ef-e60a7367d849",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School going Female 15-19 years (Falls in intervening schools of Atul Foundation)",
+  "uuid" : "26baf00a-7742-452a-b94d-fc06d0b82f03",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School going Female 15-19 years (Falls in other school)",
+  "uuid" : "3dbc52a4-22e8-4569-bef4-c28143af6885",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School going Male 10-15 years (Falls in intervening schools of Atul Foundation)",
+  "uuid" : "21bc6492-dcad-4190-9277-b0c6b2ee9c39",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School going Male 10-15 years (Falls in other school)",
+  "uuid" : "801a3ded-1112-4640-9c25-049dd0d64e4d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School going Male 15-19 years (Falls in intervening schools of Atul Foundation)",
+  "uuid" : "cd8d4728-4a0f-4f28-8f19-9a88cd2401c8",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School going Male 15-19 years (Falls in other school)",
+  "uuid" : "677367d1-939c-4551-b5a9-1068f8475ead",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School Health",
+  "uuid" : "fcf4b38c-8cd5-4157-92a2-8221140cdef7",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School Health Policy",
+  "uuid" : "c18d2d6e-138d-44cd-8dcc-f82ca51ece2d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "School Management Committee (SMC)",
+  "uuid" : "3f43b689-0cb3-42f2-bcd3-46989fab4892",
+  "dataType" : "QuestionGroup",
+  "active" : true
+}, {
+  "name" : "Science",
+  "uuid" : "a724839e-0901-4ebb-9ecf-bb385a07fdf5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Secondary",
+  "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Sections in school",
+  "uuid" : "b5f0c6c4-87f5-4c97-9e68-2318104e4149",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Pre - primary",
+    "uuid" : "64631c9c-8d67-4f28-adbf-1b431e4f047b",
+    "order" : 0.0
+  }, {
+    "name" : "Primary",
+    "uuid" : "cdff6bd2-ebc6-4630-9ca1-05350a7214d5",
+    "order" : 1.0
+  }, {
+    "name" : "Secondary",
+    "uuid" : "ded21006-ad59-42ff-abce-da7b7db113e2",
+    "order" : 2.0
+  }, {
+    "name" : "Higher Secondary",
+    "uuid" : "6f8611de-2cd8-48c0-af4a-d8d5912a1302",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Self-employed in agriculture with land",
+  "uuid" : "40cf5407-513f-405f-adcf-b55a893088fd",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Self-employed in non-agricultural activities",
+  "uuid" : "187f7793-7a34-42d3-be4b-1e6d84597128",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Semi-Permanent (Semi Pakka) House",
+  "uuid" : "a6a96170-f46e-451c-81ab-f351a2bbbb17",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Separated",
+  "uuid" : "c9160f9a-ebec-4a22-8133-55f1f83d089a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Setup of health corner",
+  "uuid" : "9aae7afd-7852-42e6-89ce-17557c558a14",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Well-being corner",
+    "uuid" : "5edbc7ab-a0eb-4b62-9951-e6b255139001",
+    "order" : 0.0
+  }, {
+    "name" : "Hygiene corner",
+    "uuid" : "fa3cfab9-7746-4fc2-8f9a-1b4481ef4584",
+    "order" : 1.0
+  }, {
+    "name" : "Menstruation corner",
+    "uuid" : "93133c90-10fd-4fc6-a0e3-5d5be5e70631",
+    "order" : 2.0
+  }, {
+    "name" : "Not available",
+    "uuid" : "11ebe3d7-aade-4751-9c14-eb3e111e5154",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Setup of well being corner",
+  "uuid" : "a359004b-7ad5-45b5-bc7d-366156907881",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Hygiene corner",
+    "uuid" : "fa3cfab9-7746-4fc2-8f9a-1b4481ef4584",
+    "order" : 0.0
+  }, {
+    "name" : "Menstruation corner",
+    "uuid" : "93133c90-10fd-4fc6-a0e3-5d5be5e70631",
+    "order" : 1.0
+  }, {
+    "name" : "Not available",
+    "uuid" : "11ebe3d7-aade-4751-9c14-eb3e111e5154",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Severe Mitral valve stenosis | Mitral regurgitation with pulmonary hypertension",
+  "uuid" : "f88dbf78-30e0-4c90-b974-cba1e450bef9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Shortness of breathe",
+  "uuid" : "d9298604-f301-450b-baf4-6e82ca3032e8",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Sickle cell",
+  "uuid" : "55257000-a8b1-400a-b2cc-89528ebccc59",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Sickle cell disease",
+  "uuid" : "839d5f3d-6be3-4cce-bbdd-2950e61a6c2b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Sickle cell trait",
+  "uuid" : "c60afd5f-e217-40ee-bbe2-52711d2dab37",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Sickle cell Trait",
+  "uuid" : "5a200ef2-47b1-40d9-921e-01aad465e153",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Sikhism",
+  "uuid" : "73dc4f38-185e-4f35-883a-05d04ec590ac",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Smoking",
+  "uuid" : "b2dd9cf8-c117-426d-9419-94391ba41e3c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Soap",
+  "uuid" : "895d933f-e144-4e93-bd95-682c836864ad",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Social Studies",
+  "uuid" : "6730f40d-c368-431f-8787-41f0b5686abe",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Soft cooked",
+  "uuid" : "d4f3d121-36d8-4881-a6ac-f0fbf4ce7746",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Source of food for students",
+  "uuid" : "d8fbf565-56b2-4bb8-8758-daffd4efe364",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Mid Day Meal",
+    "uuid" : "7fe2c613-00da-4069-b395-ed78a3ba2b4a",
+    "order" : 0.0
+  }, {
+    "name" : "School canteen",
+    "uuid" : "6c294405-133a-4965-ad03-581188a9f4ad",
+    "order" : 1.0
+  }, {
+    "name" : "Tiffin box by students",
+    "uuid" : "ade48855-6db2-4db1-b006-ce8448d4b2a5",
+    "order" : 2.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Source of meal for students",
+  "uuid" : "c8944f00-e4ad-43c7-ba25-a79092d655eb",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Mid Day Meal",
+    "uuid" : "7fe2c613-00da-4069-b395-ed78a3ba2b4a",
+    "order" : 1.0
+  }, {
+    "name" : "School canteen",
+    "uuid" : "6c294405-133a-4965-ad03-581188a9f4ad",
+    "order" : 2.0
+  }, {
+    "name" : "Tiffin box by students",
+    "uuid" : "ade48855-6db2-4db1-b006-ce8448d4b2a5",
+    "order" : 3.0
+  }, {
+    "name" : "Stalls outside schools",
+    "uuid" : "8294296e-daa8-4390-a031-02ebe008dd6a",
+    "order" : 4.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "Source of water facility",
+  "uuid" : "0555a03a-fc79-4471-9f8a-42b5434a336d",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Bore Well",
+    "uuid" : "d34fd81a-cda0-4f8a-80d9-807716865465",
+    "order" : 0.0
+  }, {
+    "name" : "Well",
+    "uuid" : "d57ca5a3-102e-4733-bd4d-280f77743381",
+    "order" : 1.0
+  }, {
+    "name" : "Tanker",
+    "uuid" : "63fcc298-19de-4083-8f30-dbcabe5cc301",
+    "order" : 2.0
+  }, {
+    "name" : "Pond",
+    "uuid" : "ff7c5bed-4b75-4274-918b-ee61c64493fd",
+    "order" : 3.0
+  }, {
+    "name" : "Gram Panchayat",
+    "uuid" : "8c155822-f3f4-41ef-a014-8fcdfc5e6123",
+    "order" : 4.0
+  }, {
+    "name" : "Hand Pump",
+    "uuid" : "4289c3ac-7ec4-452e-8fac-9c2175abfd45",
+    "order" : 5.0
+  }, {
+    "name" : "Water bottle",
+    "uuid" : "8668100f-f260-427a-851e-ea4da0672476",
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Source of water facility for common use",
+  "uuid" : "3894c558-d05e-4bf8-a56f-0539f3df1036",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Bore Well",
+    "uuid" : "d34fd81a-cda0-4f8a-80d9-807716865465",
+    "order" : 0.0
+  }, {
+    "name" : "Well",
+    "uuid" : "d57ca5a3-102e-4733-bd4d-280f77743381",
+    "order" : 1.0
+  }, {
+    "name" : "Tanker",
+    "uuid" : "63fcc298-19de-4083-8f30-dbcabe5cc301",
+    "order" : 2.0
+  }, {
+    "name" : "Pond",
+    "uuid" : "ff7c5bed-4b75-4274-918b-ee61c64493fd",
+    "order" : 3.0
+  }, {
+    "name" : "Gram Panchayat",
+    "uuid" : "8c155822-f3f4-41ef-a014-8fcdfc5e6123",
+    "order" : 4.0
+  }, {
+    "name" : "Hand Pump",
+    "uuid" : "4289c3ac-7ec4-452e-8fac-9c2175abfd45",
+    "order" : 5.0
+  }, {
+    "name" : "Water Bottle",
+    "uuid" : "7fbf1831-b189-45e5-9284-91f9a49f7384",
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Specify other school",
+  "uuid" : "00159872-16a4-441e-966b-5ac38133a56d",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Specify screening done by whom",
+  "uuid" : "b0be2b65-12e3-47fb-be47-7d82ed061bd6",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Specify source",
+  "uuid" : "377aad81-cd62-4a45-ab07-cf1f6539ab32",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Specify the disability",
+  "uuid" : "8605a9be-235b-4cfe-be77-63387f3e6d46",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Specify water drinking facility",
+  "uuid" : "2d6d27fe-307b-4395-9fa1-747cb0c55730",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Specify who is providing IFA tablets",
+  "uuid" : "ca4c7701-34a7-4c92-9db7-140fb5b2dc91",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Specify who provided Albendazole tablets",
+  "uuid" : "8d405740-aadd-4321-aed6-27fa8c2e3c56",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "ST",
+  "uuid" : "7e2ebb6e-0401-4b6f-8efe-dd09be78a41d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Stalls outside schools",
+  "uuid" : "8294296e-daa8-4390-a031-02ebe008dd6a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Standard",
+  "uuid" : "84b20238-a4fa-4c55-ae87-6a7e98223d02",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "5th",
+    "uuid" : "c188c654-9954-4d7f-b405-0593ac751b0b",
+    "order" : 0.0
+  }, {
+    "name" : "6th",
+    "uuid" : "db0954dc-c97d-4d8d-aad2-495b04b3c756",
+    "order" : 1.0
+  }, {
+    "name" : "7th",
+    "uuid" : "c2df3edc-d6d1-4d86-ab37-562376b91bcd",
+    "order" : 2.0
+  }, {
+    "name" : "8th",
+    "uuid" : "c24ae217-68f9-4543-a331-55f0606613c8",
+    "order" : 3.0
+  }, {
+    "name" : "9th",
+    "uuid" : "953850f9-3c4d-410e-880b-923c41921065",
+    "order" : 4.0
+  }, {
+    "name" : "10th",
+    "uuid" : "9499b6fd-d6a7-48b8-ac3a-410a87790f71",
+    "order" : 5.0
+  }, {
+    "name" : "11th",
+    "uuid" : "a798e63d-94cd-41a4-9444-11a6ec265181",
+    "order" : 6.0
+  }, {
+    "name" : "12th",
+    "uuid" : "8b6bf669-b1cd-44fa-b1cb-657bc281b657",
+    "order" : 7.0
+  } ]
+}, {
+  "name" : "Status of bathroom facility",
+  "uuid" : "bc7c92f7-0735-4dd5-8306-ae7c8f903289",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Kaccha bathroom",
+    "uuid" : "6acd6ea8-b19e-47dd-bdbc-23ae440c2eeb",
+    "order" : 0.0
+  }, {
+    "name" : "Pakka bathroom",
+    "uuid" : "2a1b9981-ada4-4c3b-b31d-e582b19d4eaa",
+    "order" : 1.0
+  }, {
+    "name" : "Not available",
+    "uuid" : "11ebe3d7-aade-4751-9c14-eb3e111e5154",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Status of sports facilities in the school",
+  "uuid" : "2a0b887e-a142-4b8c-83fc-96b315c933c5",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Have both",
+    "uuid" : "d02056f0-e6a9-4861-8728-27fb4c65990a",
+    "order" : 0.0
+  }, {
+    "name" : "Have playground but don't have sports equipments",
+    "uuid" : "6404f688-64bf-4e49-b891-a7a296ff2f4e",
+    "order" : 1.0
+  }, {
+    "name" : "Have sports equipments but don't have playground",
+    "uuid" : "d40d6b95-83f8-4b89-bba3-cfd84266d290",
+    "order" : 2.0
+  }, {
+    "name" : "Both are not available",
+    "uuid" : "b7ab6e2b-16dd-422e-b659-0cb62b6720e5",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Status of toilet facility",
+  "uuid" : "e89bd581-5275-493a-843b-4b5e2db86e10",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes, we have dedicated family toilet",
+    "uuid" : "9354e94f-c247-4d9f-a55d-fe363b21a3b4",
+    "order" : 0.0
+  }, {
+    "name" : "Yes, toilet shared by us and other families (public / community toilet)",
+    "uuid" : "702e3fc6-b9e4-4353-ba36-f822197ab3ef",
+    "order" : 1.0
+  }, {
+    "name" : "No, our family is without toilet (family members defecate in open fields)",
+    "uuid" : "8adbcd4f-0dc7-4c87-ae60-2e705061c763",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Storage facility for MDM grains/materials",
+  "uuid" : "04263634-f894-422f-85e3-a9507ec2cc83",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Ingredients are properly stored and covered",
+    "uuid" : "e695b736-a023-4cd6-b431-3a66421a4ab3",
+    "order" : 0.0
+  }, {
+    "name" : "Ingredients are properly stored but not covered",
+    "uuid" : "7d4354b2-20c3-4495-8902-e6d9aea559e9",
+    "order" : 1.0
+  }, {
+    "name" : "Ingredients not properly stored but covered",
+    "uuid" : "11c370a9-3734-4021-9fb3-087b3bae06ba",
+    "order" : 2.0
+  }, {
+    "name" : "Ingredients not properly stored and not covered",
+    "uuid" : "e7a9d91c-5c8f-46ee-a26a-159509b92683",
+    "order" : 3.0
+  }, {
+    "name" : "Leakage in roof",
+    "uuid" : "c7f2b6ff-4c9e-418f-b70e-6ebca286da7a",
+    "order" : 4.0
+  }, {
+    "name" : "Water logging during monsoon",
+    "uuid" : "a795186d-5b10-4699-9da0-399b125667bf",
+    "order" : 5.0
+  }, {
+    "name" : "No provision for storage",
+    "uuid" : "0428aac0-4b6c-4c75-9f3c-2ca4c8475c64",
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Street food",
+  "uuid" : "c77a7a3a-f61a-4a33-a921-7da2f96502fc",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Studen Name",
+  "uuid" : "a5314f93-62a2-4573-bf28-c7e8ee938072",
+  "dataType" : "Subject",
+  "active" : true,
+  "keyValues" : [ {
+    "key" : "subjectTypeUUID",
+    "value" : "67be1ade-3124-40c0-8896-65ee48b5f2d5"
+  } ]
+}, {
+  "name" : "Student referred for prevailing condition at which facility",
+  "uuid" : "7d1dcbfc-f815-427c-8f0a-836d3e237de8",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Atul Foundation Health Center",
+    "uuid" : "77067829-4c76-4e00-abea-3234d5bf0242",
+    "order" : 0.0
+  }, {
+    "name" : "VIMS",
+    "uuid" : "5365191f-83b6-437d-a75f-694ec505d06c",
+    "order" : 1.0
+  }, {
+    "name" : "Nearby PHC/CHC/DH",
+    "uuid" : "fb443423-7e70-4b61-8b91-b0fd7832fb42",
+    "order" : 2.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Subjects",
+  "uuid" : "c1507522-eebe-4035-a0d7-791dc4d618dc",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Maths",
+    "uuid" : "9f9b5cf8-59ed-40db-b471-0555ef27b9da",
+    "order" : 0.0
+  }, {
+    "name" : "English",
+    "uuid" : "0aa9ca27-bda2-48fd-87e9-517e61c7cdb0",
+    "order" : 1.0
+  }, {
+    "name" : "Gujarati",
+    "uuid" : "172883c3-96ef-4a6f-bf06-9ed7bc417662",
+    "order" : 2.0
+  }, {
+    "name" : "Hindi",
+    "uuid" : "adef292d-2385-453e-90ab-875ab258a660",
+    "order" : 3.0
+  }, {
+    "name" : "Science",
+    "uuid" : "a724839e-0901-4ebb-9ecf-bb385a07fdf5",
+    "order" : 4.0
+  }, {
+    "name" : "Environmental Studies",
+    "uuid" : "b028724c-4209-4391-b63f-8fe02501641a",
+    "order" : 5.0
+  }, {
+    "name" : "Social Studies",
+    "uuid" : "6730f40d-c368-431f-8787-41f0b5686abe",
+    "order" : 6.0
+  }, {
+    "name" : "Sanskrit",
+    "uuid" : "ce14e112-5313-48f3-aa9b-11792f36dc1f",
+    "order" : 7.0
+  } ]
+}, {
+  "name" : "Systolic Blood pressure",
+  "uuid" : "25e0067f-2cd5-4348-9e95-7ad0ce1dc4c3",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 1.0,
+  "highAbsolute" : 250.0,
+  "active" : true
+}, {
+  "name" : "Takes bath daily",
+  "uuid" : "6187ed92-8b28-4bce-a8ef-eff15c83858b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Talipes (Clubfoot)",
+  "uuid" : "0af24092-60b0-47ea-a124-e6edec15c748",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Tampons",
+  "uuid" : "54f8de75-3ab9-4a51-b81b-7a7245fc2858",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Tanker",
+  "uuid" : "63fcc298-19de-4083-8f30-dbcabe5cc301",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Tap water",
+  "uuid" : "367d3ab8-db33-4384-ad49-7fb66b51f2c5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Td - 1",
+  "uuid" : "5df9883d-7cd8-4abe-add7-7d9c31d1d515",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Td - 2",
+  "uuid" : "51cc6def-0437-4c63-a5fb-4a89e89216c0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Td Booster",
+  "uuid" : "7d006afa-a2da-4ad8-9f06-46df429a072e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Tea and Biscuit",
+  "uuid" : "28d30a51-17ad-474a-865a-d844b69d56da",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Teeths looks clean",
+  "uuid" : "e94bb7bb-f5c9-41a2-8f05-3233b0d5984a",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Temporarily Migrated",
+  "uuid" : "345d9312-166d-4162-8ed2-17a016323181",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Temporary (Kaccha) House",
+  "uuid" : "c974512d-4bd6-41f5-a4a3-c3997ea900e9",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Thalassemia",
+  "uuid" : "5b605050-88f8-46e2-9d8e-81ae9530b17c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Thalessemia",
+  "uuid" : "1b6c6850-52d2-49f6-9f4a-eede426775b2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Three time",
+  "uuid" : "214ebadb-f1c3-4e47-93c3-7d7685372023",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Three times",
+  "uuid" : "c49641ec-bf82-4043-8a94-07fbce961ecc",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Throw in pit",
+  "uuid" : "c73a8e1c-07d9-477f-ad9f-849de7722010",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Thrown out",
+  "uuid" : "28c04d35-9f4f-4a3f-b354-9d59d7a89fff",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Tiffin box by students",
+  "uuid" : "ade48855-6db2-4db1-b006-ce8448d4b2a5",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Time of Delivery",
+  "uuid" : "e01dd28c-57bc-4936-aa6e-3e92d6f7e3be",
+  "dataType" : "Time",
+  "active" : true
+}, {
+  "name" : "Tiredness",
+  "uuid" : "82a6bbbb-feb9-42c1-8dda-196f6c169e67",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "To have dietary supplements",
+  "uuid" : "62dc01cd-3636-438e-9e91-240d9af43b92",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "To maintain proper health and hygiene",
+  "uuid" : "ded7510f-edfd-4291-9ead-15c2020b0be2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "To make sure that child is vaccinated as per the National Immunization Schedule",
+  "uuid" : "f87e9bc6-34cc-45a0-91df-fc6f2f5e0460",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "To provide Iron and Vitamin A syrup to baby as per the schedule",
+  "uuid" : "0582921e-65c0-4d45-b6c5-1e4c93aaeaf3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "To provide Iron and Vitamin K syrup to baby as per the schedule",
+  "uuid" : "5be300e6-ed81-4d03-8efc-48811457e202",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "To reduce screen time less than 2 hours",
+  "uuid" : "e14ea09d-0ae3-4e74-852d-397898bde2ac",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "To stop doing addiction",
+  "uuid" : "64bc1d99-1efe-43b7-ade5-f68758472b7d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Tobacco",
+  "uuid" : "42f6b5be-9769-4665-9d95-aa5b4f967f8e",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Total Annual Income of the household",
+  "uuid" : "5ab4d88f-3860-41ed-b9e8-321999ccf781",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total no. of females in household",
+  "uuid" : "ae4d624c-96ea-4300-94f4-2418b2c130a7",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total no. of males in household",
+  "uuid" : "190adf30-2520-4301-b865-29d837e3d25c",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total no. of transgender in household",
+  "uuid" : "db608e46-66fc-415e-b751-37bda8c2c821",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of abortion",
+  "uuid" : "1c64ddc9-acd5-46a4-861b-95ce34ce8b90",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "active" : true
+}, {
+  "name" : "Total number of boys in the school",
+  "uuid" : "73f8b259-4b51-42fb-97d0-89698432584e",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of boys in the school of standard 5th to 12th",
+  "uuid" : "983c13df-6176-482e-a537-2d7fface6a48",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of child death after delivery",
+  "uuid" : "8d0d28c5-72b6-43a7-b732-6800cca8f4a0",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "active" : true
+}, {
+  "name" : "Total number of classrooms",
+  "uuid" : "f4c9aac2-57b8-49f3-bd00-9dc82777bbf2",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total Number of Family members",
+  "uuid" : "f73f744d-c4ff-44d5-bcb6-328bcc8e4f3b",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of girls in the school",
+  "uuid" : "209fbf93-6bf7-4ddd-a366-c304fac9aafc",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of girls in the school of standard 5th to 12th",
+  "uuid" : "a0a8eb39-2e1b-4b61-98a3-0426a5a6b6c6",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of live children",
+  "uuid" : "97e7feab-a940-4ed1-a7a7-2ea82c50af76",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "highAbsolute" : 30.0,
+  "active" : true
+}, {
+  "name" : "Total number of miscarages",
+  "uuid" : "f46d5c0f-a9bf-4b7b-8fea-df0c346c10bd",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "active" : true
+}, {
+  "name" : "Total number of non teaching staff",
+  "uuid" : "5503e07c-fb01-4d7f-8a68-b56f4119318a",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of participants",
+  "uuid" : "43810da4-8fb4-41ca-8fb3-2d45bd8696a4",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of School Health Ambassadors in the schools",
+  "uuid" : "1ebca021-b10b-468e-8563-6e391d0d4a90",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of Still birth",
+  "uuid" : "099aaa67-50ef-4dcb-973c-f4f8a2874d99",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "active" : true
+}, {
+  "name" : "Total number of students in the school",
+  "uuid" : "d49075ef-003f-480e-a1c1-ca0623964f1e",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of students in the school of standard 5th to 12th",
+  "uuid" : "6a280c93-7bf6-4773-a402-bee446e8d5df",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Total number of teaching staff",
+  "uuid" : "8a9fee7a-3f72-49ab-8688-21b72be6bc50",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Triplets",
+  "uuid" : "4969b823-9550-4447-b9cc-cd3c1ebeaa87",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Tubal Ligation (TL)",
+  "uuid" : "18a38e2d-f18c-4ad1-a847-c68588938c8d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Twice a year",
+  "uuid" : "d497a90f-b660-445b-a37f-0b55092fdca1",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Two time",
+  "uuid" : "170df0e0-4fbe-4b49-a734-1deefdb61e3d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Two times",
+  "uuid" : "ef894c98-68b8-4c10-82e5-acbfbdadf30c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Two to three days",
+  "uuid" : "47a34cd4-bd8a-4331-b8d0-11ca173c8be3",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Type of activity",
+  "uuid" : "db4dbc11-582b-4958-ad3c-cbe5a99b2542",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Group Session",
+    "uuid" : "74e0d3fe-3117-4547-b962-f0c2c45553d0",
+    "order" : 0.0
+  }, {
+    "name" : "Awareness activity",
+    "uuid" : "2a337eb2-fab0-4839-b51d-96584b44a0b1",
+    "order" : 1.0
+  }, {
+    "name" : "Health Check-up Camp",
+    "uuid" : "c2b844d2-05dc-43c3-bd55-9a7483947be1",
+    "order" : 2.0
+  }, {
+    "name" : "Competitions",
+    "uuid" : "97ed8411-05f5-49d5-bdc0-70c0ccf8fdf0",
+    "order" : 3.0
+  }, {
+    "name" : "Demonstration cum Mela",
+    "uuid" : "5aca7275-30f3-46db-86dc-91cfb7fcbf59",
+    "order" : 4.0
+  }, {
+    "name" : "National/International Day/Week celebration",
+    "uuid" : "89aba481-fc77-400b-9c5a-4d19f2c8a854",
+    "order" : 5.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Type of Delivery",
+  "uuid" : "27e1f1bc-dbb0-4962-93ac-a599414c0806",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Normal",
+    "uuid" : "f3e8e5bb-2569-4ec9-afa8-19c218906c74",
+    "order" : 0.0
+  }, {
+    "name" : "C - Section",
+    "uuid" : "6e34cc58-26de-4480-a38d-a828e6213d76",
+    "order" : 1.0
+  }, {
+    "name" : "Vacuum",
+    "uuid" : "156eceb4-765b-416f-974e-7a7508a1f6ef",
+    "order" : 2.0
+  }, {
+    "name" : "Forceps",
+    "uuid" : "30008205-b8dc-4b57-9bd3-973e13648ff7",
+    "order" : 3.0
+  }, {
+    "name" : "Episiotomy",
+    "uuid" : "c275eeac-ba7a-413a-807f-0aeba7cd1b55",
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Type of diet",
+  "uuid" : "0d4ea18b-4136-4a03-a725-0a3ec66782e1",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Veg",
+    "uuid" : "b256d4d0-1d06-4db7-9974-fda5e412ff24",
+    "order" : 0.0
+  }, {
+    "name" : "Non - Veg",
+    "uuid" : "c5467a75-95ab-45b4-b808-9e49b155db7d",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Type of drinking water facility",
+  "uuid" : "fe3ee324-30da-409a-9a07-9229ea1fbd4b",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "RO filter water",
+    "uuid" : "09a0d171-b36c-4ab9-bddc-aaade7b5c18e",
+    "order" : 0.0
+  }, {
+    "name" : "Tap water",
+    "uuid" : "367d3ab8-db33-4384-ad49-7fb66b51f2c5",
+    "order" : 1.0
+  }, {
+    "name" : "Water Bottle",
+    "uuid" : "7fbf1831-b189-45e5-9284-91f9a49f7384",
+    "order" : 2.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Type of facility",
+  "uuid" : "3b31da96-dd47-4a82-af7c-40b862bf4811",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Government Facility",
+    "uuid" : "cd222f7c-84c5-4989-9dea-3fc7d5b6f3cc",
+    "order" : 0.0
+  }, {
+    "name" : "Private Hospital",
+    "uuid" : "fa1368a7-f388-4edb-bb94-cd2365f07f47",
+    "order" : 1.0
+  }, {
+    "name" : "NGO/Trust Hospital",
+    "uuid" : "e97865cc-8519-4ca5-9a65-9a3120033456",
+    "order" : 2.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Type of facility where delivery is to be done",
+  "uuid" : "db571fb9-4482-43be-8413-13239d39488e",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Government Facility",
+    "uuid" : "cd222f7c-84c5-4989-9dea-3fc7d5b6f3cc",
+    "order" : 0.0
+  }, {
+    "name" : "Private Hospital",
+    "uuid" : "fa1368a7-f388-4edb-bb94-cd2365f07f47",
+    "order" : 1.0
+  }, {
+    "name" : "NGO/Trust Hospital",
+    "uuid" : "e97865cc-8519-4ca5-9a65-9a3120033456",
+    "order" : 2.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Type of household",
+  "uuid" : "b30b324c-47ad-4cda-855f-3cbc74b6893e",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Temporary (Kaccha) House",
+    "uuid" : "c974512d-4bd6-41f5-a4a3-c3997ea900e9",
+    "order" : 0.0
+  }, {
+    "name" : "Permanent (Pakka) House",
+    "uuid" : "5c7cfa3a-5666-4344-bfef-7c26eab33350",
+    "order" : 1.0
+  }, {
+    "name" : "Semi-Permanent (Semi Pakka) House",
+    "uuid" : "a6a96170-f46e-451c-81ab-f351a2bbbb17",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Type of Place",
+  "uuid" : "fe463a3f-d788-4f9d-aede-d62c53ca913c",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Community",
+    "uuid" : "4db36fe2-6d3d-432f-9664-da965e5cd0f2",
+    "order" : 0.0
+  }, {
+    "name" : "School",
+    "uuid" : "b226bcdf-7d5c-4782-b0ad-be40fd99ba52",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Type of resident",
+  "uuid" : "e137cead-29f0-4d0b-8102-3b48db429447",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Permanent resident",
+    "uuid" : "9255a0e0-1a4d-4fa9-b7f5-923c05571b31",
+    "order" : 0.0
+  }, {
+    "name" : "Migrant",
+    "uuid" : "58938153-b533-4ea0-8e2e-d098e861b33d",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "Type of School",
+  "uuid" : "a86a5dd1-78ba-4212-b42c-cda5de47f7d0",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Government",
+    "uuid" : "ac50724b-89e9-4cba-91d6-c1815e6e090e",
+    "order" : 1.0
+  }, {
+    "name" : "Private",
+    "uuid" : "07dca313-0b26-48d7-98bb-ee5189016034",
+    "order" : 2.0
+  }, {
+    "name" : "Grant aid school",
+    "uuid" : "7a16d71b-bb73-4021-8ad7-72eb452dd873",
+    "order" : 3.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 4.0
+  }, {
+    "name" : "Ashramshala",
+    "uuid" : "d9b3fdbf-d1ed-4a46-9cb6-a45566993572",
+    "order" : 5.0
+  } ]
+}, {
+  "name" : "Type of the Beneficiary",
+  "uuid" : "01217ff2-82eb-4614-a2d9-29ffce1e58d5",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "School going Male 10-15 years (Falls in other school)",
+    "uuid" : "801a3ded-1112-4640-9c25-049dd0d64e4d",
+    "order" : 1.0
+  }, {
+    "name" : "School going Male 15-19 years (Falls in other school)",
+    "uuid" : "677367d1-939c-4551-b5a9-1068f8475ead",
+    "order" : 2.0
+  }, {
+    "name" : "Non school going Male 10-15 years",
+    "uuid" : "ce925e45-1055-4ba1-b112-6040dba9976d",
+    "order" : 3.0
+  }, {
+    "name" : "Non school going Male 15-19 years",
+    "uuid" : "f79d1a80-9d6d-4024-81fb-f3f78f58b306",
+    "order" : 4.0
+  }, {
+    "name" : "School going Female 10-15 years (Falls in other school)",
+    "uuid" : "1b6c0787-9440-4202-b5ef-e60a7367d849",
+    "order" : 5.0
+  }, {
+    "name" : "School going Female 15-19 years (Falls in other school)",
+    "uuid" : "3dbc52a4-22e8-4569-bef4-c28143af6885",
+    "order" : 6.0
+  }, {
+    "name" : "Non school going Female 10-15 years",
+    "uuid" : "9e8457d4-0532-4ae6-a89f-92ab8ea4d7bf",
+    "order" : 7.0
+  }, {
+    "name" : "Non school going Female 15-19 years",
+    "uuid" : "f33ed841-31a7-4197-9f0c-c14745e9350c",
+    "order" : 8.0
+  }, {
+    "name" : "Non Pregnant female and non-lactating female who have children above 2 years 20-49 years",
+    "uuid" : "25ec7a1a-bad2-4e6a-a630-f076d4f68dcf",
+    "order" : 9.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 10.0
+  } ]
+}, {
+  "name" : "Type of visit",
+  "uuid" : "6465b468-0dd3-437c-86d2-4c150b4051ea",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "2nd day",
+    "uuid" : "e7b173ca-3a81-4412-a4b1-310555ca09e1",
+    "order" : 0.0
+  }, {
+    "name" : "14th day",
+    "uuid" : "7691df53-e38b-4f04-9243-edc85773cde3",
+    "order" : 1.0
+  }, {
+    "name" : "28th day",
+    "uuid" : "9a9d20f2-2a8d-47ef-9b4f-5135adecbaf8",
+    "order" : 2.0
+  }, {
+    "name" : "3 months",
+    "uuid" : "4247c9be-aa71-4113-8291-52af4edd0755",
+    "order" : 3.0
+  }, {
+    "name" : "6 months",
+    "uuid" : "5d4e83f9-7a48-41ee-884e-4f21f74c6c64",
+    "order" : 4.0
+  }, {
+    "name" : "9 months",
+    "uuid" : "4caef0f8-0447-4d48-8476-353330f64737",
+    "order" : 5.0
+  }, {
+    "name" : "12 months",
+    "uuid" : "1ceae09b-ff3b-4be2-82f4-9ded1099255b",
+    "order" : 6.0
+  }, {
+    "name" : "15 months",
+    "uuid" : "3d20feea-f568-4e3f-aeab-953b86fca230",
+    "order" : 7.0
+  }, {
+    "name" : "18 months",
+    "uuid" : "b043b36b-d432-464d-94bc-199435dfa0b0",
+    "order" : 8.0
+  }, {
+    "name" : "21 months",
+    "uuid" : "7a335fcb-b62f-45d3-bf9a-6164a216a210",
+    "order" : 9.0
+  }, {
+    "name" : "24 months",
+    "uuid" : "2352137b-6b3b-4acb-b4a3-f409ba5595d0",
+    "order" : 10.0
+  } ]
+}, {
+  "name" : "Type of water use for drinking",
+  "uuid" : "d9e3b3d2-91a9-4124-8eed-02325bdd73ae",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Bore Well",
+    "uuid" : "d34fd81a-cda0-4f8a-80d9-807716865465",
+    "order" : 0.0
+  }, {
+    "name" : "Well",
+    "uuid" : "d57ca5a3-102e-4733-bd4d-280f77743381",
+    "order" : 1.0
+  }, {
+    "name" : "Tanker",
+    "uuid" : "63fcc298-19de-4083-8f30-dbcabe5cc301",
+    "order" : 2.0
+  }, {
+    "name" : "Pond",
+    "uuid" : "ff7c5bed-4b75-4274-918b-ee61c64493fd",
+    "order" : 3.0
+  }, {
+    "name" : "Gram Panchayat",
+    "uuid" : "8c155822-f3f4-41ef-a014-8fcdfc5e6123",
+    "order" : 4.0
+  }, {
+    "name" : "Hand Pump",
+    "uuid" : "4289c3ac-7ec4-452e-8fac-9c2175abfd45",
+    "order" : 5.0
+  }, {
+    "name" : "Water bottle",
+    "uuid" : "8668100f-f260-427a-851e-ea4da0672476",
+    "order" : 6.0
+  }, {
+    "name" : "Filter water",
+    "uuid" : "65840dc9-8e4f-435e-87fe-a58c1b849cb2",
+    "order" : 7.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 8.0
+  } ]
+}, {
+  "name" : "Unable to concentrate",
+  "uuid" : "8e68a29f-dc49-413a-a41d-9a41274bd016",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Under Graduate",
+  "uuid" : "5a342f53-654b-476e-be04-abc74be82068",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Unmarried",
+  "uuid" : "a962ae86-3c25-433e-afb3-b7d63968c4e2",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Vacuum",
+  "uuid" : "156eceb4-765b-416f-974e-7a7508a1f6ef",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Veg",
+  "uuid" : "b256d4d0-1d06-4db7-9974-fda5e412ff24",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Vending Machine",
+  "uuid" : "44f71cfa-2386-4fc2-a89b-6830051ae45d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "VIMS",
+  "uuid" : "5365191f-83b6-437d-a75f-694ec505d06c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Vitamin - A rich fruits and vegetables",
+  "uuid" : "cd1d918d-903c-4b15-8e73-0701ed488b4c",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Vitamin K given to the child on which date",
+  "uuid" : "683bed56-8e81-4f5a-b3e4-5c88076616c7",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "Was the child born premature",
+  "uuid" : "44d6c598-8510-484a-901c-425b75964a30",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Less than seven months",
+    "uuid" : "1a26a6b6-197b-4065-9c77-45c198f4689f",
+    "order" : 0.0
+  }, {
+    "name" : "At seventh month",
+    "uuid" : "f79e3475-0a0e-4b79-80e3-2fe25ad5494e",
+    "order" : 1.0
+  }, {
+    "name" : "At eight month",
+    "uuid" : "2aa4a5df-ac7b-424c-a4a2-2eebed4a8356",
+    "order" : 2.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Was the child given any pre-lacteals",
+  "uuid" : "ca58fda0-2f3e-4afd-be35-aac66e7a67ec",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Honey",
+    "uuid" : "2f41770c-8580-429b-af1d-9aaf5be12e07",
+    "order" : 0.0
+  }, {
+    "name" : "Goat milk",
+    "uuid" : "76dea82d-f4d4-437f-a7f2-63c5234b38e6",
+    "order" : 1.0
+  }, {
+    "name" : "Cow milk",
+    "uuid" : "e5d30d3a-4d9c-4aed-8b95-788ee66ed422",
+    "order" : 2.0
+  }, {
+    "name" : "Jaggery",
+    "uuid" : "8b529c2b-a544-4cef-b0b5-2da6b76a2de5",
+    "order" : 3.0
+  }, {
+    "name" : "All of the above",
+    "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+    "unique" : true,
+    "order" : 4.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 5.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 6.0
+  } ]
+}, {
+  "name" : "Waste seggregation is done",
+  "uuid" : "b526a61a-7d69-4bf0-92e8-928123a8673b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Water availability",
+  "uuid" : "40b064bc-2750-4569-b3ca-119db503146d",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Water Bottle",
+  "uuid" : "7fbf1831-b189-45e5-9284-91f9a49f7384",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Water bottle",
+  "uuid" : "8668100f-f260-427a-851e-ea4da0672476",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Water logging during monsoon",
+  "uuid" : "a795186d-5b10-4699-9da0-399b125667bf",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Weight",
+  "uuid" : "97eda093-1ec0-446f-bb7d-4557e687989a",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 1.0,
+  "highAbsolute" : 150.0,
+  "unit" : "Kgs",
+  "active" : true
+}, {
+  "name" : "Weight (voided~323768)",
+  "uuid" : "4d77ddbe-d0ac-40a9-9fc5-f0e096297bcc",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 1.0,
+  "unit" : "Kg",
+  "active" : true,
+  "voided" : true
+}, {
+  "name" : "Well",
+  "uuid" : "d57ca5a3-102e-4733-bd4d-280f77743381",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Well-being corner",
+  "uuid" : "5edbc7ab-a0eb-4b62-9951-e6b255139001",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Went to relative or other place",
+  "uuid" : "7aa91832-43d7-4ed6-8fe4-feabf1455cf7",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "What is the consistency of food",
+  "uuid" : "864e5241-d18e-460d-a57b-31e458defc55",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Pureed",
+    "uuid" : "eca3c8d7-cb64-44ee-99fd-a8ee994c28de",
+    "order" : 0.0
+  }, {
+    "name" : "Mashed",
+    "uuid" : "5f76be93-b03d-43bc-b9ab-78c200af61fb",
+    "order" : 1.0
+  }, {
+    "name" : "Soft cooked",
+    "uuid" : "d4f3d121-36d8-4881-a6ac-f0fbf4ce7746",
+    "order" : 2.0
+  }, {
+    "name" : "Finger foods",
+    "uuid" : "0c29b9dc-571f-4d9f-bc2d-b0fd8dd6e04c",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "When will visit again for the patient?",
+  "uuid" : "f78f4b22-9930-4575-8c55-4a5108cf90a8",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "When will you visit again?",
+  "uuid" : "9a524e0e-1ec3-41ca-9c7f-bc42d9745114",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "After seven days",
+    "uuid" : "882e4b89-4ee1-4dfa-b500-3755a0f0f5ac",
+    "order" : 0.0
+  }, {
+    "name" : "After 15 days",
+    "uuid" : "d1aa3722-0736-4ae7-967b-d7eb0dd7449b",
+    "order" : 1.0
+  }, {
+    "name" : "After 30 days",
+    "uuid" : "8429e030-cc24-4f87-9237-529728d97690",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "When will you visit the child again?",
+  "uuid" : "40bf91d6-7b64-4bc4-b4ba-80785159cedc",
+  "dataType" : "Date",
+  "active" : true
+}, {
+  "name" : "When will you visit the patient again?",
+  "uuid" : "6ba70a2a-47c7-4861-a55e-ae7e862a9197",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "After seven days",
+    "uuid" : "882e4b89-4ee1-4dfa-b500-3755a0f0f5ac",
+    "order" : 0.0
+  }, {
+    "name" : "After 15 days",
+    "uuid" : "d1aa3722-0736-4ae7-967b-d7eb0dd7449b",
+    "order" : 1.0
+  }, {
+    "name" : "After 30 days",
+    "uuid" : "8429e030-cc24-4f87-9237-529728d97690",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "Which of the following birth dose vaccine was given",
+  "uuid" : "e2baa4ca-86ea-4c5e-a030-8b318af3217a",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Hepatitis - B",
+    "uuid" : "0a15218f-28a5-4c1c-bea8-796f02467fcc",
+    "order" : 0.0
+  }, {
+    "name" : "Polio - 0",
+    "uuid" : "c467f0b7-bda5-4bca-ae2e-adf421b18855",
+    "order" : 1.0
+  }, {
+    "name" : "BCG",
+    "uuid" : "43a460bc-be37-4e14-a155-472fa9a0fe43",
+    "order" : 2.0
+  }, {
+    "name" : "All of the above",
+    "uuid" : "ca157131-0c63-4bde-98d8-4cf3deb0eb4e",
+    "unique" : true,
+    "order" : 3.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 4.0
+  } ]
+}, {
+  "name" : "Which of the following Family Planning method is practiced",
+  "uuid" : "0e5a2fbf-7e1b-4770-a614-b3dc09dffa39",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Antara injection",
+    "uuid" : "1ca9a803-32fb-451e-80eb-48cdf3435b56",
+    "order" : 0.0
+  }, {
+    "name" : "IUCD",
+    "uuid" : "c15f9b01-5c47-45b8-8360-9f821fa5d86b",
+    "order" : 1.0
+  }, {
+    "name" : "PPIUCD",
+    "uuid" : "c6ced386-174b-41ff-ba64-ef948722249f",
+    "order" : 2.0
+  }, {
+    "name" : "Condom",
+    "uuid" : "891f0309-82ee-4934-98a4-a70f91c48099",
+    "order" : 3.0
+  }, {
+    "name" : "Mala pills",
+    "uuid" : "8b8f3695-c1b4-421c-87c1-e358aac7aab4",
+    "order" : 4.0
+  }, {
+    "name" : "Chhaya pills",
+    "uuid" : "5950dbbe-0f02-4c3a-800a-b08ed7e0b5da",
+    "order" : 5.0
+  }, {
+    "name" : "Tubal Ligation (TL)",
+    "uuid" : "18a38e2d-f18c-4ad1-a847-c68588938c8d",
+    "order" : 6.0
+  }, {
+    "name" : "Non-Scalpel Vasectomy (NSV)",
+    "uuid" : "7a44c7ca-df06-47ce-badc-7a3a45c4ac3a",
+    "order" : 7.0
+  }, {
+    "name" : "Other",
+    "uuid" : "cf383e34-8ed9-47bd-9e86-41f726773a1f",
+    "order" : 8.0
+  }, {
+    "name" : "None",
+    "uuid" : "04668370-364e-42f8-a26e-2d8c50c8828d",
+    "unique" : true,
+    "order" : 9.0
+  } ]
+}, {
+  "name" : "Which of the following vaccine is given to mother",
+  "uuid" : "cef1df09-681d-4022-8542-20db41637123",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Td - 1",
+    "uuid" : "5df9883d-7cd8-4abe-add7-7d9c31d1d515",
+    "order" : 0.0
+  }, {
+    "name" : "Td - 2",
+    "uuid" : "51cc6def-0437-4c63-a5fb-4a89e89216c0",
+    "order" : 1.0
+  }, {
+    "name" : "Td Booster",
+    "uuid" : "7d006afa-a2da-4ad8-9f06-46df429a072e",
+    "order" : 2.0
+  } ]
+}, {
+  "name" : "White (APL)",
+  "uuid" : "e0199c50-61f7-4e4a-bc3b-1e114cf9e65b",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Why don’t you breastfeed your child?",
+  "uuid" : "c47d2458-1b9f-40c5-bf80-faebb303bbc2",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Why is the person not available?",
+  "uuid" : "926399e6-8f33-4f71-961c-650c3f76e567",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Temporarily Migrated",
+    "uuid" : "345d9312-166d-4162-8ed2-17a016323181",
+    "order" : 0.0
+  }, {
+    "name" : "Death",
+    "uuid" : "1b6ce78f-181b-4b64-9ec9-7afc07fe9729",
+    "order" : 1.0
+  }, {
+    "name" : "Went to relative or other place",
+    "uuid" : "7aa91832-43d7-4ed6-8fe4-feabf1455cf7",
+    "order" : 2.0
+  }, {
+    "name" : "Not known",
+    "uuid" : "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Why not available?",
+  "uuid" : "f52e6c46-f982-4331-95c4-26bb36c48e72",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Temporarily Migrated",
+    "uuid" : "345d9312-166d-4162-8ed2-17a016323181",
+    "order" : 0.0
+  }, {
+    "name" : "Death",
+    "uuid" : "1b6ce78f-181b-4b64-9ec9-7afc07fe9729",
+    "order" : 1.0
+  }, {
+    "name" : "Went to relative or other place",
+    "uuid" : "7aa91832-43d7-4ed6-8fe4-feabf1455cf7",
+    "order" : 2.0
+  }, {
+    "name" : "Not known",
+    "uuid" : "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Why patient not availble?",
+  "uuid" : "e19ded48-c845-4a50-91ab-0d559d570b39",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Temporarily Migrated",
+    "uuid" : "345d9312-166d-4162-8ed2-17a016323181",
+    "order" : 0.0
+  }, {
+    "name" : "Death",
+    "uuid" : "1b6ce78f-181b-4b64-9ec9-7afc07fe9729",
+    "order" : 1.0
+  }, {
+    "name" : "Went to relative or other place",
+    "uuid" : "7aa91832-43d7-4ed6-8fe4-feabf1455cf7",
+    "order" : 2.0
+  }, {
+    "name" : "Not known",
+    "uuid" : "c28401fc-3b61-4c8d-a2a6-6c97df6ff61b",
+    "order" : 3.0
+  } ]
+}, {
+  "name" : "Why?",
+  "uuid" : "f810e29d-6200-44c5-9098-6a3a1f3d8120",
+  "dataType" : "Text",
+  "active" : true
+}, {
+  "name" : "Widow",
+  "uuid" : "b1d9f78c-cc26-4eae-a4e9-c2b8eb14b373",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Willing to participate",
+  "uuid" : "478b6684-0f7b-4239-afb9-d8077a05dbb0",
+  "dataType" : "Coded",
+  "active" : true,
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "30ade50e-fef5-4de1-9a6b-965cc66132ba",
+    "order" : 1.0
+  } ]
+}, {
+  "name" : "woman conceived count",
+  "uuid" : "49377654-0170-435c-aeb8-2a025e25c510",
+  "dataType" : "Numeric",
+  "lowAbsolute" : 0.0,
+  "highAbsolute" : 30.0,
+  "active" : true
+}, {
+  "name" : "Yellow (AAY - Antodaya Anna Yojana)",
+  "uuid" : "2e767bc3-f1ad-4a87-88d5-82a1a9704f25",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Yes",
+  "uuid" : "f7a3a360-58d3-4987-99ff-e7fb97f911a0",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Yes, toilet shared by us and other families (public / community toilet)",
+  "uuid" : "702e3fc6-b9e4-4353-ba36-f822197ab3ef",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Yes, we have dedicated family toilet",
+  "uuid" : "9354e94f-c247-4d9f-a55d-fe363b21a3b4",
+  "dataType" : "NA",
+  "active" : true
+}, {
+  "name" : "Yesterday was a fasting day",
+  "uuid" : "8d0e23dc-9e7c-4d29-ab5f-66d8b873bbda",
+  "dataType" : "NA",
+  "active" : true
+} ]

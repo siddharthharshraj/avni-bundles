@@ -1,0 +1,8 @@
+{
+  "name" : "Community Hb Screening 1 Encounter (voided~13155)",
+  "uuid" : "1868e1fd-cd12-4174-a728-0b02e69b540c",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

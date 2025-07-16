@@ -1,0 +1,15 @@
+{
+  "ruleDependencyUUID" : "a1020200-d6c0-45e9-b6f9-e11e9e9e3036",
+  "entity" : {
+    "uuid" : "80f09382-c97b-4850-9c9e-b834e0a6f501",
+    "type" : "Form"
+  },
+  "entityUUID" : "80f09382-c97b-4850-9c9e-b834e0a6f501",
+  "entityType" : "Form",
+  "type" : "ViewFilter",
+  "executionOrder" : 101.0,
+  "data" : { },
+  "name" : "childFollowupClusterInchargeHandler",
+  "uuid" : "cce09d93-784d-44a8-827d-14a5b1c575b6",
+  "fnName" : "childFollowupHandlerClusterIncharge"
+}

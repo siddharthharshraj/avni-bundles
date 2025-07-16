@@ -1,0 +1,7 @@
+{
+  "name" : "Activities follow up Encounter Cancellation",
+  "uuid" : "7695fd0e-ddbe-4a55-b06f-d425d6f286ca",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ]
+}

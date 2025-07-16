@@ -1,0 +1,80 @@
+[ {
+  "name" : "Child",
+  "uuid" : "16e226cd-9ea0-42f6-98a0-f39c9133bbb3",
+  "colour" : "#ff0000",
+  "voided" : false,
+  "active" : null,
+  "enrolmentEligibilityCheckRule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  let eligibility = true;\n  \n  const age = individual.getAgeInYears(moment(), true);\n\n  eligibility = age >= 0 && age <= 2;\n  \n  return eligibility;\n};",
+  "enrolmentSummaryRule" : "",
+  "enrolmentEligibilityCheckDeclarativeRule" : null,
+  "manualEligibilityCheckRequired" : false,
+  "showGrowthChart" : true,
+  "manualEnrolmentEligibilityCheckRule" : "",
+  "manualEnrolmentEligibilityCheckDeclarativeRule" : null,
+  "allowMultipleEnrolments" : false
+}, {
+  "name" : "Community Screening",
+  "uuid" : "3bf0c0d7-5f6e-42c1-91ef-ff6ac15612e5",
+  "colour" : "#0053f5",
+  "voided" : false,
+  "active" : null,
+  "enrolmentEligibilityCheckRule" : "",
+  "enrolmentSummaryRule" : "",
+  "enrolmentEligibilityCheckDeclarativeRule" : null,
+  "manualEligibilityCheckRequired" : false,
+  "showGrowthChart" : false,
+  "manualEnrolmentEligibilityCheckRule" : "",
+  "manualEnrolmentEligibilityCheckDeclarativeRule" : null,
+  "allowMultipleEnrolments" : false
+}, {
+  "name" : "Pregnancy",
+  "uuid" : "e4570a64-d5d3-49b9-a1dd-a067f50fc411",
+  "colour" : "#ff0000",
+  "voided" : false,
+  "active" : null,
+  "enrolmentEligibilityCheckRule" : "'use strict';\n({params, imports}) => {\n  const individual = params.entity;\n  const moment = imports.moment;\n  let eligibility = true;\n  \n  const condition11 = new imports.rulesConfig.RuleCondition({individual}).when.ageInYears.greaterThanOrEqualTo(12).and.when.ageInYears.lessThanOrEqualTo(50).and.when.gender.equals(\"Female\").matches();\n  \n  eligibility = condition11 ;\n  \n  return eligibility;\n};",
+  "enrolmentSummaryRule" : "",
+  "enrolmentEligibilityCheckDeclarativeRule" : [ {
+    "actions" : [ {
+      "actionType" : "showProgram"
+    }, { } ],
+    "conditions" : [ {
+      "compoundRule" : {
+        "rules" : [ {
+          "lhs" : {
+            "type" : "ageInYears"
+          },
+          "rhs" : {
+            "type" : "value",
+            "value" : 12
+          },
+          "operator" : "greaterThanOrEqualTo"
+        }, {
+          "lhs" : {
+            "type" : "ageInYears"
+          },
+          "rhs" : {
+            "type" : "value",
+            "value" : 50
+          },
+          "operator" : "lessThanOrEqualTo"
+        }, {
+          "lhs" : {
+            "type" : "gender"
+          },
+          "rhs" : {
+            "type" : "value",
+            "value" : "Female"
+          },
+          "operator" : "equals"
+        } ],
+        "conjunction" : "and"
+      }
+    } ]
+  } ],
+  "manualEligibilityCheckRequired" : false,
+  "showGrowthChart" : false,
+  "manualEnrolmentEligibilityCheckRule" : "",
+  "manualEnrolmentEligibilityCheckDeclarativeRule" : null,
+  "allowMultipleEnrolments" : false
+} ]

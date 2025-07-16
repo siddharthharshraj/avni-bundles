@@ -1,0 +1,51 @@
+{
+  "operationalSubjectTypes" : [ {
+    "uuid" : "eb9e39ad-2ef0-4b27-b753-fd5bbcd33fc8",
+    "subjectType" : {
+      "uuid" : "360606c2-3514-4848-8e7e-8b5830325130",
+      "voided" : false
+    },
+    "name" : "Demand",
+    "voided" : false
+  }, {
+    "uuid" : "89ff042f-d48a-4fca-a640-c4771e5a1af3",
+    "subjectType" : {
+      "uuid" : "bc0a4ae3-77b3-4620-81c4-2d02d1c62280",
+      "voided" : false
+    },
+    "name" : "Dispatch",
+    "voided" : false
+  }, {
+    "uuid" : "5abc0201-88a5-40da-8c58-0d60b501bb15",
+    "subjectType" : {
+      "uuid" : "07df088a-7924-461d-9a9b-24a29d43813b",
+      "voided" : false
+    },
+    "name" : "Inventory Item",
+    "voided" : false
+  }, {
+    "uuid" : "3414c1aa-f8cc-49d6-be3c-bc4d2fa03c7f",
+    "subjectType" : {
+      "uuid" : "07d0e5b8-0dad-4469-9623-10278261f829",
+      "voided" : false
+    },
+    "name" : "Activity",
+    "voided" : false
+  }, {
+    "uuid" : "7fcdca2d-ffb5-409f-b652-b5df56e0c18a",
+    "subjectType" : {
+      "uuid" : "461abfde-8767-41f3-993e-b68599999f07",
+      "voided" : false
+    },
+    "name" : "Distribution",
+    "voided" : false
+  }, {
+    "uuid" : "4b6703d0-2b9d-49b4-8d00-6876140a58df",
+    "subjectType" : {
+      "uuid" : "c781319c-e47f-49f1-9ed7-7c85cd2bd16a",
+      "voided" : false
+    },
+    "name" : "Village",
+    "voided" : false
+  } ]
+}

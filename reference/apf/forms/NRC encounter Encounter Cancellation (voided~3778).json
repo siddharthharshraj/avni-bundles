@@ -1,0 +1,8 @@
+{
+  "name" : "NRC encounter Encounter Cancellation (voided~3778)",
+  "uuid" : "32e92e06-fafb-46ed-b9c2-bd399d0d1128",
+  "formType" : "IndividualEncounterCancellation",
+  "formElementGroups" : [ ],
+  "decisionConcepts" : [ ],
+  "voided" : true
+}

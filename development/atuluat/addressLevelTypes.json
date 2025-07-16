@@ -1,0 +1,38 @@
+[ {
+  "uuid" : "b09f80ce-0d79-4639-8fa3-e98bc2b4d46d",
+  "id" : 2610,
+  "name" : "State",
+  "level" : 6.0
+}, {
+  "uuid" : "b261a26e-38c9-4dbf-b98c-acc02125f6a1",
+  "id" : 2611,
+  "name" : "District",
+  "level" : 5.0,
+  "parent" : {
+    "uuid" : "b09f80ce-0d79-4639-8fa3-e98bc2b4d46d"
+  }
+}, {
+  "uuid" : "c961a5ef-06a5-484d-ace5-b764b0c871df",
+  "id" : 2612,
+  "name" : "Taluka",
+  "level" : 4.0,
+  "parent" : {
+    "uuid" : "b261a26e-38c9-4dbf-b98c-acc02125f6a1"
+  }
+}, {
+  "uuid" : "c983153d-f57f-4df8-90bb-3f8fb3642e42",
+  "id" : 2613,
+  "name" : "Village",
+  "level" : 3.0,
+  "parent" : {
+    "uuid" : "c961a5ef-06a5-484d-ace5-b764b0c871df"
+  }
+}, {
+  "uuid" : "4c23ae7d-6f0c-4924-93f2-7296bfe96fef",
+  "id" : 2614,
+  "name" : "Faliya",
+  "level" : 2.0,
+  "parent" : {
+    "uuid" : "c983153d-f57f-4df8-90bb-3f8fb3642e42"
+  }
+} ]

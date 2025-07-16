@@ -1,0 +1,123 @@
+{
+  "operationalEncounterTypes" : [ {
+    "uuid" : "d38f19a0-8dbf-4560-be0c-26ff4e9017d8",
+    "encounterType" : {
+      "uuid" : "25c6c7d8-d779-43e2-b53e-d1cbf92f3865",
+      "voided" : false
+    },
+    "name" : "ANC",
+    "voided" : false
+  }, {
+    "uuid" : "0ee1392c-babd-49d4-8fec-14688ff0eef3",
+    "encounterType" : {
+      "uuid" : "0ffc5fe0-eb12-40e2-b707-65ef26efc70e",
+      "voided" : false
+    },
+    "name" : "Delivery",
+    "voided" : false
+  }, {
+    "uuid" : "7eb02a2c-f401-4c7a-8b8f-04ad0abe9dd9",
+    "encounterType" : {
+      "uuid" : "aaaa9032-072c-4662-acb1-f651e6b67946",
+      "voided" : false
+    },
+    "name" : "PNC",
+    "voided" : false
+  }, {
+    "uuid" : "c2654318-d940-449d-a90a-d9ffdf37473f",
+    "encounterType" : {
+      "uuid" : "818786a0-eb92-413d-85ab-c7fff52a5cbb",
+      "voided" : false
+    },
+    "name" : "AWC inputs",
+    "voided" : false
+  }, {
+    "uuid" : "1d43aef2-e5f6-4875-9745-ae840e4ef69c",
+    "encounterType" : {
+      "uuid" : "231e81b3-8f1c-474a-bc2e-4398006e2579",
+      "voided" : false
+    },
+    "name" : "QRT PW",
+    "voided" : false
+  }, {
+    "uuid" : "25cc77fe-9e8e-402d-b9ed-2653bf59e503",
+    "encounterType" : {
+      "uuid" : "d5bc489e-713d-44ef-bd09-6e862fae6eac",
+      "voided" : false
+    },
+    "name" : "Village inputs (voided~1419)",
+    "voided" : true
+  }, {
+    "uuid" : "2dfb9ef0-be27-4526-9313-f1a29101a9ac",
+    "encounterType" : {
+      "uuid" : "c901cd8b-fcc3-44c6-bbd2-848e8466e00e",
+      "voided" : false
+    },
+    "name" : "PW Home Visit",
+    "voided" : false
+  }, {
+    "uuid" : "1fcd1e13-150b-4df9-959d-c0eb5e991b7f",
+    "encounterType" : {
+      "uuid" : "91719f2a-0312-41ad-80ce-9e010f193e0b",
+      "voided" : false
+    },
+    "name" : "Child Home Visit",
+    "voided" : false
+  }, {
+    "uuid" : "556b4e38-5d7b-4386-9ff1-ffc00a63f71e",
+    "encounterType" : {
+      "uuid" : "5c68b335-0456-4111-ae77-4697cb61cd56",
+      "voided" : false
+    },
+    "name" : "Growth Monitoring",
+    "voided" : false
+  }, {
+    "uuid" : "d49706a2-5682-43d4-88d6-365ae9a9f6bf",
+    "encounterType" : {
+      "uuid" : "196ebfd9-9649-41c1-b07d-2ea5f6b7cd59",
+      "voided" : false
+    },
+    "name" : "NRC (voided~1414)",
+    "voided" : true
+  }, {
+    "uuid" : "877b474a-b732-407a-9c62-7915639004b3",
+    "encounterType" : {
+      "uuid" : "24474001-f69a-433f-8a65-737c1662bbca",
+      "voided" : false
+    },
+    "name" : "QRT Child",
+    "voided" : false
+  }, {
+    "uuid" : "b3fb9972-cdf5-47ff-9472-cf614f01b3db",
+    "encounterType" : {
+      "uuid" : "362996b5-aaef-4474-b037-03a7f52df5ce",
+      "voided" : false
+    },
+    "name" : "Medical Facilitation for Poshan Sathi",
+    "voided" : false
+  }, {
+    "uuid" : "a27afd8d-5781-43a2-ac25-2e1eb37813b4",
+    "encounterType" : {
+      "uuid" : "7cd16d3f-ecc1-442d-8f77-9125edb31a4a",
+      "voided" : false
+    },
+    "name" : "Medical Facilitation for QRT",
+    "voided" : false
+  }, {
+    "uuid" : "5918e998-6b76-4050-8e08-fe770a98528c",
+    "encounterType" : {
+      "uuid" : "039b6488-5395-4fda-989e-d3b00760c5bd",
+      "voided" : false
+    },
+    "name" : "Training",
+    "voided" : false
+  }, {
+    "uuid" : "88303e69-86fd-413c-b2cf-ad9e82eb8121",
+    "encounterType" : {
+      "uuid" : "e8ec379d-8cc7-4617-a74e-264854b7139d",
+      "voided" : false
+    },
+    "name" : "Training Completion",
+    "voided" : false
+  } ]
+}
